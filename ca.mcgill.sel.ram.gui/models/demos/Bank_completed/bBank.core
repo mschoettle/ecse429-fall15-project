@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_GpF_AKslEeS5cosAq8x8lQ" name="BBank">
+  <models xsi:type="ram:Aspect" href="BBank.ram#_zXT7cKpXEeS1Vb-t_ucHGQ"/>
+  <models xsi:type="ram:Aspect" href="GUI.ram#_UGzhUKslEeS5cosAq8x8lQ"/>
+  <models xsi:type="ram:Aspect" href="Transfer.ram#_vHyIcKsyEeSI0ZxNw_rzmQ"/>
+  <models xsi:type="core:COREFeatureModel" href="#_GpGmEKslEeS5cosAq8x8lQ"/>
+  <featureModel xmi:id="_GpGmEKslEeS5cosAq8x8lQ" coreConcern="_GpF_AKslEeS5cosAq8x8lQ" root="_GpGmEaslEeS5cosAq8x8lQ">
+    <features xmi:id="_GpGmEaslEeS5cosAq8x8lQ" name="BBank" children="_R9rRoKslEeS5cosAq8x8lQ _fC6WoKsyEeSI0ZxNw_rzmQ">
+      <realizedBy xsi:type="ram:Aspect" href="BBank.ram#_zXT7cKpXEeS1Vb-t_ucHGQ"/>
+    </features>
+    <features xmi:id="_R9rRoKslEeS5cosAq8x8lQ" name="GUI" parent="_GpGmEaslEeS5cosAq8x8lQ" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="GUI.ram#_UGzhUKslEeS5cosAq8x8lQ"/>
+      <reuses xmi:id="_eSsgYCWhEeW4P6Q8k4u3cQ" name="BBank_GUI" selectedConfiguration="_eSsgYSWhEeW4P6Q8k4u3cQ">
+        <reusedConcern href="Reused_Observer/Observer.core#_GcFioKBBEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_eSsgYSWhEeW4P6Q8k4u3cQ" name="Observer_PushNotificationMethodObserver">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Observer/Observer.core#_GcFioaBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Observer/Observer.core#_Rq5kcKBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Observer/Observer.core#_PJW0wKBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Observer/Observer.core#_GcFioqBBEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_fC6WoKsyEeSI0ZxNw_rzmQ" name="Transfer" parent="_GpGmEaslEeS5cosAq8x8lQ" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Transfer.ram#_vHyIcKsyEeSI0ZxNw_rzmQ"/>
+      <reuses xmi:id="_Eyb8wCWiEeW4P6Q8k4u3cQ" name="BBank_Transfer" selectedConfiguration="_Eyb8wSWiEeW4P6Q8k4u3cQ">
+        <reusedConcern href="Reused_Authentication/Authentication.core#_gFhYwKAyEeSaEq_8EhRMPA"/>
+        <configurations xmi:id="_Eyb8wSWiEeW4P6Q8k4u3cQ" name="Authentication_PasswordPassword ExpiryAuto LogoffAuthenticationAccess BlockingAuthentication Means">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Authentication/Authentication.core#_gFhYwaAyEeSaEq_8EhRMPA"/>
+          <selected href="Reused_Authentication/Authentication.core#_nEKl4KAyEeSaEq_8EhRMPA"/>
+          <selected href="Reused_Authentication/Authentication.core#_oJ77IKAyEeSaEq_8EhRMPA"/>
+          <selected href="Reused_Authentication/Authentication.core#_hTvfYKAyEeSaEq_8EhRMPA"/>
+          <selected href="Reused_Authentication/Authentication.core#_gFhYwqAyEeSaEq_8EhRMPA"/>
+          <selected href="Reused_Authentication/Authentication.core#_hZb3sKAyEeSaEq_8EhRMPA"/>
+          <selected href="Reused_Authentication/Authentication.core#_hq6pQKAyEeSaEq_8EhRMPA"/>
+        </configurations>
+      </reuses>
+    </features>
+  </featureModel>
+</core:COREConcern>

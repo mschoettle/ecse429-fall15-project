@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_ZlbngKBAEeSFg4mHi7X2Nw" name="Copyable">
+  <models xsi:type="core:COREFeatureModel" href="#_ZlbngaBAEeSFg4mHi7X2Nw"/>
+  <models xsi:type="ram:Aspect" href="Clone.ram#_F6DtkGQ-EeSHMdf5DpN6fg"/>
+  <models xsi:type="ram:Aspect" href="ReplaceState.ram#_-kW-4EQeEeSPKotjlAbjzg"/>
+  <featureModel xmi:id="_ZlbngaBAEeSFg4mHi7X2Nw" coreConcern="_ZlbngKBAEeSFg4mHi7X2Nw" root="_ZlbngqBAEeSFg4mHi7X2Nw">
+    <features xmi:id="_ZlbngqBAEeSFg4mHi7X2Nw" name="Copyable" children="_d5nZgKBAEeSFg4mHi7X2Nw _d_WOEKBAEeSFg4mHi7X2Nw"/>
+    <features xmi:id="_d5nZgKBAEeSFg4mHi7X2Nw" name="Clone" parent="_ZlbngqBAEeSFg4mHi7X2Nw" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="Clone.ram#_F6DtkGQ-EeSHMdf5DpN6fg"/>
+    </features>
+    <features xmi:id="_d_WOEKBAEeSFg4mHi7X2Nw" name="Replace State" parent="_ZlbngqBAEeSFg4mHi7X2Nw" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="ReplaceState.ram#_-kW-4EQeEeSPKotjlAbjzg"/>
+    </features>
+  </featureModel>
+</core:COREConcern>

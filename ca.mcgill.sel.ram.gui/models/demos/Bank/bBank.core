@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_GpF_AKslEeS5cosAq8x8lQ" name="BBank">
+  <models xsi:type="ram:Aspect" href="BBank.ram#_zXT7cKpXEeS1Vb-t_ucHGQ"/>
+  <models xsi:type="ram:Aspect" href="GUI.ram#_UGzhUKslEeS5cosAq8x8lQ"/>
+  <models xsi:type="ram:Aspect" href="Transfer.ram#_vHyIcKsyEeSI0ZxNw_rzmQ"/>
+  <models xsi:type="core:COREFeatureModel" href="#_GpGmEKslEeS5cosAq8x8lQ"/>
+  <featureModel xmi:id="_GpGmEKslEeS5cosAq8x8lQ" coreConcern="_GpF_AKslEeS5cosAq8x8lQ" root="_GpGmEaslEeS5cosAq8x8lQ">
+    <features xmi:id="_GpGmEaslEeS5cosAq8x8lQ" name="BBank" children="_R9rRoKslEeS5cosAq8x8lQ _fC6WoKsyEeSI0ZxNw_rzmQ">
+      <realizedBy xsi:type="ram:Aspect" href="BBank.ram#_zXT7cKpXEeS1Vb-t_ucHGQ"/>
+    </features>
+    <features xmi:id="_R9rRoKslEeS5cosAq8x8lQ" name="GUI" parent="_GpGmEaslEeS5cosAq8x8lQ" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="GUI.ram#_UGzhUKslEeS5cosAq8x8lQ"/>
+    </features>
+    <features xmi:id="_fC6WoKsyEeSI0ZxNw_rzmQ" name="Transfer" parent="_GpGmEaslEeS5cosAq8x8lQ" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Transfer.ram#_vHyIcKsyEeSI0ZxNw_rzmQ"/>
+    </features>
+  </featureModel>
+</core:COREConcern>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_PjUQsOHbEeSgi6FCXCkP2Q" name="Platform">
+  <realizes href="minueto.core#_MLxikOHaEeSgi6FCXCkP2Q"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_PjUQseHbEeSgi6FCXCkP2Q">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_PjUQsuHbEeSgi6FCXCkP2Q" name="MinuetoTool" visibility="public" instanceClassName="org.minueto.MinuetoTool">
+      <operations xmi:id="_PjUQs-HbEeSgi6FCXCkP2Q" name="isLinux" visibility="public" returnType="_PjUQuOHbEeSgi6FCXCkP2Q" static="true"/>
+      <operations xmi:id="_PjUQtOHbEeSgi6FCXCkP2Q" name="isMac" visibility="public" returnType="_PjUQuOHbEeSgi6FCXCkP2Q" static="true"/>
+      <operations xmi:id="_PjUQteHbEeSgi6FCXCkP2Q" name="isWindows" visibility="public" returnType="_PjUQuOHbEeSgi6FCXCkP2Q" static="true"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_PjUQtuHbEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RAny" xmi:id="_PjUQt-HbEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_PjUQuOHbEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RInt" xmi:id="_PjUQueHbEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RChar" xmi:id="_PjUQuuHbEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RString" xmi:id="_PjUQu-HbEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RDouble" xmi:id="_PjUQvOHbEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RFloat" xmi:id="_PjU3wOHbEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RLong" xmi:id="_PjU3weHbEeSgi6FCXCkP2Q"/>
+  </structuralView>
+  <instantiations xmi:id="_PjU3wuHbEeSgi6FCXCkP2Q">
+    <source xsi:type="ram:Aspect" href="Minueto.ram#_OqwhEMf9EeSSgrP6a4IKSw"/>
+  </instantiations>
+  <layout xmi:id="_PjU3w-HbEeSgi6FCXCkP2Q">
+    <containers xmi:id="_PjU3xOHbEeSgi6FCXCkP2Q" key="_PjUQseHbEeSgi6FCXCkP2Q">
+      <value xmi:id="_PjU3xeHbEeSgi6FCXCkP2Q" key="_PjUQsuHbEeSgi6FCXCkP2Q">
+        <value xmi:id="_PjU3xuHbEeSgi6FCXCkP2Q" x="440.0" y="212.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

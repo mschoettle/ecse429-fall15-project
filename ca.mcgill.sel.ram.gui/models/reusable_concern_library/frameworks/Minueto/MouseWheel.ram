@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_415xkNc6EeSyqfAiT90vaA" name="MouseWheel">
+  <realizes href="minueto.core#_CSh00OJDEeSZQMFI4R9wUA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_415xkdc6EeSyqfAiT90vaA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_415xktc6EeSyqfAiT90vaA" name="MinuetoMouseWheelHandler" visibility="public" instanceClassName="org.minueto.handlers.MinuetoMouseWheelHandler" interface="true">
+      <operations xmi:id="_415xk9c6EeSyqfAiT90vaA" name="handleMouseWheelRotate" visibility="public" returnType="_415xmtc6EeSyqfAiT90vaA">
+        <parameters xmi:id="_415xlNc6EeSyqfAiT90vaA" name="arg0" type="_415xndc6EeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_415xldc6EeSyqfAiT90vaA" name="MinuetoWindow" visibility="public" instanceClassName="org.minueto.window.MinuetoWindow" interface="true">
+      <operations xmi:id="_415xltc6EeSyqfAiT90vaA" name="registerMouseWheelHandler" visibility="public" returnType="_415xmtc6EeSyqfAiT90vaA">
+        <parameters xmi:id="_415xl9c6EeSyqfAiT90vaA" name="arg0" type="_415xktc6EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_415xmNc6EeSyqfAiT90vaA" name="arg1" type="_415xmdc6EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_wJ1BkN72EeShJ659NzW61g" name="unregisterMouseWheelHandler" visibility="public" returnType="_415xmtc6EeSyqfAiT90vaA">
+        <parameters xmi:id="_wJ1Bkd72EeShJ659NzW61g" name="arg0" type="_415xktc6EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_wJ1Bkt72EeShJ659NzW61g" name="arg1" type="_415xmdc6EeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_415xmdc6EeSyqfAiT90vaA" name="MinuetoEventQueue" visibility="public" instanceClassName="org.minueto.MinuetoEventQueue"/>
+    <classes xsi:type="ram:Class" xmi:id="_J6iOQAhyEeWF_N5Blk99kA" name="MouseWheelHandler" partiality="public" visibility="public" superTypes="_415xktc6EeSyqfAiT90vaA">
+      <operations xmi:id="_T47xEAhyEeWF_N5Blk99kA" name="handleMouseWheelRotate" partiality="public" visibility="public" returnType="_415xmtc6EeSyqfAiT90vaA">
+        <parameters xmi:id="_T47xEQhyEeWF_N5Blk99kA" name="arg0" type="_415xndc6EeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_415xmtc6EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_415xm9c6EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_415xnNc6EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_415xndc6EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_415xntc6EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RString" xmi:id="_415xn9c6EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_415xoNc6EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_415xodc6EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_415xotc6EeSyqfAiT90vaA"/>
+  </structuralView>
+  <instantiations xmi:id="_assdoOJDEeSZQMFI4R9wUA">
+    <source xsi:type="ram:Aspect" href="Mouse.ram#_yxpbANc4EeSyqfAiT90vaA"/>
+  </instantiations>
+  <layout xmi:id="_415xo9c6EeSyqfAiT90vaA">
+    <containers xmi:id="_415xpNc6EeSyqfAiT90vaA" key="_415xkdc6EeSyqfAiT90vaA">
+      <value xmi:id="_415xpdc6EeSyqfAiT90vaA" key="_415xktc6EeSyqfAiT90vaA">
+        <value xmi:id="_415xptc6EeSyqfAiT90vaA" x="388.0" y="251.0"/>
+      </value>
+      <value xmi:id="_415xp9c6EeSyqfAiT90vaA" key="_415xldc6EeSyqfAiT90vaA">
+        <value xmi:id="_415xqNc6EeSyqfAiT90vaA" x="49.99997" y="520.0"/>
+      </value>
+      <value xmi:id="_415xqdc6EeSyqfAiT90vaA" key="_415xmdc6EeSyqfAiT90vaA">
+        <value xmi:id="_415xqtc6EeSyqfAiT90vaA" x="81.99991" y="237.99994"/>
+      </value>
+      <value xmi:id="_J6i1UAhyEeWF_N5Blk99kA" key="_J6iOQAhyEeWF_N5Blk99kA">
+        <value xmi:id="_J6i1UQhyEeWF_N5Blk99kA" x="386.99976" y="420.00006"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

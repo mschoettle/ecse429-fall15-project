@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_--HGAC5aEeWEMbzGx7oxkQ" name="Minueto&lt;Minueto,GraphicalElement,Text,Visual,Surface,Window>">
+  <structuralView xmi:id="_--HGAS5aEeWEMbzGx7oxkQ">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_--HGAi5aEeWEMbzGx7oxkQ" name="MinuetoText" superTypes="_--HGNy5aEeWEMbzGx7oxkQ" instanceClassName="org.minueto.image.MinuetoText">
+      <operations xmi:id="_--HGAy5aEeWEMbzGx7oxkQ" name="MinuetoText" visibility="public" returnType="_--HGAi5aEeWEMbzGx7oxkQ" operationType="Constructor">
+        <parameters xmi:id="_--HGBC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPC5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGBS5aEeWEMbzGx7oxkQ" name="arg1" type="_--HGDC5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGBi5aEeWEMbzGx7oxkQ" name="arg2" type="_--HGEi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGBy5aEeWEMbzGx7oxkQ" name="MinuetoText" visibility="public" returnType="_--HGAi5aEeWEMbzGx7oxkQ" operationType="Constructor">
+        <parameters xmi:id="_--HGCC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPC5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGCS5aEeWEMbzGx7oxkQ" name="arg1" type="_--HGDC5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGCi5aEeWEMbzGx7oxkQ" name="arg2" type="_--HGEi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGCy5aEeWEMbzGx7oxkQ" name="arg3" type="_--HtOS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_--HGDC5aEeWEMbzGx7oxkQ" name="MinuetoFont" instanceClassName="org.minueto.image.MinuetoFont">
+      <operations xmi:id="_--HGDS5aEeWEMbzGx7oxkQ" name="MinuetoFont" visibility="public" returnType="_--HGDC5aEeWEMbzGx7oxkQ" operationType="Constructor">
+        <parameters xmi:id="_--HGDi5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPC5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGDy5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGEC5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtOS5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGES5aEeWEMbzGx7oxkQ" name="arg3" type="_--HtOS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_--HGEi5aEeWEMbzGx7oxkQ" name="MinuetoColor" instanceClassName="org.minueto.MinuetoColor">
+      <operations xmi:id="_--HGEy5aEeWEMbzGx7oxkQ" name="MinuetoColor" visibility="public" returnType="_--HGEi5aEeWEMbzGx7oxkQ" operationType="Constructor">
+        <parameters xmi:id="_--HGFC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGFS5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGFi5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGFy5aEeWEMbzGx7oxkQ" name="MinuetoColor" visibility="public" returnType="_--HGEi5aEeWEMbzGx7oxkQ" operationType="Constructor">
+        <parameters xmi:id="_--HGGC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGGS5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGGi5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGGy5aEeWEMbzGx7oxkQ" name="arg3" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGHC5aEeWEMbzGx7oxkQ" name="MinuetoColor" visibility="public" returnType="_--HGEi5aEeWEMbzGx7oxkQ" operationType="Constructor">
+        <parameters xmi:id="_--HGHS5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGHi5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGHy5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGIC5aEeWEMbzGx7oxkQ" name="MinuetoColor" visibility="public" returnType="_--HGEi5aEeWEMbzGx7oxkQ" operationType="Constructor">
+        <parameters xmi:id="_--HGIS5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGIi5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGIy5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGJC5aEeWEMbzGx7oxkQ" name="arg3" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGJS5aEeWEMbzGx7oxkQ" name="MinuetoColor" visibility="public" returnType="_--HGEi5aEeWEMbzGx7oxkQ" operationType="Constructor">
+        <parameters xmi:id="_--HGJi5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGJy5aEeWEMbzGx7oxkQ" name="MinuetoColor" visibility="public" returnType="_--HGEi5aEeWEMbzGx7oxkQ" operationType="Constructor">
+        <parameters xmi:id="_--HGKC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtNS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGKS5aEeWEMbzGx7oxkQ" name="darken" visibility="public" returnType="_--HGEi5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGKi5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGKy5aEeWEMbzGx7oxkQ" name="darken" visibility="public" returnType="_--HGEi5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGLC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGLS5aEeWEMbzGx7oxkQ" name="getAlpha" visibility="public" returnType="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGLi5aEeWEMbzGx7oxkQ" name="getARGBColorValue" visibility="public" returnType="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGLy5aEeWEMbzGx7oxkQ" name="getAWTColor" visibility="public" returnType="_--HtNS5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGMC5aEeWEMbzGx7oxkQ" name="getBlue" visibility="public" returnType="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGMS5aEeWEMbzGx7oxkQ" name="getGreen" visibility="public" returnType="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGMi5aEeWEMbzGx7oxkQ" name="getRed" visibility="public" returnType="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGMy5aEeWEMbzGx7oxkQ" name="lighten" visibility="public" returnType="_--HGEi5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGNC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGNS5aEeWEMbzGx7oxkQ" name="lighten" visibility="public" returnType="_--HGEi5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGNi5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_--HGNy5aEeWEMbzGx7oxkQ" name="MinuetoImage" superTypes="_--HtIS5aEeWEMbzGx7oxkQ" instanceClassName="org.minueto.image.MinuetoImage">
+      <operations xmi:id="_--HGOC5aEeWEMbzGx7oxkQ" name="MinuetoImage" visibility="public" returnType="_--HGNy5aEeWEMbzGx7oxkQ" operationType="Constructor">
+        <parameters xmi:id="_--HGOS5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGOi5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGOy5aEeWEMbzGx7oxkQ" name="getWidth" visibility="public" returnType="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGPC5aEeWEMbzGx7oxkQ" name="getHeight" visibility="public" returnType="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGPS5aEeWEMbzGx7oxkQ" name="clear" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGPi5aEeWEMbzGx7oxkQ" name="drawRectangle" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGPy5aEeWEMbzGx7oxkQ" name="arg0" type="_--HGEi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGQC5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGQS5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGQi5aEeWEMbzGx7oxkQ" name="arg3" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGQy5aEeWEMbzGx7oxkQ" name="arg4" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGRC5aEeWEMbzGx7oxkQ" name="drawCircle" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGRS5aEeWEMbzGx7oxkQ" name="arg0" type="_--HGEi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGRi5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGRy5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGSC5aEeWEMbzGx7oxkQ" name="arg3" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGSS5aEeWEMbzGx7oxkQ" name="drawLine" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGSi5aEeWEMbzGx7oxkQ" name="arg0" type="_--HGEi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGSy5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGTC5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGTS5aEeWEMbzGx7oxkQ" name="arg3" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGTi5aEeWEMbzGx7oxkQ" name="arg4" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGTy5aEeWEMbzGx7oxkQ" name="drawPolygon" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGUC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HGEi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGUS5aEeWEMbzGx7oxkQ" name="arg1">
+          <type xsi:type="ram:RArray" href="Image.ram#_lD4RIOkYEeSTfoEhwhmjdw"/>
+        </parameters>
+      </operations>
+      <operations xmi:id="_--HGUi5aEeWEMbzGx7oxkQ" name="setPixel" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGUy5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGVC5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGVS5aEeWEMbzGx7oxkQ" name="arg2" type="_--HGEi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGVi5aEeWEMbzGx7oxkQ" name="getPixel" visibility="public" returnType="_--HGEi5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGVy5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGWC5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGWS5aEeWEMbzGx7oxkQ" name="flip" visibility="public" returnType="_--HGNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGWi5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOS5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGWy5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGXC5aEeWEMbzGx7oxkQ" name="rotate" visibility="public" returnType="_--HGNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGXS5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGXi5aEeWEMbzGx7oxkQ" name="scale" visibility="public" returnType="_--HGNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGXy5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HGYC5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_--HGYS5aEeWEMbzGx7oxkQ" name="MinuetoWindow" superTypes="_--HtIS5aEeWEMbzGx7oxkQ" instanceClassName="org.minueto.window.MinuetoWindow" interface="true">
+      <operations xmi:id="_--HGYi5aEeWEMbzGx7oxkQ" name="close" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGYy5aEeWEMbzGx7oxkQ" name="getFrameRate" visibility="public" returnType="_--HtPS5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGZC5aEeWEMbzGx7oxkQ" name="getPositionX" visibility="public" returnType="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGZS5aEeWEMbzGx7oxkQ" name="getPositionY" visibility="public" returnType="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGZi5aEeWEMbzGx7oxkQ" name="isClosed" visibility="public" returnType="_--HtOS5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGZy5aEeWEMbzGx7oxkQ" name="isVisible" visibility="public" returnType="_--HtOS5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGaC5aEeWEMbzGx7oxkQ" name="render" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGaS5aEeWEMbzGx7oxkQ" name="setCursorVisible" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGai5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGay5aEeWEMbzGx7oxkQ" name="setMaxFrameRate" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGbC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGbS5aEeWEMbzGx7oxkQ" name="setTitle" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGbi5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPC5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGby5aEeWEMbzGx7oxkQ" name="setVisible" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HGcC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HGcS5aEeWEMbzGx7oxkQ" name="clear" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HGci5aEeWEMbzGx7oxkQ" name="clear" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HtEC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HGEi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HtES5aEeWEMbzGx7oxkQ" name="drawLine" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HtEi5aEeWEMbzGx7oxkQ" name="arg0" type="_--HGEi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtEy5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtFC5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtFS5aEeWEMbzGx7oxkQ" name="arg3" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtFi5aEeWEMbzGx7oxkQ" name="arg4" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HtFy5aEeWEMbzGx7oxkQ" name="draw" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HtGC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HGNy5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtGS5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtGi5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <associationEnds xmi:id="_--HtGy5aEeWEMbzGx7oxkQ" name="myApplication" lowerBound="1" navigable="false" assoc="_--HtNi5aEeWEMbzGx7oxkQ"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_--HtHC5aEeWEMbzGx7oxkQ" name="MinuetoFrame" superTypes="_--HGYS5aEeWEMbzGx7oxkQ" instanceClassName="org.minueto.window.MinuetoFrame">
+      <operations xmi:id="_--HtHS5aEeWEMbzGx7oxkQ" name="MinuetoFrame" visibility="public" returnType="_--HtHC5aEeWEMbzGx7oxkQ" operationType="Constructor">
+        <parameters xmi:id="_--HtHi5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtHy5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtIC5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtOS5aEeWEMbzGx7oxkQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_--HtIS5aEeWEMbzGx7oxkQ" name="MinuetoDrawingSurface" instanceClassName="org.minueto.image.MinuetoDrawingSurface" interface="true">
+      <operations xmi:id="_--HtIi5aEeWEMbzGx7oxkQ" name="draw" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HtIy5aEeWEMbzGx7oxkQ" name="arg0" type="_--HGNy5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtJC5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtJS5aEeWEMbzGx7oxkQ" name="arg2" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HtJi5aEeWEMbzGx7oxkQ" name="clear" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HtJy5aEeWEMbzGx7oxkQ" name="clear" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HtKC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HGEi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HtKS5aEeWEMbzGx7oxkQ" name="getHeight" visibility="public" returnType="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HtKi5aEeWEMbzGx7oxkQ" name="getWidth" visibility="public" returnType="_--HtOi5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HtKy5aEeWEMbzGx7oxkQ" name="save" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HtLC5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtPC5aEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_--HtLS5aEeWEMbzGx7oxkQ" name="setPixel" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_--HtLi5aEeWEMbzGx7oxkQ" name="arg0" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtLy5aEeWEMbzGx7oxkQ" name="arg1" type="_--HtOi5aEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_--HtMC5aEeWEMbzGx7oxkQ" name="arg2" type="_--HGEi5aEeWEMbzGx7oxkQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_--HtMS5aEeWEMbzGx7oxkQ" name="Application" partiality="public">
+      <operations xmi:id="_--HtMi5aEeWEMbzGx7oxkQ" name="startRenderLoop" visibility="public" returnType="_--HtNy5aEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_--HtMy5aEeWEMbzGx7oxkQ" name="doDraw" partiality="public" extendedVisibility="private" returnType="_--HtNy5aEeWEMbzGx7oxkQ"/>
+      <associationEnds xmi:id="_--HtNC5aEeWEMbzGx7oxkQ" name="window" lowerBound="1" referenceType="Composition" assoc="_--HtNi5aEeWEMbzGx7oxkQ"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_--HtNS5aEeWEMbzGx7oxkQ" name="Color" instanceClassName="java.awt.Color"/>
+    <associations xmi:id="_--HtNi5aEeWEMbzGx7oxkQ" name="Application_MinuetoWindow" ends="_--HtNC5aEeWEMbzGx7oxkQ _--HtGy5aEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RVoid" xmi:id="_--HtNy5aEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_--HtOC5aEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_--HtOS5aEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_--HtOi5aEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_--HtOy5aEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RString" xmi:id="_--HtPC5aEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_--HtPS5aEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_--HtPi5aEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_--HtPy5aEeWEMbzGx7oxkQ"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_--HtQC5aEeWEMbzGx7oxkQ" specifies="_--HtMi5aEeWEMbzGx7oxkQ">
+    <specification xmi:id="_--HtQS5aEeWEMbzGx7oxkQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_--HtQi5aEeWEMbzGx7oxkQ" covered="_--HtSy5aEeWEMbzGx7oxkQ" message="_--HtTS5aEeWEMbzGx7oxkQ"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_--HtQy5aEeWEMbzGx7oxkQ" covered="_--HtSy5aEeWEMbzGx7oxkQ _--HtTC5aEeWEMbzGx7oxkQ" interactionOperator="loop">
+        <operands xmi:id="_--HtRC5aEeWEMbzGx7oxkQ">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_--HtRS5aEeWEMbzGx7oxkQ" covered="_--HtSy5aEeWEMbzGx7oxkQ" message="_--HtTy5aEeWEMbzGx7oxkQ"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_--HtRi5aEeWEMbzGx7oxkQ" covered="_--HtSy5aEeWEMbzGx7oxkQ" message="_--HtTy5aEeWEMbzGx7oxkQ"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_--HtRy5aEeWEMbzGx7oxkQ" covered="_--HtSy5aEeWEMbzGx7oxkQ" message="_--HtUC5aEeWEMbzGx7oxkQ"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_--HtSC5aEeWEMbzGx7oxkQ" covered="_--HtTC5aEeWEMbzGx7oxkQ" message="_--HtUC5aEeWEMbzGx7oxkQ"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_--HtSS5aEeWEMbzGx7oxkQ" body="true" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_--HtSi5aEeWEMbzGx7oxkQ" covered="_--HtSy5aEeWEMbzGx7oxkQ" message="_--HtTi5aEeWEMbzGx7oxkQ"/>
+      <lifelines xmi:id="_--HtSy5aEeWEMbzGx7oxkQ" represents="_--HtUS5aEeWEMbzGx7oxkQ" coveredBy="_--HtQi5aEeWEMbzGx7oxkQ _--HtSi5aEeWEMbzGx7oxkQ _--HtQy5aEeWEMbzGx7oxkQ _--HtRS5aEeWEMbzGx7oxkQ _--HtRi5aEeWEMbzGx7oxkQ _--HtRy5aEeWEMbzGx7oxkQ"/>
+      <lifelines xmi:id="_--HtTC5aEeWEMbzGx7oxkQ" represents="_--HtNC5aEeWEMbzGx7oxkQ" coveredBy="_--HtQy5aEeWEMbzGx7oxkQ _--HtSC5aEeWEMbzGx7oxkQ"/>
+      <messages xmi:id="_--HtTS5aEeWEMbzGx7oxkQ" sendEvent="_--HtUi5aEeWEMbzGx7oxkQ" receiveEvent="_--HtQi5aEeWEMbzGx7oxkQ" signature="_--HtMi5aEeWEMbzGx7oxkQ"/>
+      <messages xmi:id="_--HtTi5aEeWEMbzGx7oxkQ" sendEvent="_--HtSi5aEeWEMbzGx7oxkQ" receiveEvent="_--HtUy5aEeWEMbzGx7oxkQ" signature="_--HtMi5aEeWEMbzGx7oxkQ" messageSort="reply"/>
+      <messages xmi:id="_--HtTy5aEeWEMbzGx7oxkQ" sendEvent="_--HtRS5aEeWEMbzGx7oxkQ" receiveEvent="_--HtRi5aEeWEMbzGx7oxkQ" signature="_--HtMy5aEeWEMbzGx7oxkQ"/>
+      <messages xmi:id="_--HtUC5aEeWEMbzGx7oxkQ" sendEvent="_--HtRy5aEeWEMbzGx7oxkQ" receiveEvent="_--HtSC5aEeWEMbzGx7oxkQ" signature="_--HGaC5aEeWEMbzGx7oxkQ"/>
+      <properties xmi:id="_--HtUS5aEeWEMbzGx7oxkQ" name="target" lowerBound="1" type="_--HtMS5aEeWEMbzGx7oxkQ"/>
+      <formalGates xmi:id="_--HtUi5aEeWEMbzGx7oxkQ" message="_--HtTS5aEeWEMbzGx7oxkQ" name="in_startRenderLoop"/>
+      <formalGates xmi:id="_--HtUy5aEeWEMbzGx7oxkQ" message="_--HtTi5aEeWEMbzGx7oxkQ" name="out_startRenderLoop"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_--HtVC5aEeWEMbzGx7oxkQ">
+    <containers xmi:id="_--HtVS5aEeWEMbzGx7oxkQ" key="_--HGAS5aEeWEMbzGx7oxkQ">
+      <value xmi:id="_Fx60wGj2EeWBiaVOoAuGWA" key="_--HGAi5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_Fx60wWj2EeWBiaVOoAuGWA" x="1594.3964" y="450.44843"/>
+      </value>
+      <value xmi:id="_Fx8p8Gj2EeWBiaVOoAuGWA" key="_--HGDC5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_Fx9RAGj2EeWBiaVOoAuGWA" x="2914.5867" y="-637.6367"/>
+      </value>
+      <value xmi:id="_FyL6gGj2EeWBiaVOoAuGWA" key="_--HGEi5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_FyL6gWj2EeWBiaVOoAuGWA" x="3289.356" y="-349.36478"/>
+      </value>
+      <value xmi:id="_FybyIGj2EeWBiaVOoAuGWA" key="_--HGNy5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_FycZMGj2EeWBiaVOoAuGWA" x="1655.4402" y="-109.13892"/>
+      </value>
+      <value xmi:id="_FynYUGj2EeWBiaVOoAuGWA" key="_--HGYS5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_FynYUWj2EeWBiaVOoAuGWA" x="2608.8352" y="-126.095146"/>
+      </value>
+      <value xmi:id="_Fyp0kGj2EeWBiaVOoAuGWA" key="_--HtHC5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_Fyp0kWj2EeWBiaVOoAuGWA" x="2715.4192" y="458.9273"/>
+      </value>
+      <value xmi:id="_Fyv7MGj2EeWBiaVOoAuGWA" key="_--HtIS5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_Fyv7MWj2EeWBiaVOoAuGWA" x="2322.4695" y="-645.7063"/>
+      </value>
+      <value xmi:id="_FyyXcGj2EeWBiaVOoAuGWA" key="_--HtMS5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_FyyXcWj2EeWBiaVOoAuGWA" x="3600.5383" y="207.80516"/>
+      </value>
+      <value xmi:id="_Fy0MoGj2EeWBiaVOoAuGWA" key="_--HtNS5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_Fy0MoWj2EeWBiaVOoAuGWA" x="3182.984" y="-515.7004"/>
+      </value>
+    </containers>
+    <containers xmi:id="_Fy9WkGj2EeWBiaVOoAuGWA" key="_--HtVi5aEeWEMbzGx7oxkQ">
+      <value xmi:id="_FzErUGj2EeWBiaVOoAuGWA" key="_--HtWC5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_FzErUWj2EeWBiaVOoAuGWA" x="100.0"/>
+      </value>
+      <value xmi:id="_FzErUmj2EeWBiaVOoAuGWA" key="_--HtWS5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_FzErU2j2EeWBiaVOoAuGWA" x="100.0" y="100.0"/>
+      </value>
+      <value xmi:id="_FzFSYGj2EeWBiaVOoAuGWA" key="_--HtWi5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_FzFSYWj2EeWBiaVOoAuGWA" x="100.0" y="200.0"/>
+      </value>
+      <value xmi:id="_FzFSYmj2EeWBiaVOoAuGWA" key="_--HtWy5aEeWEMbzGx7oxkQ">
+        <value xmi:id="_FzFSY2j2EeWBiaVOoAuGWA" x="100.0" y="300.0"/>
+      </value>
+    </containers>
+  </layout>
+  <stateViews xmi:id="_--HtVi5aEeWEMbzGx7oxkQ" name="MinuetoWindow" specifies="_--HGYS5aEeWEMbzGx7oxkQ">
+    <stateMachines xmi:id="_--HtVy5aEeWEMbzGx7oxkQ" start="_--HtWC5aEeWEMbzGx7oxkQ">
+      <states xmi:id="_--HtWC5aEeWEMbzGx7oxkQ" name="Invisible" outgoings="_--HtXC5aEeWEMbzGx7oxkQ"/>
+      <states xmi:id="_--HtWS5aEeWEMbzGx7oxkQ" name="Visible" incomings="_--HtXC5aEeWEMbzGx7oxkQ _--HtXy5aEeWEMbzGx7oxkQ" outgoings="_--HtXS5aEeWEMbzGx7oxkQ _--HtXi5aEeWEMbzGx7oxkQ _--HtYi5aEeWEMbzGx7oxkQ _--HtYy5aEeWEMbzGx7oxkQ _--HtZC5aEeWEMbzGx7oxkQ"/>
+      <states xmi:id="_--HtWi5aEeWEMbzGx7oxkQ" name="ReadyToRender" incomings="_--HtXi5aEeWEMbzGx7oxkQ _--HtYC5aEeWEMbzGx7oxkQ _--HtYS5aEeWEMbzGx7oxkQ _--HtYi5aEeWEMbzGx7oxkQ _--HtYy5aEeWEMbzGx7oxkQ _--HtZC5aEeWEMbzGx7oxkQ" outgoings="_--HtXy5aEeWEMbzGx7oxkQ _--HtYC5aEeWEMbzGx7oxkQ _--HtYS5aEeWEMbzGx7oxkQ"/>
+      <states xmi:id="_--HtWy5aEeWEMbzGx7oxkQ" name="Closed" incomings="_--HtXS5aEeWEMbzGx7oxkQ"/>
+      <transitions xmi:id="_--HtXC5aEeWEMbzGx7oxkQ" name="setVisible" endState="_--HtWS5aEeWEMbzGx7oxkQ" startState="_--HtWC5aEeWEMbzGx7oxkQ" signature="_--HGby5aEeWEMbzGx7oxkQ"/>
+      <transitions xmi:id="_--HtXS5aEeWEMbzGx7oxkQ" name="close" endState="_--HtWy5aEeWEMbzGx7oxkQ" startState="_--HtWS5aEeWEMbzGx7oxkQ" signature="_--HGYi5aEeWEMbzGx7oxkQ"/>
+      <transitions xmi:id="_--HtXi5aEeWEMbzGx7oxkQ" name="clear" endState="_--HtWi5aEeWEMbzGx7oxkQ" startState="_--HtWS5aEeWEMbzGx7oxkQ" signature="_--HGcS5aEeWEMbzGx7oxkQ"/>
+      <transitions xmi:id="_--HtXy5aEeWEMbzGx7oxkQ" name="render" endState="_--HtWS5aEeWEMbzGx7oxkQ" startState="_--HtWi5aEeWEMbzGx7oxkQ" signature="_--HGaC5aEeWEMbzGx7oxkQ"/>
+      <transitions xmi:id="_--HtYC5aEeWEMbzGx7oxkQ" name="drawLine" endState="_--HtWi5aEeWEMbzGx7oxkQ" startState="_--HtWi5aEeWEMbzGx7oxkQ" signature="_--HtES5aEeWEMbzGx7oxkQ"/>
+      <transitions xmi:id="_--HtYS5aEeWEMbzGx7oxkQ" name="draw" endState="_--HtWi5aEeWEMbzGx7oxkQ" startState="_--HtWi5aEeWEMbzGx7oxkQ" signature="_--HtFy5aEeWEMbzGx7oxkQ"/>
+      <transitions xmi:id="_--HtYi5aEeWEMbzGx7oxkQ" name="drawLine" endState="_--HtWi5aEeWEMbzGx7oxkQ" startState="_--HtWS5aEeWEMbzGx7oxkQ" signature="_--HtES5aEeWEMbzGx7oxkQ"/>
+      <transitions xmi:id="_--HtYy5aEeWEMbzGx7oxkQ" name="draw" endState="_--HtWi5aEeWEMbzGx7oxkQ" startState="_--HtWS5aEeWEMbzGx7oxkQ" signature="_--HtFy5aEeWEMbzGx7oxkQ"/>
+      <transitions xmi:id="_--HtZC5aEeWEMbzGx7oxkQ" name="clear" endState="_--HtWi5aEeWEMbzGx7oxkQ" startState="_--HtWS5aEeWEMbzGx7oxkQ" signature="_--HGci5aEeWEMbzGx7oxkQ"/>
+    </stateMachines>
+  </stateViews>
+  <wovenAspects xmi:id="_--HtZS5aEeWEMbzGx7oxkQ" name="Text" wovenElements="_--HGDC5aEeWEMbzGx7oxkQ _--HGDS5aEeWEMbzGx7oxkQ _--HGAi5aEeWEMbzGx7oxkQ _--HGAy5aEeWEMbzGx7oxkQ _--HGBy5aEeWEMbzGx7oxkQ _--HGEi5aEeWEMbzGx7oxkQ _--HGNy5aEeWEMbzGx7oxkQ">
+    <comesFrom href="Text.ram#_ScF4sNcnEeSyqfAiT90vaA"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_--HtZi5aEeWEMbzGx7oxkQ" name="Window" wovenElements="_--HtHS5aEeWEMbzGx7oxkQ _--HtHC5aEeWEMbzGx7oxkQ _--HGYS5aEeWEMbzGx7oxkQ">
+    <comesFrom href="Frame.ram#_MwfsANcgEeSyqfAiT90vaA"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_--HtZy5aEeWEMbzGx7oxkQ" name="Image" wovenElements="_--HGPi5aEeWEMbzGx7oxkQ _--HGOy5aEeWEMbzGx7oxkQ _--HGNy5aEeWEMbzGx7oxkQ _--HGRC5aEeWEMbzGx7oxkQ _--HGXC5aEeWEMbzGx7oxkQ _--HGSS5aEeWEMbzGx7oxkQ _--HGXi5aEeWEMbzGx7oxkQ _--HGPS5aEeWEMbzGx7oxkQ _--HGUi5aEeWEMbzGx7oxkQ _--HGWS5aEeWEMbzGx7oxkQ _--HGOC5aEeWEMbzGx7oxkQ _--HGVi5aEeWEMbzGx7oxkQ _--HGTy5aEeWEMbzGx7oxkQ _--HGPC5aEeWEMbzGx7oxkQ _--HGEi5aEeWEMbzGx7oxkQ">
+    <comesFrom href="Image.ram#_vWKtQNclEeSyqfAiT90vaA"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_--HtaC5aEeWEMbzGx7oxkQ" name="GraphicalElement" wovenElements="_--HtIS5aEeWEMbzGx7oxkQ _--HGNy5aEeWEMbzGx7oxkQ _--HtIi5aEeWEMbzGx7oxkQ">
+    <comesFrom href="GraphicalElement.ram#_tGECgCDJEeWOgN4vdFvUTg"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_--HtaS5aEeWEMbzGx7oxkQ" name="Surface" wovenElements="_--HGEi5aEeWEMbzGx7oxkQ _--HGYS5aEeWEMbzGx7oxkQ _--HGaS5aEeWEMbzGx7oxkQ _--HGYy5aEeWEMbzGx7oxkQ _--HGZC5aEeWEMbzGx7oxkQ _--HGci5aEeWEMbzGx7oxkQ _--HtFy5aEeWEMbzGx7oxkQ _--HGYi5aEeWEMbzGx7oxkQ _--HGbS5aEeWEMbzGx7oxkQ _--HtES5aEeWEMbzGx7oxkQ _--HtMS5aEeWEMbzGx7oxkQ _--HGaC5aEeWEMbzGx7oxkQ _--HGZi5aEeWEMbzGx7oxkQ _--HGby5aEeWEMbzGx7oxkQ _--HGcS5aEeWEMbzGx7oxkQ _--HtMy5aEeWEMbzGx7oxkQ _--HGay5aEeWEMbzGx7oxkQ _--HtMi5aEeWEMbzGx7oxkQ _--HGZy5aEeWEMbzGx7oxkQ _--HGZS5aEeWEMbzGx7oxkQ _--HtIS5aEeWEMbzGx7oxkQ _--HGNy5aEeWEMbzGx7oxkQ">
+    <comesFrom href="Surface.ram#_eG4zkPfvEeSv9pyqEMq9pA"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_--Htai5aEeWEMbzGx7oxkQ" name="Visual" wovenElements="_--HGJS5aEeWEMbzGx7oxkQ _--HtLS5aEeWEMbzGx7oxkQ _--HGMS5aEeWEMbzGx7oxkQ _--HGJy5aEeWEMbzGx7oxkQ _--HGIC5aEeWEMbzGx7oxkQ _--HGLi5aEeWEMbzGx7oxkQ _--HGHC5aEeWEMbzGx7oxkQ _--HtNS5aEeWEMbzGx7oxkQ _--HtKy5aEeWEMbzGx7oxkQ _--HtJi5aEeWEMbzGx7oxkQ _--HtKS5aEeWEMbzGx7oxkQ _--HGLy5aEeWEMbzGx7oxkQ _--HGMi5aEeWEMbzGx7oxkQ _--HGEi5aEeWEMbzGx7oxkQ _--HtKi5aEeWEMbzGx7oxkQ _--HGFy5aEeWEMbzGx7oxkQ _--HGNS5aEeWEMbzGx7oxkQ _--HGLS5aEeWEMbzGx7oxkQ _--HtJy5aEeWEMbzGx7oxkQ _--HtIS5aEeWEMbzGx7oxkQ _--HGKy5aEeWEMbzGx7oxkQ _--HGKS5aEeWEMbzGx7oxkQ _--HGMC5aEeWEMbzGx7oxkQ _--HGEy5aEeWEMbzGx7oxkQ _--HGMy5aEeWEMbzGx7oxkQ">
+    <comesFrom href="Visual.ram#_vwwVAPNUEeSMhuSPkYyYzA"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_--Htay5aEeWEMbzGx7oxkQ" name="Minueto" wovenElements="_--HtMS5aEeWEMbzGx7oxkQ">
+    <comesFrom href="Minueto.ram#_OqwhEMf9EeSSgrP6a4IKSw"/>
+  </wovenAspects>
+</ram:Aspect>

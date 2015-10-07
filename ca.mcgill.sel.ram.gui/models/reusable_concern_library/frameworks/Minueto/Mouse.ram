@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_yxpbANc4EeSyqfAiT90vaA" name="Mouse">
+  <realizes href="minueto.core#_u1dHsNc3EeSyqfAiT90vaA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_yxqCENc4EeSyqfAiT90vaA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_yxqCEdc4EeSyqfAiT90vaA" name="MinuetoMouseHandler" visibility="public" instanceClassName="org.minueto.handlers.MinuetoMouseHandler" interface="true">
+      <operations xmi:id="_yxqCEtc4EeSyqfAiT90vaA" name="handleMouseMove" visibility="public" returnType="_yxqCHdc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_yxqCE9c4EeSyqfAiT90vaA" name="arg0" type="_yxqCINc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_yxqCFNc4EeSyqfAiT90vaA" name="arg1" type="_yxqCINc4EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_yxqCFdc4EeSyqfAiT90vaA" name="handleMousePress" visibility="public" returnType="_yxqCHdc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_yxqCFtc4EeSyqfAiT90vaA" name="arg0" type="_yxqCINc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_yxqCF9c4EeSyqfAiT90vaA" name="arg1" type="_yxqCINc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_yxqCGNc4EeSyqfAiT90vaA" name="arg2" type="_yxqCINc4EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_yxqCGdc4EeSyqfAiT90vaA" name="handleMouseRelease" visibility="public" returnType="_yxqCHdc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_yxqCGtc4EeSyqfAiT90vaA" name="arg0" type="_yxqCINc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_yxqCG9c4EeSyqfAiT90vaA" name="arg1" type="_yxqCINc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_yxqCHNc4EeSyqfAiT90vaA" name="arg2" type="_yxqCINc4EeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_Gwg9MNc5EeSyqfAiT90vaA" name="MinuetoWindow" visibility="public" instanceClassName="org.minueto.window.MinuetoWindow" interface="true">
+      <operations xmi:id="_HjEbgtc5EeSyqfAiT90vaA" name="registerMouseHandler" visibility="public" returnType="_yxqCHdc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_HjEbg9c5EeSyqfAiT90vaA" name="arg0" type="_yxqCEdc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_HjEbhNc5EeSyqfAiT90vaA" name="arg1" type="_HjD0cNc5EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_t2xZ0N72EeShJ659NzW61g" name="unregisterMouseHandler" visibility="public" returnType="_yxqCHdc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_t2xZ0d72EeShJ659NzW61g" name="arg0" type="_yxqCEdc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_t2xZ0t72EeShJ659NzW61g" name="arg1" type="_HjD0cNc5EeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_HjD0cNc5EeSyqfAiT90vaA" name="MinuetoEventQueue" visibility="public" instanceClassName="org.minueto.MinuetoEventQueue"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_j_ZSMNc5EeSyqfAiT90vaA" name="MinuetoMouse" visibility="public" instanceClassName="org.minueto.handlers.MinuetoMouse"/>
+    <classes xsi:type="ram:Class" xmi:id="_-GAQQAhxEeWF_N5Blk99kA" name="MouseHandler" partiality="public" visibility="public" superTypes="_yxqCEdc4EeSyqfAiT90vaA">
+      <operations xmi:id="_BMdq4AhyEeWF_N5Blk99kA" name="handleMouseMove" partiality="public" visibility="public" returnType="_yxqCHdc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_BMdq4QhyEeWF_N5Blk99kA" name="arg0" type="_yxqCINc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_BMdq4ghyEeWF_N5Blk99kA" name="arg1" type="_yxqCINc4EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_DaNU0AhyEeWF_N5Blk99kA" name="handleMousePress" partiality="public" visibility="public" returnType="_yxqCHdc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_DaNU0QhyEeWF_N5Blk99kA" name="arg0" type="_yxqCINc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_DaNU0ghyEeWF_N5Blk99kA" name="arg1" type="_yxqCINc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_DaNU0whyEeWF_N5Blk99kA" name="arg2" type="_yxqCINc4EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_FgtuUAhyEeWF_N5Blk99kA" name="handleMouseRelease" partiality="public" visibility="public" returnType="_yxqCHdc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_FgtuUQhyEeWF_N5Blk99kA" name="arg0" type="_yxqCINc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_FgtuUghyEeWF_N5Blk99kA" name="arg1" type="_yxqCINc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_FgtuUwhyEeWF_N5Blk99kA" name="arg2" type="_yxqCINc4EeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_yxqCHdc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_yxqCHtc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_yxqCH9c4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_yxqCINc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_yxqCIdc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RString" xmi:id="_yxqCItc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_yxqCI9c4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_yxqCJNc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_yxqCJdc4EeSyqfAiT90vaA"/>
+  </structuralView>
+  <instantiations xmi:id="_FnlmQNc5EeSyqfAiT90vaA">
+    <source xsi:type="ram:Aspect" href="Event.ram#_03aqINc3EeSyqfAiT90vaA"/>
+  </instantiations>
+  <layout xmi:id="_yxqCJtc4EeSyqfAiT90vaA">
+    <containers xmi:id="_yxqCJ9c4EeSyqfAiT90vaA" key="_yxqCENc4EeSyqfAiT90vaA">
+      <value xmi:id="_yxqCKNc4EeSyqfAiT90vaA" key="_yxqCEdc4EeSyqfAiT90vaA">
+        <value xmi:id="_yxqCKdc4EeSyqfAiT90vaA" x="403.95126" y="173.13281"/>
+      </value>
+      <value xmi:id="_GwhkQNc5EeSyqfAiT90vaA" key="_Gwg9MNc5EeSyqfAiT90vaA">
+        <value xmi:id="_GwhkQdc5EeSyqfAiT90vaA" x="42.203167" y="542.38306"/>
+      </value>
+      <value xmi:id="_HjEbgNc5EeSyqfAiT90vaA" key="_HjD0cNc5EeSyqfAiT90vaA">
+        <value xmi:id="_HjEbgdc5EeSyqfAiT90vaA" x="869.79144" y="573.59607"/>
+      </value>
+      <value xmi:id="_j_agUNc5EeSyqfAiT90vaA" key="_j_ZSMNc5EeSyqfAiT90vaA">
+        <value xmi:id="_j_agUdc5EeSyqfAiT90vaA" x="157.04681" y="202.50789"/>
+      </value>
+      <value xmi:id="_-GBeYAhxEeWF_N5Blk99kA" key="_-GAQQAhxEeWF_N5Blk99kA">
+        <value xmi:id="_-GBeYQhxEeWF_N5Blk99kA" x="329.5059" y="382.1429"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

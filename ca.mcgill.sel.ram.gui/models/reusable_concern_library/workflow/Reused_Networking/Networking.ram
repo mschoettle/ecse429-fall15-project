@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_STbk8F1iEeS-crAw_TocNg" name="Networking">
+  <realizes xsi:type="fm:Feature" href="Networking.jucm#11"/>
+  <structuralView xmi:id="_STcMAF1iEeS-crAw_TocNg">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_STcMAV1iEeS-crAw_TocNg" name="Serializable" instanceClassName="java.io.Serializable" interface="true"/>
+    <classes xsi:type="ram:Class" xmi:id="_STcMAl1iEeS-crAw_TocNg" name="Sendable" partiality="public" superTypes="_STcMAV1iEeS-crAw_TocNg"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-RmY4F1iEeS-crAw_TocNg" name="Socket" instanceClassName="java.net.Socket">
+      <operations  xmi:id="_0vsiIGrGEeSe1cOkClGpSw" name="Socket" returnType="_-RmY4F1iEeS-crAw_TocNg" operationType="Constructor" visibility="public">
+        <parameters xmi:id="_0vsiIWrGEeSe1cOkClGpSw" name="arg0" type="_STcMFV1iEeS-crAw_TocNg"/>
+        <parameters xmi:id="_0vsiImrGEeSe1cOkClGpSw" name="arg1" type="_STcME11iEeS-crAw_TocNg"/>
+      </operations>
+      <operations  xmi:id="_A9G84F1jEeS-crAw_TocNg" name="close" returnType="_STcMEF1iEeS-crAw_TocNg" visibility="public"/>
+      <operations  xmi:id="_IJtGcF1jEeS-crAw_TocNg" name="isConnected" returnType="_STcMEl1iEeS-crAw_TocNg" visibility="public"/>
+      <operations  xmi:id="_YQOlMF3_EeSbwuJLzGxAEg" name="getOutputStream" returnType="_YQHQcF3_EeSbwuJLzGxAEg" visibility="public"/>
+      <operations  xmi:id="_rTRRoGkeEeSxC6LJwAjSxg" name="getInputStream" returnType="_sdcv4F1kEeS-crAw_TocNg" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_Bk25YF1jEeS-crAw_TocNg" name="SocketAddress" instanceClassName="java.net.SocketAddress"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_sdcv4F1kEeS-crAw_TocNg" name="InputStream" instanceClassName="java.io.InputStream"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_YQHQcF3_EeSbwuJLzGxAEg" name="OutputStream" instanceClassName="java.io.OutputStream"/>
+    <classes xsi:type="ram:Class" xmi:id="_8DCtAF4aEeS6BKoYaxGhSg" name="InputStreamImpl" superTypes="_sdcv4F1kEeS-crAw_TocNg"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_baOcwGrIEeSe1cOkClGpSw" name="ServerSocket" instanceClassName="java.net.ServerSocket">
+      <operations  xmi:id="_drCo0GrIEeSe1cOkClGpSw" name="ServerSocket" returnType="_baOcwGrIEeSe1cOkClGpSw" operationType="Constructor" visibility="public">
+        <parameters xmi:id="_drCo0WrIEeSe1cOkClGpSw" name="arg0" type="_STcME11iEeS-crAw_TocNg"/>
+      </operations>
+      <operations  xmi:id="_et7CIGrIEeSe1cOkClGpSw" name="accept" returnType="_-RmY4F1iEeS-crAw_TocNg" visibility="public"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_STcMEF1iEeS-crAw_TocNg"/>
+    <types xsi:type="ram:RAny" xmi:id="_STcMEV1iEeS-crAw_TocNg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_STcMEl1iEeS-crAw_TocNg"/>
+    <types xsi:type="ram:RInt" xmi:id="_STcME11iEeS-crAw_TocNg"/>
+    <types xsi:type="ram:RChar" xmi:id="_STcMFF1iEeS-crAw_TocNg"/>
+    <types xsi:type="ram:RString" xmi:id="_STcMFV1iEeS-crAw_TocNg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_STcMFl1iEeS-crAw_TocNg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_STcMF11iEeS-crAw_TocNg"/>
+    <types xsi:type="ram:RLong" xmi:id="_STcMGF1iEeS-crAw_TocNg"/>
+  </structuralView>
+  <layout xmi:id="_STcMGV1iEeS-crAw_TocNg">
+    <containers xmi:id="_STcMGl1iEeS-crAw_TocNg" key="_STcMAF1iEeS-crAw_TocNg">
+      <value xmi:id="_STcMG11iEeS-crAw_TocNg" key="_STcMAV1iEeS-crAw_TocNg">
+        <value xmi:id="_STcMHF1iEeS-crAw_TocNg" x="322.0" y="169.0"/>
+      </value>
+      <value xmi:id="_STcMHV1iEeS-crAw_TocNg" key="_STcMAl1iEeS-crAw_TocNg">
+        <value xmi:id="_STcMHl1iEeS-crAw_TocNg" x="323.00015" y="368.99985"/>
+      </value>
+      <value xmi:id="_-RoOEF1iEeS-crAw_TocNg" key="_-RmY4F1iEeS-crAw_TocNg">
+        <value xmi:id="_-RoOEV1iEeS-crAw_TocNg" x="530.88055" y="282.01117"/>
+      </value>
+      <value xmi:id="_Bk4ukF1jEeS-crAw_TocNg" key="_Bk25YF1jEeS-crAw_TocNg">
+        <value xmi:id="_Bk4ukV1jEeS-crAw_TocNg" x="107.79205" y="329.49518"/>
+      </value>
+      <value xmi:id="_sdd-AF1kEeS-crAw_TocNg" key="_sdcv4F1kEeS-crAw_TocNg">
+        <value xmi:id="_sdd-AV1kEeS-crAw_TocNg" x="654.68146" y="565.9608"/>
+      </value>
+      <value xmi:id="_YQNXEF3_EeSbwuJLzGxAEg" key="_YQHQcF3_EeSbwuJLzGxAEg">
+        <value xmi:id="_YQNXEV3_EeSbwuJLzGxAEg" x="893.0003" y="342.00024"/>
+      </value>
+      <value xmi:id="_8DEiMF4aEeS6BKoYaxGhSg" key="_8DCtAF4aEeS6BKoYaxGhSg">
+        <value xmi:id="_8DEiMV4aEeS6BKoYaxGhSg" x="643.99994" y="716.0002"/>
+      </value>
+      <value xmi:id="_baQR8GrIEeSe1cOkClGpSw" key="_baOcwGrIEeSe1cOkClGpSw">
+        <value xmi:id="_baQR8WrIEeSe1cOkClGpSw" x="833.0002" y="554.00006"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

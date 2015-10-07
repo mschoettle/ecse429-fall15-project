@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_UGzhUKslEeS5cosAq8x8lQ" name="GUI">
+  <realizes href="bBank.core#_R9rRoKslEeS5cosAq8x8lQ"/>
+  <coreConcern href="bBank.core#_GpF_AKslEeS5cosAq8x8lQ"/>
+  <structuralView xmi:id="_UGzhUaslEeS5cosAq8x8lQ">
+    <classes xsi:type="ram:Class" xmi:id="_UucwIKslEeS5cosAq8x8lQ" name="AccountWindow" superTypes="_WLShkKslEeS5cosAq8x8lQ"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_WLShkKslEeS5cosAq8x8lQ" name="JFrame" instanceClassName="javax.swing.JFrame"/>
+    <types xsi:type="ram:RVoid" xmi:id="_UGzhUqslEeS5cosAq8x8lQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_UGzhU6slEeS5cosAq8x8lQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_UGzhVKslEeS5cosAq8x8lQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_UGzhVaslEeS5cosAq8x8lQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_UGzhVqslEeS5cosAq8x8lQ"/>
+    <types xsi:type="ram:RString" xmi:id="_UGzhV6slEeS5cosAq8x8lQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_UGzhWKslEeS5cosAq8x8lQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_UGzhWaslEeS5cosAq8x8lQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_UGzhWqslEeS5cosAq8x8lQ"/>
+  </structuralView>
+  <instantiations xmi:id="_Q_D30KsmEeSDKpddUclZvg">
+    <source xsi:type="ram:Aspect" href="BBank.ram#_zXT7cKpXEeS1Vb-t_ucHGQ"/>
+  </instantiations>
+  <layout xmi:id="_UGzhW6slEeS5cosAq8x8lQ">
+    <containers xmi:id="_UGzhXKslEeS5cosAq8x8lQ" key="_UGzhUaslEeS5cosAq8x8lQ">
+      <value xmi:id="_Uud-QKslEeS5cosAq8x8lQ" key="_UucwIKslEeS5cosAq8x8lQ">
+        <value xmi:id="_Uud-QaslEeS5cosAq8x8lQ" x="444.00003" y="253.0"/>
+      </value>
+      <value xmi:id="_WLadYKslEeS5cosAq8x8lQ" key="_WLShkKslEeS5cosAq8x8lQ">
+        <value xmi:id="_WLadYaslEeS5cosAq8x8lQ" x="446.99994" y="42.999924"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

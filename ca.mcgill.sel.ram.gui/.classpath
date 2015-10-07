@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="lib" path="lib/jogl/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="lib/jogl/jogl-all.jar"/>
+	<classpathentry kind="lib" path="lib/mt4j.jar" sourcepath="lib/mt4j.src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/ca.mcgill.sel.ram.gui/lib/mt4j.doc.zip!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/org.abego.treelayout.core.jar"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

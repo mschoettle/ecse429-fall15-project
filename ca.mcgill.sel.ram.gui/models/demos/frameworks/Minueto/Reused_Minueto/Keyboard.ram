@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_SxgfUNc4EeSyqfAiT90vaA" name="Keyboard">
+  <realizes href="minueto.core#_uqGMQNc3EeSyqfAiT90vaA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_SxgfUdc4EeSyqfAiT90vaA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_UI-BgNc4EeSyqfAiT90vaA" name="MinuetoKeyboardHandler" visibility="public" instanceClassName="org.minueto.handlers.MinuetoKeyboardHandler" interface="true">
+      <operations xmi:id="_ruI8ANc4EeSyqfAiT90vaA" name="handleKeyPress" visibility="public" returnType="_SxgfUtc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_ruI8Adc4EeSyqfAiT90vaA" name="arg0" type="_SxgfVdc4EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_sBmqkNc4EeSyqfAiT90vaA" name="handleKeyRelease" visibility="public" returnType="_SxgfUtc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_sBmqkdc4EeSyqfAiT90vaA" name="arg0" type="_SxgfVdc4EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_sQO8cNc4EeSyqfAiT90vaA" name="handleKeyType" visibility="public" returnType="_SxgfUtc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_sQO8cdc4EeSyqfAiT90vaA" name="arg0" type="_SxgfVtc4EeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_CNyY4Nc5EeSyqfAiT90vaA" name="MinuetoWindow" visibility="public" instanceClassName="org.minueto.window.MinuetoWindow" interface="true">
+      <operations xmi:id="_DdnpEtc5EeSyqfAiT90vaA" name="registerKeyboardHandler" visibility="public" returnType="_SxgfUtc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_DdnpE9c5EeSyqfAiT90vaA" name="arg0" type="_UI-BgNc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_DdnpFNc5EeSyqfAiT90vaA" name="arg1" type="_Ddma8Nc5EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_q4JFgN72EeShJ659NzW61g" name="unregisterKeyboardHandler" visibility="public" returnType="_SxgfUtc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_q4JFgd72EeShJ659NzW61g" name="arg0" type="_UI-BgNc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_q4JFgt72EeShJ659NzW61g" name="arg1" type="_Ddma8Nc5EeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_Ddma8Nc5EeSyqfAiT90vaA" name="MinuetoEventQueue" visibility="public" instanceClassName="org.minueto.MinuetoEventQueue"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_SbzfoNc5EeSyqfAiT90vaA" name="MinuetoKeyboard" visibility="public" instanceClassName="org.minueto.handlers.MinuetoKeyboard"/>
+    <classes xsi:type="ram:Class" xmi:id="_sEiiUAS1EeWjD78nt3PAvg" name="KeyboardHandler" partiality="public" visibility="public" superTypes="_UI-BgNc4EeSyqfAiT90vaA">
+      <operations xmi:id="_wFLtQAS1EeWjD78nt3PAvg" name="handleKeyPress" partiality="public" visibility="public" returnType="_SxgfUtc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_wFLtQQS1EeWjD78nt3PAvg" name="arg0" type="_SxgfVdc4EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_xqQ0sAS1EeWjD78nt3PAvg" name="handleKeyRelease" partiality="public" visibility="public" returnType="_SxgfUtc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_xqQ0sQS1EeWjD78nt3PAvg" name="arg0" type="_SxgfVdc4EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_0WRH8AS1EeWjD78nt3PAvg" name="handleKeyType" partiality="public" visibility="public" returnType="_SxgfUtc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_0WRH8QS1EeWjD78nt3PAvg" name="arg0" type="_SxgfVtc4EeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_SxgfUtc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_SxgfU9c4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_SxgfVNc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_SxgfVdc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_SxgfVtc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RString" xmi:id="_SxgfV9c4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_SxgfWNc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_SxgfWdc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_SxgfWtc4EeSyqfAiT90vaA"/>
+  </structuralView>
+  <instantiations xmi:id="_SxgfW9c4EeSyqfAiT90vaA">
+    <source xsi:type="ram:Aspect" href="Event.ram#_03aqINc3EeSyqfAiT90vaA"/>
+  </instantiations>
+  <layout xmi:id="_SxgfXNc4EeSyqfAiT90vaA">
+    <containers xmi:id="_SxgfXdc4EeSyqfAiT90vaA" key="_SxgfUdc4EeSyqfAiT90vaA">
+      <value xmi:id="_UI_PoNc4EeSyqfAiT90vaA" key="_UI-BgNc4EeSyqfAiT90vaA">
+        <value xmi:id="_UI_Podc4EeSyqfAiT90vaA" x="427.0" y="198.00002"/>
+      </value>
+      <value xmi:id="_CNznANc5EeSyqfAiT90vaA" key="_CNyY4Nc5EeSyqfAiT90vaA">
+        <value xmi:id="_CNznAdc5EeSyqfAiT90vaA" x="82.88299" y="612.27356"/>
+      </value>
+      <value xmi:id="_DdnpENc5EeSyqfAiT90vaA" key="_Ddma8Nc5EeSyqfAiT90vaA">
+        <value xmi:id="_DdnpEdc5EeSyqfAiT90vaA" x="888.0003" y="393.00018"/>
+      </value>
+      <value xmi:id="_Sb0twNc5EeSyqfAiT90vaA" key="_SbzfoNc5EeSyqfAiT90vaA">
+        <value xmi:id="_Sb0twdc5EeSyqfAiT90vaA" x="79.00012" y="218.99973"/>
+      </value>
+      <value xmi:id="_sEjwcAS1EeWjD78nt3PAvg" key="_sEiiUAS1EeWjD78nt3PAvg">
+        <value xmi:id="_sEjwcQS1EeWjD78nt3PAvg" x="425.68753" y="422.4299"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

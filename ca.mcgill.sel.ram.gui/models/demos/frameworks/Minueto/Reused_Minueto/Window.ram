@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_68JXQNc4EeSyqfAiT90vaA" name="WindowInteractive">
+  <realizes href="minueto.core#_MzzbMOJDEeSZQMFI4R9wUA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_68JXQdc4EeSyqfAiT90vaA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_68JXQtc4EeSyqfAiT90vaA" name="MinuetoWindowHandler" visibility="public" instanceClassName="org.minueto.handlers.MinuetoWindowHandler" interface="true">
+      <operations xmi:id="_68JXQ9c4EeSyqfAiT90vaA" name="handleGetFocus" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA"/>
+      <operations xmi:id="_68JXRNc4EeSyqfAiT90vaA" name="handleLostFocus" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA"/>
+      <operations xmi:id="_68JXRdc4EeSyqfAiT90vaA" name="handleMinimizeWindow" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA"/>
+      <operations xmi:id="_68JXRtc4EeSyqfAiT90vaA" name="handleQuitRequest" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA"/>
+      <operations xmi:id="_68JXR9c4EeSyqfAiT90vaA" name="handleRestoreWindow" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_LpcbANc5EeSyqfAiT90vaA" name="MinuetoWindow" visibility="public" instanceClassName="org.minueto.window.MinuetoWindow" interface="true">
+      <operations xmi:id="_Mps-Itc5EeSyqfAiT90vaA" name="registerWindowHandler" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_Mps-I9c5EeSyqfAiT90vaA" name="arg0" type="_68JXQtc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_Mps-JNc5EeSyqfAiT90vaA" name="arg1" type="_MprwANc5EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_0Tx5gN72EeShJ659NzW61g" name="unregisterWindowHandler" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA">
+        <parameters xmi:id="_0Tx5gd72EeShJ659NzW61g" name="arg0" type="_68JXQtc4EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_0Tx5gt72EeShJ659NzW61g" name="arg1" type="_MprwANc5EeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_MprwANc5EeSyqfAiT90vaA" name="MinuetoEventQueue" visibility="public" instanceClassName="org.minueto.MinuetoEventQueue"/>
+    <classes xsi:type="ram:Class" xmi:id="_oAXZYAhyEeWF_N5Blk99kA" name="WindowHandler" partiality="public" visibility="public" superTypes="_68JXQtc4EeSyqfAiT90vaA">
+      <operations xmi:id="_qlH1IAhyEeWF_N5Blk99kA" name="handleGetFocus" partiality="public" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA"/>
+      <operations xmi:id="_ru3EYAhyEeWF_N5Blk99kA" name="handleLostFocus" partiality="public" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA"/>
+      <operations xmi:id="_s--ocAhyEeWF_N5Blk99kA" name="handleMinimizeWindow" partiality="public" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA"/>
+      <operations xmi:id="_uLRccAhyEeWF_N5Blk99kA" name="handleQuitRequest" partiality="public" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA"/>
+      <operations xmi:id="_vs5AMAhyEeWF_N5Blk99kA" name="handleRestoreWindow" partiality="public" visibility="public" returnType="_68JXSNc4EeSyqfAiT90vaA"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_68JXSNc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_68JXSdc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_68JXStc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_68JXS9c4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_68JXTNc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RString" xmi:id="_68JXTdc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_68JXTtc4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_68JXT9c4EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_68J-UNc4EeSyqfAiT90vaA"/>
+  </structuralView>
+  <instantiations xmi:id="_YKGlEOJDEeSZQMFI4R9wUA">
+    <source xsi:type="ram:Aspect" href="Focus.ram#_Ew7ZINc7EeSyqfAiT90vaA"/>
+  </instantiations>
+  <layout xmi:id="_68J-Udc4EeSyqfAiT90vaA">
+    <containers xmi:id="_68J-Utc4EeSyqfAiT90vaA" key="_68JXQdc4EeSyqfAiT90vaA">
+      <value xmi:id="_68J-U9c4EeSyqfAiT90vaA" key="_68JXQtc4EeSyqfAiT90vaA">
+        <value xmi:id="_68J-VNc4EeSyqfAiT90vaA" x="323.91687" y="73.86121"/>
+      </value>
+      <value xmi:id="_LpdpINc5EeSyqfAiT90vaA" key="_LpcbANc5EeSyqfAiT90vaA">
+        <value xmi:id="_LpdpIdc5EeSyqfAiT90vaA" x="80.66404" y="568.6394"/>
+      </value>
+      <value xmi:id="_Mps-INc5EeSyqfAiT90vaA" key="_MprwANc5EeSyqfAiT90vaA">
+        <value xmi:id="_Mps-Idc5EeSyqfAiT90vaA" x="889.33246" y="577.22595"/>
+      </value>
+      <value xmi:id="_oAZOkAhyEeWF_N5Blk99kA" key="_oAXZYAhyEeWF_N5Blk99kA">
+        <value xmi:id="_oAZOkQhyEeWF_N5Blk99kA" x="327.06842" y="353.0608"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

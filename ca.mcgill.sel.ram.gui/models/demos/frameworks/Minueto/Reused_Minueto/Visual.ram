@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_vwwVAPNUEeSMhuSPkYyYzA" name="Visual">
+  <realizes href="minueto.core#_AmTgYOI_EeSZQMFI4R9wUA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_vwwVAfNUEeSMhuSPkYyYzA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="__zizwNcnEeSyqfAiT90vaA" name="MinuetoColor" visibility="public" instanceClassName="org.minueto.MinuetoColor">
+      <operations xmi:id="_oECcENcoEeSyqfAiT90vaA" name="MinuetoColor" visibility="public" returnType="__zizwNcnEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_oECcEdcoEeSyqfAiT90vaA" name="arg0" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_oECcEtcoEeSyqfAiT90vaA" name="arg1" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_oECcE9coEeSyqfAiT90vaA" name="arg2" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      </operations>
+      <operations xmi:id="_okyYsNcoEeSyqfAiT90vaA" name="MinuetoColor" visibility="public" returnType="__zizwNcnEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_okyYsdcoEeSyqfAiT90vaA" name="arg0" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_okyYstcoEeSyqfAiT90vaA" name="arg1" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_okyYs9coEeSyqfAiT90vaA" name="arg2" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_okyYtNcoEeSyqfAiT90vaA" name="arg3" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      </operations>
+      <operations xmi:id="_RUn74CDJEeWOgN4vdFvUTg" name="MinuetoColor" visibility="public" returnType="__zizwNcnEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_RUn74SDJEeWOgN4vdFvUTg" name="arg0" type="_vwwVCPNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_RUn74iDJEeWOgN4vdFvUTg" name="arg1" type="_vwwVCPNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_RUn74yDJEeWOgN4vdFvUTg" name="arg2" type="_vwwVCPNUEeSMhuSPkYyYzA"/>
+      </operations>
+      <operations xmi:id="_RoqSMCDJEeWOgN4vdFvUTg" name="MinuetoColor" visibility="public" returnType="__zizwNcnEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_RoqSMSDJEeWOgN4vdFvUTg" name="arg0" type="_vwwVCPNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_RoqSMiDJEeWOgN4vdFvUTg" name="arg1" type="_vwwVCPNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_RoqSMyDJEeWOgN4vdFvUTg" name="arg2" type="_vwwVCPNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_RoqSNCDJEeWOgN4vdFvUTg" name="arg3" type="_vwwVCPNUEeSMhuSPkYyYzA"/>
+      </operations>
+      <operations xmi:id="_SGQNICDJEeWOgN4vdFvUTg" name="MinuetoColor" visibility="public" returnType="__zizwNcnEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_SGQNISDJEeWOgN4vdFvUTg" name="arg0" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      </operations>
+      <operations xmi:id="_SXsiciDJEeWOgN4vdFvUTg" name="MinuetoColor" visibility="public" returnType="__zizwNcnEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_SXsicyDJEeWOgN4vdFvUTg" name="arg0" type="_SXqGMCDJEeWOgN4vdFvUTg"/>
+      </operations>
+      <operations xmi:id="_Q3Kj0CDJEeWOgN4vdFvUTg" name="darken" visibility="public" returnType="__zizwNcnEeSyqfAiT90vaA">
+        <parameters xmi:id="_Q3Kj0SDJEeWOgN4vdFvUTg" name="arg0" type="_vwwVCPNUEeSMhuSPkYyYzA"/>
+      </operations>
+      <operations xmi:id="_aW84ACDJEeWOgN4vdFvUTg" name="darken" visibility="public" returnType="__zizwNcnEeSyqfAiT90vaA">
+        <parameters xmi:id="_aW84ASDJEeWOgN4vdFvUTg" name="arg0" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      </operations>
+      <operations xmi:id="_azoM8CDJEeWOgN4vdFvUTg" name="getAlpha" visibility="public" returnType="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      <operations xmi:id="_bIS1YCDJEeWOgN4vdFvUTg" name="getARGBColorValue" visibility="public" returnType="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      <operations xmi:id="_bZ3tkCDJEeWOgN4vdFvUTg" name="getAWTColor" visibility="public" returnType="_SXqGMCDJEeWOgN4vdFvUTg"/>
+      <operations xmi:id="_bwOYECDJEeWOgN4vdFvUTg" name="getBlue" visibility="public" returnType="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      <operations xmi:id="_cKB_MCDJEeWOgN4vdFvUTg" name="getGreen" visibility="public" returnType="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      <operations xmi:id="_cf_oICDJEeWOgN4vdFvUTg" name="getRed" visibility="public" returnType="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      <operations xmi:id="_c8Cq8CDJEeWOgN4vdFvUTg" name="lighten" visibility="public" returnType="__zizwNcnEeSyqfAiT90vaA">
+        <parameters xmi:id="_c8Cq8SDJEeWOgN4vdFvUTg" name="arg0" type="_vwwVCPNUEeSMhuSPkYyYzA"/>
+      </operations>
+      <operations xmi:id="_dWhAcCDJEeWOgN4vdFvUTg" name="lighten" visibility="public" returnType="__zizwNcnEeSyqfAiT90vaA">
+        <parameters xmi:id="_dWhAcSDJEeWOgN4vdFvUTg" name="arg0" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_fn23EPfvEeSv9pyqEMq9pA" name="MinuetoDrawingSurface" visibility="public" instanceClassName="org.minueto.image.MinuetoDrawingSurface" interface="true">
+      <operations xmi:id="_hPMoUPfvEeSv9pyqEMq9pA" name="clear" visibility="public" returnType="_vwwVAvNUEeSMhuSPkYyYzA"/>
+      <operations xmi:id="_hlYTsPfvEeSv9pyqEMq9pA" name="clear" visibility="public" returnType="_vwwVAvNUEeSMhuSPkYyYzA">
+        <parameters xmi:id="_hlYTsffvEeSv9pyqEMq9pA" name="arg0" type="__zizwNcnEeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_jS_FAPfvEeSv9pyqEMq9pA" name="getHeight" visibility="public" returnType="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      <operations xmi:id="_jtsrEPfvEeSv9pyqEMq9pA" name="getWidth" visibility="public" returnType="_vwwVBfNUEeSMhuSPkYyYzA"/>
+      <operations xmi:id="_kC6GEPfvEeSv9pyqEMq9pA" name="save" visibility="public" returnType="_vwwVAvNUEeSMhuSPkYyYzA">
+        <parameters xmi:id="_kC6GEffvEeSv9pyqEMq9pA" name="arg0" type="_vwwVB_NUEeSMhuSPkYyYzA"/>
+      </operations>
+      <operations xmi:id="_kUZesPfvEeSv9pyqEMq9pA" name="setPixel" visibility="public" returnType="_vwwVAvNUEeSMhuSPkYyYzA">
+        <parameters xmi:id="_kUZesffvEeSv9pyqEMq9pA" name="arg0" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_kUZesvfvEeSv9pyqEMq9pA" name="arg1" type="_vwwVBfNUEeSMhuSPkYyYzA"/>
+        <parameters xmi:id="_kUZes_fvEeSv9pyqEMq9pA" name="arg2" type="__zizwNcnEeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_SXqGMCDJEeWOgN4vdFvUTg" name="Color" visibility="public" instanceClassName="java.awt.Color"/>
+    <types xsi:type="ram:RVoid" xmi:id="_vwwVAvNUEeSMhuSPkYyYzA"/>
+    <types xsi:type="ram:RAny" xmi:id="_vwwVA_NUEeSMhuSPkYyYzA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_vwwVBPNUEeSMhuSPkYyYzA"/>
+    <types xsi:type="ram:RInt" xmi:id="_vwwVBfNUEeSMhuSPkYyYzA"/>
+    <types xsi:type="ram:RChar" xmi:id="_vwwVBvNUEeSMhuSPkYyYzA"/>
+    <types xsi:type="ram:RString" xmi:id="_vwwVB_NUEeSMhuSPkYyYzA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_vwwVCPNUEeSMhuSPkYyYzA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_vwwVCfNUEeSMhuSPkYyYzA"/>
+    <types xsi:type="ram:RLong" xmi:id="_vwwVCvNUEeSMhuSPkYyYzA"/>
+    <types xsi:type="ram:RArray" xmi:id="_D3XAQCGfEeWkC4DbQYGV6Q" type="_vwwVCfNUEeSMhuSPkYyYzA"/>
+  </structuralView>
+  <instantiations xmi:id="_d2XRMCQWEeWjF-HtNvL9JQ">
+    <source xsi:type="ram:Aspect" href="Minueto.ram#_OqwhEMf9EeSSgrP6a4IKSw"/>
+  </instantiations>
+  <layout xmi:id="_vww8EPNUEeSMhuSPkYyYzA">
+    <containers xmi:id="_vww8EfNUEeSMhuSPkYyYzA" key="_vwwVAfNUEeSMhuSPkYyYzA">
+      <value xmi:id="_zYIO4PNVEeSMhuSPkYyYzA" key="__zizwNcnEeSyqfAiT90vaA">
+        <value xmi:id="_zYIO4fNVEeSMhuSPkYyYzA" x="141.85913" y="510.60645"/>
+      </value>
+      <value xmi:id="_fn4sQPfvEeSv9pyqEMq9pA" key="_fn23EPfvEeSv9pyqEMq9pA">
+        <value xmi:id="_fn4sQffvEeSv9pyqEMq9pA" x="789.43146" y="504.26904"/>
+      </value>
+      <value xmi:id="_SXsicCDJEeWOgN4vdFvUTg" key="_SXqGMCDJEeWOgN4vdFvUTg">
+        <value xmi:id="_SXsicSDJEeWOgN4vdFvUTg" x="1234.9395" y="801.6846"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

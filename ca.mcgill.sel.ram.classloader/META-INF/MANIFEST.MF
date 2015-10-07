@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RAM Java Classloader
+Bundle-SymbolicName: ca.mcgill.sel.ram.classloader
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: Software Engineering Laboratory, McGill University
+Export-Package: ca.mcgill.sel.ram.loaders,
+ ca.mcgill.sel.ram.loaders.exceptions

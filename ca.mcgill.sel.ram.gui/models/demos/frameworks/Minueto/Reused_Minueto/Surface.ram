@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_eG4zkPfvEeSv9pyqEMq9pA" name="Surface">
+  <realizes href="minueto.core#_zQutENcfEeSyqfAiT90vaA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_eG4zkffvEeSv9pyqEMq9pA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_sASMUPfvEeSv9pyqEMq9pA" name="MinuetoWindow" visibility="public" superTypes="_3HDoAC5LEeWEMbzGx7oxkQ" instanceClassName="org.minueto.window.MinuetoWindow" interface="true">
+      <operations xmi:id="_s8QsYPfvEeSv9pyqEMq9pA" name="close" visibility="public" returnType="_eG4zkvfvEeSv9pyqEMq9pA"/>
+      <operations xmi:id="_tm2hgPfvEeSv9pyqEMq9pA" name="getFrameRate" visibility="public" returnType="_eG4zmPfvEeSv9pyqEMq9pA"/>
+      <operations xmi:id="_uMuOsPfvEeSv9pyqEMq9pA" name="getPositionX" visibility="public" returnType="_eG4zlffvEeSv9pyqEMq9pA"/>
+      <operations xmi:id="_urenQPfvEeSv9pyqEMq9pA" name="getPositionY" visibility="public" returnType="_eG4zlffvEeSv9pyqEMq9pA"/>
+      <operations xmi:id="_vOB6sPfvEeSv9pyqEMq9pA" name="isClosed" visibility="public" returnType="_eG4zlPfvEeSv9pyqEMq9pA"/>
+      <operations xmi:id="_vuHwAPfvEeSv9pyqEMq9pA" name="isVisible" visibility="public" returnType="_eG4zlPfvEeSv9pyqEMq9pA"/>
+      <operations xmi:id="_wQ0NYPfvEeSv9pyqEMq9pA" name="render" visibility="public" returnType="_eG4zkvfvEeSv9pyqEMq9pA"/>
+      <operations xmi:id="_w7bQoPfvEeSv9pyqEMq9pA" name="setCursorVisible" visibility="public" returnType="_eG4zkvfvEeSv9pyqEMq9pA">
+        <parameters xmi:id="_w7bQoffvEeSv9pyqEMq9pA" name="arg0" type="_eG4zlPfvEeSv9pyqEMq9pA"/>
+      </operations>
+      <operations xmi:id="_xuqEYPfvEeSv9pyqEMq9pA" name="setMaxFrameRate" visibility="public" returnType="_eG4zkvfvEeSv9pyqEMq9pA">
+        <parameters xmi:id="_xuqEYffvEeSv9pyqEMq9pA" name="arg0" type="_eG4zmPfvEeSv9pyqEMq9pA"/>
+      </operations>
+      <operations xmi:id="_zM3u0PfvEeSv9pyqEMq9pA" name="setTitle" visibility="public" returnType="_eG4zkvfvEeSv9pyqEMq9pA">
+        <parameters xmi:id="_zM3u0ffvEeSv9pyqEMq9pA" name="arg0" type="_eG4zl_fvEeSv9pyqEMq9pA"/>
+      </operations>
+      <operations xmi:id="_z23uEPfvEeSv9pyqEMq9pA" name="setVisible" visibility="public" returnType="_eG4zkvfvEeSv9pyqEMq9pA">
+        <parameters xmi:id="_z23uEffvEeSv9pyqEMq9pA" name="arg0" type="_eG4zlPfvEeSv9pyqEMq9pA"/>
+      </operations>
+      <operations xmi:id="_L8flQAk-EeW02qxLj-iivA" name="clear" visibility="public" returnType="_eG4zkvfvEeSv9pyqEMq9pA"/>
+      <operations xmi:id="_MUwUQAk-EeW02qxLj-iivA" name="clear" visibility="public" returnType="_eG4zkvfvEeSv9pyqEMq9pA">
+        <parameters xmi:id="_MUwUQQk-EeW02qxLj-iivA" name="arg0" type="_ySApEPfvEeSv9pyqEMq9pA"/>
+      </operations>
+      <operations xmi:id="_Mo4KIAk-EeW02qxLj-iivA" name="drawLine" visibility="public" returnType="_eG4zkvfvEeSv9pyqEMq9pA">
+        <parameters xmi:id="_Mo4KIQk-EeW02qxLj-iivA" name="arg0" type="_ySApEPfvEeSv9pyqEMq9pA"/>
+        <parameters xmi:id="_Mo4KIgk-EeW02qxLj-iivA" name="arg1" type="_eG4zlffvEeSv9pyqEMq9pA"/>
+        <parameters xmi:id="_Mo4KIwk-EeW02qxLj-iivA" name="arg2" type="_eG4zlffvEeSv9pyqEMq9pA"/>
+        <parameters xmi:id="_Mo4KJAk-EeW02qxLj-iivA" name="arg3" type="_eG4zlffvEeSv9pyqEMq9pA"/>
+        <parameters xmi:id="_Mo4KJQk-EeW02qxLj-iivA" name="arg4" type="_eG4zlffvEeSv9pyqEMq9pA"/>
+      </operations>
+      <operations xmi:id="_M_O0oAk-EeW02qxLj-iivA" name="draw" visibility="public" returnType="_eG4zkvfvEeSv9pyqEMq9pA">
+        <parameters xmi:id="_M_O0oQk-EeW02qxLj-iivA" name="arg0" type="_M_M_cAk-EeW02qxLj-iivA"/>
+        <parameters xmi:id="_M_O0ogk-EeW02qxLj-iivA" name="arg1" type="_eG4zlffvEeSv9pyqEMq9pA"/>
+        <parameters xmi:id="_M_O0owk-EeW02qxLj-iivA" name="arg2" type="_eG4zlffvEeSv9pyqEMq9pA"/>
+      </operations>
+      <associationEnds xmi:id="_aB2Y8AS1EeWjD78nt3PAvg" name="myApplication" lowerBound="1" navigable="false" assoc="_aB3nEAS1EeWjD78nt3PAvg"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_ySApEPfvEeSv9pyqEMq9pA" name="MinuetoColor" instanceClassName="org.minueto.MinuetoColor"/>
+    <classes xsi:type="ram:Class" xmi:id="_ZInq4AS1EeWjD78nt3PAvg" name="Application" partiality="public" visibility="public">
+      <operations xmi:id="_zb7BQAhzEeWF_N5Blk99kA" name="startRenderLoop" visibility="public" returnType="_eG4zkvfvEeSv9pyqEMq9pA"/>
+      <operations xmi:id="_5nB4oAhzEeWF_N5Blk99kA" name="doDraw" partiality="public" extendedVisibility="private" returnType="_eG4zkvfvEeSv9pyqEMq9pA"/>
+      <associationEnds xmi:id="_aB1K0AS1EeWjD78nt3PAvg" name="window" lowerBound="1" referenceType="Composition" assoc="_aB3nEAS1EeWjD78nt3PAvg"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_M_M_cAk-EeW02qxLj-iivA" name="MinuetoImage" superTypes="_3HDoAC5LEeWEMbzGx7oxkQ" instanceClassName="org.minueto.image.MinuetoImage"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_3HDoAC5LEeWEMbzGx7oxkQ" name="MinuetoDrawingSurface" instanceClassName="org.minueto.image.MinuetoDrawingSurface" interface="true"/>
+    <associations xmi:id="_aB3nEAS1EeWjD78nt3PAvg" name="Application_MinuetoWindow" ends="_aB1K0AS1EeWjD78nt3PAvg _aB2Y8AS1EeWjD78nt3PAvg"/>
+    <types xsi:type="ram:RVoid" xmi:id="_eG4zkvfvEeSv9pyqEMq9pA"/>
+    <types xsi:type="ram:RAny" xmi:id="_eG4zk_fvEeSv9pyqEMq9pA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_eG4zlPfvEeSv9pyqEMq9pA"/>
+    <types xsi:type="ram:RInt" xmi:id="_eG4zlffvEeSv9pyqEMq9pA"/>
+    <types xsi:type="ram:RChar" xmi:id="_eG4zlvfvEeSv9pyqEMq9pA"/>
+    <types xsi:type="ram:RString" xmi:id="_eG4zl_fvEeSv9pyqEMq9pA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_eG4zmPfvEeSv9pyqEMq9pA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_eG4zmffvEeSv9pyqEMq9pA"/>
+    <types xsi:type="ram:RLong" xmi:id="_eG4zmvfvEeSv9pyqEMq9pA"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_zo6F0wieEeWkerP74uCx7w" specifies="_zb7BQAhzEeWF_N5Blk99kA">
+    <specification xmi:id="_zo6F1AieEeWkerP74uCx7w">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_zo6F1QieEeWkerP74uCx7w" covered="_zo6F1wieEeWkerP74uCx7w" message="_zo6F2AieEeWkerP74uCx7w"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_0P_7AAieEeWkerP74uCx7w" covered="_zo6F1wieEeWkerP74uCx7w _3OBLUAieEeWkerP74uCx7w" interactionOperator="loop">
+        <operands xmi:id="_0P_7AQieEeWkerP74uCx7w">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_2i2ucAieEeWkerP74uCx7w" covered="_zo6F1wieEeWkerP74uCx7w" message="_2i5xwAieEeWkerP74uCx7w"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_2i2ucQieEeWkerP74uCx7w" covered="_zo6F1wieEeWkerP74uCx7w" message="_2i5xwAieEeWkerP74uCx7w"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_3OPNwAieEeWkerP74uCx7w" covered="_zo6F1wieEeWkerP74uCx7w" message="_3ORqAAieEeWkerP74uCx7w"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_3OPNwQieEeWkerP74uCx7w" covered="_3OBLUAieEeWkerP74uCx7w" message="_3ORqAAieEeWkerP74uCx7w"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_0P_7AgieEeWkerP74uCx7w" body="true" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_zo6F1gieEeWkerP74uCx7w" covered="_zo6F1wieEeWkerP74uCx7w" message="_zo6F2QieEeWkerP74uCx7w"/>
+      <lifelines xmi:id="_zo6F1wieEeWkerP74uCx7w" represents="_zo6F2gieEeWkerP74uCx7w" coveredBy="_zo6F1QieEeWkerP74uCx7w _zo6F1gieEeWkerP74uCx7w _0P_7AAieEeWkerP74uCx7w _2i2ucAieEeWkerP74uCx7w _2i2ucQieEeWkerP74uCx7w _3OPNwAieEeWkerP74uCx7w"/>
+      <lifelines xmi:id="_3OBLUAieEeWkerP74uCx7w" represents="_aB1K0AS1EeWjD78nt3PAvg" coveredBy="_0P_7AAieEeWkerP74uCx7w _3OPNwQieEeWkerP74uCx7w"/>
+      <messages xmi:id="_zo6F2AieEeWkerP74uCx7w" sendEvent="_zo6F2wieEeWkerP74uCx7w" receiveEvent="_zo6F1QieEeWkerP74uCx7w" signature="_zb7BQAhzEeWF_N5Blk99kA"/>
+      <messages xmi:id="_zo6F2QieEeWkerP74uCx7w" sendEvent="_zo6F1gieEeWkerP74uCx7w" receiveEvent="_zo6F3AieEeWkerP74uCx7w" signature="_zb7BQAhzEeWF_N5Blk99kA" messageSort="reply"/>
+      <messages xmi:id="_2i5xwAieEeWkerP74uCx7w" sendEvent="_2i2ucAieEeWkerP74uCx7w" receiveEvent="_2i2ucQieEeWkerP74uCx7w" signature="_5nB4oAhzEeWF_N5Blk99kA"/>
+      <messages xmi:id="_3ORqAAieEeWkerP74uCx7w" sendEvent="_3OPNwAieEeWkerP74uCx7w" receiveEvent="_3OPNwQieEeWkerP74uCx7w" signature="_wQ0NYPfvEeSv9pyqEMq9pA"/>
+      <properties xmi:id="_zo6F2gieEeWkerP74uCx7w" name="target" lowerBound="1" type="_ZInq4AS1EeWjD78nt3PAvg"/>
+      <formalGates xmi:id="_zo6F2wieEeWkerP74uCx7w" message="_zo6F2AieEeWkerP74uCx7w" name="in_startRenderLoop"/>
+      <formalGates xmi:id="_zo6F3AieEeWkerP74uCx7w" message="_zo6F2QieEeWkerP74uCx7w" name="out_startRenderLoop"/>
+    </specification>
+  </messageViews>
+  <instantiations xmi:id="_06E3gPfvEeSv9pyqEMq9pA">
+    <source xsi:type="ram:Aspect" href="Visual.ram#_vwwVAPNUEeSMhuSPkYyYzA"/>
+  </instantiations>
+  <layout xmi:id="_eG4zm_fvEeSv9pyqEMq9pA">
+    <containers xmi:id="_eG4znPfvEeSv9pyqEMq9pA" key="_eG4zkffvEeSv9pyqEMq9pA">
+      <value xmi:id="_sATacPfvEeSv9pyqEMq9pA" key="_sASMUPfvEeSv9pyqEMq9pA">
+        <value xmi:id="_sATacffvEeSv9pyqEMq9pA" x="223.99988" y="135.99988"/>
+      </value>
+      <value xmi:id="_ySCeQPfvEeSv9pyqEMq9pA" key="_ySApEPfvEeSv9pyqEMq9pA">
+        <value xmi:id="_ySCeQffvEeSv9pyqEMq9pA" x="15.0000305" y="201.00018"/>
+      </value>
+      <value xmi:id="_ZIpgEAS1EeWjD78nt3PAvg" key="_ZInq4AS1EeWjD78nt3PAvg">
+        <value xmi:id="_ZIpgEQS1EeWjD78nt3PAvg" x="433.0001" y="692.99994"/>
+      </value>
+      <value xmi:id="_M_ONkAk-EeW02qxLj-iivA" key="_M_M_cAk-EeW02qxLj-iivA">
+        <value xmi:id="_M_ONkQk-EeW02qxLj-iivA" x="849.45386" y="128.48323"/>
+      </value>
+      <value xmi:id="_3HE2IC5LEeWEMbzGx7oxkQ" key="_3HDoAC5LEeWEMbzGx7oxkQ">
+        <value xmi:id="_3HE2IS5LEeWEMbzGx7oxkQ" x="332.9165" y="-158.13545"/>
+      </value>
+    </containers>
+    <containers xmi:id="_eAO-8Ah3EeWF_N5Blk99kA" key="_eANw0Ah3EeWF_N5Blk99kA">
+      <value xmi:id="_n1pk4Qh3EeWF_N5Blk99kA" key="_n1pk4Ah3EeWF_N5Blk99kA">
+        <value xmi:id="_n1pk4gh3EeWF_N5Blk99kA" x="153.99994" y="402.99997"/>
+      </value>
+      <value xmi:id="_o7RJIQh3EeWF_N5Blk99kA" key="_o7RJIAh3EeWF_N5Blk99kA">
+        <value xmi:id="_o7RJIgh3EeWF_N5Blk99kA" x="385.9998" y="405.99982"/>
+      </value>
+      <value xmi:id="_glqToQh4EeWF_N5Blk99kA" key="_glqToAh4EeWF_N5Blk99kA">
+        <value xmi:id="_glq6sAh4EeWF_N5Blk99kA" x="717.9995" y="407.0"/>
+      </value>
+      <value xmi:id="_QtPM8Ah5EeWF_N5Blk99kA" key="_QtOl4Ah5EeWF_N5Blk99kA">
+        <value xmi:id="_QtPM8Qh5EeWF_N5Blk99kA" x="380.99997" y="517.00006"/>
+      </value>
+    </containers>
+    <containers xmi:id="_zo6F0AieEeWkerP74uCx7w" key="_zo6F0wieEeWkerP74uCx7w">
+      <value xmi:id="_zo6F0QieEeWkerP74uCx7w" key="_zo6F1wieEeWkerP74uCx7w">
+        <value xmi:id="_zo6F0gieEeWkerP74uCx7w" x="100.0" y="100.0"/>
+      </value>
+      <value xmi:id="_3OEOoAieEeWkerP74uCx7w" key="_3OBLUAieEeWkerP74uCx7w">
+        <value xmi:id="_3OEOoQieEeWkerP74uCx7w" x="383.0" y="100.0"/>
+      </value>
+    </containers>
+  </layout>
+  <stateViews xmi:id="_eANw0Ah3EeWF_N5Blk99kA" name="MinuetoWindow" specifies="_sASMUPfvEeSv9pyqEMq9pA">
+    <stateMachines xmi:id="_nnWDIAh3EeWF_N5Blk99kA" start="_n1pk4Ah3EeWF_N5Blk99kA">
+      <states xmi:id="_n1pk4Ah3EeWF_N5Blk99kA" name="Invisible" outgoings="_p-p4wAh3EeWF_N5Blk99kA"/>
+      <states xmi:id="_o7RJIAh3EeWF_N5Blk99kA" name="Visible" incomings="_p-p4wAh3EeWF_N5Blk99kA _fi4ykAh5EeWF_N5Blk99kA" outgoings="_SyHOwAh5EeWF_N5Blk99kA _c-1hcAh5EeWF_N5Blk99kA _fFwtcAlEEeW02qxLj-iivA _gx2b0AlEEeW02qxLj-iivA _hGhEQAlEEeW02qxLj-iivA"/>
+      <states xmi:id="_glqToAh4EeWF_N5Blk99kA" name="ReadyToRender" incomings="_c-1hcAh5EeWF_N5Blk99kA _cSlbMAlEEeW02qxLj-iivA _cieRUAlEEeW02qxLj-iivA _fFwtcAlEEeW02qxLj-iivA _gx2b0AlEEeW02qxLj-iivA _hGhEQAlEEeW02qxLj-iivA" outgoings="_fi4ykAh5EeWF_N5Blk99kA _cSlbMAlEEeW02qxLj-iivA _cieRUAlEEeW02qxLj-iivA"/>
+      <states xmi:id="_QtOl4Ah5EeWF_N5Blk99kA" name="Closed" incomings="_SyHOwAh5EeWF_N5Blk99kA"/>
+      <transitions xmi:id="_p-p4wAh3EeWF_N5Blk99kA" name="setVisible" endState="_o7RJIAh3EeWF_N5Blk99kA" startState="_n1pk4Ah3EeWF_N5Blk99kA" signature="_z23uEPfvEeSv9pyqEMq9pA"/>
+      <transitions xmi:id="_SyHOwAh5EeWF_N5Blk99kA" name="close" endState="_QtOl4Ah5EeWF_N5Blk99kA" startState="_o7RJIAh3EeWF_N5Blk99kA" signature="_s8QsYPfvEeSv9pyqEMq9pA"/>
+      <transitions xmi:id="_c-1hcAh5EeWF_N5Blk99kA" name="clear" endState="_glqToAh4EeWF_N5Blk99kA" startState="_o7RJIAh3EeWF_N5Blk99kA" signature="_L8flQAk-EeW02qxLj-iivA"/>
+      <transitions xmi:id="_fi4ykAh5EeWF_N5Blk99kA" name="render" endState="_o7RJIAh3EeWF_N5Blk99kA" startState="_glqToAh4EeWF_N5Blk99kA" signature="_wQ0NYPfvEeSv9pyqEMq9pA"/>
+      <transitions xmi:id="_cSlbMAlEEeW02qxLj-iivA" name="drawLine" endState="_glqToAh4EeWF_N5Blk99kA" startState="_glqToAh4EeWF_N5Blk99kA" signature="_Mo4KIAk-EeW02qxLj-iivA"/>
+      <transitions xmi:id="_cieRUAlEEeW02qxLj-iivA" name="draw" endState="_glqToAh4EeWF_N5Blk99kA" startState="_glqToAh4EeWF_N5Blk99kA" signature="_M_O0oAk-EeW02qxLj-iivA"/>
+      <transitions xmi:id="_fFwtcAlEEeW02qxLj-iivA" name="drawLine" endState="_glqToAh4EeWF_N5Blk99kA" startState="_o7RJIAh3EeWF_N5Blk99kA" signature="_Mo4KIAk-EeW02qxLj-iivA"/>
+      <transitions xmi:id="_gx2b0AlEEeW02qxLj-iivA" name="draw" endState="_glqToAh4EeWF_N5Blk99kA" startState="_o7RJIAh3EeWF_N5Blk99kA" signature="_M_O0oAk-EeW02qxLj-iivA"/>
+      <transitions xmi:id="_hGhEQAlEEeW02qxLj-iivA" name="clear" endState="_glqToAh4EeWF_N5Blk99kA" startState="_o7RJIAh3EeWF_N5Blk99kA" signature="_MUwUQAk-EeW02qxLj-iivA"/>
+    </stateMachines>
+  </stateViews>
+</ram:Aspect>

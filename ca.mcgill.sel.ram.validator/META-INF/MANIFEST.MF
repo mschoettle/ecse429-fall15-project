@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RAM Validator
+Bundle-SymbolicName: ca.mcgill.sel.ram.validator;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: ca.mcgill.sel.ram;bundle-version="2.0.0",
+ org.eclipse.uml2.uml.resources;bundle-version="4.1.0",
+ org.eclipse.ocl.pivot,
+ org.eclipse.ocl.ecore
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: SEL Team, McGill University
+Export-Package: ca.mcgill.sel.ram.validator,
+ ca.mcgill.sel.ram.validator.quickfixes

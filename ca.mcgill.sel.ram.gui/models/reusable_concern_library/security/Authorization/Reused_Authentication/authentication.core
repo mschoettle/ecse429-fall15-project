@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_gFhYwKAyEeSaEq_8EhRMPA" name="Authentication">
+  <models xsi:type="core:COREFeatureModel" href="#_gFhYwaAyEeSaEq_8EhRMPA"/>
+  <models xsi:type="ram:Aspect" href="Authentication.ram#_NyKWwAYOEeSiwsYTSMcCVw"/>
+  <models xsi:type="ram:Aspect" href="AutoLogoff.ram#_tHeO8AYdEeSMe4miw8uLkQ"/>
+  <models xsi:type="ram:Aspect" href="Blocking.ram#_J2HwQAYUEeSMe4miw8uLkQ"/>
+  <models xsi:type="ram:Aspect" href="FacialRecognition.ram#_Ze5eoKrpEeStCcnk_Fh-rQ"/>
+  <models xsi:type="ram:Aspect" href="Password.ram#_KlcCcAYWEeSMe4miw8uLkQ"/>
+  <models xsi:type="ram:Aspect" href="PasswordExpiry.ram#_Q9KGQAeGEeSRddCRodkUfw"/>
+  <models xsi:type="core:COREImpactModel" href="#_ctmHkA33EeWSKreNQjtGbg"/>
+  <featureModel xmi:id="_gFhYwaAyEeSaEq_8EhRMPA" coreConcern="_gFhYwKAyEeSaEq_8EhRMPA" root="_gFhYwqAyEeSaEq_8EhRMPA">
+    <features xmi:id="_gFhYwqAyEeSaEq_8EhRMPA" name="Authentication" children="_hZb3sKAyEeSaEq_8EhRMPA _hq6pQKAyEeSaEq_8EhRMPA _hTvfYKAyEeSaEq_8EhRMPA">
+      <realizedBy xsi:type="ram:Aspect" href="Authentication.ram#_NyKWwAYOEeSiwsYTSMcCVw"/>
+      <reuses xmi:id="_-OFmkCT_EeWhlO2oUhObkA" name="Singleton" selectedConfiguration="_-OGNoCT_EeWhlO2oUhObkA">
+        <reusedConcern href="Reused_Singleton/Singleton.core#_d1_oUKBBEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_-OGNoCT_EeWhlO2oUhObkA" name="Singleton_Singleton">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Singleton/Singleton.core#_d1_oUaBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Singleton/Singleton.core#_d1_oUqBBEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_y2BpQCWbEeWAe-E3Zx3Iug" name="Association_Authenticatable_Credential" selectedConfiguration="_y2BpQSWbEeWAe-E3Zx3Iug">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_y2BpQSWbEeWAe-E3Zx3Iug" name="Association_AssociationHashMapKeyIndexed">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_r80mIACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_ndvLsACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_hTvfYKAyEeSaEq_8EhRMPA" name="Auto Logoff" parent="_gFhYwqAyEeSaEq_8EhRMPA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="AutoLogoff.ram#_tHeO8AYdEeSMe4miw8uLkQ"/>
+    </features>
+    <features xmi:id="_hZb3sKAyEeSaEq_8EhRMPA" name="Access Blocking" parent="_gFhYwqAyEeSaEq_8EhRMPA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Blocking.ram#_J2HwQAYUEeSMe4miw8uLkQ"/>
+    </features>
+    <features xmi:id="_hq6pQKAyEeSaEq_8EhRMPA" name="Authentication Means" children="_nKvvAKAyEeSaEq_8EhRMPA _nEKl4KAyEeSaEq_8EhRMPA" parent="_gFhYwqAyEeSaEq_8EhRMPA" parentRelationship="Mandatory"/>
+    <features xmi:id="_nEKl4KAyEeSaEq_8EhRMPA" name="Password" children="_oJ77IKAyEeSaEq_8EhRMPA" parent="_hq6pQKAyEeSaEq_8EhRMPA" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="Password.ram#_KlcCcAYWEeSMe4miw8uLkQ"/>
+    </features>
+    <features xmi:id="_nKvvAKAyEeSaEq_8EhRMPA" name="Biometrics" children="_wz1JIKAyEeSaEq_8EhRMPA _w8fV4KAyEeSaEq_8EhRMPA _MbwYcKrpEeStCcnk_Fh-rQ" parent="_hq6pQKAyEeSaEq_8EhRMPA" parentRelationship="XOR"/>
+    <features xmi:id="_oJ77IKAyEeSaEq_8EhRMPA" name="Password Expiry" parent="_nEKl4KAyEeSaEq_8EhRMPA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="PasswordExpiry.ram#_Q9KGQAeGEeSRddCRodkUfw"/>
+    </features>
+    <features xmi:id="_wz1JIKAyEeSaEq_8EhRMPA" name="Voice Recognition" parent="_nKvvAKAyEeSaEq_8EhRMPA" parentRelationship="OR"/>
+    <features xmi:id="_w8fV4KAyEeSaEq_8EhRMPA" name="Retinal Scan" parent="_nKvvAKAyEeSaEq_8EhRMPA" parentRelationship="OR"/>
+    <features xmi:id="_MbwYcKrpEeStCcnk_Fh-rQ" name="Facial Recognition" parent="_nKvvAKAyEeSaEq_8EhRMPA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="FacialRecognition.ram#_Ze5eoKrpEeStCcnk_Fh-rQ"/>
+    </features>
+  </featureModel>
+  <impactModel xmi:id="_ctmHkA33EeWSKreNQjtGbg" name="Impact Model" coreConcern="_gFhYwKAyEeSaEq_8EhRMPA">
+    <impactModelElements xmi:id="_ctuqcA33EeWSKreNQjtGbg" name="Increase Cost" scalingFactor="1.1111112" offset="-5.5555553" incoming="_nPNFIA33EeWSKreNQjtGbg _nar8YA33EeWSKreNQjtGbg _oSpfIA33EeWSKreNQjtGbg _pL5bUA33EeWSKreNQjtGbg"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_ikXGoA33EeWSKreNQjtGbg" name="Password" scalingFactor="1.0" outgoing="_pL5bUA33EeWSKreNQjtGbg" represents="_nEKl4KAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_jXhB4A33EeWSKreNQjtGbg" name="Retinal Scan" scalingFactor="1.0" outgoing="_nPNFIA33EeWSKreNQjtGbg" represents="_w8fV4KAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_jgGWIA33EeWSKreNQjtGbg" name="Voice Recognition" scalingFactor="1.0" outgoing="_nar8YA33EeWSKreNQjtGbg" represents="_wz1JIKAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_jpUjkA33EeWSKreNQjtGbg" name="Facial Recognition" scalingFactor="1.0" outgoing="_oSpfIA33EeWSKreNQjtGbg" represents="_MbwYcKrpEeStCcnk_Fh-rQ"/>
+    <impactModelElements xmi:id="__zZzsA33EeWSKreNQjtGbg" name="Security" scalingFactor="0.6896552" offset="-0.6896552" incoming="_MaM8IA34EeWSKreNQjtGbg _MpxpMA34EeWSKreNQjtGbg _NMPdEA34EeWSKreNQjtGbg _Nb0KIA34EeWSKreNQjtGbg _NpfZwA34EeWSKreNQjtGbg _N0TioA34EeWSKreNQjtGbg _PybcMA34EeWSKreNQjtGbg"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_EE8hYA34EeWSKreNQjtGbg" name="Access Blocking" scalingFactor="1.0" outgoing="_MaM8IA34EeWSKreNQjtGbg" represents="_hZb3sKAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_EWbS8A34EeWSKreNQjtGbg" name="Auto Logoff" scalingFactor="1.0" outgoing="_MpxpMA34EeWSKreNQjtGbg" represents="_hTvfYKAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_Fy87UA34EeWSKreNQjtGbg" name="Password" scalingFactor="1.0" outgoing="_PybcMA34EeWSKreNQjtGbg" represents="_nEKl4KAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_GFYvIA34EeWSKreNQjtGbg" name="Retinal Scan" scalingFactor="1.0" outgoing="_Nb0KIA34EeWSKreNQjtGbg" represents="_w8fV4KAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_GfIr4A34EeWSKreNQjtGbg" name="Voice Recognition" scalingFactor="1.0" outgoing="_N0TioA34EeWSKreNQjtGbg" represents="_wz1JIKAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_GpT7kA34EeWSKreNQjtGbg" name="Facial Recognition" scalingFactor="1.0" outgoing="_NpfZwA34EeWSKreNQjtGbg" represents="_MbwYcKrpEeStCcnk_Fh-rQ"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_KRtloA34EeWSKreNQjtGbg" name="Password Expiry" scalingFactor="1.0" outgoing="_NMPdEA34EeWSKreNQjtGbg" represents="_oJ77IKAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xmi:id="_V0XwgA34EeWSKreNQjtGbg" name="Decrease User Convenience" scalingFactor="1.0" incoming="_fYdV4A34EeWSKreNQjtGbg _fj5w4A34EeWSKreNQjtGbg _jIfR8A34EeWSKreNQjtGbg"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_cmu1IA34EeWSKreNQjtGbg" name="Access Blocking" scalingFactor="1.0" outgoing="_fYdV4A34EeWSKreNQjtGbg" represents="_hZb3sKAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_cx2gAA34EeWSKreNQjtGbg" name="Auto Logoff" scalingFactor="1.0" outgoing="_fj5w4A34EeWSKreNQjtGbg" represents="_hTvfYKAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_dL7z8A34EeWSKreNQjtGbg" name="Password" scalingFactor="1.0" outgoing="_gp2FQA34EeWSKreNQjtGbg" represents="_nEKl4KAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_dRqBcA34EeWSKreNQjtGbg" name="Password Expiry" scalingFactor="1.0" outgoing="_g230oA34EeWSKreNQjtGbg" represents="_oJ77IKAyEeSaEq_8EhRMPA"/>
+    <impactModelElements xmi:id="_gZ8oEA34EeWSKreNQjtGbg" name="Need to Remember Credentials" scalingFactor="1.0" outgoing="_jIfR8A34EeWSKreNQjtGbg" incoming="_gp2FQA34EeWSKreNQjtGbg _g230oA34EeWSKreNQjtGbg"/>
+    <layouts xmi:id="_ctxGsA33EeWSKreNQjtGbg" key="_ctuqcA33EeWSKreNQjtGbg">
+      <value xmi:id="_cty74A33EeWSKreNQjtGbg" key="_ctuqcA33EeWSKreNQjtGbg">
+        <value xmi:id="_cty74Q33EeWSKreNQjtGbg" x="497.99997" y="56.99994"/>
+      </value>
+      <value xmi:id="_ikY70A33EeWSKreNQjtGbg" key="_ikXGoA33EeWSKreNQjtGbg">
+        <value xmi:id="_ikY70Q33EeWSKreNQjtGbg" x="238.74585" y="250.99986"/>
+      </value>
+      <value xmi:id="_jXho8A33EeWSKreNQjtGbg" key="_jXhB4A33EeWSKreNQjtGbg">
+        <value xmi:id="_jXho8Q33EeWSKreNQjtGbg" x="378.98044" y="401.99973"/>
+      </value>
+      <value xmi:id="_jgHkQA33EeWSKreNQjtGbg" key="_jgGWIA33EeWSKreNQjtGbg">
+        <value xmi:id="_jgHkQQ33EeWSKreNQjtGbg" x="755.8672" y="256.99994"/>
+      </value>
+      <value xmi:id="_jpVKoA33EeWSKreNQjtGbg" key="_jpUjkA33EeWSKreNQjtGbg">
+        <value xmi:id="_jpVKoQ33EeWSKreNQjtGbg" x="604.30524" y="403.0"/>
+      </value>
+    </layouts>
+    <layouts xmi:id="__zZzsQ33EeWSKreNQjtGbg" key="__zZzsA33EeWSKreNQjtGbg">
+      <value xmi:id="__zaawA33EeWSKreNQjtGbg" key="__zZzsA33EeWSKreNQjtGbg">
+        <value xmi:id="__zaawQ33EeWSKreNQjtGbg" x="565.0" y="50.0"/>
+      </value>
+      <value xmi:id="_EE9vgA34EeWSKreNQjtGbg" key="_EE8hYA34EeWSKreNQjtGbg">
+        <value xmi:id="_EE9vgQ34EeWSKreNQjtGbg" x="186.93246" y="247.99976"/>
+      </value>
+      <value xmi:id="_EWb6AA34EeWSKreNQjtGbg" key="_EWbS8A34EeWSKreNQjtGbg">
+        <value xmi:id="_EWb6AQ34EeWSKreNQjtGbg" x="203.48407" y="377.00006"/>
+      </value>
+      <value xmi:id="_Fy-JcA34EeWSKreNQjtGbg" key="_Fy87UA34EeWSKreNQjtGbg">
+        <value xmi:id="_Fy-JcQ34EeWSKreNQjtGbg" x="317.75092" y="517.9998"/>
+      </value>
+      <value xmi:id="_GFZWMA34EeWSKreNQjtGbg" key="_GFYvIA34EeWSKreNQjtGbg">
+        <value xmi:id="_GFZWMQ34EeWSKreNQjtGbg" x="920.6166" y="298.9999"/>
+      </value>
+      <value xmi:id="_GfJS8A34EeWSKreNQjtGbg" key="_GfIr4A34EeWSKreNQjtGbg">
+        <value xmi:id="_GfJS8Q34EeWSKreNQjtGbg" x="787.9763" y="507.99988"/>
+      </value>
+      <value xmi:id="_GpUioA34EeWSKreNQjtGbg" key="_GpT7kA34EeWSKreNQjtGbg">
+        <value xmi:id="_GpUioQ34EeWSKreNQjtGbg" x="897.50586" y="406.9999"/>
+      </value>
+      <value xmi:id="_KtC2wA34EeWSKreNQjtGbg" key="_KRtloA34EeWSKreNQjtGbg">
+        <value xmi:id="_KtC2wQ34EeWSKreNQjtGbg" x="447.81213" y="410.00003"/>
+      </value>
+    </layouts>
+    <layouts xmi:id="_V0XwgQ34EeWSKreNQjtGbg" key="_V0XwgA34EeWSKreNQjtGbg">
+      <value xmi:id="_V0YXkA34EeWSKreNQjtGbg" key="_V0XwgA34EeWSKreNQjtGbg">
+        <value xmi:id="_V0YXkQ34EeWSKreNQjtGbg" x="565.0" y="50.0"/>
+      </value>
+      <value xmi:id="_cmwDQA34EeWSKreNQjtGbg" key="_cmu1IA34EeWSKreNQjtGbg">
+        <value xmi:id="_cmwDQQ34EeWSKreNQjtGbg" x="399.43134" y="342.00006"/>
+      </value>
+      <value xmi:id="_cx3HEA34EeWSKreNQjtGbg" key="_cx2gAA34EeWSKreNQjtGbg">
+        <value xmi:id="_cx3HEQ34EeWSKreNQjtGbg" x="250.40689" y="205.00005"/>
+      </value>
+      <value xmi:id="_dL8bAA34EeWSKreNQjtGbg" key="_dL7z8A34EeWSKreNQjtGbg">
+        <value xmi:id="_dL8bAQ34EeWSKreNQjtGbg" x="781.27374" y="527.0001"/>
+      </value>
+      <value xmi:id="_dRqogA34EeWSKreNQjtGbg" key="_dRqBcA34EeWSKreNQjtGbg">
+        <value xmi:id="_dRqogQ34EeWSKreNQjtGbg" x="578.12683" y="530.00037"/>
+      </value>
+      <value xmi:id="_gZ9PIA34EeWSKreNQjtGbg" key="_gZ8oEA34EeWSKreNQjtGbg">
+        <value xmi:id="_gZ9PIQ34EeWSKreNQjtGbg" x="685.9999" y="293.0003"/>
+      </value>
+    </layouts>
+    <layouts xmi:id="_-DMEECWBEeWI4uMxD79ftw" key="_gZ8oEA34EeWSKreNQjtGbg">
+      <value xmi:id="_-DiCUCWBEeWI4uMxD79ftw" key="_gZ8oEA34EeWSKreNQjtGbg">
+        <value xmi:id="_-DiCUSWBEeWI4uMxD79ftw" x="512.0" y="50.0"/>
+      </value>
+      <value xmi:id="_-JhVkCWBEeWI4uMxD79ftw" key="_dRqBcA34EeWSKreNQjtGbg">
+        <value xmi:id="_-JhVkSWBEeWI4uMxD79ftw" x="629.0" y="156.99994"/>
+      </value>
+      <value xmi:id="_-KC6ACWBEeWI4uMxD79ftw" key="_dL7z8A34EeWSKreNQjtGbg">
+        <value xmi:id="_-KC6ASWBEeWI4uMxD79ftw" x="398.99997" y="155.99997"/>
+      </value>
+    </layouts>
+    <contributions xmi:id="_nPNFIA33EeWSKreNQjtGbg" relativeWeight="70" source="_jXhB4A33EeWSKreNQjtGbg" impacts="_ctuqcA33EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_nar8YA33EeWSKreNQjtGbg" relativeWeight="10" source="_jgGWIA33EeWSKreNQjtGbg" impacts="_ctuqcA33EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_oSpfIA33EeWSKreNQjtGbg" relativeWeight="15" source="_jpUjkA33EeWSKreNQjtGbg" impacts="_ctuqcA33EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_pL5bUA33EeWSKreNQjtGbg" relativeWeight="5" source="_ikXGoA33EeWSKreNQjtGbg" impacts="_ctuqcA33EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_MaM8IA34EeWSKreNQjtGbg" relativeWeight="5" source="_EE8hYA34EeWSKreNQjtGbg" impacts="__zZzsA33EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_MpxpMA34EeWSKreNQjtGbg" relativeWeight="5" source="_EWbS8A34EeWSKreNQjtGbg" impacts="__zZzsA33EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_NMPdEA34EeWSKreNQjtGbg" relativeWeight="5" source="_KRtloA34EeWSKreNQjtGbg" impacts="__zZzsA33EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_Nb0KIA34EeWSKreNQjtGbg" relativeWeight="54" source="_GFYvIA34EeWSKreNQjtGbg" impacts="__zZzsA33EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_NpfZwA34EeWSKreNQjtGbg" relativeWeight="46" source="_GpT7kA34EeWSKreNQjtGbg" impacts="__zZzsA33EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_N0TioA34EeWSKreNQjtGbg" relativeWeight="36" source="_GfIr4A34EeWSKreNQjtGbg" impacts="__zZzsA33EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_PybcMA34EeWSKreNQjtGbg" relativeWeight="1" source="_Fy87UA34EeWSKreNQjtGbg" impacts="__zZzsA33EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_fYdV4A34EeWSKreNQjtGbg" relativeWeight="10" source="_cmu1IA34EeWSKreNQjtGbg" impacts="_V0XwgA34EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_fj5w4A34EeWSKreNQjtGbg" relativeWeight="25" source="_cx2gAA34EeWSKreNQjtGbg" impacts="_V0XwgA34EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_gp2FQA34EeWSKreNQjtGbg" relativeWeight="20" source="_dL7z8A34EeWSKreNQjtGbg" impacts="_gZ8oEA34EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_g230oA34EeWSKreNQjtGbg" relativeWeight="80" source="_dRqBcA34EeWSKreNQjtGbg" impacts="_gZ8oEA34EeWSKreNQjtGbg"/>
+    <contributions xmi:id="_jIfR8A34EeWSKreNQjtGbg" relativeWeight="65" source="_gZ8oEA34EeWSKreNQjtGbg" impacts="_V0XwgA34EeWSKreNQjtGbg"/>
+  </impactModel>
+</core:COREConcern>

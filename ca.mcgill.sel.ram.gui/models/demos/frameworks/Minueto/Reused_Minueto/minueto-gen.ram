@@ -1,0 +1,1518 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_-maIIN3_EeSGMOhR1oZbRQ" name="Untitled">
+  <structuralView xmi:id="_-maIId3_EeSGMOhR1oZbRQ">
+    <classes xsi:type="ram:Class" xmi:id="_-maIIt3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.QuitRequestEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-maII93_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-maIJN3_EeSGMOhR1oZbRQ" name="handler" assoc="_-mgPFt3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-maIJd3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-maIJt3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoInvalidColorValueException" superTypes="_-mgO-d3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-maIJ93_EeSGMOhR1oZbRQ" name="MinuetoInvalidColorValueException" visibility="public" returnType="_-maIJt3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-maIKN3_EeSGMOhR1oZbRQ" name="MinuetoInvalidColorValueException" visibility="public" returnType="_-maIJt3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-maIKd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-maIKt3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MinuetoMouseWheelListener" superTypes="_-mgO-t3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-maIK93_EeSGMOhR1oZbRQ" name="MinuetoMouseWheelListener" visibility="public" returnType="_-maIKt3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-maILN3_EeSGMOhR1oZbRQ" name="register" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-maILd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-maILt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-maIL93_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-maIMN3_EeSGMOhR1oZbRQ" name="unregister" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-maIMd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-maIMt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-maIM93_EeSGMOhR1oZbRQ" name="mouseWheelMoved" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-maINN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO-93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-maINd3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPHd3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-maINt3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MousePressEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-maIN93_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-maION3_EeSGMOhR1oZbRQ" name="handler" assoc="_-mgPF93_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-maIOd3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mavMN3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MinuetoMouseMotionListener" superTypes="_-mgO_N3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mavMd3_EeSGMOhR1oZbRQ" name="MinuetoMouseMotionListener" visibility="public" returnType="_-mavMN3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mavMt3_EeSGMOhR1oZbRQ" name="register" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavM93_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavNN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavNd3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavNt3_EeSGMOhR1oZbRQ" name="unregister" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavN93_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavON3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavOd3_EeSGMOhR1oZbRQ" name="mouseMoved" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavOt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavO93_EeSGMOhR1oZbRQ" name="mouseDragged" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavPN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-mavPd3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPHN3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mavPt3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoBaseWindow" abstract="true" superTypes="_-mb9o93_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mavP93_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavQN3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavQd3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavQt3_EeSGMOhR1oZbRQ" name="save" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavQ93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavRN3_EeSGMOhR1oZbRQ" name="close" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavRd3_EeSGMOhR1oZbRQ" name="draw" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavRt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLm93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavR93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavSN3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavSd3_EeSGMOhR1oZbRQ" name="getWidth" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavSt3_EeSGMOhR1oZbRQ" name="getHeight" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavS93_EeSGMOhR1oZbRQ" name="setVisible" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavTN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavTd3_EeSGMOhR1oZbRQ" name="setTitle" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavTt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavT93_EeSGMOhR1oZbRQ" name="setCursorVisible" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavUN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavUd3_EeSGMOhR1oZbRQ" name="setPixel" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavUt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavU93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavVN3_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavVd3_EeSGMOhR1oZbRQ" name="isVisible" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavVt3_EeSGMOhR1oZbRQ" name="unregisterMouseWheelHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavV93_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavWN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavWd3_EeSGMOhR1oZbRQ" name="unregisterFocusHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavWt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavW93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavXN3_EeSGMOhR1oZbRQ" name="unregisterWindowHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavXd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavXt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavX93_EeSGMOhR1oZbRQ" name="unregisterMouseHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavYN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavYd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavYt3_EeSGMOhR1oZbRQ" name="unregisterKeyboardHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavY93_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavZN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavZd3_EeSGMOhR1oZbRQ" name="registerMouseWheelHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavZt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavZ93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavaN3_EeSGMOhR1oZbRQ" name="registerFocusHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavad3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavat3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mava93_EeSGMOhR1oZbRQ" name="registerWindowHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavbN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavbd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavbt3_EeSGMOhR1oZbRQ" name="registerMouseHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavb93_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavcN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavcd3_EeSGMOhR1oZbRQ" name="registerKeyboardHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavct3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavc93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavdN3_EeSGMOhR1oZbRQ" name="setMaxFrameRate" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavdd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavdt3_EeSGMOhR1oZbRQ" name="getFrameRate" visibility="public" returnType="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavd93_EeSGMOhR1oZbRQ" name="render" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-maveN3_EeSGMOhR1oZbRQ" name="drawLine" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-maved3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavet3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mave93_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavfN3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavfd3_EeSGMOhR1oZbRQ" name="arg4" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavft3_EeSGMOhR1oZbRQ" name="getKeyListener" visibility="public" visibility="protected" returnType="_-mcku93_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavf93_EeSGMOhR1oZbRQ" name="getMouseListener" visibility="public" visibility="protected" returnType="_-meZrd3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavgN3_EeSGMOhR1oZbRQ" name="getMouseMotionListener" visibility="public" visibility="protected" returnType="_-mavMN3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavgd3_EeSGMOhR1oZbRQ" name="getWindowListener" visibility="public" visibility="protected" returnType="_-mfAp93_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavgt3_EeSGMOhR1oZbRQ" name="getMinuetoMouseWheelListener" visibility="public" visibility="protected" returnType="_-maIKt3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavg93_EeSGMOhR1oZbRQ" name="getFocusListener" visibility="public" visibility="protected" returnType="_-mbWoN3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mavhN3_EeSGMOhR1oZbRQ" name="resizeWindow" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mavhd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mavht3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mavh93_EeSGMOhR1oZbRQ" name="getScreenshot" visibility="public" visibility="protected" returnType="_-mdLm93_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-maviN3_EeSGMOhR1oZbRQ" name="stopWatchMaxFrameRate" assoc="_-mgPGN3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mavid3_EeSGMOhR1oZbRQ" name="stopWatchCurrentFrameRate" assoc="_-mgPGd3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mavit3_EeSGMOhR1oZbRQ" name="keyListener" assoc="_-mgPGt3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mavi93_EeSGMOhR1oZbRQ" name="mouseListener" assoc="_-mgPG93_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mavjN3_EeSGMOhR1oZbRQ" name="mouseMotionListener" assoc="_-mgPHN3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mavjd3_EeSGMOhR1oZbRQ" name="mouseWheelListener" assoc="_-mgPHd3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mavjt3_EeSGMOhR1oZbRQ" name="windowListener" assoc="_-mgPHt3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mavj93_EeSGMOhR1oZbRQ" name="focusListener" assoc="_-mgPH93_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mbWQN3_EeSGMOhR1oZbRQ" name="isAbstract" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mbWQd3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mbWQt3_EeSGMOhR1oZbRQ" name="saveThrowsMinuetoFileException" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mbWQ93_EeSGMOhR1oZbRQ" name="org.minueto.image.BrightnessFilter" superTypes="_-mfn693_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mbWRN3_EeSGMOhR1oZbRQ" name="BrightnessFilter" visibility="public" returnType="_-mbWQ93_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mbWRd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWRt3_EeSGMOhR1oZbRQ" name="apply" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWR93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWSN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWSd3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <attributes xmi:id="_-mbWSt3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mbWS93_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoFrame" superTypes="_-mavPt3_EeSGMOhR1oZbRQ _-mb9o93_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mbWTN3_EeSGMOhR1oZbRQ" name="MinuetoFrame" visibility="public" returnType="_-mbWS93_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mbWTd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWTt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWT93_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWUN3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWUd3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWUt3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWU93_EeSGMOhR1oZbRQ" name="save" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWVN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWVd3_EeSGMOhR1oZbRQ" name="close" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWVt3_EeSGMOhR1oZbRQ" name="isClosed" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWV93_EeSGMOhR1oZbRQ" name="draw" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWWN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLm93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWWd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWWt3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWW93_EeSGMOhR1oZbRQ" name="getWidth" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWXN3_EeSGMOhR1oZbRQ" name="getHeight" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWXd3_EeSGMOhR1oZbRQ" name="setVisible" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWXt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWX93_EeSGMOhR1oZbRQ" name="setTitle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWYN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWYd3_EeSGMOhR1oZbRQ" name="getWindowWidth" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWYt3_EeSGMOhR1oZbRQ" name="getWindowHeight" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWY93_EeSGMOhR1oZbRQ" name="getWindowPositionX" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWZN3_EeSGMOhR1oZbRQ" name="getWindowPositionY" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWZd3_EeSGMOhR1oZbRQ" name="setWindowPosition" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWZt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWZ93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWaN3_EeSGMOhR1oZbRQ" name="exitOnClose" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWad3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWat3_EeSGMOhR1oZbRQ" name="setCursorVisible" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWa93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWbN3_EeSGMOhR1oZbRQ" name="getPositionX" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWbd3_EeSGMOhR1oZbRQ" name="getPositionY" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWbt3_EeSGMOhR1oZbRQ" name="setPixel" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWb93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWcN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWcd3_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWct3_EeSGMOhR1oZbRQ" name="isVisible" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWc93_EeSGMOhR1oZbRQ" name="unregisterMouseWheelHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWdN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWdd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWdt3_EeSGMOhR1oZbRQ" name="unregisterFocusHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWd93_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWeN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWed3_EeSGMOhR1oZbRQ" name="unregisterWindowHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWet3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWe93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWfN3_EeSGMOhR1oZbRQ" name="unregisterMouseHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWfd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWft3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWf93_EeSGMOhR1oZbRQ" name="unregisterKeyboardHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWgN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWgd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWgt3_EeSGMOhR1oZbRQ" name="registerMouseWheelHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWg93_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWhN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWhd3_EeSGMOhR1oZbRQ" name="registerFocusHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWht3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWh93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWiN3_EeSGMOhR1oZbRQ" name="registerWindowHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWid3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWit3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWi93_EeSGMOhR1oZbRQ" name="registerMouseHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWjN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWjd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWjt3_EeSGMOhR1oZbRQ" name="registerKeyboardHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWj93_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWkN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWkd3_EeSGMOhR1oZbRQ" name="setMaxFrameRate" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWkt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mbWk93_EeSGMOhR1oZbRQ" name="getFrameRate" visibility="public" returnType="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWlN3_EeSGMOhR1oZbRQ" name="render" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mbWld3_EeSGMOhR1oZbRQ" name="drawLine" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mbWlt3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWl93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWmN3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWmd3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mbWmt3_EeSGMOhR1oZbRQ" name="arg4" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <attributes xmi:id="_-mbWm93_EeSGMOhR1oZbRQ" name="saveThrowsMinuetoFileException" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mbWnN3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoZeroNegativeException" superTypes="_-mgO-d3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mbWnd3_EeSGMOhR1oZbRQ" name="MinuetoZeroNegativeException" visibility="public" returnType="_-mbWnN3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mbWnt3_EeSGMOhR1oZbRQ" name="MinuetoZeroNegativeException" visibility="public" returnType="_-mbWnN3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mbWn93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mbWoN3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MinuetoFocusListener" superTypes="_-mgO_t3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mb9UN3_EeSGMOhR1oZbRQ" name="MinuetoFocusListener" visibility="public" returnType="_-mbWoN3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mb9Ud3_EeSGMOhR1oZbRQ" name="register" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9Ut3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9U93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9VN3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mb9Vd3_EeSGMOhR1oZbRQ" name="unregister" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9Vt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9V93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9WN3_EeSGMOhR1oZbRQ" name="focusGained" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9Wd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9Wt3_EeSGMOhR1oZbRQ" name="focusLost" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9W93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-mb9XN3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPH93_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mb9Xd3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MinuetoKeyboard"/>
+    <classes xsi:type="ram:Class" xmi:id="_-mb9Xt3_EeSGMOhR1oZbRQ" name="org.minueto.image.ImageTools">
+      <operations xmi:id="_-mb9X93_EeSGMOhR1oZbRQ" name="ImageTools" visibility="public" returnType="_-mb9Xt3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mb9YN3_EeSGMOhR1oZbRQ" name="createImage" visibility="public" visibility="protected" returnType="_-mgPAN3_EeSGMOhR1oZbRQ" static="true">
+        <parameters xmi:id="_-mb9Yd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9Yt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9Y93_EeSGMOhR1oZbRQ" name="setGraphicConfiguration" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ" static="true">
+        <parameters xmi:id="_-mb9ZN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPAt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9Zd3_EeSGMOhR1oZbRQ" name="getBufferedImage" visibility="public" returnType="_-mgPAN3_EeSGMOhR1oZbRQ" static="true">
+        <parameters xmi:id="_-mb9Zt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLm93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9Z93_EeSGMOhR1oZbRQ" name="createAcceleratedImage" visibility="public" visibility="protected" returnType="_-mgPAN3_EeSGMOhR1oZbRQ" static="true">
+        <parameters xmi:id="_-mb9aN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9ad3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mb9at3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoOptions">
+      <operations xmi:id="_-mb9a93_EeSGMOhR1oZbRQ" name="MinuetoOptions" visibility="public" returnType="_-mb9at3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mb9bN3_EeSGMOhR1oZbRQ" name="isAlphaEnabled" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ" static="true"/>
+      <operations xmi:id="_-mb9bd3_EeSGMOhR1oZbRQ" name="enableAlpha" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ" static="true">
+        <parameters xmi:id="_-mb9bt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9b93_EeSGMOhR1oZbRQ" name="enableOpenGLAcceleration" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ" static="true"/>
+      <operations xmi:id="_-mb9cN3_EeSGMOhR1oZbRQ" name="enableDirectXAcceleration" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ" static="true"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mb9cd3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoEventQueue">
+      <operations xmi:id="_-mb9ct3_EeSGMOhR1oZbRQ" name="MinuetoEventQueue" visibility="public" returnType="_-mb9cd3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mb9c93_EeSGMOhR1oZbRQ" name="add" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9dN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mcklN3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9dd3_EeSGMOhR1oZbRQ" name="hasNext" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mb9dt3_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mb9d93_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg1093_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mb9eN3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.KeyReleaseEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mb9ed3_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mb9et3_EeSGMOhR1oZbRQ" name="handler" assoc="_-mgPIN3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mb9e93_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mb9fN3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.KeyTypedEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mb9fd3_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mb9ft3_EeSGMOhR1oZbRQ" name="handler" assoc="_-mgPId3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mb9f93_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mb9gN3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MouseMoveEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mb9gd3_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mb9gt3_EeSGMOhR1oZbRQ" name="handler" assoc="_-mgPIt3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mb9g93_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mb9hN3_EeSGMOhR1oZbRQ" name="org.minueto.image.IMinuetoDrawingSurface" abstract="true">
+      <operations xmi:id="_-mb9hd3_EeSGMOhR1oZbRQ" name="clear" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mb9ht3_EeSGMOhR1oZbRQ" name="clear" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9h93_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9iN3_EeSGMOhR1oZbRQ" name="save" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9id3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9it3_EeSGMOhR1oZbRQ" name="draw" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9i93_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLm93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9jN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9jd3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9jt3_EeSGMOhR1oZbRQ" name="getWidth" visibility="public" abstract="true" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mb9j93_EeSGMOhR1oZbRQ" name="getHeight" visibility="public" abstract="true" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mb9kN3_EeSGMOhR1oZbRQ" name="setPixel" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9kd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9kt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9k93_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9lN3_EeSGMOhR1oZbRQ" name="drawLine" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9ld3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9lt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9l93_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9mN3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9md3_EeSGMOhR1oZbRQ" name="arg4" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <attributes xmi:id="_-mb9mt3_EeSGMOhR1oZbRQ" name="isAbstract" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mb9m93_EeSGMOhR1oZbRQ" name="saveThrowsMinuetoFileException" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mb9nN3_EeSGMOhR1oZbRQ" name="org.minueto.image.MinuetoImageFile" superTypes="_-mdLm93_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mb9nd3_EeSGMOhR1oZbRQ" name="MinuetoImageFile" visibility="public" returnType="_-mb9nN3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mb9nt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9n93_EeSGMOhR1oZbRQ" name="MinuetoImageFile" visibility="public" returnType="_-mb9nN3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mb9oN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPA93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <attributes xmi:id="_-mb9od3_EeSGMOhR1oZbRQ" name="MinuetoImageFileThrowsMinuetoFileException" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mb9ot3_EeSGMOhR1oZbRQ" name="MinuetoImageFileThrowsMinuetoFileException" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mb9o93_EeSGMOhR1oZbRQ" name="org.minueto.window.IMinuetoWindow" abstract="true" superTypes="_-mb9hN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mb9pN3_EeSGMOhR1oZbRQ" name="close" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mb9pd3_EeSGMOhR1oZbRQ" name="isClosed" visibility="public" abstract="true" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mb9pt3_EeSGMOhR1oZbRQ" name="setVisible" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9p93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9qN3_EeSGMOhR1oZbRQ" name="setTitle" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9qd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9qt3_EeSGMOhR1oZbRQ" name="setCursorVisible" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9q93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9rN3_EeSGMOhR1oZbRQ" name="getPositionX" visibility="public" abstract="true" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mb9rd3_EeSGMOhR1oZbRQ" name="getPositionY" visibility="public" abstract="true" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mb9rt3_EeSGMOhR1oZbRQ" name="isVisible" visibility="public" abstract="true" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mb9r93_EeSGMOhR1oZbRQ" name="unregisterMouseWheelHandler" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9sN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9sd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mb9st3_EeSGMOhR1oZbRQ" name="unregisterFocusHandler" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mb9s93_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mb9tN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckYN3_EeSGMOhR1oZbRQ" name="unregisterWindowHandler" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckYd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mckYt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckY93_EeSGMOhR1oZbRQ" name="unregisterMouseHandler" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckZN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mckZd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckZt3_EeSGMOhR1oZbRQ" name="unregisterKeyboardHandler" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckZ93_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mckaN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckad3_EeSGMOhR1oZbRQ" name="registerMouseWheelHandler" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckat3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mcka93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckbN3_EeSGMOhR1oZbRQ" name="registerFocusHandler" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckbd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mckbt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckb93_EeSGMOhR1oZbRQ" name="registerWindowHandler" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckcN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mckcd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckct3_EeSGMOhR1oZbRQ" name="registerMouseHandler" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckc93_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mckdN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckdd3_EeSGMOhR1oZbRQ" name="registerKeyboardHandler" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckdt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mckd93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckeN3_EeSGMOhR1oZbRQ" name="setMaxFrameRate" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mcked3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mcket3_EeSGMOhR1oZbRQ" name="getFrameRate" visibility="public" abstract="true" returnType="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mcke93_EeSGMOhR1oZbRQ" name="render" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mckfN3_EeSGMOhR1oZbRQ" name="isAbstract" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mckfd3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.IMinuetoKeyboardHandler" abstract="true">
+      <operations xmi:id="_-mckft3_EeSGMOhR1oZbRQ" name="handleKeyType" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckf93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15t3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckgN3_EeSGMOhR1oZbRQ" name="handleKeyRelease" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckgd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckgt3_EeSGMOhR1oZbRQ" name="handleKeyPress" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckg93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-mckhN3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPIN3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mckhd3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPId3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mckht3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg10N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mckh93_EeSGMOhR1oZbRQ" name="isAbstract" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mckiN3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.IMinuetoWindowHandler" abstract="true" superTypes="_-mfAzd3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mckid3_EeSGMOhR1oZbRQ" name="handleQuitRequest" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mckit3_EeSGMOhR1oZbRQ" name="handleMinimizeWindow" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mcki93_EeSGMOhR1oZbRQ" name="handleRestoreWindow" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mckjN3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPFt3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mckjd3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPI93_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mckjt3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPJN3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mckj93_EeSGMOhR1oZbRQ" name="isAbstract" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mckkN3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoWindowNotInitializedException" superTypes="_-mgO-d3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mckkd3_EeSGMOhR1oZbRQ" name="MinuetoWindowNotInitializedException" visibility="public" returnType="_-mckkN3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mckkt3_EeSGMOhR1oZbRQ" name="MinuetoWindowNotInitializedException" visibility="public" returnType="_-mckkN3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mckk93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mcklN3_EeSGMOhR1oZbRQ" name="org.minueto.IMinuetoEvent" abstract="true">
+      <operations xmi:id="_-mckld3_EeSGMOhR1oZbRQ" name="handle" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mcklt3_EeSGMOhR1oZbRQ" name="isAbstract" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mckl93_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoFileException" superTypes="_-mgPBN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mckmN3_EeSGMOhR1oZbRQ" name="MinuetoFileException" visibility="public" returnType="_-mckl93_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mckmd3_EeSGMOhR1oZbRQ" name="MinuetoFileException" visibility="public" returnType="_-mckl93_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mckmt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mckm93_EeSGMOhR1oZbRQ" name="org.minueto.image.MinuetoFont">
+      <operations xmi:id="_-mcknN3_EeSGMOhR1oZbRQ" name="MinuetoFont" visibility="public" returnType="_-mckm93_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mcknd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mcknt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mckn93_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mckoN3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mckod3_EeSGMOhR1oZbRQ" name="getFont" visibility="public" visibility="protected" returnType="_-mgPBd3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mckot3_EeSGMOhR1oZbRQ" name="getFontSize" visibility="public" visibility="protected" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mcko93_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoWindowInvalidStateException" superTypes="_-mgO-d3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mckpN3_EeSGMOhR1oZbRQ" name="MinuetoWindowInvalidStateException" visibility="public" returnType="_-mcko93_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mckpd3_EeSGMOhR1oZbRQ" name="MinuetoWindowInvalidStateException" visibility="public" returnType="_-mcko93_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mckpt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mckp93_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoWindowAlreadyInitializedException" superTypes="_-mgO-d3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mckqN3_EeSGMOhR1oZbRQ" name="MinuetoWindowAlreadyInitializedException" visibility="public" returnType="_-mckp93_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mckqd3_EeSGMOhR1oZbRQ" name="MinuetoWindowAlreadyInitializedException" visibility="public" returnType="_-mckp93_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mckqt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mckq93_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MinimizeWindowEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mckrN3_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mckrd3_EeSGMOhR1oZbRQ" name="handler" assoc="_-mgPI93_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mckrt3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mckr93_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoUnsupportedDisplayModeException" superTypes="_-mgO-d3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mcksN3_EeSGMOhR1oZbRQ" name="MinuetoUnsupportedDisplayModeException" visibility="public" returnType="_-mckr93_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mcksd3_EeSGMOhR1oZbRQ" name="MinuetoUnsupportedDisplayModeException" visibility="public" returnType="_-mckr93_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mckst3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mcks93_EeSGMOhR1oZbRQ" name="org.minueto.handlers.RestoreWindowEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mcktN3_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mcktd3_EeSGMOhR1oZbRQ" name="handler" assoc="_-mgPJN3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mcktt3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mckt93_EeSGMOhR1oZbRQ" name="org.minueto.handlers.KeyPressEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mckuN3_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mckud3_EeSGMOhR1oZbRQ" name="handler" assoc="_-mg10N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mckut3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mcku93_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MinuetoKeyListener" superTypes="_-mgPBt3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mckvN3_EeSGMOhR1oZbRQ" name="MinuetoKeyListener" visibility="public" returnType="_-mcku93_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mckvd3_EeSGMOhR1oZbRQ" name="register" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mckvt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mckv93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLcN3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdLcd3_EeSGMOhR1oZbRQ" name="unregister" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLct3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLc93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLdN3_EeSGMOhR1oZbRQ" name="keyPressed" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLdd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPB93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLdt3_EeSGMOhR1oZbRQ" name="keyReleased" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLd93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPB93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLeN3_EeSGMOhR1oZbRQ" name="keyTyped" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLed3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPB93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-mdLet3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPGt3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mdLe93_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoStopWatch">
+      <operations xmi:id="_-mdLfN3_EeSGMOhR1oZbRQ" name="MinuetoStopWatch" visibility="public" returnType="_-mdLe93_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mdLfd3_EeSGMOhR1oZbRQ" name="start" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdLft3_EeSGMOhR1oZbRQ" name="stop" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdLf93_EeSGMOhR1oZbRQ" name="reset" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdLgN3_EeSGMOhR1oZbRQ" name="getTime" visibility="public" returnType="_-mg16t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mdLgd3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPGN3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mdLgt3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPGd3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mdLg93_EeSGMOhR1oZbRQ" name="org.minueto.handlers.IMinuetoMouseHandler" abstract="true">
+      <operations xmi:id="_-mdLhN3_EeSGMOhR1oZbRQ" name="handleMouseRelease" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLhd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLht3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLh93_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLiN3_EeSGMOhR1oZbRQ" name="handleMousePress" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLid3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLit3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLi93_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLjN3_EeSGMOhR1oZbRQ" name="handleMouseMove" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLjd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLjt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-mdLj93_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPF93_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mdLkN3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPIt3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mdLkd3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg14N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mdLkt3_EeSGMOhR1oZbRQ" name="isAbstract" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mdLk93_EeSGMOhR1oZbRQ" name="org.minueto.image.MaskImageFilter" superTypes="_-mfn693_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mdLlN3_EeSGMOhR1oZbRQ" name="MaskImageFilter" visibility="public" returnType="_-mdLk93_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mdLld3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLlt3_EeSGMOhR1oZbRQ" name="apply" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLl93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLmN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLmd3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <attributes xmi:id="_-mdLmt3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mdLm93_EeSGMOhR1oZbRQ" name="org.minueto.image.MinuetoImage" superTypes="_-mgPCN3_EeSGMOhR1oZbRQ _-mb9hN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mdLnN3_EeSGMOhR1oZbRQ" name="MinuetoImage" visibility="public" returnType="_-mdLm93_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mdLnd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLnt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLn93_EeSGMOhR1oZbRQ" name="MinuetoImage" visibility="public" returnType="_-mdLm93_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mdLoN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPAN3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLod3_EeSGMOhR1oZbRQ" name="clone" visibility="public" returnType="_-mgPCd3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdLot3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLo93_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLpN3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdLpd3_EeSGMOhR1oZbRQ" name="save" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLpt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLp93_EeSGMOhR1oZbRQ" name="flip" visibility="public" returnType="_-mdLm93_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLqN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLqd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLqt3_EeSGMOhR1oZbRQ" name="rotate" visibility="public" returnType="_-mdLm93_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLq93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLrN3_EeSGMOhR1oZbRQ" name="scale" visibility="public" returnType="_-mdLm93_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLrd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLrt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLr93_EeSGMOhR1oZbRQ" name="mask" visibility="public" returnType="_-mdLm93_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLsN3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLsd3_EeSGMOhR1oZbRQ" name="getImage" visibility="public" visibility="protected" returnType="_-mgPAN3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdLst3_EeSGMOhR1oZbRQ" name="crop" visibility="public" returnType="_-mdLm93_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLs93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLtN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLtd3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLtt3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLt93_EeSGMOhR1oZbRQ" name="draw" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLuN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLm93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLud3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLut3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLu93_EeSGMOhR1oZbRQ" name="getWidth" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdLvN3_EeSGMOhR1oZbRQ" name="getHeight" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdLvd3_EeSGMOhR1oZbRQ" name="setPixel" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLvt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLv93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLwN3_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLwd3_EeSGMOhR1oZbRQ" name="drawLine" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLwt3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLw93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLxN3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLxd3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLxt3_EeSGMOhR1oZbRQ" name="arg4" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLx93_EeSGMOhR1oZbRQ" name="setUpImage" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLyN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPAN3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLyd3_EeSGMOhR1oZbRQ" name="getPixel" visibility="public" returnType="_-meZxt3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLyt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLy93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdLzN3_EeSGMOhR1oZbRQ" name="accelerateBuffer" visibility="public" visibility="protected" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdLzd3_EeSGMOhR1oZbRQ" name="drawRectangle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdLzt3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdLz93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdL0N3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdygN3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdygd3_EeSGMOhR1oZbRQ" name="arg4" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdygt3_EeSGMOhR1oZbRQ" name="drawPolygon" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyg93_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyhN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg1693_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyhd3_EeSGMOhR1oZbRQ" name="drawCircle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyht3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyh93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyiN3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyid3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-mdyit3_EeSGMOhR1oZbRQ" name="bufferedImage" assoc="_-mg10d3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mdyi93_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg1393_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mdyjN3_EeSGMOhR1oZbRQ" name="saveThrowsMinuetoFileException" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mdyjd3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.ListenerQueuePair">
+      <operations xmi:id="_-mdyjt3_EeSGMOhR1oZbRQ" name="ListenerQueuePair" visibility="public" returnType="_-mdyjd3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mdyj93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPCd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdykN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdykd3_EeSGMOhR1oZbRQ" name="equals" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdykt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPCd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyk93_EeSGMOhR1oZbRQ" name="getListener" visibility="public" returnType="_-mgPCd3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdylN3_EeSGMOhR1oZbRQ" name="getQueue" visibility="public" returnType="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mdyld3_EeSGMOhR1oZbRQ" name="listener" assoc="_-mg10t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mdylt3_EeSGMOhR1oZbRQ" name="queue" assoc="_-mg1093_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mdyl93_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mdymN3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.GetFocusEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mdymd3_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mdymt3_EeSGMOhR1oZbRQ" name="handler" assoc="_-mg11N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mdym93_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mdynN3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoPanel" superTypes="_-mgPC93_EeSGMOhR1oZbRQ _-mb9o93_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mdynd3_EeSGMOhR1oZbRQ" name="MinuetoPanel" visibility="public" returnType="_-mdynN3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mdynt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyn93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyoN3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdyod3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyot3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyo93_EeSGMOhR1oZbRQ" name="save" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdypN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdypd3_EeSGMOhR1oZbRQ" name="close" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdypt3_EeSGMOhR1oZbRQ" name="setSize" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyp93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPDd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyqN3_EeSGMOhR1oZbRQ" name="update" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyqd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPDt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyqt3_EeSGMOhR1oZbRQ" name="isClosed" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdyq93_EeSGMOhR1oZbRQ" name="draw" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyrN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLm93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyrd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyrt3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyr93_EeSGMOhR1oZbRQ" name="getWidth" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdysN3_EeSGMOhR1oZbRQ" name="getHeight" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdysd3_EeSGMOhR1oZbRQ" name="setVisible" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyst3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdys93_EeSGMOhR1oZbRQ" name="setTitle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdytN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdytd3_EeSGMOhR1oZbRQ" name="setCursorVisible" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdytt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyt93_EeSGMOhR1oZbRQ" name="getPositionX" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdyuN3_EeSGMOhR1oZbRQ" name="getPositionY" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdyud3_EeSGMOhR1oZbRQ" name="setPixel" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyut3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyu93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyvN3_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyvd3_EeSGMOhR1oZbRQ" name="isVisible" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdyvt3_EeSGMOhR1oZbRQ" name="unregisterMouseWheelHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyv93_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdywN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdywd3_EeSGMOhR1oZbRQ" name="unregisterFocusHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdywt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyw93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyxN3_EeSGMOhR1oZbRQ" name="unregisterWindowHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyxd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyxt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyx93_EeSGMOhR1oZbRQ" name="unregisterMouseHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyyN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyyd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyyt3_EeSGMOhR1oZbRQ" name="unregisterKeyboardHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyy93_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyzN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdyzd3_EeSGMOhR1oZbRQ" name="registerMouseWheelHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdyzt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdyz93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdy0N3_EeSGMOhR1oZbRQ" name="registerFocusHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdy0d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdy0t3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdy093_EeSGMOhR1oZbRQ" name="registerWindowHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdy1N3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdy1d3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdy1t3_EeSGMOhR1oZbRQ" name="registerMouseHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdy193_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdy2N3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdy2d3_EeSGMOhR1oZbRQ" name="registerKeyboardHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdy2t3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdy293_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdy3N3_EeSGMOhR1oZbRQ" name="setMaxFrameRate" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdy3d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mdy3t3_EeSGMOhR1oZbRQ" name="getFrameRate" visibility="public" returnType="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdy393_EeSGMOhR1oZbRQ" name="render" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mdy4N3_EeSGMOhR1oZbRQ" name="drawLine" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mdy4d3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mdy4t3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZkN3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZkd3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZkt3_EeSGMOhR1oZbRQ" name="arg4" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZk93_EeSGMOhR1oZbRQ" name="addKeyListener" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZlN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPBt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZld3_EeSGMOhR1oZbRQ" name="addMouseListener" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZlt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPD93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZl93_EeSGMOhR1oZbRQ" name="addMouseMotionListener" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZmN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZmd3_EeSGMOhR1oZbRQ" name="addMouseWheelListener" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZmt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO-t3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZm93_EeSGMOhR1oZbRQ" name="addFocusListener" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZnN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_t3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZnd3_EeSGMOhR1oZbRQ" name="removeFocusListener" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZnt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_t3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZn93_EeSGMOhR1oZbRQ" name="removeKeyListener" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZoN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPBt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZod3_EeSGMOhR1oZbRQ" name="removeMouseListener" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZot3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPD93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZo93_EeSGMOhR1oZbRQ" name="removeMouseMotionListener" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZpN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZpd3_EeSGMOhR1oZbRQ" name="removeMouseWheelListener" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZpt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO-t3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZp93_EeSGMOhR1oZbRQ" name="getPreferredSize" visibility="public" returnType="_-mgPDd3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-meZqN3_EeSGMOhR1oZbRQ" name="paint" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZqd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPDt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-meZqt3_EeSGMOhR1oZbRQ" name="window" assoc="_-mg11d3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-meZq93_EeSGMOhR1oZbRQ" name="saveThrowsMinuetoFileException" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-meZrN3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MinuetoMouse"/>
+    <classes xsi:type="ram:Class" xmi:id="_-meZrd3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MinuetoMouseListener" superTypes="_-mgPD93_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-meZrt3_EeSGMOhR1oZbRQ" name="MinuetoMouseListener" visibility="public" returnType="_-meZrd3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-meZr93_EeSGMOhR1oZbRQ" name="register" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZsN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZsd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZst3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-meZs93_EeSGMOhR1oZbRQ" name="unregister" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZtN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZtd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZtt3_EeSGMOhR1oZbRQ" name="mousePressed" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZt93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZuN3_EeSGMOhR1oZbRQ" name="mouseReleased" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZud3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZut3_EeSGMOhR1oZbRQ" name="mouseClicked" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZu93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZvN3_EeSGMOhR1oZbRQ" name="mouseEntered" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZvd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZvt3_EeSGMOhR1oZbRQ" name="mouseExited" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZv93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-meZwN3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPG93_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-meZwd3_EeSGMOhR1oZbRQ" name="org.minueto.image.ImageTransformations">
+      <operations xmi:id="_-meZwt3_EeSGMOhR1oZbRQ" name="applyFilter" visibility="public" visibility="protected" returnType="_-mgPAN3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZw93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPAN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZxN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mfn693_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <attributes xmi:id="_-meZxd3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-meZxt3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoColor" superTypes="_-mgPEN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-meZx93_EeSGMOhR1oZbRQ" name="MinuetoColor" visibility="public" returnType="_-meZxt3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-meZyN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZyd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZyt3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZy93_EeSGMOhR1oZbRQ" name="MinuetoColor" visibility="public" returnType="_-meZxt3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-meZzN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPEd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZzd3_EeSGMOhR1oZbRQ" name="MinuetoColor" visibility="public" returnType="_-meZxt3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-meZzt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZz93_EeSGMOhR1oZbRQ" name="MinuetoColor" visibility="public" returnType="_-meZxt3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-meZ0N3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZ0d3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZ0t3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZ093_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZ1N3_EeSGMOhR1oZbRQ" name="MinuetoColor" visibility="public" returnType="_-meZxt3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-meZ1d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZ1t3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZ193_EeSGMOhR1oZbRQ" name="arg2" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZ2N3_EeSGMOhR1oZbRQ" name="MinuetoColor" visibility="public" returnType="_-meZxt3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-meZ2d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZ2t3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZ293_EeSGMOhR1oZbRQ" name="arg2" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-meZ3N3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZ3d3_EeSGMOhR1oZbRQ" name="toString" visibility="public" returnType="_-mg1593_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-meZ3t3_EeSGMOhR1oZbRQ" name="getAWTColor" visibility="public" returnType="_-mgPEd3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-meZ393_EeSGMOhR1oZbRQ" name="getRed" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-meZ4N3_EeSGMOhR1oZbRQ" name="getGreen" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-meZ4d3_EeSGMOhR1oZbRQ" name="getBlue" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-meZ4t3_EeSGMOhR1oZbRQ" name="getAlpha" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-meZ493_EeSGMOhR1oZbRQ" name="getARGBColorValue" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-meZ5N3_EeSGMOhR1oZbRQ" name="darken" visibility="public" returnType="_-meZxt3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZ5d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZ5t3_EeSGMOhR1oZbRQ" name="darken" visibility="public" returnType="_-meZxt3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZ593_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZ6N3_EeSGMOhR1oZbRQ" name="lighten" visibility="public" returnType="_-meZxt3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZ6d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-meZ6t3_EeSGMOhR1oZbRQ" name="lighten" visibility="public" returnType="_-meZxt3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-meZ693_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-meZ7N3_EeSGMOhR1oZbRQ" name="RED" static="true" assoc="_-mg11t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-meZ7d3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg11t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-meZ7t3_EeSGMOhR1oZbRQ" name="GREEN" static="true" assoc="_-mg1193_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-meZ793_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg1193_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-meZ8N3_EeSGMOhR1oZbRQ" name="BLUE" static="true" assoc="_-mg12N3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfAoN3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg12N3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfAod3_EeSGMOhR1oZbRQ" name="YELLOW" static="true" assoc="_-mg12d3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfAot3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg12d3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfAo93_EeSGMOhR1oZbRQ" name="BLACK" static="true" assoc="_-mg12t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfApN3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg12t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfApd3_EeSGMOhR1oZbRQ" name="WHITE" static="true" assoc="_-mg1293_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfApt3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg1293_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfAp93_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MinuetoWindowListener" superTypes="_-mgPEt3_EeSGMOhR1oZbRQ _-mgPE93_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mfAqN3_EeSGMOhR1oZbRQ" name="MinuetoWindowListener" visibility="public" returnType="_-mfAp93_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mfAqd3_EeSGMOhR1oZbRQ" name="register" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAqt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfAq93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfArN3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfArd3_EeSGMOhR1oZbRQ" name="unregister" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfArt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfAr93_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAsN3_EeSGMOhR1oZbRQ" name="windowActivated" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAsd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFN3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAst3_EeSGMOhR1oZbRQ" name="windowClosed" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAs93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFN3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAtN3_EeSGMOhR1oZbRQ" name="windowClosing" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAtd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFN3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAtt3_EeSGMOhR1oZbRQ" name="windowDeactivated" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAt93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFN3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAuN3_EeSGMOhR1oZbRQ" name="windowDeiconified" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAud3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFN3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAut3_EeSGMOhR1oZbRQ" name="windowIconified" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAu93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFN3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAvN3_EeSGMOhR1oZbRQ" name="windowOpened" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAvd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFN3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAvt3_EeSGMOhR1oZbRQ" name="internalFrameActivated" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAv93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAwN3_EeSGMOhR1oZbRQ" name="internalFrameClosed" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAwd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAwt3_EeSGMOhR1oZbRQ" name="internalFrameClosing" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAw93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAxN3_EeSGMOhR1oZbRQ" name="internalFrameDeactivated" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAxd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAxt3_EeSGMOhR1oZbRQ" name="internalFrameDeiconified" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAx93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAyN3_EeSGMOhR1oZbRQ" name="internalFrameIconified" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAyd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfAyt3_EeSGMOhR1oZbRQ" name="internalFrameOpened" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfAy93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPFd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-mfAzN3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mgPHt3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfAzd3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.IMinuetoFocusHandler" abstract="true">
+      <operations xmi:id="_-mfAzt3_EeSGMOhR1oZbRQ" name="handleGetFocus" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfAz93_EeSGMOhR1oZbRQ" name="handleLostFocus" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfA0N3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg11N3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfA0d3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg13N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mfA0t3_EeSGMOhR1oZbRQ" name="isAbstract" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfA093_EeSGMOhR1oZbRQ" name="org.minueto.handlers.LostFocusEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mfA1N3_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfA1d3_EeSGMOhR1oZbRQ" name="handler" assoc="_-mg13N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mfA1t3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfA193_EeSGMOhR1oZbRQ" name="org.minueto.image.MinuetoText" superTypes="_-mdLm93_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mfA2N3_EeSGMOhR1oZbRQ" name="MinuetoText" visibility="public" returnType="_-mfA193_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mfA2d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfA2t3_EeSGMOhR1oZbRQ" name="arg1" type="_-mckm93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfA293_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfA3N3_EeSGMOhR1oZbRQ" name="MinuetoText" visibility="public" returnType="_-mfA193_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mfA3d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfA3t3_EeSGMOhR1oZbRQ" name="arg1" type="_-mckm93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfA393_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfA4N3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfA4d3_EeSGMOhR1oZbRQ" name="setUpText" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfA4t3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfA493_EeSGMOhR1oZbRQ" name="arg1" type="_-mckm93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfA5N3_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfA5d3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfA5t3_EeSGMOhR1oZbRQ" name="org.minueto.window.WindowManager">
+      <operations xmi:id="_-mfA593_EeSGMOhR1oZbRQ" name="register" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfA6N3_EeSGMOhR1oZbRQ" name="arg0" type="_-mb9o93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfA6d3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfA6t3_EeSGMOhR1oZbRQ" name="getInstance" visibility="public" returnType="_-mfA5t3_EeSGMOhR1oZbRQ" static="true"/>
+      <operations xmi:id="_-mfA693_EeSGMOhR1oZbRQ" name="unregister" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfA7N3_EeSGMOhR1oZbRQ" name="arg0" type="_-mb9o93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-mfA7d3_EeSGMOhR1oZbRQ" name="instance" static="true" assoc="_-mg13d3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfA7t3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg13d3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mfA793_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfA8N3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoPanelWindow" superTypes="_-mavPt3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mfA8d3_EeSGMOhR1oZbRQ" name="MinuetoPanelWindow" visibility="public" returnType="_-mfA8N3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mfA8t3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPC93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfA893_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfA9N3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfA9d3_EeSGMOhR1oZbRQ" name="close" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfA9t3_EeSGMOhR1oZbRQ" name="isClosed" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfA993_EeSGMOhR1oZbRQ" name="setVisible" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfA-N3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfA-d3_EeSGMOhR1oZbRQ" name="setTitle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfA-t3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfA-93_EeSGMOhR1oZbRQ" name="setCursorVisible" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfA_N3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfA_d3_EeSGMOhR1oZbRQ" name="getPositionX" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfA_t3_EeSGMOhR1oZbRQ" name="getPositionY" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfnsN3_EeSGMOhR1oZbRQ" name="addKeyListener" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfnsd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPBt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfnst3_EeSGMOhR1oZbRQ" name="addMouseListener" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfns93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPD93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfntN3_EeSGMOhR1oZbRQ" name="addMouseMotionListener" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfntd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfntt3_EeSGMOhR1oZbRQ" name="addMouseWheelListener" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfnt93_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO-t3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfnuN3_EeSGMOhR1oZbRQ" name="addFocusListener" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfnud3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_t3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfnut3_EeSGMOhR1oZbRQ" name="registerListeners" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfnu93_EeSGMOhR1oZbRQ" name="removeFocusListener" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfnvN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_t3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfnvd3_EeSGMOhR1oZbRQ" name="removeKeyListener" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfnvt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPBt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfnv93_EeSGMOhR1oZbRQ" name="removeMouseListener" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfnwN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgPD93_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfnwd3_EeSGMOhR1oZbRQ" name="removeMouseMotionListener" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfnwt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO_N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfnw93_EeSGMOhR1oZbRQ" name="removeMouseWheelListener" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfnxN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mgO-t3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-mfnxd3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg11d3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfnxt3_EeSGMOhR1oZbRQ" name="jPanel" assoc="_-mg13t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfnx93_EeSGMOhR1oZbRQ" name="buffer" assoc="_-mg1393_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mfnyN3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfnyd3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoEventQueueEmptyException" superTypes="_-mgO-d3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mfnyt3_EeSGMOhR1oZbRQ" name="MinuetoEventQueueEmptyException" visibility="public" returnType="_-mfnyd3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mfny93_EeSGMOhR1oZbRQ" name="MinuetoEventQueueEmptyException" visibility="public" returnType="_-mfnyd3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mfnzN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfnzd3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.IMinuetoMouseWheelHandler" abstract="true">
+      <operations xmi:id="_-mfnzt3_EeSGMOhR1oZbRQ" name="handleMouseWheelRotate" visibility="public" abstract="true" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfnz93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <associationEnds xmi:id="_-mfn0N3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg14d3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mfn0d3_EeSGMOhR1oZbRQ" name="isAbstract" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfn0t3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MouseReleaseEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mfn093_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mfn1N3_EeSGMOhR1oZbRQ" name="handler" assoc="_-mg14N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mfn1d3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfn1t3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoOutOfBoundException" superTypes="_-mgO-d3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mfn193_EeSGMOhR1oZbRQ" name="MinuetoOutOfBoundException" visibility="public" returnType="_-mfn1t3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mfn2N3_EeSGMOhR1oZbRQ" name="MinuetoOutOfBoundException" visibility="public" returnType="_-mfn1t3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mfn2d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfn2t3_EeSGMOhR1oZbRQ" name="MinuetoOutOfBoundException" visibility="public" returnType="_-mfn1t3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mfn293_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn3N3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn3d3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfn3t3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoTool">
+      <operations xmi:id="_-mfn393_EeSGMOhR1oZbRQ" name="MinuetoTool" visibility="public" returnType="_-mfn3t3_EeSGMOhR1oZbRQ" operationType="Constructor"/>
+      <operations xmi:id="_-mfn4N3_EeSGMOhR1oZbRQ" name="getDisplayWidth" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ" static="true"/>
+      <operations xmi:id="_-mfn4d3_EeSGMOhR1oZbRQ" name="getDisplayHeight" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ" static="true"/>
+      <operations xmi:id="_-mfn4t3_EeSGMOhR1oZbRQ" name="isWindows" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ" static="true"/>
+      <operations xmi:id="_-mfn493_EeSGMOhR1oZbRQ" name="isLinux" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ" static="true"/>
+      <operations xmi:id="_-mfn5N3_EeSGMOhR1oZbRQ" name="isMac" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ" static="true"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfn5d3_EeSGMOhR1oZbRQ" name="org.minueto.image.MinuetoRectangle" superTypes="_-mdLm93_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mfn5t3_EeSGMOhR1oZbRQ" name="MinuetoRectangle" visibility="public" returnType="_-mfn5d3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mfn593_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn6N3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn6d3_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn6t3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfn693_EeSGMOhR1oZbRQ" name="org.minueto.image.IImageFilter" abstract="true">
+      <operations xmi:id="_-mfn7N3_EeSGMOhR1oZbRQ" name="apply" visibility="public" abstract="true" returnType="_-mg15d3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfn7d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn7t3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn793_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <attributes xmi:id="_-mfn8N3_EeSGMOhR1oZbRQ" name="isAbstract" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mfn8d3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfn8t3_EeSGMOhR1oZbRQ" name="org.minueto.image.MinuetoCircle" superTypes="_-mdLm93_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mfn893_EeSGMOhR1oZbRQ" name="MinuetoCircle" visibility="public" returnType="_-mfn8t3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mfn9N3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn9d3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn9t3_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn993_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfn-N3_EeSGMOhR1oZbRQ" name="MinuetoCircle" visibility="public" returnType="_-mfn8t3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mfn-d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn-t3_EeSGMOhR1oZbRQ" name="arg1" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn-93_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfn_N3_EeSGMOhR1oZbRQ" name="buildCircle" visibility="public" visibility="protected" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfn_d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn_t3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfn_93_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfoAN3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mfoAd3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoFullscreen" superTypes="_-mavPt3_EeSGMOhR1oZbRQ _-mb9o93_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mfoAt3_EeSGMOhR1oZbRQ" name="MinuetoFullscreen" visibility="public" returnType="_-mfoAd3_EeSGMOhR1oZbRQ" operationType="Constructor">
+        <parameters xmi:id="_-mfoA93_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfoBN3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfoBd3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfoBt3_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfoB93_EeSGMOhR1oZbRQ" name="clear" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfoCN3_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfoCd3_EeSGMOhR1oZbRQ" name="save" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfoCt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfoC93_EeSGMOhR1oZbRQ" name="close" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfoDN3_EeSGMOhR1oZbRQ" name="isClosed" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfoDd3_EeSGMOhR1oZbRQ" name="draw" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mfoDt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLm93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfoD93_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mfoEN3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mfoEd3_EeSGMOhR1oZbRQ" name="getWidth" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfoEt3_EeSGMOhR1oZbRQ" name="getHeight" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mfoE93_EeSGMOhR1oZbRQ" name="setVisible" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgOwN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgOwd3_EeSGMOhR1oZbRQ" name="setTitle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgOwt3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg1593_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgOw93_EeSGMOhR1oZbRQ" name="setCursorVisible" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgOxN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgOxd3_EeSGMOhR1oZbRQ" name="getPositionX" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mgOxt3_EeSGMOhR1oZbRQ" name="getPositionY" visibility="public" returnType="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mgOx93_EeSGMOhR1oZbRQ" name="setPixel" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgOyN3_EeSGMOhR1oZbRQ" name="arg0" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgOyd3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgOyt3_EeSGMOhR1oZbRQ" name="arg2" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgOy93_EeSGMOhR1oZbRQ" name="isVisible" visibility="public" returnType="_-mg15N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mgOzN3_EeSGMOhR1oZbRQ" name="unregisterMouseWheelHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgOzd3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgOzt3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgOz93_EeSGMOhR1oZbRQ" name="unregisterFocusHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgO0N3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO0d3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgO0t3_EeSGMOhR1oZbRQ" name="unregisterWindowHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgO093_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO1N3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgO1d3_EeSGMOhR1oZbRQ" name="unregisterMouseHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgO1t3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO193_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgO2N3_EeSGMOhR1oZbRQ" name="unregisterKeyboardHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgO2d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO2t3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgO293_EeSGMOhR1oZbRQ" name="registerMouseWheelHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgO3N3_EeSGMOhR1oZbRQ" name="arg0" type="_-mfnzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO3d3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgO3t3_EeSGMOhR1oZbRQ" name="registerFocusHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgO393_EeSGMOhR1oZbRQ" name="arg0" type="_-mfAzd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO4N3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgO4d3_EeSGMOhR1oZbRQ" name="registerWindowHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgO4t3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckiN3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO493_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgO5N3_EeSGMOhR1oZbRQ" name="registerMouseHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgO5d3_EeSGMOhR1oZbRQ" name="arg0" type="_-mdLg93_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO5t3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgO593_EeSGMOhR1oZbRQ" name="registerKeyboardHandler" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgO6N3_EeSGMOhR1oZbRQ" name="arg0" type="_-mckfd3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO6d3_EeSGMOhR1oZbRQ" name="arg1" type="_-mb9cd3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgO6t3_EeSGMOhR1oZbRQ" name="setMaxFrameRate" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgO693_EeSGMOhR1oZbRQ" name="arg0" type="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <operations xmi:id="_-mgO7N3_EeSGMOhR1oZbRQ" name="getFrameRate" visibility="public" returnType="_-mg16N3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mgO7d3_EeSGMOhR1oZbRQ" name="render" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <operations xmi:id="_-mgO7t3_EeSGMOhR1oZbRQ" name="drawLine" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ">
+        <parameters xmi:id="_-mgO793_EeSGMOhR1oZbRQ" name="arg0" type="_-meZxt3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO8N3_EeSGMOhR1oZbRQ" name="arg1" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO8d3_EeSGMOhR1oZbRQ" name="arg2" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO8t3_EeSGMOhR1oZbRQ" name="arg3" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+        <parameters xmi:id="_-mgO893_EeSGMOhR1oZbRQ" name="arg4" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+      </operations>
+      <attributes xmi:id="_-mgO9N3_EeSGMOhR1oZbRQ" name="saveThrowsMinuetoFileException" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_-mgO9d3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MouseWheelTurnEvent" superTypes="_-mcklN3_EeSGMOhR1oZbRQ">
+      <operations xmi:id="_-mgO9t3_EeSGMOhR1oZbRQ" name="handle" visibility="public" returnType="_-mg14t3_EeSGMOhR1oZbRQ"/>
+      <associationEnds xmi:id="_-mgO993_EeSGMOhR1oZbRQ" name="handler" assoc="_-mg14d3_EeSGMOhR1oZbRQ"/>
+      <attributes xmi:id="_-mgO-N3_EeSGMOhR1oZbRQ" name="visibilityNotPublic" type="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgO-d3_EeSGMOhR1oZbRQ" name="RuntimeException" instanceClassName="java.lang.RuntimeException"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgO-t3_EeSGMOhR1oZbRQ" name="MouseWheelListener" instanceClassName="java.awt.event.MouseWheelListener" interface="true"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgO-93_EeSGMOhR1oZbRQ" name="MouseWheelEvent" instanceClassName="java.awt.event.MouseWheelEvent"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgO_N3_EeSGMOhR1oZbRQ" name="MouseMotionListener" instanceClassName="java.awt.event.MouseMotionListener" interface="true"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgO_d3_EeSGMOhR1oZbRQ" name="MouseEvent" instanceClassName="java.awt.event.MouseEvent"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgO_t3_EeSGMOhR1oZbRQ" name="FocusListener" instanceClassName="java.awt.event.FocusListener" interface="true"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgO_93_EeSGMOhR1oZbRQ" name="FocusEvent" instanceClassName="java.awt.event.FocusEvent"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPAN3_EeSGMOhR1oZbRQ" name="BufferedImage" instanceClassName="java.awt.image.BufferedImage">
+      <associationEnds xmi:id="_-mgPAd3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg10d3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPAt3_EeSGMOhR1oZbRQ" name="GraphicsConfiguration" instanceClassName="java.awt.GraphicsConfiguration"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPA93_EeSGMOhR1oZbRQ" name="URL" instanceClassName="java.net.URL"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPBN3_EeSGMOhR1oZbRQ" name="IOException" instanceClassName="java.io.IOException"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPBd3_EeSGMOhR1oZbRQ" name="Font" instanceClassName="java.awt.Font"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPBt3_EeSGMOhR1oZbRQ" name="KeyListener" instanceClassName="java.awt.event.KeyListener" interface="true"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPB93_EeSGMOhR1oZbRQ" name="KeyEvent" instanceClassName="java.awt.event.KeyEvent"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPCN3_EeSGMOhR1oZbRQ" name="Cloneable" instanceClassName="java.lang.Cloneable" interface="true"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPCd3_EeSGMOhR1oZbRQ" name="Object" instanceClassName="java.lang.Object">
+      <associationEnds xmi:id="_-mgPCt3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg10t3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPC93_EeSGMOhR1oZbRQ" name="JPanel" instanceClassName="javax.swing.JPanel">
+      <associationEnds xmi:id="_-mgPDN3_EeSGMOhR1oZbRQ" navigable="false" assoc="_-mg13t3_EeSGMOhR1oZbRQ"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPDd3_EeSGMOhR1oZbRQ" name="Dimension" instanceClassName="java.awt.Dimension"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPDt3_EeSGMOhR1oZbRQ" name="Graphics" instanceClassName="java.awt.Graphics"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPD93_EeSGMOhR1oZbRQ" name="MouseListener" instanceClassName="java.awt.event.MouseListener" interface="true"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPEN3_EeSGMOhR1oZbRQ" name="Serializable" instanceClassName="java.io.Serializable" interface="true"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPEd3_EeSGMOhR1oZbRQ" name="Color" instanceClassName="java.awt.Color"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPEt3_EeSGMOhR1oZbRQ" name="WindowListener" instanceClassName="java.awt.event.WindowListener" interface="true"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPE93_EeSGMOhR1oZbRQ" name="InternalFrameListener" instanceClassName="javax.swing.event.InternalFrameListener" interface="true"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPFN3_EeSGMOhR1oZbRQ" name="WindowEvent" instanceClassName="java.awt.event.WindowEvent"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_-mgPFd3_EeSGMOhR1oZbRQ" name="InternalFrameEvent" instanceClassName="javax.swing.event.InternalFrameEvent"/>
+    <associations xmi:id="_-mgPFt3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.QuitRequestEvent_org.minueto.handlers.IMinuetoWindowHandler" ends="_-maIJN3_EeSGMOhR1oZbRQ _-mckjN3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPF93_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MousePressEvent_org.minueto.handlers.IMinuetoMouseHandler" ends="_-maION3_EeSGMOhR1oZbRQ _-mdLj93_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPGN3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoBaseWindow_org.minueto.MinuetoStopWatch" ends="_-maviN3_EeSGMOhR1oZbRQ _-mdLgd3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPGd3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoBaseWindow_org.minueto.MinuetoStopWatch" ends="_-mavid3_EeSGMOhR1oZbRQ _-mdLgt3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPGt3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoBaseWindow_org.minueto.handlers.MinuetoKeyListener" ends="_-mavit3_EeSGMOhR1oZbRQ _-mdLet3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPG93_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoBaseWindow_org.minueto.handlers.MinuetoMouseListener" ends="_-mavi93_EeSGMOhR1oZbRQ _-meZwN3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPHN3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoBaseWindow_org.minueto.handlers.MinuetoMouseMotionListener" ends="_-mavjN3_EeSGMOhR1oZbRQ _-mavPd3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPHd3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoBaseWindow_org.minueto.handlers.MinuetoMouseWheelListener" ends="_-mavjd3_EeSGMOhR1oZbRQ _-maINd3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPHt3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoBaseWindow_org.minueto.handlers.MinuetoWindowListener" ends="_-mavjt3_EeSGMOhR1oZbRQ _-mfAzN3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPH93_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoBaseWindow_org.minueto.handlers.MinuetoFocusListener" ends="_-mavj93_EeSGMOhR1oZbRQ _-mb9XN3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPIN3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.KeyReleaseEvent_org.minueto.handlers.IMinuetoKeyboardHandler" ends="_-mb9et3_EeSGMOhR1oZbRQ _-mckhN3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPId3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.KeyTypedEvent_org.minueto.handlers.IMinuetoKeyboardHandler" ends="_-mb9ft3_EeSGMOhR1oZbRQ _-mckhd3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPIt3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MouseMoveEvent_org.minueto.handlers.IMinuetoMouseHandler" ends="_-mb9gt3_EeSGMOhR1oZbRQ _-mdLkN3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPI93_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MinimizeWindowEvent_org.minueto.handlers.IMinuetoWindowHandler" ends="_-mckrd3_EeSGMOhR1oZbRQ _-mckjd3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mgPJN3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.RestoreWindowEvent_org.minueto.handlers.IMinuetoWindowHandler" ends="_-mcktd3_EeSGMOhR1oZbRQ _-mckjt3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg10N3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.KeyPressEvent_org.minueto.handlers.IMinuetoKeyboardHandler" ends="_-mckud3_EeSGMOhR1oZbRQ _-mckht3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg10d3_EeSGMOhR1oZbRQ" name="org.minueto.image.MinuetoImage_BufferedImage" ends="_-mdyit3_EeSGMOhR1oZbRQ _-mgPAd3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg10t3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.ListenerQueuePair_Object" ends="_-mdyld3_EeSGMOhR1oZbRQ _-mgPCt3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg1093_EeSGMOhR1oZbRQ" name="org.minueto.handlers.ListenerQueuePair_org.minueto.MinuetoEventQueue" ends="_-mdylt3_EeSGMOhR1oZbRQ _-mb9d93_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg11N3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.GetFocusEvent_org.minueto.handlers.IMinuetoFocusHandler" ends="_-mdymt3_EeSGMOhR1oZbRQ _-mfA0N3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg11d3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoPanel_org.minueto.window.MinuetoPanelWindow" ends="_-meZqt3_EeSGMOhR1oZbRQ _-mfnxd3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg11t3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoColor_org.minueto.MinuetoColor" ends="_-meZ7N3_EeSGMOhR1oZbRQ _-meZ7d3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg1193_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoColor_org.minueto.MinuetoColor" ends="_-meZ7t3_EeSGMOhR1oZbRQ _-meZ793_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg12N3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoColor_org.minueto.MinuetoColor" ends="_-meZ8N3_EeSGMOhR1oZbRQ _-mfAoN3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg12d3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoColor_org.minueto.MinuetoColor" ends="_-mfAod3_EeSGMOhR1oZbRQ _-mfAot3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg12t3_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoColor_org.minueto.MinuetoColor" ends="_-mfAo93_EeSGMOhR1oZbRQ _-mfApN3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg1293_EeSGMOhR1oZbRQ" name="org.minueto.MinuetoColor_org.minueto.MinuetoColor" ends="_-mfApd3_EeSGMOhR1oZbRQ _-mfApt3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg13N3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.LostFocusEvent_org.minueto.handlers.IMinuetoFocusHandler" ends="_-mfA1d3_EeSGMOhR1oZbRQ _-mfA0d3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg13d3_EeSGMOhR1oZbRQ" name="org.minueto.window.WindowManager_org.minueto.window.WindowManager" ends="_-mfA7d3_EeSGMOhR1oZbRQ _-mfA7t3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg13t3_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoPanelWindow_JPanel" ends="_-mfnxt3_EeSGMOhR1oZbRQ _-mgPDN3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg1393_EeSGMOhR1oZbRQ" name="org.minueto.window.MinuetoPanelWindow_org.minueto.image.MinuetoImage" ends="_-mfnx93_EeSGMOhR1oZbRQ _-mdyi93_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg14N3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MouseReleaseEvent_org.minueto.handlers.IMinuetoMouseHandler" ends="_-mfn1N3_EeSGMOhR1oZbRQ _-mdLkd3_EeSGMOhR1oZbRQ"/>
+    <associations xmi:id="_-mg14d3_EeSGMOhR1oZbRQ" name="org.minueto.handlers.MouseWheelTurnEvent_org.minueto.handlers.IMinuetoMouseWheelHandler" ends="_-mgO993_EeSGMOhR1oZbRQ _-mfn0N3_EeSGMOhR1oZbRQ"/>
+    <types xsi:type="ram:RVoid" xmi:id="_-mg14t3_EeSGMOhR1oZbRQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_-mg1493_EeSGMOhR1oZbRQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_-mg15N3_EeSGMOhR1oZbRQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_-mg15d3_EeSGMOhR1oZbRQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_-mg15t3_EeSGMOhR1oZbRQ"/>
+    <types xsi:type="ram:RString" xmi:id="_-mg1593_EeSGMOhR1oZbRQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_-mg16N3_EeSGMOhR1oZbRQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_-mg16d3_EeSGMOhR1oZbRQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_-mg16t3_EeSGMOhR1oZbRQ"/>
+    <types xsi:type="ram:RArray" xmi:id="_-mg1693_EeSGMOhR1oZbRQ" type="_-mg15d3_EeSGMOhR1oZbRQ"/>
+  </structuralView>
+  <layout xmi:id="_-mhc4N3_EeSGMOhR1oZbRQ">
+    <containers xmi:id="_-mhc4d3_EeSGMOhR1oZbRQ" key="_-maIId3_EeSGMOhR1oZbRQ">
+      <value xmi:id="_-mhc4t3_EeSGMOhR1oZbRQ" key="_-maIIt3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQh-t1eEeSn77UjR4WLxQ" x="3904.8008" y="-162.33066"/>
+      </value>
+      <value xmi:id="_-mhc493_EeSGMOhR1oZbRQ" key="_-maIJt3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiBt1eEeSn77UjR4WLxQ" x="-1152.8713" y="1017.4909"/>
+      </value>
+      <value xmi:id="_-mhc5N3_EeSGMOhR1oZbRQ" key="_-maIKt3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQh_N1eEeSn77UjR4WLxQ" x="570.32214" y="-860.5015"/>
+      </value>
+      <value xmi:id="_-mhc5d3_EeSGMOhR1oZbRQ" key="_-maINt3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8ld1eEeSn77UjR4WLxQ" x="3072.9634" y="555.47253"/>
+      </value>
+      <value xmi:id="_-mhc5t3_EeSGMOhR1oZbRQ" key="_-mavMN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiIt1eEeSn77UjR4WLxQ" x="-758.6158" y="-47.17094"/>
+      </value>
+      <value xmi:id="_-mhc593_EeSGMOhR1oZbRQ" key="_-mavPt3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiEN1eEeSn77UjR4WLxQ" x="-797.5741" y="-2198.537"/>
+      </value>
+      <value xmi:id="_-mhc6N3_EeSGMOhR1oZbRQ" key="_-mbWQ93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiGt1eEeSn77UjR4WLxQ" x="1540.5343" y="1225.2496"/>
+      </value>
+      <value xmi:id="_-mhc6d3_EeSGMOhR1oZbRQ" key="_-mbWS93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiSt1eEeSn77UjR4WLxQ" x="-2005.1477" y="-2125.3328"/>
+      </value>
+      <value xmi:id="_-mhc6t3_EeSGMOhR1oZbRQ" key="_-mbWnN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiHN1eEeSn77UjR4WLxQ" x="138.91869" y="1042.8162"/>
+      </value>
+      <value xmi:id="_-mhc693_EeSGMOhR1oZbRQ" key="_-mbWoN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiLN1eEeSn77UjR4WLxQ" x="458.47424" y="-594.0956"/>
+      </value>
+      <value xmi:id="_-mhc7N3_EeSGMOhR1oZbRQ" key="_-mb9Xd3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiON1eEeSn77UjR4WLxQ" x="590.7224" y="540.24414"/>
+      </value>
+      <value xmi:id="_-mhc7d3_EeSGMOhR1oZbRQ" key="_-mb9Xt3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQh-N1eEeSn77UjR4WLxQ" x="-278.39825" y="329.635"/>
+      </value>
+      <value xmi:id="_-mhc7t3_EeSGMOhR1oZbRQ" key="_-mb9at3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8nd1eEeSn77UjR4WLxQ" x="-585.74994" y="575.1605"/>
+      </value>
+      <value xmi:id="_-mhc793_EeSGMOhR1oZbRQ" key="_-mb9cd3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQh8t1eEeSn77UjR4WLxQ" x="1045.2703" y="513.502"/>
+      </value>
+      <value xmi:id="_-mhc8N3_EeSGMOhR1oZbRQ" key="_-mb9eN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiDt1eEeSn77UjR4WLxQ" x="4119.1543" y="505.46884"/>
+      </value>
+      <value xmi:id="_-mhc8d3_EeSGMOhR1oZbRQ" key="_-mb9fN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiBN1eEeSn77UjR4WLxQ" x="5051.1104" y="506.1426"/>
+      </value>
+      <value xmi:id="_-mhc8t3_EeSGMOhR1oZbRQ" key="_-mb9gN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiMt1eEeSn77UjR4WLxQ" x="2589.9326" y="555.2251"/>
+      </value>
+      <value xmi:id="_-mhc893_EeSGMOhR1oZbRQ" key="_-mb9hN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8od1eEeSn77UjR4WLxQ" x="1059.8933" y="-3553.0627"/>
+      </value>
+      <value xmi:id="_-mhc9N3_EeSGMOhR1oZbRQ" key="_-mb9nN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8p91eEeSn77UjR4WLxQ" x="4900.4497" y="-1702.2202"/>
+      </value>
+      <value xmi:id="_-mhc9d3_EeSGMOhR1oZbRQ" key="_-mb9o93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiKt1eEeSn77UjR4WLxQ" x="-838.88477" y="-3092.9902"/>
+      </value>
+      <value xmi:id="_-mhc9t3_EeSGMOhR1oZbRQ" key="_-mckfd3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiNN1eEeSn77UjR4WLxQ" x="4552.6206" y="898.95984"/>
+      </value>
+      <value xmi:id="_-mhc993_EeSGMOhR1oZbRQ" key="_-mckiN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8qd1eEeSn77UjR4WLxQ" x="4126.0205" y="-643.1175"/>
+      </value>
+      <value xmi:id="_-mhc-N3_EeSGMOhR1oZbRQ" key="_-mckkN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiEt1eEeSn77UjR4WLxQ" x="-1185.274" y="1193.0775"/>
+      </value>
+      <value xmi:id="_-mhc-d3_EeSGMOhR1oZbRQ" key="_-mcklN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiIN1eEeSn77UjR4WLxQ" x="4385.3013" y="211.39178"/>
+      </value>
+      <value xmi:id="_-mhc-t3_EeSGMOhR1oZbRQ" key="_-mckl93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiGN1eEeSn77UjR4WLxQ" x="201.94191" y="872.9273"/>
+      </value>
+      <value xmi:id="_-mhc-93_EeSGMOhR1oZbRQ" key="_-mckm93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiMN1eEeSn77UjR4WLxQ" x="1019.15607" y="316.4394"/>
+      </value>
+      <value xmi:id="_-mhc_N3_EeSGMOhR1oZbRQ" key="_-mcko93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiCt1eEeSn77UjR4WLxQ" x="-479.90683" y="1033.9224"/>
+      </value>
+      <value xmi:id="_-mhc_d3_EeSGMOhR1oZbRQ" key="_-mckp93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiRt1eEeSn77UjR4WLxQ" x="-1136.8367" y="855.7387"/>
+      </value>
+      <value xmi:id="_-mhc_t3_EeSGMOhR1oZbRQ" key="_-mckq93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiJN1eEeSn77UjR4WLxQ" x="3425.3452" y="-144.29382"/>
+      </value>
+      <value xmi:id="_-mhc_93_EeSGMOhR1oZbRQ" key="_-mckr93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiTt1eEeSn77UjR4WLxQ" x="-478.0289" y="855.57733"/>
+      </value>
+      <value xmi:id="_-mhdAN3_EeSGMOhR1oZbRQ" key="_-mcks93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiAN1eEeSn77UjR4WLxQ" x="4348.97" y="-153.82843"/>
+      </value>
+      <value xmi:id="_-mhdAd3_EeSGMOhR1oZbRQ" key="_-mckt93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8n91eEeSn77UjR4WLxQ" x="4597.871" y="503.7017"/>
+      </value>
+      <value xmi:id="_-mhdAt3_EeSGMOhR1oZbRQ" key="_-mcku93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiQN1eEeSn77UjR4WLxQ" x="-1939.14" y="-377.93268"/>
+      </value>
+      <value xmi:id="_-mhdA93_EeSGMOhR1oZbRQ" key="_-mdLe93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8m91eEeSn77UjR4WLxQ" x="-2245.5034" y="-938.6627"/>
+      </value>
+      <value xmi:id="_-mhdBN3_EeSGMOhR1oZbRQ" key="_-mdLg93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiPN1eEeSn77UjR4WLxQ" x="3109.976" y="947.20715"/>
+      </value>
+      <value xmi:id="_-mhdBd3_EeSGMOhR1oZbRQ" key="_-mdLk93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiTN1eEeSn77UjR4WLxQ" x="954.3613" y="1220.8285"/>
+      </value>
+      <value xmi:id="_-mhdBt3_EeSGMOhR1oZbRQ" key="_-mdLm93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiCN1eEeSn77UjR4WLxQ" x="2036.0951" y="-3073.6414"/>
+      </value>
+      <value xmi:id="_-mhdB93_EeSGMOhR1oZbRQ" key="_-mdyjd3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiKN1eEeSn77UjR4WLxQ" x="1064.3163" y="737.2636"/>
+      </value>
+      <value xmi:id="_-mhdCN3_EeSGMOhR1oZbRQ" key="_-mdymN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8o91eEeSn77UjR4WLxQ" x="4851.0786" y="-167.70212"/>
+      </value>
+      <value xmi:id="_-mhdCd3_EeSGMOhR1oZbRQ" key="_-mdynN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8k91eEeSn77UjR4WLxQ" x="548.04407" y="-2420.2917"/>
+      </value>
+      <value xmi:id="_-mhdCt3_EeSGMOhR1oZbRQ" key="_-meZrN3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiJt1eEeSn77UjR4WLxQ" x="595.9205" y="676.1915"/>
+      </value>
+      <value xmi:id="_-mhdC93_EeSGMOhR1oZbRQ" key="_-meZrd3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiQt1eEeSn77UjR4WLxQ" x="-1940.4458" y="-705.6628"/>
+      </value>
+      <value xmi:id="_-mhdDN3_EeSGMOhR1oZbRQ" key="_-meZwd3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8md1eEeSn77UjR4WLxQ" x="362.3309" y="354.7915"/>
+      </value>
+      <value xmi:id="_-mhdDd3_EeSGMOhR1oZbRQ" key="_-meZxt3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiSN1eEeSn77UjR4WLxQ" x="-1350.3125" y="261.51788"/>
+      </value>
+      <value xmi:id="_-mhdDt3_EeSGMOhR1oZbRQ" key="_-mfAp93_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQh9t1eEeSn77UjR4WLxQ" x="433.3116" y="-337.6751"/>
+      </value>
+      <value xmi:id="_-mhdD93_EeSGMOhR1oZbRQ" key="_-mfAzd3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQh8N1eEeSn77UjR4WLxQ" x="4804.9067" y="-638.0306"/>
+      </value>
+      <value xmi:id="_-mhdEN3_EeSGMOhR1oZbRQ" key="_-mfA093_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiPt1eEeSn77UjR4WLxQ" x="5249.7793" y="-252.99405"/>
+      </value>
+      <value xmi:id="_-mhdEd3_EeSGMOhR1oZbRQ" key="_-mfA193_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiFt1eEeSn77UjR4WLxQ" x="2364.8137" y="-2045.2396"/>
+      </value>
+      <value xmi:id="_-mhdEt3_EeSGMOhR1oZbRQ" key="_-mfA5t3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiAt1eEeSn77UjR4WLxQ" x="-118.77482" y="638.1815"/>
+      </value>
+      <value xmi:id="_-mhdE93_EeSGMOhR1oZbRQ" key="_-mfA8N3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQh_t1eEeSn77UjR4WLxQ" x="1974.9519" y="-1351.4587"/>
+      </value>
+      <value xmi:id="_-mhdFN3_EeSGMOhR1oZbRQ" key="_-mfnyd3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQh9N1eEeSn77UjR4WLxQ" x="-483.25406" y="1203.5132"/>
+      </value>
+      <value xmi:id="_-mhdFd3_EeSGMOhR1oZbRQ" key="_-mfnzd3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiFN1eEeSn77UjR4WLxQ" x="2590.3833" y="-30.791924"/>
+      </value>
+      <value xmi:id="_-mhdFt3_EeSGMOhR1oZbRQ" key="_-mfn0t3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiHt1eEeSn77UjR4WLxQ" x="3571.2754" y="517.22156"/>
+      </value>
+      <value xmi:id="_-mhdF93_EeSGMOhR1oZbRQ" key="_-mfn1t3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiRN1eEeSn77UjR4WLxQ" x="128.18794" y="1197.9479"/>
+      </value>
+      <value xmi:id="_-miD8N3_EeSGMOhR1oZbRQ" key="_-mfn3t3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiOt1eEeSn77UjR4WLxQ" x="-630.2365" y="272.79364"/>
+      </value>
+      <value xmi:id="_-miD8d3_EeSGMOhR1oZbRQ" key="_-mfn5d3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8pd1eEeSn77UjR4WLxQ" x="4023.1465" y="-1651.0842"/>
+      </value>
+      <value xmi:id="_-miD8t3_EeSGMOhR1oZbRQ" key="_-mfn693_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOP8l91eEeSn77UjR4WLxQ" x="1210.0294" y="1032.8365"/>
+      </value>
+      <value xmi:id="_-miD893_EeSGMOhR1oZbRQ" key="_-mfn8t3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiDN1eEeSn77UjR4WLxQ" x="3225.5044" y="-1658.803"/>
+      </value>
+      <value xmi:id="_-miD9N3_EeSGMOhR1oZbRQ" key="_-mfoAd3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiNt1eEeSn77UjR4WLxQ" x="-3491.252" y="-1434.635"/>
+      </value>
+      <value xmi:id="_-miD9d3_EeSGMOhR1oZbRQ" key="_-mgO9d3_EeSGMOhR1oZbRQ">
+        <value xmi:id="_UOQiLt1eEeSn77UjR4WLxQ" x="2845.3296" y="189.24255"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

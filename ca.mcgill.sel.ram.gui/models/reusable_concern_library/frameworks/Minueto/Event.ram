@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_03aqINc3EeSyqfAiT90vaA" name="Event">
+  <realizes href="minueto.core#_reyG0Nc3EeSyqfAiT90vaA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_03aqIdc3EeSyqfAiT90vaA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_3NXN0Nc3EeSyqfAiT90vaA" name="MinuetoEventQueue" visibility="public" instanceClassName="org.minueto.MinuetoEventQueue">
+      <operations xmi:id="_4nUqYNc3EeSyqfAiT90vaA" name="MinuetoEventQueue" visibility="public" returnType="_3NXN0Nc3EeSyqfAiT90vaA" operationType="Constructor"/>
+      <operations xmi:id="_5yvJoNewEeS8y5KmwJbwVA" name="hasNext" visibility="public" returnType="_03aqJNc3EeSyqfAiT90vaA"/>
+      <operations xmi:id="_8eY3kNewEeS8y5KmwJbwVA" name="handle" visibility="public" returnType="_03aqItc3EeSyqfAiT90vaA"/>
+      <associationEnds xmi:id="_zJ6T0Cc2EeW0ouusF6AkQg" name="myApplication" lowerBound="1" navigable="false" assoc="_zJ664Cc2EeW0ouusF6AkQg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_nvEBICc2EeW0ouusF6AkQg" name="Application" partiality="public" visibility="public">
+      <operations xmi:id="_skYxUCc2EeW0ouusF6AkQg" name="create" partiality="public" visibility="public" returnType="_nvEBICc2EeW0ouusF6AkQg" operationType="Constructor"/>
+      <associationEnds xmi:id="_zJ5swCc2EeW0ouusF6AkQg" name="eventQueue" lowerBound="1" assoc="_zJ664Cc2EeW0ouusF6AkQg"/>
+    </classes>
+    <associations xmi:id="_zJ664Cc2EeW0ouusF6AkQg" name="Application_MinuetoEventQueue" ends="_zJ5swCc2EeW0ouusF6AkQg _zJ6T0Cc2EeW0ouusF6AkQg"/>
+    <types xsi:type="ram:RVoid" xmi:id="_03aqItc3EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_03aqI9c3EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_03aqJNc3EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_03aqJdc3EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_03aqJtc3EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RString" xmi:id="_03aqJ9c3EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_03aqKNc3EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_03aqKdc3EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_03aqKtc3EeSyqfAiT90vaA"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_11DEYCc2EeW0ouusF6AkQg" affectedBy="_11Drcyc2EeW0ouusF6AkQg" specifies="_skYxUCc2EeW0ouusF6AkQg"/>
+  <messageViews xsi:type="ram:AspectMessageView" xmi:id="_11Drcyc2EeW0ouusF6AkQg" name="createEventQueue" pointcut="_skYxUCc2EeW0ouusF6AkQg">
+    <advice xmi:id="_11DrdCc2EeW0ouusF6AkQg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_11DrdSc2EeW0ouusF6AkQg" covered="_11DreCc2EeW0ouusF6AkQg" message="_11DreSc2EeW0ouusF6AkQg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_E0kRkikBEeW5qI0w_TnlIQ" covered="_11DreCc2EeW0ouusF6AkQg" message="_E0kRlCkBEeW5qI0w_TnlIQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_E0kRkykBEeW5qI0w_TnlIQ" covered="_E0jqgSkBEeW5qI0w_TnlIQ" message="_E0kRlCkBEeW5qI0w_TnlIQ"/>
+      <fragments xsi:type="ram:OriginalBehaviorExecution" xmi:id="_11Drdic2EeW0ouusF6AkQg" covered="_11DreCc2EeW0ouusF6AkQg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_11Drdyc2EeW0ouusF6AkQg" covered="_11DreCc2EeW0ouusF6AkQg" message="_11Dreic2EeW0ouusF6AkQg"/>
+      <lifelines xmi:id="_11DreCc2EeW0ouusF6AkQg" represents="_11Dreyc2EeW0ouusF6AkQg" coveredBy="_11DrdSc2EeW0ouusF6AkQg _11Drdyc2EeW0ouusF6AkQg _11Drdic2EeW0ouusF6AkQg _E0kRkikBEeW5qI0w_TnlIQ"/>
+      <lifelines xmi:id="_E0jqgSkBEeW5qI0w_TnlIQ" represents="_zJ5swCc2EeW0ouusF6AkQg" coveredBy="_E0kRkykBEeW5qI0w_TnlIQ"/>
+      <messages xmi:id="_11DreSc2EeW0ouusF6AkQg" sendEvent="_11DrfCc2EeW0ouusF6AkQg" receiveEvent="_11DrdSc2EeW0ouusF6AkQg" signature="_skYxUCc2EeW0ouusF6AkQg" messageSort="createMessage"/>
+      <messages xmi:id="_11Dreic2EeW0ouusF6AkQg" sendEvent="_11Drdyc2EeW0ouusF6AkQg" receiveEvent="_11DrfSc2EeW0ouusF6AkQg" signature="_skYxUCc2EeW0ouusF6AkQg" messageSort="reply"/>
+      <messages xmi:id="_E0kRlCkBEeW5qI0w_TnlIQ" sendEvent="_E0kRkikBEeW5qI0w_TnlIQ" receiveEvent="_E0kRkykBEeW5qI0w_TnlIQ" signature="_4nUqYNc3EeSyqfAiT90vaA" assignTo="_zJ5swCc2EeW0ouusF6AkQg" messageSort="createMessage"/>
+      <properties xmi:id="_11Dreyc2EeW0ouusF6AkQg" name="target" lowerBound="1" type="_nvEBICc2EeW0ouusF6AkQg"/>
+      <formalGates xmi:id="_11DrfCc2EeW0ouusF6AkQg" message="_11DreSc2EeW0ouusF6AkQg" name="in_create"/>
+      <formalGates xmi:id="_11DrfSc2EeW0ouusF6AkQg" message="_11Dreic2EeW0ouusF6AkQg" name="out_create"/>
+    </advice>
+  </messageViews>
+  <instantiations xmi:id="_03aqK9c3EeSyqfAiT90vaA">
+    <source xsi:type="ram:Aspect" href="Minueto.ram#_OqwhEMf9EeSSgrP6a4IKSw"/>
+  </instantiations>
+  <layout xmi:id="_03aqLNc3EeSyqfAiT90vaA">
+    <containers xmi:id="_03aqLdc3EeSyqfAiT90vaA" key="_03aqIdc3EeSyqfAiT90vaA">
+      <value xmi:id="_3NYb8Nc3EeSyqfAiT90vaA" key="_3NXN0Nc3EeSyqfAiT90vaA">
+        <value xmi:id="_3NYb8dc3EeSyqfAiT90vaA" x="375.9999" y="118.99991"/>
+      </value>
+      <value xmi:id="_nvEoMCc2EeW0ouusF6AkQg" key="_nvEBICc2EeW0ouusF6AkQg">
+        <value xmi:id="_nvEoMSc2EeW0ouusF6AkQg" x="421.00003" y="428.0"/>
+      </value>
+    </containers>
+    <containers xmi:id="_M86PkAhxEeWF_N5Blk99kA" key="_M85BcAhxEeWF_N5Blk99kA">
+      <value xmi:id="_Rh-WMAhxEeWF_N5Blk99kA" key="_Rh9IEAhxEeWF_N5Blk99kA">
+        <value xmi:id="_Rh-WMQhxEeWF_N5Blk99kA" x="362.99976" y="358.00003"/>
+      </value>
+      <value xmi:id="_sooacQhxEeWF_N5Blk99kA" key="_sooacAhxEeWF_N5Blk99kA">
+        <value xmi:id="_sooacghxEeWF_N5Blk99kA" x="380.0" y="211.0"/>
+      </value>
+      <value xmi:id="_wducsAhxEeWF_N5Blk99kA" key="_wdt1oAhxEeWF_N5Blk99kA">
+        <value xmi:id="_wducsQhxEeWF_N5Blk99kA" x="662.0" y="214.0001"/>
+      </value>
+    </containers>
+    <containers xmi:id="_11DrcCc2EeW0ouusF6AkQg" key="_11Drcyc2EeW0ouusF6AkQg">
+      <value xmi:id="_11DrcSc2EeW0ouusF6AkQg" key="_11DreCc2EeW0ouusF6AkQg">
+        <value xmi:id="_11Drcic2EeW0ouusF6AkQg" x="100.0" y="94.0"/>
+      </value>
+      <value xmi:id="_E0kRkCkBEeW5qI0w_TnlIQ" key="_E0jqgSkBEeW5qI0w_TnlIQ">
+        <value xmi:id="_E0kRkSkBEeW5qI0w_TnlIQ" x="391.0" y="146.0"/>
+      </value>
+    </containers>
+  </layout>
+  <stateViews xmi:id="_M85BcAhxEeWF_N5Blk99kA" name="MinuetoEventQueue" specifies="_3NXN0Nc3EeSyqfAiT90vaA">
+    <stateMachines xmi:id="_RVOToAhxEeWF_N5Blk99kA" start="_Rh9IEAhxEeWF_N5Blk99kA">
+      <states xmi:id="_Rh9IEAhxEeWF_N5Blk99kA" name="Uninitialized" outgoings="_t4vXcAhxEeWF_N5Blk99kA"/>
+      <states xmi:id="_sooacAhxEeWF_N5Blk99kA" name="Created" incomings="_t4vXcAhxEeWF_N5Blk99kA _y3Qf4AhxEeWF_N5Blk99kA" outgoings="_yUnF0AhxEeWF_N5Blk99kA"/>
+      <states xmi:id="_wdt1oAhxEeWF_N5Blk99kA" name="Next" incomings="_yUnF0AhxEeWF_N5Blk99kA _6rbjkAkxEeW02qxLj-iivA" outgoings="_y3Qf4AhxEeWF_N5Blk99kA _6rbjkAkxEeW02qxLj-iivA"/>
+      <transitions xmi:id="_t4vXcAhxEeWF_N5Blk99kA" name="MinuetoEventQueue" endState="_sooacAhxEeWF_N5Blk99kA" startState="_Rh9IEAhxEeWF_N5Blk99kA" signature="_4nUqYNc3EeSyqfAiT90vaA"/>
+      <transitions xmi:id="_yUnF0AhxEeWF_N5Blk99kA" name="hasNext" endState="_wdt1oAhxEeWF_N5Blk99kA" startState="_sooacAhxEeWF_N5Blk99kA" signature="_5yvJoNewEeS8y5KmwJbwVA"/>
+      <transitions xmi:id="_y3Qf4AhxEeWF_N5Blk99kA" name="handle" endState="_sooacAhxEeWF_N5Blk99kA" startState="_wdt1oAhxEeWF_N5Blk99kA" signature="_8eY3kNewEeS8y5KmwJbwVA"/>
+      <transitions xmi:id="_6rbjkAkxEeW02qxLj-iivA" name="hasNext" endState="_wdt1oAhxEeWF_N5Blk99kA" startState="_wdt1oAhxEeWF_N5Blk99kA" signature="_5yvJoNewEeS8y5KmwJbwVA"/>
+    </stateMachines>
+  </stateViews>
+</ram:Aspect>

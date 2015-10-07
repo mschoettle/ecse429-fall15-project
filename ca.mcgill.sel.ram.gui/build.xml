@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    This file was originally created by Eclipse Runnable JAR Export Wizard
+    and modified by mschoettle for TouchCORE. 
+-->
+<project default="create_distributables" name="Create Runnable JAR for Project ca.mcgill.sel.ram.gui">
+    
+	<!--
+	   Get the commit hash via the git command. This probably won't work on Windows.
+	   See: http://stackoverflow.com/questions/2974106/how-to-lookup-the-latest-git-commit-hash-from-an-ant-build-script
+	-->
+	<target name="git.revision">
+    	<exec executable="git" outputproperty="git.revision" failifexecutionfails="false" errorproperty="">
+    		<arg value="log"/>
+    		<arg value="-1"/>
+    		<arg value="--pretty=format:%h"/>
+	    </exec>
+	    <condition property="repository.version" value="${git.revision}" else="unknown">
+	        <and>
+	            <isset property="git.revision"/>
+	            <length string="${git.revision}" trim="yes" length="0" when="greater"/>
+	        </and>
+	    </condition>
+	</target>
+	
+    <!-- creates a runnable JAR of TouchCORE and copies all required files for a release -->
+    <target name="create_run_jar" depends="git.revision">
+    	<!-- ANT needs to be run in the same JRE as Eclipse. Otherwise certain properties are not available. -->
+    	<fail unless="eclipse.home">Eclipse home directory cannot be determined. Please run ANT within the same JRE as Eclipse. Check the Wiki to find out how to do this.</fail>
+    	
+    	<!-- tstamp sets date related properties like DSTAMP -->
+    	<tstamp />
+    	
+        <!-- load build number from properties -->
+        <property file="${basedir}/build.properties" />
+    	<!-- set properties for directories -->
+        <property name="workspace.dir" location="${basedir}/.."/>
+    	<property name="workspace.core.dir" location="${basedir}/../../core/"/>
+        <property name="build.dir" location="${basedir}/releases/${DSTAMP}_${build.number}"/>
+        <property name="jar.file" location="${build.dir}/TouchCORE.jar"/>
+        <property name="readme.file" value="${build.dir}/README.txt" />
+    	<property name="pluginProperties.file" value="${build.dir}/plugin.properties" />
+    	
+    	<!-- copy files to directory -->
+        <echo message="Copying lib folder ..."/>
+    	<copy todir="${build.dir}/lib">
+    	    <fileset dir="${basedir}/lib" excludes="**/*.zip,*.jar" />
+    	</copy>
+        
+        <echo message="Copying demo and reusable concern library ..."/>
+        <copy todir="${build.dir}/models/demos">
+            <fileset dir="${basedir}/models/demos" />
+        </copy>
+        
+    	<copy todir="${build.dir}/models/reusable_concern_library">
+    	    <fileset dir="${basedir}/models/reusable_concern_library" />
+        </copy>
+        
+        <echo message="Copying settings and batch files ..."/>
+        <copy todir="${build.dir}">
+            <fileset dir="${basedir}" includes="Settings.txt" />
+        	<fileset dir="${basedir}/build" includes="TouchCORE.bat" />
+        </copy>
+    	
+    	
+    	<echo message="Copying quick reference guide ..."/>
+    	<copy todir="${build.dir}">
+    		<fileset dir="${workspace.dir}/" includes="quick_reference.pdf"/>
+		</copy>
+        
+        <!-- create readme -->
+        <echo message="Creating readme file ..."/>
+    	<concat destfile="${readme.file}">
+    		<string>TouchCORE v${build.number} "${build.codename}" README${line.separator}===============================${line.separator}${line.separator}Built On: ${TODAY}${line.separator}Based On Commit: ${repository.version}${line.separator}${line.separator}</string>
+    		<fileset dir="${basedir}/build" includes="README.txt"/>
+    	</concat>
+    	
+    	<!-- 
+    	   Create custom plugin.properties file, which is a concatenation of all plugin.properties of required plug-ins.
+    	   This (temporary) file has to be deleted at the end.
+    	   This procedure is required, because adding a plug-in overwrites already existing files and plugin.properties exists in all plug-ins.
+    	   The current version of TouchCORE requires the contents of plugin.properties of the emf.common, emf.ecore, emf.edit and ram.edit plug-ins.
+    	   A better way would be to concatenate this while
+    	 -->
+    	<concat destfile="${pluginProperties.file}">
+            <zipfileset includes="plugin.properties" src="${eclipse.home}/plugins/org.eclipse.emf.common_2.11.0.v20150512-0501.jar"/>
+    		<zipfileset includes="plugin.properties" src="${eclipse.home}/plugins/org.eclipse.emf.ecore_2.11.0.v20150512-0501.jar"/>
+    		<zipfileset includes="plugin.properties" src="${eclipse.home}/plugins/org.eclipse.emf.edit_2.11.0.v20150601-0402.jar"/>
+    		<zipfileset includes="plugin.properties" dir="${workspace.dir}/ca.mcgill.sel.ram.edit/"/>
+    		<zipfileset includes="plugin.properties" dir="${workspace.core.dir}/ca.mcgill.sel.core.edit/"/>
+    	</concat>
+    	
+        <!-- create jar task -->
+        <echo message="Creating jar file ..."/>
+    	
+        <jar destfile="${jar.file}" filesetmanifest="skip">
+            <manifest>
+                <attribute name="Main-Class" value="ca.mcgill.sel.ram.ui.TouchCORE"/>
+                <attribute name="Class-Path" value=". lib/jogl/gluegen-rt.jar lib/jogl/jogl-all.jar"/>
+            </manifest>
+        	
+            <!-- Add TouchCORE projects. -->
+            <fileset dir="${workspace.dir}/ca.mcgill.sel.ram/bin"/>
+            <fileset dir="${workspace.dir}/ca.mcgill.sel.ram.edit/bin"/>
+            <fileset dir="${workspace.dir}/ca.mcgill.sel.ram.controller/bin"/>
+            <fileset dir="${workspace.dir}/ca.mcgill.sel.ram.weaver/bin"/>
+            <fileset dir="${workspace.dir}/ca.mcgill.sel.ram.gui/bin"/>
+            <fileset dir="${workspace.dir}/ca.mcgill.sel.ram.classloader/bin"/>
+        	<fileset dir="${workspace.dir}/ca.mcgill.sel.ram.validator/bin"/>
+            <fileset excludes="**/*.mtl" dir="${workspace.dir}/ca.mcgill.sel.ram.generator/bin"/>
+            
+            <fileset dir="${workspace.core.dir}/ca.mcgill.sel.core/bin"/>
+            <fileset dir="${workspace.core.dir}/ca.mcgill.sel.core.edit/bin"/>
+            <fileset dir="${workspace.core.dir}/ca.mcgill.sel.core.evaluator/bin"/>
+            <fileset dir="${workspace.core.dir}/ca.mcgill.sel.commons/bin"/>
+            
+            <!-- Add Plug-In dependencies. -->
+        	<zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.core.runtime_3.11.0.v20150405-1723.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/javax.annotation_1.2.0.v201401042248.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/javax.inject_1.0.0.v20091030.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.osgi_3.10.100.v20150529-1857.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.osgi.compatibility.state_1.0.100.v20150402-1551.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.equinox.common_3.7.0.v20150402-1709.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.core.jobs_3.7.0.v20150330-2103.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.core.runtime.compatibility.registry_3.6.0.v20150318-1505/runtime_registry_compatibility.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.equinox.preferences_3.5.300.v20150408-1437.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.core.contenttype_3.5.0.v20150421-2214.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.equinox.app_1.3.300.v20150423-1356.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.emf.ecore_2.11.0.v20150512-0501.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.emf.common_2.11.0.v20150512-0501.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.emf.ecore.xmi_2.11.0.v20150512-0501.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.emf.edit_2.11.0.v20150601-0402.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.emf.ecore.change_2.11.0.v20150512-0501.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.uml2.uml.resources_5.1.0.v20150601-0733.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.uml2.uml_5.1.0.v20150601-0733.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.uml2.common_2.1.0.v20150601-0733.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.uml2.types_2.0.0.v20150601-0733.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.emf.mapping.ecore2xml_2.9.0.v20150601-0402.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.uml2.uml.profile.standard_1.0.100.v20150601-0733.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.ocl.ecore_3.5.0.v20150525-1635.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.ocl_3.5.0.v20150521-1211.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/lpg.runtime.java_2.0.17.v201004271640.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.ocl.common_1.3.0.v20150519-0914.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.ocl.pivot_1.0.0.v20150603-1503.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.ocl.xtext.oclinecore_1.0.0.v20150602-1746.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.ocl.xtext.essentialocl_1.0.0.v20150525-1320.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.ocl.xtext.base_1.0.0.v20150606-1159.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.xtext_2.8.3.v201506010551.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.antlr.runtime_3.2.0.v201101311130.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/com.google.inject_3.0.0.v201312141243.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.emf.mwe.core_1.3.10.v201505260335.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.apache.commons.cli_1.2.0.v201404270220.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.emf.mwe2.runtime_2.8.0.v201505260335.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.emf.mwe.utils_1.3.10.v201505260335.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.xtext.util_2.8.3.v201506010551.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/com.google.guava_15.0.0.v201403281430.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.ocl.xtext.oclstdlib_1.0.0.v20150519-0914.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.ocl.xtext.completeocl_1.0.0.v20150529-1942.jar"/>
+        	
+            <!-- Acceleo plug-in dependencies -->
+        	<zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.acceleo.common_3.6.0.201506080954.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.acceleo.model_3.6.0.201506080954.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.acceleo.profiler_3.6.0.201506080954.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.acceleo.engine_3.6.0.201506080954.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.emf.codegen.ecore_2.11.0.v20150601-0402.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${eclipse.home}/plugins/org.eclipse.emf.codegen_2.11.0.v20150601-0402.jar"/>
+            
+            <!-- Add third-party libraries -->
+            <zipfileset excludes="META-INF/*.SF" src="${workspace.dir}/ca.mcgill.sel.ram.classloader/lib/commons-lang3-3.2.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${workspace.dir}/ca.mcgill.sel.ram.classloader/lib/asm-5.0.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${workspace.dir}/ca.mcgill.sel.ram.gui/lib/org.abego.treelayout.core.jar"/>
+        	<zipfileset excludes="META-INF/*.SF,**/*.jar,**/*.html,**/*.gif,**/*.jpg,**/*.tvl" src="${workspace.core.dir}/ca.mcgill.sel.core.evaluator/lib/familiar-bridge-0.0.1.jar"/>
+        	<!-- Temporarily disable -->
+        	<!-- <zipfileset excludes="META-INF/*.SF" src="${workspace.dir}/ca.mcgill.sel.ram.gui/lib/rearrange.jar"/> -->
+        	
+        	<!-- Libs are currently located outside of the JAR. -->
+            <!-- <fileset excludes="**/*.zip,**/*.jar" dir="${workspace.dir}/RAMDesktopTool/lib"/> -->
+            
+        	<zipfileset excludes="META-INF/*.SF,**/*.jar,**/*.jnilib,**/*.dll,**/*.so,**/*.txt,**/*.html,**/*.obj,**/*.jpg,**/*.dtd" src="${workspace.dir}/ca.mcgill.sel.ram.gui/lib/mt4j.jar"/>
+            <!-- this file gets overwritten by other plugins but is required to be able to run the tool, use the concatenated version -->
+            <fileset file="${pluginProperties.file}"/>
+        </jar> 
+    	
+    	<!-- delete the temporary file -->
+    	<delete quiet="true" file="${pluginProperties.file}"/>
+    </target>
+
+    <!-- creates a mac os x BUNDLE using our jar file -->
+    <target name="create_bundle" depends="create_run_jar">      	
+    	<echo message="Creating app bundle ..."/>
+    	<property name="bundle.name" value="TouchCORE"/>
+    	
+    	<!-- Libraries from the classpath will be copied automatically into Contents/Java. -->
+    	<path id="runclasspathref">
+    		<pathelement path="${build.dir}/TouchCORE.jar"/>
+    	</path>
+    	
+    	<taskdef name="bundleapp" classname="com.oracle.appbundler.AppBundlerTask" classpath="${basedir}/build/appbundler-1.0ea.jar"/>
+    	<bundleapp
+    		classpathref="runclasspathref"
+    		jvmrequired="1.7"
+    		jrepreferred="true"
+    		outputdirectory="${build.dir}"
+    		name="${bundle.name}"
+    		displayname="${bundle.name}"
+    		executablename="${bundle.name}"
+    	    identifier="ca.mcgill.sel.touchcore"
+    		shortversion="${build.number}"
+    		version="${build.codename}"
+    		icon="resources/icons/icon_512x512.icns"
+    		mainclassname="ca.mcgill.sel.ram.ui.TouchCORE"
+    		copyright="© 2012-2015 Software Engineering Lab, McGill University">
+    	        <!-- Increase the maximum memory by default to 1GB. -->
+    		    <option value="-Xmx1024M"/>
+    		
+    		    <option value="-Xdock:name=${bundle.name}"/>
+    		    <option value="-Dapple.laf.useScreenMenuBar=true"/>
+    		    <option value="-Dcom.apple.macos.use-file-dialog-packages=true"/>
+    		    <option value="-Dcom.apple.macos.useScreenMenuBar=true"/>
+    		    <option value="-Dcom.apple.mrj.application.apple.menu.about.name=${bundle.name}"/>
+    		    <option value="-Dcom.apple.smallTabs=true"/>
+    	</bundleapp>
+    	
+    	<!--   
+    	   Manually copy the models, settings and JOGL libraries 
+    	   into the corresponding folders inside the app bundle 
+    	-->
+    	<copy todir="${build.dir}/${bundle.name}.app/Contents/Resources/models">
+    	    <fileset dir="${workspace.dir}/ca.mcgill.sel.ram.gui/models" includes="demos/**,reusable_concern_library/**"/>
+    	</copy>
+    	<copy todir="${build.dir}/${bundle.name}.app/Contents/Java/">
+            <fileset dir="${workspace.dir}/ca.mcgill.sel.ram.gui" includes="Settings.txt"/>
+        </copy>
+    	<copy todir="${build.dir}/${bundle.name}.app/Contents/Java/lib/jogl">
+    	    <fileset dir="${workspace.dir}/ca.mcgill.sel.ram.gui/lib/jogl" includes="*.jar"/>
+    	</copy>
+        
+        <!-- 
+            Sign the app with an ad-hoc key (i.e., unidentified developer message might appear).
+            See http://hints.macworld.com/article.php?story=20130715141650672
+        -->
+        <exec executable="codesign" failifexecutionfails="true" errorproperty="">
+            <arg value="-s"/>
+            <arg value="-"/>
+            <arg value="--force"/>
+            <arg value="${releases.dir}/${jarbundler.name}.app"/>
+        </exec>
+    </target>
+	
+    <!-- Creates .zip files for TouchCORE that can be distributed. -->
+    <target name="create_distributables" depends="create_bundle" description="Creates the archives of the releases that can be distributed.">
+        <property name="dist.universal" value="${build.dir}/TouchCORE_v${build.number}_${build.codename}.zip"/>
+        <property name="dist.osx" value="${build.dir}/TouchCORE_v${build.number}_${build.codename}_osx.zip"/>
+           
+        <echo message="Creating distributables..."/>
+        <zip destfile="${dist.universal}" basedir="${build.dir}">
+            <include name="README.txt"/>
+            <include name="quick_reference.pdf"/>
+            <include name="Settings.txt"/>
+            <include name="TouchCORE.bat"/>
+            <include name="TouchCORE.jar"/>
+            <include name="lib/**"/>
+            <include name="models/**"/>
+        </zip>
+        <zip destfile="${dist.osx}" basedir="${build.dir}">
+            <include name="README.txt"/>
+            <include name="quick_reference.pdf"/>
+            <include name="TouchCORE.app/**"/>
+            <!-- File permissions are not preserved, so we need to force them on the executable to be executable. -->
+            <zipfileset filemode="755" dir="${build.dir}" includes="TouchCORE.app/Contents/MacOS/${bundle.name}"/>
+        </zip>
+    	<property name="build.tag" value="v${build.number}-${build.codename}"/>
+    	<echo>Please create a tag for this version: git tag -m "v${build.number} Codename: ${build.codename}" ${build.tag} ${git.revision}</echo>
+    	<echo>And push it: git push origin ${build.tag}</echo>
+    </target>
+</project>

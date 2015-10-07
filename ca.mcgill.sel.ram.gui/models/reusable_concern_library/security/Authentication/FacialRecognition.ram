@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_Ze5eoKrpEeStCcnk_Fh-rQ" name="Facial Recognition">
+  <realizes href="authentication.core#_MbwYcKrpEeStCcnk_Fh-rQ"/>
+  <coreConcern href="authentication.core#_gFhYwKAyEeSaEq_8EhRMPA"/>
+  <structuralView xmi:id="_Ze5eoarpEeStCcnk_Fh-rQ">
+    <classes xsi:type="ram:Class" xmi:id="_cIbFoKrpEeStCcnk_Fh-rQ" name="FacialInformation"/>
+    <classes xsi:type="ram:Class" xmi:id="_H-l-sKrrEeStCcnk_Fh-rQ" name="CameraDriver">
+      <operations xmi:id="_bTqV8KrrEeStCcnk_Fh-rQ" name="takePicture" visibility="public" extendedVisibility="package" returnType="_YwaWEKrrEeStCcnk_Fh-rQ"/>
+      <associationEnds xmi:id="_X3etgarsEeStCcnk_Fh-rQ" name="myFacialRecognition" lowerBound="1" navigable="false" assoc="_X3fUkKrsEeStCcnk_Fh-rQ"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_YwaWEKrrEeStCcnk_Fh-rQ" name="Image" instanceClassName="java.awt.Image"/>
+    <classes xsi:type="ram:Class" xmi:id="_b-D90KrrEeStCcnk_Fh-rQ" name="SensorDriver">
+      <operations xmi:id="_C2iDQKrsEeStCcnk_Fh-rQ" name="getCurrentLight" visibility="public" extendedVisibility="package" returnType="_Ze5eqKrpEeStCcnk_Fh-rQ"/>
+      <associationEnds xmi:id="_XI6XUKrsEeStCcnk_Fh-rQ" name="myFacialRecognition" lowerBound="1" navigable="false" assoc="_XI6XUarsEeStCcnk_Fh-rQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_VaS5YKrsEeStCcnk_Fh-rQ" name="FacialRecognition">
+      <operations xmi:id="_wsnbEKrsEeStCcnk_Fh-rQ" name="takeReliablePicture" visibility="public" returnType="_YwaWEKrrEeStCcnk_Fh-rQ"/>
+      <associationEnds xmi:id="_XI5wQKrsEeStCcnk_Fh-rQ" name="mySensorDriver" lowerBound="1" assoc="_XI6XUarsEeStCcnk_Fh-rQ"/>
+      <associationEnds xmi:id="_X3etgKrsEeStCcnk_Fh-rQ" name="myCameraDriver" lowerBound="1" assoc="_X3fUkKrsEeStCcnk_Fh-rQ"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_1ZgykKrtEeStCcnk_Fh-rQ" name="NotEnoughtLightException">
+      <operations xmi:id="_4MpokKrtEeStCcnk_Fh-rQ" name="create" visibility="public" extendedVisibility="package" returnType="_1ZgykKrtEeStCcnk_Fh-rQ" operationType="Constructor"/>
+    </classes>
+    <associations xmi:id="_XI6XUarsEeStCcnk_Fh-rQ" name="FacialRecognition_SensorDriver" ends="_XI5wQKrsEeStCcnk_Fh-rQ _XI6XUKrsEeStCcnk_Fh-rQ"/>
+    <associations xmi:id="_X3fUkKrsEeStCcnk_Fh-rQ" name="FacialRecognition_CameraDriver" ends="_X3etgKrsEeStCcnk_Fh-rQ _X3etgarsEeStCcnk_Fh-rQ"/>
+    <types xsi:type="ram:RVoid" xmi:id="_Ze5eoqrpEeStCcnk_Fh-rQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_Ze5eo6rpEeStCcnk_Fh-rQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_Ze5epKrpEeStCcnk_Fh-rQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_Ze5eparpEeStCcnk_Fh-rQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_Ze5epqrpEeStCcnk_Fh-rQ"/>
+    <types xsi:type="ram:RString" xmi:id="_Ze5ep6rpEeStCcnk_Fh-rQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_Ze5eqKrpEeStCcnk_Fh-rQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_Ze5eqarpEeStCcnk_Fh-rQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_Ze5eqqrpEeStCcnk_Fh-rQ"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_xJlD46rsEeStCcnk_Fh-rQ" specifies="_wsnbEKrsEeStCcnk_Fh-rQ">
+    <specification xmi:id="_xJlD5KrsEeStCcnk_Fh-rQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_xJlD5arsEeStCcnk_Fh-rQ" covered="_xJlq8KrsEeStCcnk_Fh-rQ" message="_xJlq8arsEeStCcnk_Fh-rQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_x8UvcqrsEeStCcnk_Fh-rQ" covered="_xJlq8KrsEeStCcnk_Fh-rQ" message="_x8UvdqrsEeStCcnk_Fh-rQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_x8Uvc6rsEeStCcnk_Fh-rQ" covered="_x8UIYKrsEeStCcnk_Fh-rQ" message="_x8UvdqrsEeStCcnk_Fh-rQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_x8UvdKrsEeStCcnk_Fh-rQ" covered="_x8UIYKrsEeStCcnk_Fh-rQ" message="_x8XLsKrsEeStCcnk_Fh-rQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_x8UvdarsEeStCcnk_Fh-rQ" covered="_xJlq8KrsEeStCcnk_Fh-rQ" message="_x8XLsKrsEeStCcnk_Fh-rQ"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="__BcLkKrsEeStCcnk_Fh-rQ" covered="_xJlq8KrsEeStCcnk_Fh-rQ _v-3u0KrtEeStCcnk_Fh-rQ">
+        <operands xmi:id="__BcLkarsEeStCcnk_Fh-rQ">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_v-488KrtEeStCcnk_Fh-rQ" covered="_xJlq8KrsEeStCcnk_Fh-rQ" message="_v-5kAKrtEeStCcnk_Fh-rQ"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_v-488artEeStCcnk_Fh-rQ" covered="_v-3u0KrtEeStCcnk_Fh-rQ" message="_v-5kAKrtEeStCcnk_Fh-rQ"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_v-488qrtEeStCcnk_Fh-rQ" covered="_v-3u0KrtEeStCcnk_Fh-rQ" message="_v-91cKrtEeStCcnk_Fh-rQ"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_v-4886rtEeStCcnk_Fh-rQ" covered="_xJlq8KrsEeStCcnk_Fh-rQ" message="_v-91cKrtEeStCcnk_Fh-rQ"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="__BcLkqrsEeStCcnk_Fh-rQ" body="currentLight > requiredLight" language="java"/>
+        </operands>
+        <operands xmi:id="_z9T6UKrtEeStCcnk_Fh-rQ">
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_z9T6UartEeStCcnk_Fh-rQ" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_xJlD5qrsEeStCcnk_Fh-rQ" covered="_xJlq8KrsEeStCcnk_Fh-rQ" message="_xJlq8qrsEeStCcnk_Fh-rQ"/>
+      <lifelines xmi:id="_xJlq8KrsEeStCcnk_Fh-rQ" represents="_xJlq86rsEeStCcnk_Fh-rQ" coveredBy="_xJlD5arsEeStCcnk_Fh-rQ _xJlD5qrsEeStCcnk_Fh-rQ _x8UvcqrsEeStCcnk_Fh-rQ _x8UvdarsEeStCcnk_Fh-rQ __BcLkKrsEeStCcnk_Fh-rQ _v-488KrtEeStCcnk_Fh-rQ _v-4886rtEeStCcnk_Fh-rQ"/>
+      <lifelines xmi:id="_x8UIYKrsEeStCcnk_Fh-rQ" represents="_XI5wQKrsEeStCcnk_Fh-rQ" coveredBy="_x8Uvc6rsEeStCcnk_Fh-rQ _x8UvdKrsEeStCcnk_Fh-rQ"/>
+      <lifelines xmi:id="_v-3u0KrtEeStCcnk_Fh-rQ" represents="_X3etgKrsEeStCcnk_Fh-rQ" coveredBy="__BcLkKrsEeStCcnk_Fh-rQ _v-488artEeStCcnk_Fh-rQ _v-488qrtEeStCcnk_Fh-rQ"/>
+      <messages xmi:id="_xJlq8arsEeStCcnk_Fh-rQ" sendEvent="_xJlq9KrsEeStCcnk_Fh-rQ" receiveEvent="_xJlD5arsEeStCcnk_Fh-rQ" signature="_wsnbEKrsEeStCcnk_Fh-rQ">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_ydSHcKrsEeStCcnk_Fh-rQ" name="currentLight" type="_Ze5eqKrpEeStCcnk_Fh-rQ"/>
+        <localProperties xsi:type="ram:Reference" xmi:id="_wyRhsKrtEeStCcnk_Fh-rQ" name="pictureTaken" lowerBound="1" type="_YwaWEKrrEeStCcnk_Fh-rQ"/>
+      </messages>
+      <messages xmi:id="_xJlq8qrsEeStCcnk_Fh-rQ" sendEvent="_xJlD5qrsEeStCcnk_Fh-rQ" receiveEvent="_xJlq9arsEeStCcnk_Fh-rQ" signature="_wsnbEKrsEeStCcnk_Fh-rQ" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_zWxewKrtEeStCcnk_Fh-rQ" value="_wyRhsKrtEeStCcnk_Fh-rQ"/>
+      </messages>
+      <messages xmi:id="_x8UvdqrsEeStCcnk_Fh-rQ" sendEvent="_x8UvcqrsEeStCcnk_Fh-rQ" receiveEvent="_x8Uvc6rsEeStCcnk_Fh-rQ" signature="_C2iDQKrsEeStCcnk_Fh-rQ" assignTo="_ydSHcKrsEeStCcnk_Fh-rQ"/>
+      <messages xmi:id="_x8XLsKrsEeStCcnk_Fh-rQ" sendEvent="_x8UvdKrsEeStCcnk_Fh-rQ" receiveEvent="_x8UvdarsEeStCcnk_Fh-rQ" signature="_C2iDQKrsEeStCcnk_Fh-rQ" messageSort="reply"/>
+      <messages xmi:id="_v-5kAKrtEeStCcnk_Fh-rQ" sendEvent="_v-488KrtEeStCcnk_Fh-rQ" receiveEvent="_v-488artEeStCcnk_Fh-rQ" signature="_bTqV8KrrEeStCcnk_Fh-rQ" assignTo="_wyRhsKrtEeStCcnk_Fh-rQ"/>
+      <messages xmi:id="_v-91cKrtEeStCcnk_Fh-rQ" sendEvent="_v-488qrtEeStCcnk_Fh-rQ" receiveEvent="_v-4886rtEeStCcnk_Fh-rQ" signature="_bTqV8KrrEeStCcnk_Fh-rQ" messageSort="reply"/>
+      <properties xmi:id="_xJlq86rsEeStCcnk_Fh-rQ" name="target" lowerBound="1" type="_VaS5YKrsEeStCcnk_Fh-rQ"/>
+      <formalGates xmi:id="_xJlq9KrsEeStCcnk_Fh-rQ" message="_xJlq8arsEeStCcnk_Fh-rQ" name="in_takeReliablePicture"/>
+      <formalGates xmi:id="_xJlq9arsEeStCcnk_Fh-rQ" message="_xJlq8qrsEeStCcnk_Fh-rQ" name="out_takeReliablePicture"/>
+    </specification>
+  </messageViews>
+  <instantiations xmi:id="_qG7n4KrpEeStCcnk_Fh-rQ">
+    <source xsi:type="ram:Aspect" href="Authentication.ram#_NyKWwAYOEeSiwsYTSMcCVw"/>
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_rA8CsA-qEeWm6Z5p4cfDGQ" to="_cIbFoKrpEeStCcnk_Fh-rQ">
+      <from xsi:type="ram:Class" href="Authentication.ram#_NyKWxgYOEeSiwsYTSMcCVw"/>
+    </mappings>
+  </instantiations>
+  <layout xmi:id="_Ze6FsKrpEeStCcnk_Fh-rQ">
+    <containers xmi:id="_Ze6FsarpEeStCcnk_Fh-rQ" key="_Ze5eoarpEeStCcnk_Fh-rQ">
+      <value xmi:id="_cIglMKrpEeStCcnk_Fh-rQ" key="_cIbFoKrpEeStCcnk_Fh-rQ">
+        <value xmi:id="_cIglMarpEeStCcnk_Fh-rQ" x="100.00012" y="341.99988"/>
+      </value>
+      <value xmi:id="_H-mlwKrrEeStCcnk_Fh-rQ" key="_H-l-sKrrEeStCcnk_Fh-rQ">
+        <value xmi:id="_H-mlwarrEeStCcnk_Fh-rQ" x="765.00024" y="387.00003"/>
+      </value>
+      <value xmi:id="_YwfOkKrrEeStCcnk_Fh-rQ" key="_YwaWEKrrEeStCcnk_Fh-rQ">
+        <value xmi:id="_YwfOkarrEeStCcnk_Fh-rQ" x="435.99994" y="179.99988"/>
+      </value>
+      <value xmi:id="_b-Ek4KrrEeStCcnk_Fh-rQ" key="_b-D90KrrEeStCcnk_Fh-rQ">
+        <value xmi:id="_b-Ek4arrEeStCcnk_Fh-rQ" x="337.9999" y="557.99994"/>
+      </value>
+      <value xmi:id="_VaUHgKrsEeStCcnk_Fh-rQ" key="_VaS5YKrsEeStCcnk_Fh-rQ">
+        <value xmi:id="_VaUHgarsEeStCcnk_Fh-rQ" x="367.99997" y="383.00003"/>
+      </value>
+      <value xmi:id="_1ZhZoKrtEeStCcnk_Fh-rQ" key="_1ZgykKrtEeStCcnk_Fh-rQ">
+        <value xmi:id="_1ZhZoartEeStCcnk_Fh-rQ" x="688.99976" y="558.0"/>
+      </value>
+    </containers>
+    <containers xmi:id="_xJlD4KrsEeStCcnk_Fh-rQ" key="_xJlD46rsEeStCcnk_Fh-rQ">
+      <value xmi:id="_xJlD4arsEeStCcnk_Fh-rQ" key="_xJlq8KrsEeStCcnk_Fh-rQ">
+        <value xmi:id="_xJlD4qrsEeStCcnk_Fh-rQ" x="100.0" y="100.0"/>
+      </value>
+      <value xmi:id="_x8UvcKrsEeStCcnk_Fh-rQ" key="_x8UIYKrsEeStCcnk_Fh-rQ">
+        <value xmi:id="_x8UvcarsEeStCcnk_Fh-rQ" x="374.0" y="100.0"/>
+      </value>
+      <value xmi:id="_v-4V4KrtEeStCcnk_Fh-rQ" key="_v-3u0KrtEeStCcnk_Fh-rQ">
+        <value xmi:id="_v-4V4artEeStCcnk_Fh-rQ" x="647.0" y="100.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

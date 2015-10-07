@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_FCrqgCrMEeW3Po49D6GeZA" name="Workflow">
+  <models xsi:type="core:COREFeatureModel" href="#_FCrqgSrMEeW3Po49D6GeZA"/>
+  <models xsi:type="ram:Aspect" href="Workflow.ram#_lQ-RQFVEEeSrUt9aC6YVcA"/>
+  <models xsi:type="ram:Aspect" href="Input.ram#_eywYcJRBEeSxiIO43J4lMw"/>
+  <models xsi:type="ram:Aspect" href="Synchronization.ram#_Rm-8QKDaEeSylNteASngbg"/>
+  <models xsi:type="ram:Aspect" href="ParallelExecution.ram#_d2CAoJ04EeSt9a2wP2B-bA"/>
+  <models xsi:type="ram:Aspect" href="Inpath.ram#_OJB6YJRzEeSxiIO43J4lMw"/>
+  <models xsi:type="ram:Aspect" href="Outpath.ram#_2sfkEJOZEeSxiIO43J4lMw"/>
+  <featureModel xmi:id="_FCrqgSrMEeW3Po49D6GeZA" coreConcern="_FCrqgCrMEeW3Po49D6GeZA" root="_FCrqgirMEeW3Po49D6GeZA">
+    <features xmi:id="_FCrqgirMEeW3Po49D6GeZA" name="Workflow" children="_KrWq8CsTEeW3Po49D6GeZA _LFGnsCsTEeW3Po49D6GeZA">
+      <realizedBy xsi:type="ram:Aspect" href="Workflow.ram#_lQ-RQFVEEeSrUt9aC6YVcA"/>
+      <reuses xmi:id="_30oRACscEeW3Po49D6GeZA" name="Copyable_LocalContext" selectedConfiguration="_30oRASscEeW3Po49D6GeZA">
+        <reusedConcern href="Reused_Copyable/Copyable.core#_ZlbngKBAEeSFg4mHi7X2Nw"/>
+        <configurations xmi:id="_30oRASscEeW3Po49D6GeZA" name="Copyable_CloneCopyable">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Copyable/Copyable.core#_ZlbngaBAEeSFg4mHi7X2Nw"/>
+          <selected href="Reused_Copyable/Copyable.core#_d5nZgKBAEeSFg4mHi7X2Nw"/>
+          <selected href="Reused_Copyable/Copyable.core#_ZlbngqBAEeSFg4mHi7X2Nw"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_-7b7oCscEeW3Po49D6GeZA" name="Association_ControlFlowNode_WorkfFlowNode" selectedConfiguration="_-7b7oSscEeW3Po49D6GeZA">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_-7b7oSscEeW3Po49D6GeZA" name="Association_ArrayListOrderedKindPlainAssociation">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_B8rTMACYEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#__6WrkACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_MpDiMCsdEeW3Po49D6GeZA" name="Association_Workflow_WorkflowNode" selectedConfiguration="_MpDiMSsdEeW3Po49D6GeZA">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_MpDiMSsdEeW3Po49D6GeZA" name="Association_OrderedArrayListAssociationKindPlain">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#__6WrkACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_B8rTMACYEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_PBmmkCsgEeWgVoxTCbR_Jg" name="Association_WorkflowUtility_WorkflowExecutor" selectedConfiguration="_PBmmkSsgEeWgVoxTCbR_Jg">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_PBmmkSsgEeWgVoxTCbR_Jg" name="Association_AssociationHashMapKeyIndexed">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_r80mIACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_ndvLsACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_KrWq8CsTEeW3Po49D6GeZA" name="ConcurrentBranching" children="_ckF4ACscEeW3Po49D6GeZA _c84ygCscEeW3Po49D6GeZA" parent="_FCrqgirMEeW3Po49D6GeZA" parentRelationship="Optional"/>
+    <features xmi:id="_LFGnsCsTEeW3Po49D6GeZA" name="IO" children="_SN45MCscEeW3Po49D6GeZA _S-hr8CscEeW3Po49D6GeZA" parent="_FCrqgirMEeW3Po49D6GeZA" parentRelationship="Optional"/>
+    <features xmi:id="_SN45MCscEeW3Po49D6GeZA" name="Input" parent="_LFGnsCsTEeW3Po49D6GeZA" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="Input.ram#_eywYcJRBEeSxiIO43J4lMw"/>
+      <reuses xmi:id="_pgZ8ACuhEeWUgrZlRb32Qg" name="Singleton_CommunicationChannel" selectedConfiguration="_pgZ8ASuhEeWUgrZlRb32Qg">
+        <reusedConcern href="Reused_Singleton/Singleton.core#_d1_oUKBBEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_pgZ8ASuhEeWUgrZlRb32Qg" name="Singleton_Singleton">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Singleton/Singleton.core#_d1_oUaBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Singleton/Singleton.core#_d1_oUqBBEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_rCQwUCuhEeWUgrZlRb32Qg" name="Singleton_InputQueueFinder" selectedConfiguration="_rCQwUSuhEeWUgrZlRb32Qg">
+        <reusedConcern href="Reused_Singleton/Singleton.core#_d1_oUKBBEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_rCQwUSuhEeWUgrZlRb32Qg" name="Singleton_Singleton">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Singleton/Singleton.core#_d1_oUaBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Singleton/Singleton.core#_d1_oUqBBEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_cuC4cCvQEeWFIqtqyVP4TQ" name="Named_InputData" selectedConfiguration="_cuC4cSvQEeWFIqtqyVP4TQ">
+        <reusedConcern href="Reused_Named/Named.core#_vjZ6sKBAEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_cuC4cSvQEeWFIqtqyVP4TQ" name="Named_Named">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Named/Named.core#_vjZ6saBAEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Named/Named.core#_vjZ6sqBAEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_e7XroCvQEeWFIqtqyVP4TQ" name="Named_SenderName" selectedConfiguration="_e7XroSvQEeWFIqtqyVP4TQ">
+        <reusedConcern href="Reused_Named/Named.core#_vjZ6sKBAEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_e7XroSvQEeWFIqtqyVP4TQ" name="Named_Named">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Named/Named.core#_vjZ6saBAEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Named/Named.core#_vjZ6sqBAEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_knfEcCvREeWFIqtqyVP4TQ" name="Named_InputQueue" selectedConfiguration="_knfEcSvREeWFIqtqyVP4TQ">
+        <reusedConcern href="Reused_Named/Named.core#_vjZ6sKBAEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_knfEcSvREeWFIqtqyVP4TQ" name="Named_Named">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Named/Named.core#_vjZ6saBAEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Named/Named.core#_vjZ6sqBAEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_odJucCvREeWFIqtqyVP4TQ" name="Association_InputQueueFinder_InputQueue" selectedConfiguration="_odJucSvREeWFIqtqyVP4TQ">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_odJucSvREeWFIqtqyVP4TQ" name="Association_AssociationKeyIndexedHashMap">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_ndvLsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_r80mIACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_LDDGQCvkEeWGxaVV1lWIhQ" name="Command" selectedConfiguration="_LDDGQSvkEeWGxaVV1lWIhQ">
+        <reusedConcern href="Reused_Command/Command.core#_ZYsdEKr2EeSFZ4ae5sBgYg"/>
+        <configurations xmi:id="_LDDGQSvkEeWGxaVV1lWIhQ" name="Command_NetworkCommandCommand">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Command/Command.core#_ZYsdEar2EeSFZ4ae5sBgYg"/>
+          <selected href="Reused_Command/Command.core#_gHhFgKr2EeSFZ4ae5sBgYg"/>
+          <selected href="Reused_Command/Command.core#_ZYsdEqr2EeSFZ4ae5sBgYg"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_S-hr8CscEeW3Po49D6GeZA" name="Output" parent="_LFGnsCsTEeW3Po49D6GeZA" parentRelationship="XOR"/>
+    <features xmi:id="_ckF4ACscEeW3Po49D6GeZA" name="ParallelExecution" parent="_KrWq8CsTEeW3Po49D6GeZA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="ParallelExecution.ram#_d2CAoJ04EeSt9a2wP2B-bA"/>
+      <realizedBy xsi:type="ram:Aspect" href="Outpath.ram#_2sfkEJOZEeSxiIO43J4lMw"/>
+    </features>
+    <features xmi:id="_c84ygCscEeW3Po49D6GeZA" name="Synchronization" parent="_KrWq8CsTEeW3Po49D6GeZA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Synchronization.ram#_Rm-8QKDaEeSylNteASngbg"/>
+      <realizedBy xsi:type="ram:Aspect" href="Inpath.ram#_OJB6YJRzEeSxiIO43J4lMw"/>
+      <reuses xmi:id="_NsCTACvqEeW277ndoM86dQ" name="Association_CFNWithInpaths_InpathNode" selectedConfiguration="_NsCTASvqEeW277ndoM86dQ">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_NsCTASvqEeW277ndoM86dQ" name="Association_KeyIndexedHashMapAssociation">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_ndvLsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_r80mIACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_o-kQECvqEeW277ndoM86dQ" name="Named_InpathNode" selectedConfiguration="_o-kQESvqEeW277ndoM86dQ">
+        <reusedConcern href="Reused_Named/Named.core#_vjZ6sKBAEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_o-kQESvqEeW277ndoM86dQ" name="Named_Named">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Named/Named.core#_vjZ6saBAEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Named/Named.core#_vjZ6sqBAEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_4UvTYCvrEeW277ndoM86dQ" name="Counter" selectedConfiguration="_4UvTYSvrEeW277ndoM86dQ">
+        <reusedConcern href="Reused_Counter/Counter.core#_JJWkAKsfEeSFZ4ae5sBgYg"/>
+        <configurations xmi:id="_4UvTYSvrEeW277ndoM86dQ" name="Counter_Counter">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Counter/Counter.core#_JJWkAasfEeSFZ4ae5sBgYg"/>
+          <selected href="Reused_Counter/Counter.core#_JJWkAqsfEeSFZ4ae5sBgYg"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_dS1W0CvsEeW277ndoM86dQ" name="Association_SynchronizationNode_LocalContext" selectedConfiguration="_dS1W0SvsEeW277ndoM86dQ">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_dS1W0SvsEeW277ndoM86dQ" name="Association_OrderedPlainKindAssociationArrayList">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#__6WrkACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_B8rTMACYEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+    </features>
+  </featureModel>
+</core:COREConcern>

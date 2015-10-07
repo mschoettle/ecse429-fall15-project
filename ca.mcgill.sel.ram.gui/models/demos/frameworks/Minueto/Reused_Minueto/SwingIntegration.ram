@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_3bB9UNeuEeS8y5KmwJbwVA" name="SwingIntegration">
+  <realizes href="minueto.core#_KWU_INeuEeS8y5KmwJbwVA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_3bB9UdeuEeS8y5KmwJbwVA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_3bB9UteuEeS8y5KmwJbwVA" name="MinuetoPanel" visibility="public" superTypes="_AW6CwC5MEeWEMbzGx7oxkQ" instanceClassName="org.minueto.window.MinuetoPanel">
+      <operations xmi:id="_3bB9U9euEeS8y5KmwJbwVA" name="MinuetoPanel" visibility="public" returnType="_3bB9UteuEeS8y5KmwJbwVA" operationType="Constructor">
+        <parameters xmi:id="_3bB9VNeuEeS8y5KmwJbwVA" name="arg0" type="_3bB9YNeuEeS8y5KmwJbwVA"/>
+        <parameters xmi:id="_3bB9VdeuEeS8y5KmwJbwVA" name="arg1" type="_3bB9YNeuEeS8y5KmwJbwVA"/>
+      </operations>
+      <operations xmi:id="_3bB9VteuEeS8y5KmwJbwVA" name="setSize" visibility="public" returnType="_3bB9XdeuEeS8y5KmwJbwVA">
+        <parameters xmi:id="_3bB9V9euEeS8y5KmwJbwVA" name="arg0" type="_3bB9YNeuEeS8y5KmwJbwVA"/>
+        <parameters xmi:id="_3bB9WNeuEeS8y5KmwJbwVA" name="arg1" type="_3bB9YNeuEeS8y5KmwJbwVA"/>
+      </operations>
+      <operations xmi:id="_3bB9WdeuEeS8y5KmwJbwVA" name="setVisible" visibility="public" returnType="_3bB9XdeuEeS8y5KmwJbwVA">
+        <parameters xmi:id="_3bB9WteuEeS8y5KmwJbwVA" name="arg0" type="_3bB9X9euEeS8y5KmwJbwVA"/>
+      </operations>
+      <operations xmi:id="_3bB9W9euEeS8y5KmwJbwVA" name="isVisible" visibility="public" returnType="_3bB9X9euEeS8y5KmwJbwVA"/>
+      <operations xmi:id="_3bB9XNeuEeS8y5KmwJbwVA" name="close" visibility="public" returnType="_3bB9XdeuEeS8y5KmwJbwVA"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_AW6CwC5MEeWEMbzGx7oxkQ" name="MinuetoWindow" instanceClassName="org.minueto.window.MinuetoWindow" interface="true"/>
+    <types xsi:type="ram:RVoid" xmi:id="_3bB9XdeuEeS8y5KmwJbwVA"/>
+    <types xsi:type="ram:RAny" xmi:id="_3bB9XteuEeS8y5KmwJbwVA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_3bB9X9euEeS8y5KmwJbwVA"/>
+    <types xsi:type="ram:RInt" xmi:id="_3bB9YNeuEeS8y5KmwJbwVA"/>
+    <types xsi:type="ram:RChar" xmi:id="_3bB9YdeuEeS8y5KmwJbwVA"/>
+    <types xsi:type="ram:RString" xmi:id="_3bB9YteuEeS8y5KmwJbwVA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_3bB9Y9euEeS8y5KmwJbwVA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_3bB9ZNeuEeS8y5KmwJbwVA"/>
+    <types xsi:type="ram:RLong" xmi:id="_3bB9ZdeuEeS8y5KmwJbwVA"/>
+  </structuralView>
+  <instantiations xmi:id="_VHsIYCDKEeWOgN4vdFvUTg">
+    <source xsi:type="ram:Aspect" href="Surface.ram#_eG4zkPfvEeSv9pyqEMq9pA"/>
+  </instantiations>
+  <layout xmi:id="_3bCkYNeuEeS8y5KmwJbwVA">
+    <containers xmi:id="_3bCkYdeuEeS8y5KmwJbwVA" key="_3bB9UdeuEeS8y5KmwJbwVA">
+      <value xmi:id="_3bCkYteuEeS8y5KmwJbwVA" key="_3bB9UteuEeS8y5KmwJbwVA">
+        <value xmi:id="_3bCkY9euEeS8y5KmwJbwVA" x="353.99985" y="205.99988"/>
+      </value>
+      <value xmi:id="_AW738C5MEeWEMbzGx7oxkQ" key="_AW6CwC5MEeWEMbzGx7oxkQ">
+        <value xmi:id="_AW738S5MEeWEMbzGx7oxkQ" x="426.99994" y="47.99997"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_6i10kC5aEeWEMbzGx7oxkQ" name="Minueto">
+  <models xsi:type="core:COREFeatureModel" href="#_6i10kS5aEeWEMbzGx7oxkQ"/>
+  <models xsi:type="ram:Aspect" href="HelloWorld.ram#_Ls00UC5bEeWEMbzGx7oxkQ"/>
+  <models xsi:type="ram:Aspect" href="HelloWorldInteractive.ram#_Ls00UC5bEeWEMbzGx7oxkQ"/>
+  <featureModel xmi:id="_6i10kS5aEeWEMbzGx7oxkQ" coreConcern="_6i10kC5aEeWEMbzGx7oxkQ" root="_KRiv0C5gEeWR4O9Wi-jkhg">
+    <features xmi:id="_KRiv0C5gEeWR4O9Wi-jkhg" name="Minueto" children="_6i10ki5aEeWEMbzGx7oxkQ _vAJlwC5gEeWmpNtxUwjadQ"/>
+    <features xmi:id="_6i10ki5aEeWEMbzGx7oxkQ" name="HelloWorld" parent="_KRiv0C5gEeWR4O9Wi-jkhg" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="HelloWorld.ram#_Ls00UC5bEeWEMbzGx7oxkQ"/>
+      <reuses xmi:id="_--MlkC5aEeWEMbzGx7oxkQ" name="Minueto" selectedConfiguration="_--MlkS5aEeWEMbzGx7oxkQ">
+        <reusedConcern href="Reused_Minueto/Minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+        <configurations xmi:id="_--MlkS5aEeWEMbzGx7oxkQ" name="Minueto_WindowMinuetoGraphicalElementTextVisualSurface">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Minueto/Minueto.core#_MGAFUcf9EeSSgrP6a4IKSw"/>
+          <selected href="Reused_Minueto/Minueto.core#_1dm0UNcfEeSyqfAiT90vaA"/>
+          <selected href="Reused_Minueto/Minueto.core#_MGAFUsf9EeSSgrP6a4IKSw"/>
+          <selected href="Reused_Minueto/Minueto.core#_eZUKkNclEeSyqfAiT90vaA"/>
+          <selected href="Reused_Minueto/Minueto.core#_3Ixt8NclEeSyqfAiT90vaA"/>
+          <selected href="Reused_Minueto/Minueto.core#_AmTgYOI_EeSZQMFI4R9wUA"/>
+          <selected href="Reused_Minueto/Minueto.core#_zQutENcfEeSyqfAiT90vaA"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_vAJlwC5gEeWmpNtxUwjadQ" name="HelloWorldInteractive" parent="_KRiv0C5gEeWR4O9Wi-jkhg" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="HelloWorldInteractive.ram#_Ls00UC5bEeWEMbzGx7oxkQ"/>
+      <reuses xmi:id="_J0z7EC5hEeWmpNtxUwjadQ" name="Minueto" selectedConfiguration="_J0z7ES5hEeWmpNtxUwjadQ">
+        <reusedConcern href="Reused_Minueto/Minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+        <configurations xmi:id="_J0z7ES5hEeWmpNtxUwjadQ" name="Minueto_TextMinuetoAccelerationSurfaceTransparencyWindowKeyboardGraphicalElementVisualInteractive">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Minueto/Minueto.core#_MGAFUcf9EeSSgrP6a4IKSw"/>
+          <selected href="Reused_Minueto/Minueto.core#_3Ixt8NclEeSyqfAiT90vaA"/>
+          <selected href="Reused_Minueto/Minueto.core#_MGAFUsf9EeSSgrP6a4IKSw"/>
+          <selected href="Reused_Minueto/Minueto.core#_ZHgTYOJBEeSZQMFI4R9wUA"/>
+          <selected href="Reused_Minueto/Minueto.core#_zQutENcfEeSyqfAiT90vaA"/>
+          <selected href="Reused_Minueto/Minueto.core#_rr_YAOgwEeSs6LKpNnTh_g"/>
+          <selected href="Reused_Minueto/Minueto.core#_1dm0UNcfEeSyqfAiT90vaA"/>
+          <selected href="Reused_Minueto/Minueto.core#_uqGMQNc3EeSyqfAiT90vaA"/>
+          <selected href="Reused_Minueto/Minueto.core#_eZUKkNclEeSyqfAiT90vaA"/>
+          <selected href="Reused_Minueto/Minueto.core#_AmTgYOI_EeSZQMFI4R9wUA"/>
+          <selected href="Reused_Minueto/Minueto.core#_reyG0Nc3EeSyqfAiT90vaA"/>
+        </configurations>
+      </reuses>
+    </features>
+  </featureModel>
+</core:COREConcern>

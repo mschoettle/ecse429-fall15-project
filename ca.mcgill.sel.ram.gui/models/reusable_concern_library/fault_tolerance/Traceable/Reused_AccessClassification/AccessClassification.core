@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_lJYWYKBBEeS-cby9IJCtzQ" name="AccessClassification">
+  <models xsi:type="ram:Aspect" href="AccessClassified.ram#_yBifgGESEeSXOsBvT42j1g"/>
+  <models xsi:type="core:COREFeatureModel" href="#_lJYWYaBBEeS-cby9IJCtzQ"/>
+  <featureModel xmi:id="_lJYWYaBBEeS-cby9IJCtzQ" coreConcern="_lJYWYKBBEeS-cby9IJCtzQ" root="_lJYWYqBBEeS-cby9IJCtzQ">
+    <features xmi:id="_lJYWYqBBEeS-cby9IJCtzQ" name="AccessClassification">
+      <realizedBy xsi:type="ram:Aspect" href="AccessClassified.ram#_yBifgGESEeSXOsBvT42j1g"/>
+    </features>
+  </featureModel>
+</core:COREConcern>

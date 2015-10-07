@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="__dpNoOHaEeSgi6FCXCkP2Q" name="Stopwatch">
+  <realizes href="minueto.core#_4fMJAN8BEeShJ659NzW61g"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="__dpNoeHaEeSgi6FCXCkP2Q">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="__dpNouHaEeSgi6FCXCkP2Q" name="MinuetoStopWatch" visibility="public" instanceClassName="org.minueto.MinuetoStopWatch">
+      <operations xmi:id="__dpNo-HaEeSgi6FCXCkP2Q" name="MinuetoStopWatch" visibility="public" returnType="__dpNouHaEeSgi6FCXCkP2Q" operationType="Constructor"/>
+      <operations xmi:id="__dpNpOHaEeSgi6FCXCkP2Q" name="getTime" visibility="public" returnType="__dp0s-HaEeSgi6FCXCkP2Q"/>
+      <operations xmi:id="__dpNpeHaEeSgi6FCXCkP2Q" name="start" visibility="public" returnType="__dpNqOHaEeSgi6FCXCkP2Q"/>
+      <operations xmi:id="__dpNpuHaEeSgi6FCXCkP2Q" name="reset" visibility="public" returnType="__dpNqOHaEeSgi6FCXCkP2Q"/>
+      <operations xmi:id="__dpNp-HaEeSgi6FCXCkP2Q" name="stop" visibility="public" returnType="__dpNqOHaEeSgi6FCXCkP2Q"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="__dpNqOHaEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RAny" xmi:id="__dpNqeHaEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RBoolean" xmi:id="__dpNquHaEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RInt" xmi:id="__dpNq-HaEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RChar" xmi:id="__dpNrOHaEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RString" xmi:id="__dp0sOHaEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RDouble" xmi:id="__dp0seHaEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RFloat" xmi:id="__dp0suHaEeSgi6FCXCkP2Q"/>
+    <types xsi:type="ram:RLong" xmi:id="__dp0s-HaEeSgi6FCXCkP2Q"/>
+  </structuralView>
+  <instantiations xmi:id="_HX9Y0OHbEeSgi6FCXCkP2Q">
+    <source xsi:type="ram:Aspect" href="Minueto.ram#_OqwhEMf9EeSSgrP6a4IKSw"/>
+  </instantiations>
+  <layout xmi:id="__dqbwOHaEeSgi6FCXCkP2Q">
+    <containers xmi:id="__dqbweHaEeSgi6FCXCkP2Q" key="__dpNoeHaEeSgi6FCXCkP2Q">
+      <value xmi:id="__dqbwuHaEeSgi6FCXCkP2Q" key="__dpNouHaEeSgi6FCXCkP2Q">
+        <value xmi:id="__dqbw-HaEeSgi6FCXCkP2Q" x="478.99976" y="181.99994"/>
+      </value>
+    </containers>
+    <containers xmi:id="_3QfUgAhyEeWF_N5Blk99kA" key="_3QetcAhyEeWF_N5Blk99kA">
+      <value xmi:id="_5705YQhyEeWF_N5Blk99kA" key="_5705YAhyEeWF_N5Blk99kA">
+        <value xmi:id="_5705YghyEeWF_N5Blk99kA" x="301.99994" y="427.00003"/>
+      </value>
+      <value xmi:id="_8ghqwAhyEeWF_N5Blk99kA" key="_8ghDsAhyEeWF_N5Blk99kA">
+        <value xmi:id="_8ghqwQhyEeWF_N5Blk99kA" x="623.00006" y="426.99997"/>
+      </value>
+      <value xmi:id="__HvkoQhyEeWF_N5Blk99kA" key="__HvkoAhyEeWF_N5Blk99kA">
+        <value xmi:id="__HvkoghyEeWF_N5Blk99kA" x="597.00024" y="369.99997"/>
+      </value>
+      <value xmi:id="_rbsvYAlEEeW02qxLj-iivA" key="_rbsIUAlEEeW02qxLj-iivA">
+        <value xmi:id="_rbsvYQlEEeW02qxLj-iivA" x="445.00018" y="438.99994"/>
+      </value>
+      <value xmi:id="_skzsgAlEEeW02qxLj-iivA" key="_skzFcAlEEeW02qxLj-iivA">
+        <value xmi:id="_skzsgQlEEeW02qxLj-iivA" x="226.99948" y="543.0001"/>
+      </value>
+    </containers>
+  </layout>
+  <stateViews xmi:id="_3QetcAhyEeWF_N5Blk99kA" name="MinuetoStopWatch" specifies="__dpNouHaEeSgi6FCXCkP2Q">
+    <stateMachines xmi:id="_5qVgwAhyEeWF_N5Blk99kA" start="_5705YAhyEeWF_N5Blk99kA">
+      <states xmi:id="_5705YAhyEeWF_N5Blk99kA" name="Uninitialized" outgoings="_9kOjcAhyEeWF_N5Blk99kA"/>
+      <states xmi:id="_8ghDsAhyEeWF_N5Blk99kA" name="Created" incomings="_9kOjcAhyEeWF_N5Blk99kA _pMUGsAlEEeW02qxLj-iivA" outgoings="_Awo1EAhzEeWF_N5Blk99kA"/>
+      <states xmi:id="__HvkoAhyEeWF_N5Blk99kA" name="Running" incomings="_Awo1EAhzEeWF_N5Blk99kA" outgoings="_pMUGsAlEEeW02qxLj-iivA"/>
+      <transitions xmi:id="_9kOjcAhyEeWF_N5Blk99kA" name="MinuetoStopWatch" endState="_8ghDsAhyEeWF_N5Blk99kA" startState="_5705YAhyEeWF_N5Blk99kA" signature="__dpNo-HaEeSgi6FCXCkP2Q"/>
+      <transitions xmi:id="_Awo1EAhzEeWF_N5Blk99kA" name="start" endState="__HvkoAhyEeWF_N5Blk99kA" startState="_8ghDsAhyEeWF_N5Blk99kA" signature="__dpNpeHaEeSgi6FCXCkP2Q"/>
+      <transitions xmi:id="_pMUGsAlEEeW02qxLj-iivA" name="stop" endState="_8ghDsAhyEeWF_N5Blk99kA" startState="__HvkoAhyEeWF_N5Blk99kA" signature="__dpNp-HaEeSgi6FCXCkP2Q"/>
+    </stateMachines>
+    <stateMachines xmi:id="_rEKZIAlEEeW02qxLj-iivA" start="_rbsIUAlEEeW02qxLj-iivA">
+      <states xmi:id="_rbsIUAlEEeW02qxLj-iivA" name="Uninitialized" outgoings="_uAWdcAlEEeW02qxLj-iivA"/>
+      <states xmi:id="_skzFcAlEEeW02qxLj-iivA" name="Created" incomings="_uAWdcAlEEeW02qxLj-iivA _xePgoAlEEeW02qxLj-iivA _xljCgAlEEeW02qxLj-iivA" outgoings="_xePgoAlEEeW02qxLj-iivA _xljCgAlEEeW02qxLj-iivA"/>
+      <transitions xmi:id="_uAWdcAlEEeW02qxLj-iivA" name="MinuetoStopWatch" endState="_skzFcAlEEeW02qxLj-iivA" startState="_rbsIUAlEEeW02qxLj-iivA" signature="__dpNo-HaEeSgi6FCXCkP2Q"/>
+      <transitions xmi:id="_xePgoAlEEeW02qxLj-iivA" name="reset" endState="_skzFcAlEEeW02qxLj-iivA" startState="_skzFcAlEEeW02qxLj-iivA" signature="__dpNpuHaEeSgi6FCXCkP2Q"/>
+      <transitions xmi:id="_xljCgAlEEeW02qxLj-iivA" name="getTime" endState="_skzFcAlEEeW02qxLj-iivA" startState="_skzFcAlEEeW02qxLj-iivA" signature="__dpNpOHaEeSgi6FCXCkP2Q"/>
+    </stateMachines>
+  </stateViews>
+</ram:Aspect>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_SIpcUMeREeSb5YMwXG3r2w" name="Traceable">
+  <models xsi:type="ram:Aspect" href="Traceable.ram#_Fn4asGEYEeSxuurPGOqeHA"/>
+  <models xsi:type="core:COREFeatureModel" href="#_SIpcUceREeSb5YMwXG3r2w"/>
+  <featureModel xmi:id="_SIpcUceREeSb5YMwXG3r2w" coreConcern="_SIpcUMeREeSb5YMwXG3r2w" root="_SIpcUseREeSb5YMwXG3r2w">
+    <features xmi:id="_SIpcUseREeSb5YMwXG3r2w" name="Traceable">
+      <realizedBy xsi:type="ram:Aspect" href="Traceable.ram#_Fn4asGEYEeSxuurPGOqeHA"/>
+      <reuses xmi:id="_j1D-wCWLEeWKwdDnYqndcw" name="AccessClassification" selectedConfiguration="_j1D-wSWLEeWKwdDnYqndcw">
+        <reusedConcern href="Reused_AccessClassification/AccessClassification.core#_lJYWYKBBEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_j1D-wSWLEeWKwdDnYqndcw" name="AccessClassification_AccessClassification">
+          <source xsi:type="core:COREFeatureModel" href="Reused_AccessClassification/AccessClassification.core#_lJYWYaBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_AccessClassification/AccessClassification.core#_lJYWYqBBEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+    </features>
+  </featureModel>
+</core:COREConcern>

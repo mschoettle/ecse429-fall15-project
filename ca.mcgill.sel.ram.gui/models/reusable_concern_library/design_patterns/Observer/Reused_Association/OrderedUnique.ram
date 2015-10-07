@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_xjRfkDuiEeWIVcpOKZa9oA" name="OrderedUnique">
+  <coreConcern href="Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+  <structuralView xmi:id="_xjRfkTuiEeWIVcpOKZa9oA">
+    <types xsi:type="ram:RVoid" xmi:id="_xjRfljuiEeWIVcpOKZa9oA"/>
+    <types xsi:type="ram:RAny" xmi:id="_xjRflzuiEeWIVcpOKZa9oA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_xjRfmDuiEeWIVcpOKZa9oA"/>
+    <types xsi:type="ram:RInt" xmi:id="_xjRfmTuiEeWIVcpOKZa9oA"/>
+    <types xsi:type="ram:RChar" xmi:id="_xjRfmjuiEeWIVcpOKZa9oA"/>
+    <types xsi:type="ram:RString" xmi:id="_xjRfmzuiEeWIVcpOKZa9oA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_xjRfnDuiEeWIVcpOKZa9oA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_xjRfnTuiEeWIVcpOKZa9oA"/>
+    <types xsi:type="ram:RLong" xmi:id="_xjRfnjuiEeWIVcpOKZa9oA"/>
+  </structuralView>
+  <instantiations xmi:id="_LdQ8YDujEeWIVcpOKZa9oA">
+    <source xsi:type="ram:Aspect" href="Ordered.ram#_3WYVMKaKEeSAKObocMolaA"/>
+  </instantiations>
+  <instantiations xmi:id="_UTHaYDuxEeWLsaxPjIJ7QQ">
+    <source xsi:type="ram:Aspect" href="Unique.ram#_1vEZQPp1EeS5bOZ3U4LrDw"/>
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_Urca0DuxEeWLsaxPjIJ7QQ">
+      <to xsi:type="ram:Class" href="Ordered.ram#_3WYVMqaKEeSAKObocMolaA"/>
+      <from xsi:type="ram:Class" href="Unique.ram#_1vEZQvp1EeS5bOZ3U4LrDw"/>
+      <operationMappings xmi:id="_XqF9QDuxEeWLsaxPjIJ7QQ">
+        <to xsi:type="ram:Operation" href="Ordered.ram#_I1aoIAvGEeW97eUarwQSdA"/>
+        <from xsi:type="ram:Operation" href="Unique.ram#_1vEZQ_p1EeS5bOZ3U4LrDw"/>
+      </operationMappings>
+    </mappings>
+  </instantiations>
+  <layout xmi:id="_xjRfoDuiEeWIVcpOKZa9oA">
+    <containers xmi:id="_xjRfoTuiEeWIVcpOKZa9oA" key="_xjRfkTuiEeWIVcpOKZa9oA"/>
+    <containers xmi:id="_MO1jQDujEeWIVcpOKZa9oA">
+      <value xmi:id="_MO1jQTujEeWIVcpOKZa9oA">
+        <value xmi:id="_MO1jQjujEeWIVcpOKZa9oA" x="100.0" y="100.0"/>
+      </value>
+      <value xmi:id="_TRo3oDujEeWIVcpOKZa9oA">
+        <value xmi:id="_TRo3oTujEeWIVcpOKZa9oA" x="378.0" y="100.0"/>
+      </value>
+    </containers>
+    <containers xmi:id="_MYZScDukEeWIVcpOKZa9oA">
+      <value xmi:id="_MYZScTukEeWIVcpOKZa9oA">
+        <value xmi:id="_MYZScjukEeWIVcpOKZa9oA" x="100.0" y="100.0"/>
+      </value>
+      <value xmi:id="_W_wSsDukEeWIVcpOKZa9oA">
+        <value xmi:id="_W_wSsTukEeWIVcpOKZa9oA" x="704.0" y="100.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_nzJfACUJEeWiSbUkFV6vLg" name="AccessControl&lt;Card,AccessControl>">
+  <structuralView xmi:id="_nzKGECUJEeWiSbUkFV6vLg">
+    <classes xsi:type="ram:Class" xmi:id="_nzKGESUJEeWiSbUkFV6vLg" name="Card" superTypes="_nzKGGCUJEeWiSbUkFV6vLg">
+      <operations xmi:id="_nzKGEiUJEeWiSbUkFV6vLg" name="create" visibility="public" returnType="_nzKGESUJEeWiSbUkFV6vLg" operationType="Constructor">
+        <parameters xmi:id="_nzKGEyUJEeWiSbUkFV6vLg" name="data" type="_nzKGLCUJEeWiSbUkFV6vLg"/>
+      </operations>
+      <operations xmi:id="_nzKGFCUJEeWiSbUkFV6vLg" name="check" visibility="public" extendedVisibility="package" returnType="_nzKGKSUJEeWiSbUkFV6vLg">
+        <parameters xmi:id="_nzKGFSUJEeWiSbUkFV6vLg" name="otherCard" type="_nzKGESUJEeWiSbUkFV6vLg"/>
+      </operations>
+      <operations xmi:id="_nzKGFiUJEeWiSbUkFV6vLg" name="getData" visibility="public" returnType="_nzKGLCUJEeWiSbUkFV6vLg"/>
+      <attributes xmi:id="_nzKGFyUJEeWiSbUkFV6vLg" name="data" type="_nzKGLCUJEeWiSbUkFV6vLg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_nzKGGCUJEeWiSbUkFV6vLg" name="Credential">
+      <operations xmi:id="_nzKGGSUJEeWiSbUkFV6vLg" name="check" visibility="public" extendedVisibility="package" returnType="_nzKGKSUJEeWiSbUkFV6vLg">
+        <parameters xmi:id="_nzKGGiUJEeWiSbUkFV6vLg" name="credential" type="_nzKGGCUJEeWiSbUkFV6vLg"/>
+      </operations>
+      <associationEnds xmi:id="_nzKGGyUJEeWiSbUkFV6vLg" name="myProtectedAsset" lowerBound="1" navigable="false" assoc="_nzKGJiUJEeWiSbUkFV6vLg"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_nzKGHCUJEeWiSbUkFV6vLg" name="User" partiality="public">
+      <operations xmi:id="_nzKGHSUJEeWiSbUkFV6vLg" name="swipeCard" visibility="public" returnType="_nzKGJyUJEeWiSbUkFV6vLg">
+        <parameters xmi:id="_nzKGHiUJEeWiSbUkFV6vLg" name="asset" type="_nzKGICUJEeWiSbUkFV6vLg"/>
+        <parameters xmi:id="_nzKGHyUJEeWiSbUkFV6vLg" name="data" type="_nzKGLCUJEeWiSbUkFV6vLg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_nzKGICUJEeWiSbUkFV6vLg" name="ProtectedAsset" partiality="public">
+      <operations xmi:id="_nzKGISUJEeWiSbUkFV6vLg" name="protectedAction" partiality="public" visibility="public" returnType="_nzKGKCUJEeWiSbUkFV6vLg"/>
+      <operations xmi:id="_nzKGIiUJEeWiSbUkFV6vLg" name="authenticate" visibility="public" returnType="_nzKGJyUJEeWiSbUkFV6vLg">
+        <parameters xmi:id="_nzKGIyUJEeWiSbUkFV6vLg" name="givenCredential" type="_nzKGGCUJEeWiSbUkFV6vLg"/>
+      </operations>
+      <associationEnds xmi:id="_nzKGJCUJEeWiSbUkFV6vLg" name="credentials" lowerBound="1" upperBound="-1" referenceType="Composition" assoc="_nzKGJiUJEeWiSbUkFV6vLg"/>
+      <attributes xmi:id="_nzKGJSUJEeWiSbUkFV6vLg" name="lastAuthenticated" type="_nzKGLyUJEeWiSbUkFV6vLg"/>
+    </classes>
+    <associations xmi:id="_nzKGJiUJEeWiSbUkFV6vLg" name="ProtectedAsset_Credential" ends="_nzKGJCUJEeWiSbUkFV6vLg _nzKGGyUJEeWiSbUkFV6vLg"/>
+    <types xsi:type="ram:RVoid" xmi:id="_nzKGJyUJEeWiSbUkFV6vLg"/>
+    <types xsi:type="ram:RAny" xmi:id="_nzKGKCUJEeWiSbUkFV6vLg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_nzKGKSUJEeWiSbUkFV6vLg"/>
+    <types xsi:type="ram:RInt" xmi:id="_nzKGKiUJEeWiSbUkFV6vLg"/>
+    <types xsi:type="ram:RChar" xmi:id="_nzKGKyUJEeWiSbUkFV6vLg"/>
+    <types xsi:type="ram:RString" xmi:id="_nzKGLCUJEeWiSbUkFV6vLg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_nzKGLSUJEeWiSbUkFV6vLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_nzKGLiUJEeWiSbUkFV6vLg"/>
+    <types xsi:type="ram:RLong" xmi:id="_nzKGLyUJEeWiSbUkFV6vLg"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_nzKGMCUJEeWiSbUkFV6vLg" specifies="_nzKGFCUJEeWiSbUkFV6vLg">
+    <specification xmi:id="_nzKGMSUJEeWiSbUkFV6vLg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGMiUJEeWiSbUkFV6vLg" covered="_nzKGOCUJEeWiSbUkFV6vLg" message="_nzKGOiUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGMyUJEeWiSbUkFV6vLg" covered="_nzKGOCUJEeWiSbUkFV6vLg" message="_nzKGPyUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGNCUJEeWiSbUkFV6vLg" covered="_nzKGOSUJEeWiSbUkFV6vLg" message="_nzKGPyUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:AssignmentStatement" xmi:id="_nzKGNSUJEeWiSbUkFV6vLg" covered="_nzKGOCUJEeWiSbUkFV6vLg" assignTo="_nzKGPCUJEeWiSbUkFV6vLg">
+        <value xsi:type="ram:OpaqueExpression" xmi:id="_nzKGNiUJEeWiSbUkFV6vLg" body="data.equals(otherData)" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGNyUJEeWiSbUkFV6vLg" covered="_nzKGOCUJEeWiSbUkFV6vLg" message="_nzKGPSUJEeWiSbUkFV6vLg"/>
+      <lifelines xmi:id="_nzKGOCUJEeWiSbUkFV6vLg" represents="_nzKGQCUJEeWiSbUkFV6vLg" coveredBy="_nzKGMiUJEeWiSbUkFV6vLg _nzKGNyUJEeWiSbUkFV6vLg _nzKGMyUJEeWiSbUkFV6vLg _nzKGNSUJEeWiSbUkFV6vLg"/>
+      <lifelines xmi:id="_nzKGOSUJEeWiSbUkFV6vLg" represents="_nzKGFSUJEeWiSbUkFV6vLg" coveredBy="_nzKGNCUJEeWiSbUkFV6vLg"/>
+      <messages xmi:id="_nzKGOiUJEeWiSbUkFV6vLg" sendEvent="_nzKGQSUJEeWiSbUkFV6vLg" receiveEvent="_nzKGMiUJEeWiSbUkFV6vLg" signature="_nzKGFCUJEeWiSbUkFV6vLg">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_nzKGOyUJEeWiSbUkFV6vLg" name="otherData" type="_nzKGLCUJEeWiSbUkFV6vLg"/>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_nzKGPCUJEeWiSbUkFV6vLg" name="valid" type="_nzKGKSUJEeWiSbUkFV6vLg"/>
+      </messages>
+      <messages xmi:id="_nzKGPSUJEeWiSbUkFV6vLg" sendEvent="_nzKGNyUJEeWiSbUkFV6vLg" receiveEvent="_nzKGQiUJEeWiSbUkFV6vLg" signature="_nzKGFCUJEeWiSbUkFV6vLg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_nzKGPiUJEeWiSbUkFV6vLg" value="_nzKGPCUJEeWiSbUkFV6vLg"/>
+      </messages>
+      <messages xmi:id="_nzKGPyUJEeWiSbUkFV6vLg" sendEvent="_nzKGMyUJEeWiSbUkFV6vLg" receiveEvent="_nzKGNCUJEeWiSbUkFV6vLg" signature="_nzKGFiUJEeWiSbUkFV6vLg" assignTo="_nzKGOyUJEeWiSbUkFV6vLg"/>
+      <properties xmi:id="_nzKGQCUJEeWiSbUkFV6vLg" name="target" lowerBound="1" type="_nzKGESUJEeWiSbUkFV6vLg"/>
+      <formalGates xmi:id="_nzKGQSUJEeWiSbUkFV6vLg" message="_nzKGOiUJEeWiSbUkFV6vLg" name="in_check"/>
+      <formalGates xmi:id="_nzKGQiUJEeWiSbUkFV6vLg" message="_nzKGPSUJEeWiSbUkFV6vLg" name="out_check"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_nzKGQyUJEeWiSbUkFV6vLg" specifies="_nzKGFiUJEeWiSbUkFV6vLg">
+    <specification xmi:id="_nzKGRCUJEeWiSbUkFV6vLg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGRSUJEeWiSbUkFV6vLg" covered="_nzKGRyUJEeWiSbUkFV6vLg" message="_nzKGSCUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGRiUJEeWiSbUkFV6vLg" covered="_nzKGRyUJEeWiSbUkFV6vLg" message="_nzKGSSUJEeWiSbUkFV6vLg"/>
+      <lifelines xmi:id="_nzKGRyUJEeWiSbUkFV6vLg" represents="_nzKGSiUJEeWiSbUkFV6vLg" coveredBy="_nzKGRSUJEeWiSbUkFV6vLg _nzKGRiUJEeWiSbUkFV6vLg"/>
+      <messages xmi:id="_nzKGSCUJEeWiSbUkFV6vLg" sendEvent="_nzKGSyUJEeWiSbUkFV6vLg" receiveEvent="_nzKGRSUJEeWiSbUkFV6vLg" signature="_nzKGFiUJEeWiSbUkFV6vLg"/>
+      <messages xmi:id="_nzKGSSUJEeWiSbUkFV6vLg" sendEvent="_nzKGRiUJEeWiSbUkFV6vLg" receiveEvent="_nzKGTCUJEeWiSbUkFV6vLg" signature="_nzKGFiUJEeWiSbUkFV6vLg" messageSort="reply"/>
+      <properties xmi:id="_nzKGSiUJEeWiSbUkFV6vLg" name="target" lowerBound="1" type="_nzKGESUJEeWiSbUkFV6vLg"/>
+      <formalGates xmi:id="_nzKGSyUJEeWiSbUkFV6vLg" message="_nzKGSCUJEeWiSbUkFV6vLg" name="in_getData"/>
+      <formalGates xmi:id="_nzKGTCUJEeWiSbUkFV6vLg" message="_nzKGSSUJEeWiSbUkFV6vLg" name="out_getData"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_nzKGTSUJEeWiSbUkFV6vLg" specifies="_nzKGHSUJEeWiSbUkFV6vLg">
+    <specification xmi:id="_nzKGTiUJEeWiSbUkFV6vLg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGTyUJEeWiSbUkFV6vLg" covered="_nzKGVSUJEeWiSbUkFV6vLg" message="_nzKGWCUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGUCUJEeWiSbUkFV6vLg" covered="_nzKGVSUJEeWiSbUkFV6vLg" message="_nzKGWyUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGUSUJEeWiSbUkFV6vLg" covered="_nzKGViUJEeWiSbUkFV6vLg" message="_nzKGWyUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGUiUJEeWiSbUkFV6vLg" covered="_nzKGVSUJEeWiSbUkFV6vLg" message="_nzKGXiUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGUyUJEeWiSbUkFV6vLg" covered="_nzKGVyUJEeWiSbUkFV6vLg" message="_nzKGXiUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGVCUJEeWiSbUkFV6vLg" covered="_nzKGVSUJEeWiSbUkFV6vLg" message="_nzKGWiUJEeWiSbUkFV6vLg"/>
+      <lifelines xmi:id="_nzKGVSUJEeWiSbUkFV6vLg" represents="_nzKGYSUJEeWiSbUkFV6vLg" coveredBy="_nzKGTyUJEeWiSbUkFV6vLg _nzKGVCUJEeWiSbUkFV6vLg _nzKGUCUJEeWiSbUkFV6vLg _nzKGUiUJEeWiSbUkFV6vLg"/>
+      <lifelines xmi:id="_nzKGViUJEeWiSbUkFV6vLg" represents="_nzKGWSUJEeWiSbUkFV6vLg" coveredBy="_nzKGUSUJEeWiSbUkFV6vLg"/>
+      <lifelines xmi:id="_nzKGVyUJEeWiSbUkFV6vLg" represents="_nzKGHiUJEeWiSbUkFV6vLg" coveredBy="_nzKGUyUJEeWiSbUkFV6vLg"/>
+      <messages xmi:id="_nzKGWCUJEeWiSbUkFV6vLg" sendEvent="_nzKGYiUJEeWiSbUkFV6vLg" receiveEvent="_nzKGTyUJEeWiSbUkFV6vLg" signature="_nzKGHSUJEeWiSbUkFV6vLg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_nzKGWSUJEeWiSbUkFV6vLg" name="card" lowerBound="1" type="_nzKGESUJEeWiSbUkFV6vLg"/>
+      </messages>
+      <messages xmi:id="_nzKGWiUJEeWiSbUkFV6vLg" sendEvent="_nzKGVCUJEeWiSbUkFV6vLg" receiveEvent="_nzKGYyUJEeWiSbUkFV6vLg" signature="_nzKGHSUJEeWiSbUkFV6vLg" messageSort="reply"/>
+      <messages xmi:id="_nzKGWyUJEeWiSbUkFV6vLg" sendEvent="_nzKGUCUJEeWiSbUkFV6vLg" receiveEvent="_nzKGUSUJEeWiSbUkFV6vLg" signature="_nzKGEiUJEeWiSbUkFV6vLg" assignTo="_nzKGWSUJEeWiSbUkFV6vLg" messageSort="createMessage">
+        <arguments xmi:id="_nzKGXCUJEeWiSbUkFV6vLg" parameter="_nzKGEyUJEeWiSbUkFV6vLg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_nzKGXSUJEeWiSbUkFV6vLg" parameter="_nzKGHyUJEeWiSbUkFV6vLg"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_nzKGXiUJEeWiSbUkFV6vLg" sendEvent="_nzKGUiUJEeWiSbUkFV6vLg" receiveEvent="_nzKGUyUJEeWiSbUkFV6vLg" signature="_nzKGIiUJEeWiSbUkFV6vLg">
+        <arguments xmi:id="_nzKGXyUJEeWiSbUkFV6vLg" parameter="_nzKGIyUJEeWiSbUkFV6vLg">
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_nzKGYCUJEeWiSbUkFV6vLg" value="_nzKGWSUJEeWiSbUkFV6vLg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_nzKGYSUJEeWiSbUkFV6vLg" name="target" lowerBound="1" type="_nzKGHCUJEeWiSbUkFV6vLg"/>
+      <formalGates xmi:id="_nzKGYiUJEeWiSbUkFV6vLg" message="_nzKGWCUJEeWiSbUkFV6vLg" name="in_swipeCard"/>
+      <formalGates xmi:id="_nzKGYyUJEeWiSbUkFV6vLg" message="_nzKGWiUJEeWiSbUkFV6vLg" name="out_swipeCard"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:AspectMessageView" xmi:id="_nzKGZCUJEeWiSbUkFV6vLg" name="checkAccess">
+    <pointcut href="AccessControl.ram#_Z0fD0LkxEeSVqZtHr9XOFw"/>
+    <advice xmi:id="_nzKGZSUJEeWiSbUkFV6vLg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGZiUJEeWiSbUkFV6vLg" covered="_nzKGbiUJEeWiSbUkFV6vLg" message="_nzKGbyUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:AssignmentStatement" xmi:id="_nzKGZyUJEeWiSbUkFV6vLg" covered="_nzKGbiUJEeWiSbUkFV6vLg" assignTo="_nzKGcCUJEeWiSbUkFV6vLg">
+        <value xsi:type="ram:OpaqueExpression" xmi:id="_nzKGaCUJEeWiSbUkFV6vLg" body="System.currentTimeMillis()" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_nzKGaSUJEeWiSbUkFV6vLg" covered="_nzKGbiUJEeWiSbUkFV6vLg" interactionOperator="opt">
+        <operands xmi:id="_nzKGaiUJEeWiSbUkFV6vLg">
+          <fragments xsi:type="ram:OriginalBehaviorExecution" xmi:id="_nzKGayUJEeWiSbUkFV6vLg" covered="_nzKGbiUJEeWiSbUkFV6vLg"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_nzKGbCUJEeWiSbUkFV6vLg" body="(currentTime - lastAuthenticated) &lt;= 5000" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGbSUJEeWiSbUkFV6vLg" covered="_nzKGbiUJEeWiSbUkFV6vLg" message="_nzKGcSUJEeWiSbUkFV6vLg"/>
+      <lifelines xmi:id="_nzKGbiUJEeWiSbUkFV6vLg" represents="_nzKGciUJEeWiSbUkFV6vLg" coveredBy="_nzKGZiUJEeWiSbUkFV6vLg _nzKGbSUJEeWiSbUkFV6vLg _nzKGZyUJEeWiSbUkFV6vLg _nzKGaSUJEeWiSbUkFV6vLg _nzKGayUJEeWiSbUkFV6vLg"/>
+      <messages xmi:id="_nzKGbyUJEeWiSbUkFV6vLg" sendEvent="_nzKGcyUJEeWiSbUkFV6vLg" receiveEvent="_nzKGZiUJEeWiSbUkFV6vLg" signature="_nzKGISUJEeWiSbUkFV6vLg">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_nzKGcCUJEeWiSbUkFV6vLg" name="currentTime" type="_nzKGLyUJEeWiSbUkFV6vLg"/>
+      </messages>
+      <messages xmi:id="_nzKGcSUJEeWiSbUkFV6vLg" sendEvent="_nzKGbSUJEeWiSbUkFV6vLg" receiveEvent="_nzKGdCUJEeWiSbUkFV6vLg" signature="_nzKGISUJEeWiSbUkFV6vLg" messageSort="reply"/>
+      <properties xmi:id="_nzKGciUJEeWiSbUkFV6vLg" name="target" lowerBound="1" type="_nzKGICUJEeWiSbUkFV6vLg"/>
+      <formalGates xmi:id="_nzKGcyUJEeWiSbUkFV6vLg" message="_nzKGbyUJEeWiSbUkFV6vLg" name="in_protectedAction"/>
+      <formalGates xmi:id="_nzKGdCUJEeWiSbUkFV6vLg" message="_nzKGcSUJEeWiSbUkFV6vLg" name="out_protectedAction"/>
+    </advice>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_nzKGdSUJEeWiSbUkFV6vLg" specifies="_nzKGGSUJEeWiSbUkFV6vLg">
+    <specification xmi:id="_nzKGdiUJEeWiSbUkFV6vLg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGdyUJEeWiSbUkFV6vLg" covered="_nzKGeSUJEeWiSbUkFV6vLg" message="_nzKGeiUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGeCUJEeWiSbUkFV6vLg" covered="_nzKGeSUJEeWiSbUkFV6vLg" message="_nzKGeyUJEeWiSbUkFV6vLg"/>
+      <lifelines xmi:id="_nzKGeSUJEeWiSbUkFV6vLg" represents="_nzKGfCUJEeWiSbUkFV6vLg" coveredBy="_nzKGdyUJEeWiSbUkFV6vLg _nzKGeCUJEeWiSbUkFV6vLg"/>
+      <messages xmi:id="_nzKGeiUJEeWiSbUkFV6vLg" sendEvent="_nzKGfSUJEeWiSbUkFV6vLg" receiveEvent="_nzKGdyUJEeWiSbUkFV6vLg" signature="_nzKGGSUJEeWiSbUkFV6vLg"/>
+      <messages xmi:id="_nzKGeyUJEeWiSbUkFV6vLg" sendEvent="_nzKGeCUJEeWiSbUkFV6vLg" receiveEvent="_nzKGfiUJEeWiSbUkFV6vLg" signature="_nzKGGSUJEeWiSbUkFV6vLg" messageSort="reply"/>
+      <properties xmi:id="_nzKGfCUJEeWiSbUkFV6vLg" name="target" lowerBound="1" type="_nzKGGCUJEeWiSbUkFV6vLg"/>
+      <formalGates xmi:id="_nzKGfSUJEeWiSbUkFV6vLg" message="_nzKGeiUJEeWiSbUkFV6vLg" name="in_check"/>
+      <formalGates xmi:id="_nzKGfiUJEeWiSbUkFV6vLg" message="_nzKGeyUJEeWiSbUkFV6vLg" name="out_check"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_nzKGfyUJEeWiSbUkFV6vLg" affectedBy="_nzKGZCUJEeWiSbUkFV6vLg" specifies="_nzKGISUJEeWiSbUkFV6vLg">
+    <specification xmi:id="_nzKGgCUJEeWiSbUkFV6vLg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGgSUJEeWiSbUkFV6vLg" covered="_nzKGiSUJEeWiSbUkFV6vLg" message="_nzKGiiUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:AssignmentStatement" xmi:id="_nzKGgiUJEeWiSbUkFV6vLg" covered="_nzKGiSUJEeWiSbUkFV6vLg" assignTo="_nzKGiyUJEeWiSbUkFV6vLg">
+        <value xsi:type="ram:OpaqueExpression" xmi:id="_nzKGgyUJEeWiSbUkFV6vLg" body="System.currentTimeMillis()" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_nzKGhCUJEeWiSbUkFV6vLg" covered="_nzKGiSUJEeWiSbUkFV6vLg" interactionOperator="opt">
+        <operands xmi:id="_nzKGhSUJEeWiSbUkFV6vLg">
+          <fragments xsi:type="ram:OriginalBehaviorExecution" xmi:id="_nzKGhiUJEeWiSbUkFV6vLg" covered="_nzKGiSUJEeWiSbUkFV6vLg"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_nzKGhyUJEeWiSbUkFV6vLg" body="(currentTime - lastAuthenticated) &lt;= 5000" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGiCUJEeWiSbUkFV6vLg" covered="_nzKGiSUJEeWiSbUkFV6vLg" message="_nzKGjCUJEeWiSbUkFV6vLg"/>
+      <lifelines xmi:id="_nzKGiSUJEeWiSbUkFV6vLg" represents="_nzKGjSUJEeWiSbUkFV6vLg" coveredBy="_nzKGgSUJEeWiSbUkFV6vLg _nzKGiCUJEeWiSbUkFV6vLg _nzKGgiUJEeWiSbUkFV6vLg _nzKGhCUJEeWiSbUkFV6vLg _nzKGhiUJEeWiSbUkFV6vLg"/>
+      <messages xmi:id="_nzKGiiUJEeWiSbUkFV6vLg" sendEvent="_nzKGjiUJEeWiSbUkFV6vLg" receiveEvent="_nzKGgSUJEeWiSbUkFV6vLg" signature="_nzKGISUJEeWiSbUkFV6vLg">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_nzKGiyUJEeWiSbUkFV6vLg" name="currentTime" type="_nzKGLyUJEeWiSbUkFV6vLg"/>
+      </messages>
+      <messages xmi:id="_nzKGjCUJEeWiSbUkFV6vLg" sendEvent="_nzKGiCUJEeWiSbUkFV6vLg" receiveEvent="_nzKGjyUJEeWiSbUkFV6vLg" signature="_nzKGISUJEeWiSbUkFV6vLg" messageSort="reply"/>
+      <properties xmi:id="_nzKGjSUJEeWiSbUkFV6vLg" name="target" lowerBound="1" type="_nzKGICUJEeWiSbUkFV6vLg"/>
+      <formalGates xmi:id="_nzKGjiUJEeWiSbUkFV6vLg" message="_nzKGiiUJEeWiSbUkFV6vLg" name="in_protectedAction"/>
+      <formalGates xmi:id="_nzKGjyUJEeWiSbUkFV6vLg" message="_nzKGjCUJEeWiSbUkFV6vLg" name="out_protectedAction"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_nzKGkCUJEeWiSbUkFV6vLg" specifies="_nzKGIiUJEeWiSbUkFV6vLg">
+    <specification xmi:id="_nzKGkSUJEeWiSbUkFV6vLg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGkiUJEeWiSbUkFV6vLg" covered="_nzKGniUJEeWiSbUkFV6vLg" message="_nzKGoCUJEeWiSbUkFV6vLg"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_nzKGkyUJEeWiSbUkFV6vLg" covered="_nzKGniUJEeWiSbUkFV6vLg _nzKGnyUJEeWiSbUkFV6vLg" interactionOperator="loop">
+        <operands xmi:id="_nzKGlCUJEeWiSbUkFV6vLg">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGlSUJEeWiSbUkFV6vLg" covered="_nzKGniUJEeWiSbUkFV6vLg" message="_nzKtISUJEeWiSbUkFV6vLg"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGliUJEeWiSbUkFV6vLg" covered="_nzKGnyUJEeWiSbUkFV6vLg" message="_nzKtISUJEeWiSbUkFV6vLg"/>
+          <fragments xsi:type="ram:CombinedFragment" xmi:id="_nzKGlyUJEeWiSbUkFV6vLg" covered="_nzKGniUJEeWiSbUkFV6vLg" interactionOperator="opt">
+            <operands xmi:id="_nzKGmCUJEeWiSbUkFV6vLg">
+              <fragments xsi:type="ram:AssignmentStatement" xmi:id="_nzKGmSUJEeWiSbUkFV6vLg" covered="_nzKGniUJEeWiSbUkFV6vLg" assignTo="_nzKGJSUJEeWiSbUkFV6vLg">
+                <value xsi:type="ram:OpaqueExpression" xmi:id="_nzKGmiUJEeWiSbUkFV6vLg" body="System.currentTimeMillis()" language="java"/>
+              </fragments>
+              <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_nzKGmyUJEeWiSbUkFV6vLg" body="credentialValid" language="java"/>
+            </operands>
+          </fragments>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_nzKGnCUJEeWiSbUkFV6vLg" body="Credential credential : credentials" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_nzKGnSUJEeWiSbUkFV6vLg" covered="_nzKGniUJEeWiSbUkFV6vLg" message="_nzKtICUJEeWiSbUkFV6vLg"/>
+      <lifelines xmi:id="_nzKGniUJEeWiSbUkFV6vLg" represents="_nzKtJCUJEeWiSbUkFV6vLg" coveredBy="_nzKGkiUJEeWiSbUkFV6vLg _nzKGnSUJEeWiSbUkFV6vLg _nzKGkyUJEeWiSbUkFV6vLg _nzKGlyUJEeWiSbUkFV6vLg _nzKGlSUJEeWiSbUkFV6vLg _nzKGmSUJEeWiSbUkFV6vLg"/>
+      <lifelines xmi:id="_nzKGnyUJEeWiSbUkFV6vLg" represents="_nzKGoSUJEeWiSbUkFV6vLg" coveredBy="_nzKGkyUJEeWiSbUkFV6vLg _nzKGliUJEeWiSbUkFV6vLg"/>
+      <messages xmi:id="_nzKGoCUJEeWiSbUkFV6vLg" sendEvent="_nzKtJSUJEeWiSbUkFV6vLg" receiveEvent="_nzKGkiUJEeWiSbUkFV6vLg" signature="_nzKGIiUJEeWiSbUkFV6vLg">
+        <localProperties xsi:type="ram:Reference" xmi:id="_nzKGoSUJEeWiSbUkFV6vLg" name="credential" lowerBound="1" type="_nzKGGCUJEeWiSbUkFV6vLg"/>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_nzKGoiUJEeWiSbUkFV6vLg" name="credentialValid" type="_nzKGKSUJEeWiSbUkFV6vLg"/>
+      </messages>
+      <messages xmi:id="_nzKtICUJEeWiSbUkFV6vLg" sendEvent="_nzKGnSUJEeWiSbUkFV6vLg" receiveEvent="_nzKtJiUJEeWiSbUkFV6vLg" signature="_nzKGIiUJEeWiSbUkFV6vLg" messageSort="reply"/>
+      <messages xmi:id="_nzKtISUJEeWiSbUkFV6vLg" sendEvent="_nzKGlSUJEeWiSbUkFV6vLg" receiveEvent="_nzKGliUJEeWiSbUkFV6vLg" signature="_nzKGGSUJEeWiSbUkFV6vLg" assignTo="_nzKGoiUJEeWiSbUkFV6vLg">
+        <arguments xmi:id="_nzKtIiUJEeWiSbUkFV6vLg" parameter="_nzKGGiUJEeWiSbUkFV6vLg">
+          <value xsi:type="ram:ParameterValue" xmi:id="_nzKtIyUJEeWiSbUkFV6vLg" parameter="_nzKGIyUJEeWiSbUkFV6vLg"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_nzKtJCUJEeWiSbUkFV6vLg" name="target" lowerBound="1" type="_nzKGICUJEeWiSbUkFV6vLg"/>
+      <formalGates xmi:id="_nzKtJSUJEeWiSbUkFV6vLg" message="_nzKGoCUJEeWiSbUkFV6vLg" name="in_authenticate"/>
+      <formalGates xmi:id="_nzKtJiUJEeWiSbUkFV6vLg" message="_nzKtICUJEeWiSbUkFV6vLg" name="out_authenticate"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_nzKtJyUJEeWiSbUkFV6vLg">
+    <containers xmi:id="_nzKtKCUJEeWiSbUkFV6vLg" key="_nzKGECUJEeWiSbUkFV6vLg"/>
+  </layout>
+  <wovenAspects xmi:id="_nzKtKSUJEeWiSbUkFV6vLg" name="Card" wovenElements="_nzKGFyUJEeWiSbUkFV6vLg _nzKGHSUJEeWiSbUkFV6vLg _nzKGESUJEeWiSbUkFV6vLg _nzKGEiUJEeWiSbUkFV6vLg _nzKGFiUJEeWiSbUkFV6vLg _nzKGGCUJEeWiSbUkFV6vLg _nzKGHCUJEeWiSbUkFV6vLg _nzKGFCUJEeWiSbUkFV6vLg">
+    <comesFrom href="Card.ram#_VBtRULkxEeSVqZtHr9XOFw"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_nzKtKiUJEeWiSbUkFV6vLg" name="AccessControl" wovenElements="_nzKGIiUJEeWiSbUkFV6vLg _nzKGGSUJEeWiSbUkFV6vLg _nzKGJSUJEeWiSbUkFV6vLg _nzKGISUJEeWiSbUkFV6vLg _nzKGHCUJEeWiSbUkFV6vLg _nzKGICUJEeWiSbUkFV6vLg _nzKGGCUJEeWiSbUkFV6vLg">
+    <comesFrom href="AccessControl.ram#_NB_cQLiCEeS3_sttK7uqeQ"/>
+  </wovenAspects>
+</ram:Aspect>

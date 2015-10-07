@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_A4ULgOJBEeSZQMFI4R9wUA" name="Transparency">
+  <realizes href="minueto.core#_rr_YAOgwEeSs6LKpNnTh_g"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_A4ULgeJBEeSZQMFI4R9wUA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_A4ULguJBEeSZQMFI4R9wUA" name="MinuetoOptions" visibility="public" instanceClassName="org.minueto.MinuetoOptions">
+      <operations xmi:id="_A4ULg-JBEeSZQMFI4R9wUA" name="enableAlpha" visibility="public" returnType="_A4ULhuJBEeSZQMFI4R9wUA" static="true">
+        <parameters xmi:id="_A4ULhOJBEeSZQMFI4R9wUA" name="arg0" type="_A4ULiOJBEeSZQMFI4R9wUA"/>
+      </operations>
+      <operations xmi:id="_A4ULheJBEeSZQMFI4R9wUA" name="isAlphaEnabled" visibility="public" returnType="_A4ULiOJBEeSZQMFI4R9wUA" static="true"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_A4ULhuJBEeSZQMFI4R9wUA"/>
+    <types xsi:type="ram:RAny" xmi:id="_A4ULh-JBEeSZQMFI4R9wUA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_A4ULiOJBEeSZQMFI4R9wUA"/>
+    <types xsi:type="ram:RInt" xmi:id="_A4ULieJBEeSZQMFI4R9wUA"/>
+    <types xsi:type="ram:RChar" xmi:id="_A4ULiuJBEeSZQMFI4R9wUA"/>
+    <types xsi:type="ram:RString" xmi:id="_A4ULi-JBEeSZQMFI4R9wUA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_A4ULjOJBEeSZQMFI4R9wUA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_A4ULjeJBEeSZQMFI4R9wUA"/>
+    <types xsi:type="ram:RLong" xmi:id="_A4ULjuJBEeSZQMFI4R9wUA"/>
+  </structuralView>
+  <instantiations xmi:id="_qlMLwCDKEeWOgN4vdFvUTg">
+    <source xsi:type="ram:Aspect" href="Acceleration.ram#_kT7vkOJBEeSZQMFI4R9wUA"/>
+  </instantiations>
+  <layout xmi:id="_A4ULj-JBEeSZQMFI4R9wUA">
+    <containers xmi:id="_A4ULkOJBEeSZQMFI4R9wUA" key="_A4ULgeJBEeSZQMFI4R9wUA">
+      <value xmi:id="_A4ULkeJBEeSZQMFI4R9wUA" key="_A4ULguJBEeSZQMFI4R9wUA">
+        <value xmi:id="_A4ULkuJBEeSZQMFI4R9wUA" x="370.99994" y="147.00009"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

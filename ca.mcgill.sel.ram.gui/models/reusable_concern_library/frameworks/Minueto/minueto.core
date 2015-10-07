@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_MGAFUMf9EeSSgrP6a4IKSw" name="Minueto">
+  <models xsi:type="core:COREFeatureModel" href="#_MGAFUcf9EeSSgrP6a4IKSw"/>
+  <models xsi:type="ram:Aspect" href="Minueto.ram#_OqwhEMf9EeSSgrP6a4IKSw"/>
+  <models xsi:type="ram:Aspect" href="Visual.ram#_vwwVAPNUEeSMhuSPkYyYzA"/>
+  <models xsi:type="ram:Aspect" href="Surface.ram#_eG4zkPfvEeSv9pyqEMq9pA"/>
+  <models xsi:type="ram:Aspect" href="SwingIntegration.ram#_3bB9UNeuEeS8y5KmwJbwVA"/>
+  <models xsi:type="ram:Aspect" href="Fullscreen.ram#_QousYNchEeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="Frame.ram#_MwfsANcgEeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="DisplaySize.ram#_TrHMgOHbEeSgi6FCXCkP2Q"/>
+  <models xsi:type="ram:Aspect" href="Acceleration.ram#_kT7vkOJBEeSZQMFI4R9wUA"/>
+  <models xsi:type="ram:Aspect" href="Transparency.ram#_A4ULgOJBEeSZQMFI4R9wUA"/>
+  <models xsi:type="ram:Aspect" href="Circle.ram#_y_h5QNcoEeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="File.ram#_7LgcMNcoEeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="Image.ram#_vWKtQNclEeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="Line.ram#_-BJ2YN75EeShJ659NzW61g"/>
+  <models xsi:type="ram:Aspect" href="Rectangle.ram#_oBu5gNcpEeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="Text.ram#_ScF4sNcnEeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="Event.ram#_03aqINc3EeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="Focus.ram#_Ew7ZINc7EeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="Keyboard.ram#_SxgfUNc4EeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="Mouse.ram#_yxpbANc4EeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="MouseWheel.ram#_415xkNc6EeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="Window.ram#_68JXQNc4EeSyqfAiT90vaA"/>
+  <models xsi:type="ram:Aspect" href="Platform.ram#_PjUQsOHbEeSgi6FCXCkP2Q"/>
+  <models xsi:type="ram:Aspect" href="Stopwatch.ram#__dpNoOHaEeSgi6FCXCkP2Q"/>
+  <models xsi:type="ram:Aspect" href="GraphicalElement.ram#_tGECgCDJEeWOgN4vdFvUTg"/>
+  <models xsi:type="core:COREImpactModel" href="#_b75-UCTUEeW7bslf6FxACg"/>
+  <featureModel xmi:id="_MGAFUcf9EeSSgrP6a4IKSw" coreConcern="_MGAFUMf9EeSSgrP6a4IKSw" root="_MGAFUsf9EeSSgrP6a4IKSw">
+    <features xmi:id="_MGAFUsf9EeSSgrP6a4IKSw" name="Minueto" children="_AmTgYOI_EeSZQMFI4R9wUA _reyG0Nc3EeSyqfAiT90vaA _3AVlYN8BEeShJ659NzW61g">
+      <realizedBy xsi:type="ram:Aspect" href="Minueto.ram#_OqwhEMf9EeSSgrP6a4IKSw"/>
+    </features>
+    <features xmi:id="_zQutENcfEeSyqfAiT90vaA" name="Surface" children="_1dm0UNcfEeSyqfAiT90vaA _2bhOENcfEeSyqfAiT90vaA _KWU_INeuEeS8y5KmwJbwVA" parent="_AmTgYOI_EeSZQMFI4R9wUA" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="Surface.ram#_eG4zkPfvEeSv9pyqEMq9pA"/>
+    </features>
+    <features xmi:id="_1dm0UNcfEeSyqfAiT90vaA" name="Window" parent="_zQutENcfEeSyqfAiT90vaA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Frame.ram#_MwfsANcgEeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_2bhOENcfEeSyqfAiT90vaA" name="Fullscreen" parent="_zQutENcfEeSyqfAiT90vaA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Fullscreen.ram#_QousYNchEeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_eZUKkNclEeSyqfAiT90vaA" name="GraphicalElement" children="_3Ixt8NclEeSyqfAiT90vaA _3T9qQNclEeSyqfAiT90vaA _3d2mENclEeSyqfAiT90vaA _2pRcIN70EeShJ659NzW61g _4y_vcN75EeShJ659NzW61g" parent="_AmTgYOI_EeSZQMFI4R9wUA" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="GraphicalElement.ram#_tGECgCDJEeWOgN4vdFvUTg"/>
+    </features>
+    <features xmi:id="_3Ixt8NclEeSyqfAiT90vaA" name="Text" parent="_eZUKkNclEeSyqfAiT90vaA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Text.ram#_ScF4sNcnEeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_3T9qQNclEeSyqfAiT90vaA" name="Circle" parent="_eZUKkNclEeSyqfAiT90vaA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Circle.ram#_y_h5QNcoEeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_3d2mENclEeSyqfAiT90vaA" name="Rectangle" parent="_eZUKkNclEeSyqfAiT90vaA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Rectangle.ram#_oBu5gNcpEeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_reyG0Nc3EeSyqfAiT90vaA" name="Interactive" children="_uqGMQNc3EeSyqfAiT90vaA _u1dHsNc3EeSyqfAiT90vaA _w1Pt0Nc6EeSyqfAiT90vaA _EaM94OJBEeSZQMFI4R9wUA" parent="_MGAFUsf9EeSSgrP6a4IKSw" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Event.ram#_03aqINc3EeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_uqGMQNc3EeSyqfAiT90vaA" name="Keyboard" parent="_reyG0Nc3EeSyqfAiT90vaA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Keyboard.ram#_SxgfUNc4EeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_u1dHsNc3EeSyqfAiT90vaA" name="Mouse" children="_CSh00OJDEeSZQMFI4R9wUA" parent="_reyG0Nc3EeSyqfAiT90vaA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Mouse.ram#_yxpbANc4EeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_w1Pt0Nc6EeSyqfAiT90vaA" name="WindowFocus" children="_MzzbMOJDEeSZQMFI4R9wUA" parent="_reyG0Nc3EeSyqfAiT90vaA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Focus.ram#_Ew7ZINc7EeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_KWU_INeuEeS8y5KmwJbwVA" name="SwingIntegration" parent="_zQutENcfEeSyqfAiT90vaA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="SwingIntegration.ram#_3bB9UNeuEeS8y5KmwJbwVA"/>
+    </features>
+    <features xmi:id="_2pRcIN70EeShJ659NzW61g" name="Image" children="_4Nu4gN70EeShJ659NzW61g" parent="_eZUKkNclEeSyqfAiT90vaA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Image.ram#_vWKtQNclEeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_4Nu4gN70EeShJ659NzW61g" name="File" parent="_2pRcIN70EeShJ659NzW61g" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="File.ram#_7LgcMNcoEeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_4y_vcN75EeShJ659NzW61g" name="Line" parent="_eZUKkNclEeSyqfAiT90vaA" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Line.ram#_-BJ2YN75EeShJ659NzW61g"/>
+    </features>
+    <features xmi:id="_3AVlYN8BEeShJ659NzW61g" name="Utilities" children="_4fMJAN8BEeShJ659NzW61g _MLxikOHaEeSgi6FCXCkP2Q" parent="_MGAFUsf9EeSSgrP6a4IKSw" parentRelationship="Optional"/>
+    <features xmi:id="_4fMJAN8BEeShJ659NzW61g" name="Stopwatch" parent="_3AVlYN8BEeShJ659NzW61g" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Stopwatch.ram#__dpNoOHaEeSgi6FCXCkP2Q"/>
+    </features>
+    <features xmi:id="_MLxikOHaEeSgi6FCXCkP2Q" name="Platform" parent="_3AVlYN8BEeShJ659NzW61g" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Platform.ram#_PjUQsOHbEeSgi6FCXCkP2Q"/>
+    </features>
+    <features xmi:id="_AmTgYOI_EeSZQMFI4R9wUA" name="Visual" children="_zQutENcfEeSyqfAiT90vaA _VOezYOJBEeSZQMFI4R9wUA _eZUKkNclEeSyqfAiT90vaA _ZHgTYOJBEeSZQMFI4R9wUA" parent="_MGAFUsf9EeSSgrP6a4IKSw" parentRelationship="Mandatory">
+      <realizedBy xsi:type="ram:Aspect" href="Visual.ram#_vwwVAPNUEeSMhuSPkYyYzA"/>
+    </features>
+    <features xmi:id="_EaM94OJBEeSZQMFI4R9wUA" name="SwingIntegrationInteractive" parent="_reyG0Nc3EeSyqfAiT90vaA" parentRelationship="OR"/>
+    <features xmi:id="_VOezYOJBEeSZQMFI4R9wUA" name="DisplaySize" parent="_AmTgYOI_EeSZQMFI4R9wUA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="DisplaySize.ram#_TrHMgOHbEeSgi6FCXCkP2Q"/>
+    </features>
+    <features xmi:id="_ZHgTYOJBEeSZQMFI4R9wUA" name="Acceleration" children="_rr_YAOgwEeSs6LKpNnTh_g" parent="_AmTgYOI_EeSZQMFI4R9wUA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Acceleration.ram#_kT7vkOJBEeSZQMFI4R9wUA"/>
+    </features>
+    <features xmi:id="_CSh00OJDEeSZQMFI4R9wUA" name="MouseWheel" parent="_u1dHsNc3EeSyqfAiT90vaA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="MouseWheel.ram#_415xkNc6EeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_MzzbMOJDEeSZQMFI4R9wUA" name="WindowInteractive" parent="_w1Pt0Nc6EeSyqfAiT90vaA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Window.ram#_68JXQNc4EeSyqfAiT90vaA"/>
+    </features>
+    <features xmi:id="_rr_YAOgwEeSs6LKpNnTh_g" name="Transparency" parent="_ZHgTYOJBEeSZQMFI4R9wUA" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Transparency.ram#_A4ULgOJBEeSZQMFI4R9wUA"/>
+    </features>
+  </featureModel>
+  <impactModel xmi:id="_b75-UCTUEeW7bslf6FxACg" name="Impact Model" coreConcern="_MGAFUMf9EeSSgrP6a4IKSw">
+    <impactModelElements xmi:id="_b76lYCTUEeW7bslf6FxACg" name="Decrease System Requirements" scalingFactor="6.67" offset="100.0" incoming="_j6ESQCTVEeW7bslf6FxACg _r5N6ICTVEeW7bslf6FxACg"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_i657UCTVEeW7bslf6FxACg" name="Transparency" scalingFactor="1.0" outgoing="_j6ESQCTVEeW7bslf6FxACg" represents="_rr_YAOgwEeSs6LKpNnTh_g"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_rZbm0CTVEeW7bslf6FxACg" name="Acceleration" scalingFactor="1.0" outgoing="_r5N6ICTVEeW7bslf6FxACg" represents="_ZHgTYOJBEeSZQMFI4R9wUA"/>
+    <impactModelElements xmi:id="_wEaIMCTVEeW7bslf6FxACg" name="Increase Performance" scalingFactor="6.25" offset="62.5" incoming="_0-5FMCTVEeW7bslf6FxACg _NCCqQCTYEeW7bslf6FxACg _z-6aQCmIEeWhRM8GTp-o2w"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_0LtUwCTVEeW7bslf6FxACg" name="Fullscreen" scalingFactor="1.0" outgoing="_0-5FMCTVEeW7bslf6FxACg" represents="_2bhOENcfEeSyqfAiT90vaA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_MeHd0CTYEeW7bslf6FxACg" name="SwingIntegration" scalingFactor="1.0" outgoing="_NCCqQCTYEeW7bslf6FxACg" represents="_KWU_INeuEeS8y5KmwJbwVA"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_zCi4oCmIEeWhRM8GTp-o2w" name="Acceleration" scalingFactor="1.0" outgoing="_z-6aQCmIEeWhRM8GTp-o2w" represents="_ZHgTYOJBEeSZQMFI4R9wUA"/>
+    <layouts xmi:id="_b76lYSTUEeW7bslf6FxACg" key="_b76lYCTUEeW7bslf6FxACg">
+      <value xmi:id="_b76lYiTUEeW7bslf6FxACg" key="_b76lYCTUEeW7bslf6FxACg">
+        <value xmi:id="_b76lYyTUEeW7bslf6FxACg" x="479.49988" y="73.00009"/>
+      </value>
+      <value xmi:id="_i657USTVEeW7bslf6FxACg" key="_i657UCTVEeW7bslf6FxACg">
+        <value xmi:id="_i657UiTVEeW7bslf6FxACg" x="381.0617" y="350.9999"/>
+      </value>
+      <value xmi:id="_rZbm0STVEeW7bslf6FxACg" key="_rZbm0CTVEeW7bslf6FxACg">
+        <value xmi:id="_rZbm0iTVEeW7bslf6FxACg" x="572.92267" y="349.9998"/>
+      </value>
+    </layouts>
+    <layouts xmi:id="_wEaIMSTVEeW7bslf6FxACg" key="_wEaIMCTVEeW7bslf6FxACg">
+      <value xmi:id="_wEaIMiTVEeW7bslf6FxACg" key="_wEaIMCTVEeW7bslf6FxACg">
+        <value xmi:id="_wEaIMyTVEeW7bslf6FxACg" x="512.0" y="50.0"/>
+      </value>
+      <value xmi:id="_0LtUwSTVEeW7bslf6FxACg" key="_0LtUwCTVEeW7bslf6FxACg">
+        <value xmi:id="_0LtUwiTVEeW7bslf6FxACg" x="373.48334" y="272.99994"/>
+      </value>
+      <value xmi:id="_MeHd0STYEeW7bslf6FxACg" key="_MeHd0CTYEeW7bslf6FxACg">
+        <value xmi:id="_MeHd0iTYEeW7bslf6FxACg" x="593.6946" y="269.99982"/>
+      </value>
+      <value xmi:id="_zCi4oSmIEeWhRM8GTp-o2w" key="_zCi4oCmIEeWhRM8GTp-o2w">
+        <value xmi:id="_zCi4oimIEeWhRM8GTp-o2w" x="810.1596" y="267.99997"/>
+      </value>
+    </layouts>
+    <contributions xmi:id="_j6ESQCTVEeW7bslf6FxACg" relativeWeight="-5" source="_i657UCTVEeW7bslf6FxACg" impacts="_b76lYCTUEeW7bslf6FxACg"/>
+    <contributions xmi:id="_r5N6ICTVEeW7bslf6FxACg" relativeWeight="-10" source="_rZbm0CTVEeW7bslf6FxACg" impacts="_b76lYCTUEeW7bslf6FxACg"/>
+    <contributions xmi:id="_0-5FMCTVEeW7bslf6FxACg" relativeWeight="1" source="_0LtUwCTVEeW7bslf6FxACg" impacts="_wEaIMCTVEeW7bslf6FxACg"/>
+    <contributions xmi:id="_NCCqQCTYEeW7bslf6FxACg" relativeWeight="-10" source="_MeHd0CTYEeW7bslf6FxACg" impacts="_wEaIMCTVEeW7bslf6FxACg"/>
+    <contributions xmi:id="_z-6aQCmIEeWhRM8GTp-o2w" relativeWeight="5" source="_zCi4oCmIEeWhRM8GTp-o2w" impacts="_wEaIMCTVEeW7bslf6FxACg"/>
+  </impactModel>
+</core:COREConcern>

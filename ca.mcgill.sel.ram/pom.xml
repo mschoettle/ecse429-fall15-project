@@ -1,0 +1,217 @@
+<!-- Generated pom.xml, feel free to adapt it to your needs -->    
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>ca.mcgill.sel.ram</artifactId>
+    <groupId>ca.mcgill.sel</groupId>
+    <packaging>bundle</packaging>
+    <name>ca.mcgill.sel.ram</name>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <properties>
+        <scala.version>2.9.2</scala.version> 
+        <kermeta.version>2.0.98</kermeta.version>
+        <bundle.vendor>McGill Software Engineering Laboratory</bundle.vendor>
+    </properties>
+   
+   
+    <build>
+       
+        <resources>
+                <resource>
+                        <directory>${basedir}/src/main/resources</directory>
+                </resource>
+                <resource>
+                        <directory>${project.build.directory}/resources</directory>
+                </resource>
+                <resource>
+                        <directory>model</directory>
+                        <targetPath>model</targetPath>
+                </resource>
+                <resource>
+                                <directory>.</directory>
+                                <includes>
+                                        <include>plugin.properties</include>
+                                        <include>plugin.xml</include>
+                                </includes>
+                        </resource>
+        </resources>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+           
+                         
+            <!-- Creation of the bundle jar and its manifest -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>2.3.7</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.name}</Bundle-Name>
+                        <Bundle-Vendor>${bundle.vendor}</Bundle-Vendor>
+                        <!-- <Bundle-Activator>org.kermeta.kp.wizard.eclipse.Activator</Bundle-Activator>-->
+                        <Bundle-ActivationPolicy>lazy</Bundle-ActivationPolicy>
+                        <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
+                        <Bundle-Version>${bundle.version}</Bundle-Version>
+                        <Export-Package>
+                                ca.mcgill.sel.*
+                        </Export-Package>
+                        <Require-Bundle>
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi;bundle-version="2.7.0",
+ org.eclipse.ocl.examples.xtext.oclinecore;bundle-version="3.2.0"
+                                                </Require-Bundle>
+                        <Import-Package>
+                                !*
+                        </Import-Package>
+                        <Bundle-ClassPath>.</Bundle-ClassPath>
+                        <Bundle-RequiredExecutionEnvironment>JavaSE-1.6</Bundle-RequiredExecutionEnvironment>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <!-- calculate versions for some special cases -->
+                        <!-- calculate the bundle version from the project version : replace -SNAPSHOT
+                                by .SNAPSHOT_${timestamp} -->
+                        <plugin>
+                                <groupId>org.codehaus.groovy.maven</groupId>
+                                <artifactId>gmaven-plugin</artifactId>
+                                <version>1.0</version>
+                                <executions>
+                                        <execution>
+                                                <id>generate_bundle_version</id>
+                                                <phase>initialize</phase>
+                                                <goals>
+                                                        <goal>execute</goal>
+                                                </goals>
+                                                <configuration>
+                                                        <source>
+                                                                String scalaVersionNoSuffix = "${scala.version}"
+                                                                int index = "${scala.version}".indexOf("-")
+                                                                if(index!=-1)
+                                                                        scalaVersionNoSuffix = "${scala.version}".substring(0,index)
+                                                                project.properties.setProperty('scala.version.nosuffix', scalaVersionNoSuffix)
+                                                                println("scala.version.nosuffix="+scalaVersionNoSuffix)
+                                                                String bundleVersion = "${project.version}"
+                                                                // workaround jenkins bug https://issues.jenkins-ci.org/browse/JENKINS-9693?page=com.atlassian.jira.plugin.system.issuetabpanels:all-tabpanel
+                                                                String timestamp = "${maven.build.timestamp}".replaceAll("-","_")
+                                                                bundleVersion = bundleVersion.replaceAll("-SNAPSHOT", "-SNAPSHOT_"+timestamp)
+                                                                bundleVersion = bundleVersion.replaceAll("-",".")
+                                                                project.properties.setProperty('bundle.version',bundleVersion)
+                                                                println("bundle.version="+bundleVersion)
+                                                        </source>
+                                                </configuration>
+                                        </execution>
+                                </executions>
+                        </plugin>
+            <!-- copy the generated manifest to a place where eclipse expects it so it doesn't raise error -->
+                          <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.4.3</version>
+                <executions>
+                    <execution>
+                        <id>copy-manifest-for-eclipse-ide</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>META-INF</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.build.directory}/classes/META-INF</directory>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+           
+            <!-- correctly configure eclipse project accordingly to the pom -->
+                <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-eclipse-plugin</artifactId>
+                            <version>2.8</version>
+                            <!-- see http://maven.apache.org/plugins/maven-eclipse-plugin/eclipse-mojo.html for more information -->
+                            <configuration>
+                              <downloadSources>true</downloadSources>
+                              <downloadJavadocs>true</downloadJavadocs>
+                              <projectnatures>
+                                <projectnature>org.eclipse.pde.PluginNature</projectnature>
+                                <projectnature>org.eclipse.jdt.core.javanature</projectnature>                         
+                              </projectnatures>
+                              <buildcommands>
+                                <buildcommand>org.eclipse.pde.ManifestBuilder</buildcommand>
+                              </buildcommands>
+                              <buildcommands>
+                                <buildcommand>org.eclipse.pde.SchemaBuilder</buildcommand>
+                              </buildcommands>
+                              <buildcommands>
+                                <buildcommand>org.eclipse.jdt.core.javabuilder</buildcommand>
+                              </buildcommands>
+                              <classpathContainers>
+                                <classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
+                                <classpathContainer>org.eclipse.pde.core.requiredPlugins</classpathContainer>
+                              </classpathContainers>
+                              <excludes>
+                                <exclude>org.scala-lang:scala-library</exclude>
+                              </excludes>
+                              <sourceIncludes>
+                                <sourceInclude>**/*.java</sourceInclude>
+                              </sourceIncludes>
+                              <useProjectReferences>false</useProjectReferences>
+                            </configuration>
+                          </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.emf</groupId>
+            <artifactId>ecore</artifactId>
+            <version>[2.7.0,)</version>
+            <exclusions>
+                <exclusion>
+                        <groupId>org.eclipse.equinox</groupId>
+                        <artifactId>app</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+       
+        <dependency>
+            <groupId>org.eclipse.emf.ecore</groupId>
+            <artifactId>xmi</artifactId>
+            <version>[2.7.0,)</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.ocl.examples.xtext</groupId>
+            <artifactId>oclinecore</artifactId>
+            <version>[3.2.0,)</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.ocl.examples.xtext</groupId>
+            <artifactId>essentialocl</artifactId>
+            <version>[3.2.0,)</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.ocl.examples</groupId>
+            <artifactId>pivot</artifactId>
+            <version>[3.2.0,)</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.ocl.examples</groupId>
+            <artifactId>library</artifactId>
+            <version>[3.2.0,)</version>
+        </dependency>
+        <!-- make sure to use a version even if there is an error in the xtext jar that is in the maven repository -->
+        <dependency>
+                <groupId>org.eclipse.xtext</groupId>
+                <artifactId>util</artifactId>
+                <version>[2.0.0,)</version>
+        </dependency>
+       
+        <!-- Add more dependencies here -->        
+    </dependencies>
+</project>

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: ca.mcgill.sel.ram.edit;singleton:=true
+Bundle-Version: 2.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: ca.mcgill.sel.ram.provider.RAMEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: ca.mcgill.sel.ram.provider,
+ ca.mcgill.sel.ram.provider.util
+Require-Bundle: org.eclipse.core.runtime,
+ ca.mcgill.sel.ram;visibility:=reexport,
+ ca.mcgill.sel.core.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy

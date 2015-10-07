@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_ae9HcF1kEeWQT_S3cgcj8w" name="OrderedMinimum">
+  <realizes href="Association.core#__6WrkACWEeWTy6SkLveZ6w"/>
+  <realizes href="Association.core#_LEwHcACXEeWTy6SkLveZ6w"/>
+  <coreConcern href="Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+  <structuralView xmi:id="_ae9HcV1kEeWQT_S3cgcj8w">
+    <classes xsi:type="ram:Class" xmi:id="_3uxTwF1oEeWQT_S3cgcj8w" name="Data" partiality="public" visibility="public">
+      <operations xmi:id="_DmkoMF1pEeWQT_S3cgcj8w" name="add" extendedVisibility="package" returnType="_ae9HdF1kEeWQT_S3cgcj8w">
+        <parameters xmi:id="_DmkoMV1pEeWQT_S3cgcj8w" name="index" type="_ae9HdV1kEeWQT_S3cgcj8w"/>
+        <parameters xmi:id="_DmkoMl1pEeWQT_S3cgcj8w" name="a">
+          <type xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        </parameters>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_ae9Hcl1kEeWQT_S3cgcj8w"/>
+    <types xsi:type="ram:RAny" xmi:id="_ae9Hc11kEeWQT_S3cgcj8w"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_ae9HdF1kEeWQT_S3cgcj8w"/>
+    <types xsi:type="ram:RInt" xmi:id="_ae9HdV1kEeWQT_S3cgcj8w"/>
+    <types xsi:type="ram:RChar" xmi:id="_ae9Hdl1kEeWQT_S3cgcj8w"/>
+    <types xsi:type="ram:RString" xmi:id="_ae9Hd11kEeWQT_S3cgcj8w"/>
+    <types xsi:type="ram:RDouble" xmi:id="_ae9HeF1kEeWQT_S3cgcj8w"/>
+    <types xsi:type="ram:RFloat" xmi:id="_ae9HeV1kEeWQT_S3cgcj8w"/>
+    <types xsi:type="ram:RLong" xmi:id="_ae9Hel1kEeWQT_S3cgcj8w"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageViewReference" xmi:id="_DMfM4F1sEeWZb4Ilp44CGg">
+    <affectedBy href="Minimum.ram#_txKVUzuhEeWIVcpOKZa9oA"/>
+    <references href="Ordered.ram#_rlFsMwvGEeW97eUarwQSdA"/>
+  </messageViews>
+  <instantiations xmi:id="_G1DWYF1pEeWQT_S3cgcj8w">
+    <source xsi:type="ram:Aspect" href="Ordered.ram#_3WYVMKaKEeSAKObocMolaA"/>
+  </instantiations>
+  <instantiations xmi:id="_HcyEwF1pEeWQT_S3cgcj8w">
+    <source xsi:type="ram:Aspect" href="Minimum.ram#_7DYvYPpxEeSkPvOsRGSPpQ"/>
+  </instantiations>
+  <layout xmi:id="_ae9HfF1kEeWQT_S3cgcj8w">
+    <containers xmi:id="_ae9HfV1kEeWQT_S3cgcj8w" key="_ae9HcV1kEeWQT_S3cgcj8w">
+      <value xmi:id="_3uyh4F1oEeWQT_S3cgcj8w" key="_3uxTwF1oEeWQT_S3cgcj8w">
+        <value xmi:id="_3uyh4V1oEeWQT_S3cgcj8w" x="342.00006" y="319.00015"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_d2CAoJ04EeSt9a2wP2B-bA" name="ParallelExecution">
+  <realizes href="workflow.core#_ckF4ACscEeW3Po49D6GeZA"/>
+  <coreConcern href="workflow.core#_FCrqgCrMEeW3Po49D6GeZA"/>
+  <structuralView xmi:id="_d2CAoZ04EeSt9a2wP2B-bA">
+    <classes xsi:type="ram:Class" xmi:id="_d2CAop04EeSt9a2wP2B-bA" name="ParallelExeuctionNode">
+      <operations xmi:id="_d2CAo504EeSt9a2wP2B-bA" name="chooseNextNodes" extendedVisibility="protected" returnType="_d2CArp04EeSt9a2wP2B-bA">
+        <parameters xmi:id="_d2CApJ04EeSt9a2wP2B-bA" name="c">
+          <type xsi:type="ram:Class" href="Workflow.ram#_lQ-4YFVEEeSrUt9aC6YVcA"/>
+        </parameters>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_d2CApZ04EeSt9a2wP2B-bA"/>
+    <types xsi:type="ram:RAny" xmi:id="_d2CApp04EeSt9a2wP2B-bA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_d2CAp504EeSt9a2wP2B-bA"/>
+    <types xsi:type="ram:RInt" xmi:id="_d2CAqJ04EeSt9a2wP2B-bA"/>
+    <types xsi:type="ram:RChar" xmi:id="_d2CAqZ04EeSt9a2wP2B-bA"/>
+    <types xsi:type="ram:RString" xmi:id="_d2CAqp04EeSt9a2wP2B-bA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_d2CAq504EeSt9a2wP2B-bA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_d2CArJ04EeSt9a2wP2B-bA"/>
+    <types xsi:type="ram:RLong" xmi:id="_d2CArZ04EeSt9a2wP2B-bA"/>
+    <types xsi:type="ram:RSet" xmi:id="_d2CArp04EeSt9a2wP2B-bA">
+      <type xsi:type="ram:Class" href="Workflow.ram#_lQ-4V1VEEeSrUt9aC6YVcA"/>
+    </types>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_eShIUJ04EeSt9a2wP2B-bA" specifies="_d2CAo504EeSt9a2wP2B-bA">
+    <specification xmi:id="_eShIUZ04EeSt9a2wP2B-bA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_eShIUp04EeSt9a2wP2B-bA" covered="_eShIVJ04EeSt9a2wP2B-bA" message="_eShIVZ04EeSt9a2wP2B-bA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_z-gowJ06EeSt9a2wP2B-bA" covered="_eShIVJ04EeSt9a2wP2B-bA" message="_z-hP0J06EeSt9a2wP2B-bA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_z-gowZ06EeSt9a2wP2B-bA" covered="_eShIVJ04EeSt9a2wP2B-bA" message="_z-hP0J06EeSt9a2wP2B-bA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_eShIU504EeSt9a2wP2B-bA" covered="_eShIVJ04EeSt9a2wP2B-bA" message="_eShIVp04EeSt9a2wP2B-bA"/>
+      <lifelines xmi:id="_eShIVJ04EeSt9a2wP2B-bA" represents="_eShIV504EeSt9a2wP2B-bA" coveredBy="_eShIUp04EeSt9a2wP2B-bA _eShIU504EeSt9a2wP2B-bA _z-gowJ06EeSt9a2wP2B-bA _z-gowZ06EeSt9a2wP2B-bA"/>
+      <messages xmi:id="_eShIVZ04EeSt9a2wP2B-bA" sendEvent="_eShIWJ04EeSt9a2wP2B-bA" receiveEvent="_eShIUp04EeSt9a2wP2B-bA" signature="_d2CAo504EeSt9a2wP2B-bA">
+        <localProperties xsi:type="ram:Reference" xmi:id="_0XuaAJ06EeSt9a2wP2B-bA" name="toActivate" lowerBound="1">
+          <type xsi:type="ram:RSet" href="Outpath.ram#_wTQfAJ06EeSt9a2wP2B-bA"/>
+        </localProperties>
+      </messages>
+      <messages xmi:id="_eShIVp04EeSt9a2wP2B-bA" sendEvent="_eShIU504EeSt9a2wP2B-bA" receiveEvent="_eShIWZ04EeSt9a2wP2B-bA" signature="_d2CAo504EeSt9a2wP2B-bA" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_3RLTYJ06EeSt9a2wP2B-bA" value="_0XuaAJ06EeSt9a2wP2B-bA"/>
+      </messages>
+      <messages xmi:id="_z-hP0J06EeSt9a2wP2B-bA" sendEvent="_z-gowJ06EeSt9a2wP2B-bA" receiveEvent="_z-gowZ06EeSt9a2wP2B-bA" assignTo="_0XuaAJ06EeSt9a2wP2B-bA">
+        <signature href="Outpath.ram#_wTQfAZ06EeSt9a2wP2B-bA"/>
+      </messages>
+      <properties xmi:id="_eShIV504EeSt9a2wP2B-bA" name="target" lowerBound="1" type="_d2CAop04EeSt9a2wP2B-bA"/>
+      <formalGates xmi:id="_eShIWJ04EeSt9a2wP2B-bA" message="_eShIVZ04EeSt9a2wP2B-bA" name="in_chooseNextNodes"/>
+      <formalGates xmi:id="_eShIWZ04EeSt9a2wP2B-bA" message="_eShIVp04EeSt9a2wP2B-bA" name="out_chooseNextNodes"/>
+    </specification>
+  </messageViews>
+  <instantiations xmi:id="_d2CAr504EeSt9a2wP2B-bA">
+    <source xsi:type="ram:Aspect" href="Outpath.ram#_2sfkEJOZEeSxiIO43J4lMw"/>
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_d2CAsJ04EeSt9a2wP2B-bA" to="_d2CAop04EeSt9a2wP2B-bA">
+      <from xsi:type="ram:Class" href="Outpath.ram#_2sfkE5OZEeSxiIO43J4lMw"/>
+    </mappings>
+  </instantiations>
+  <layout xmi:id="_d2CAsZ04EeSt9a2wP2B-bA">
+    <containers xmi:id="_d2CAsp04EeSt9a2wP2B-bA" key="_d2CAoZ04EeSt9a2wP2B-bA">
+      <value xmi:id="_d2CAs504EeSt9a2wP2B-bA" key="_d2CAop04EeSt9a2wP2B-bA">
+        <value xmi:id="_d2CAtJ04EeSt9a2wP2B-bA" x="569.0" y="218.0"/>
+      </value>
+    </containers>
+    <containers xmi:id="_eSghQJ04EeSt9a2wP2B-bA" key="_eShIUJ04EeSt9a2wP2B-bA">
+      <value xmi:id="_eSghQZ04EeSt9a2wP2B-bA" key="_eShIVJ04EeSt9a2wP2B-bA">
+        <value xmi:id="_eSghQp04EeSt9a2wP2B-bA" x="100.0" y="100.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

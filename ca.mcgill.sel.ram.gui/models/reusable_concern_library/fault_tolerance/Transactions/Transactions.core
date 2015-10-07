@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_eqym4MeUEeSMcvEs0xYKUg" name="Transactions">
+  <models xsi:type="core:COREFeatureModel" href="#_eqzN8MeUEeSMcvEs0xYKUg"/>
+  <models xsi:type="ram:Aspect" href="Checkpointing.ram#_yjWOMHpPEeSgh--X5qWQDg"/>
+  <models xsi:type="ram:Aspect" href="ExecutionContext.ram#_wCcDYFpgEeSi9aLECrkrrw"/>
+  <models xsi:type="ram:Aspect" href="OutcomeAware.ram#_frA6QFpmEeSCxMl2F0ZRSQ"/>
+  <models xsi:type="ram:Aspect" href="Recovering.ram#_LS9QoHpSEeSgh--X5qWQDg"/>
+  <models xsi:type="ram:Aspect" href="Tracing.ram#_aeKJEGUVEeSmRoPKIystCg"/>
+  <featureModel xmi:id="_eqzN8MeUEeSMcvEs0xYKUg" coreConcern="_eqym4MeUEeSMcvEs0xYKUg" root="_eqzN8ceUEeSMcvEs0xYKUg">
+    <features xmi:id="_eqzN8ceUEeSMcvEs0xYKUg" name="Transactions" children="_wRGWQMeUEeSMcvEs0xYKUg _wf6OUMeUEeSMcvEs0xYKUg _0eVLsMeUEeSMcvEs0xYKUg _1py5QMeUEeSMcvEs0xYKUg">
+      <realizedBy xsi:type="ram:Aspect" href="ExecutionContext.ram#_wCcDYFpgEeSi9aLECrkrrw"/>
+    </features>
+    <features xmi:id="_wRGWQMeUEeSMcvEs0xYKUg" name="OutcomeAware" parent="_eqzN8ceUEeSMcvEs0xYKUg" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="OutcomeAware.ram#_frA6QFpmEeSCxMl2F0ZRSQ"/>
+    </features>
+    <features xmi:id="_wf6OUMeUEeSMcvEs0xYKUg" name="Tracing" parent="_eqzN8ceUEeSMcvEs0xYKUg" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Tracing.ram#_aeKJEGUVEeSmRoPKIystCg"/>
+      <reuses xmi:id="_ZWY6QCWoEeWTO8baw2AE5A" name="Association_Trace_Context" selectedConfiguration="_ZWY6QSWoEeWTO8baw2AE5A">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_ZWY6QSWoEeWTO8baw2AE5A" name="Association_PlainAssociationKindOrderedArrayList">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_B8rTMACYEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_lR1_oCWoEeWTO8baw2AE5A" name="Traceable" selectedConfiguration="_lR1_oSWoEeWTO8baw2AE5A">
+        <reusedConcern href="Reused_Traceable/Traceable.core#_SIpcUMeREeSb5YMwXG3r2w"/>
+        <configurations xmi:id="_lR1_oSWoEeWTO8baw2AE5A" name="Traceable_Traceable">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Traceable/Traceable.core#_SIpcUceREeSb5YMwXG3r2w"/>
+          <selected href="Reused_Traceable/Traceable.core#_SIpcUseREeSb5YMwXG3r2w"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_0eVLsMeUEeSMcvEs0xYKUg" name="Checkpointing" parent="_eqzN8ceUEeSMcvEs0xYKUg" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Checkpointing.ram#_yjWOMHpPEeSgh--X5qWQDg"/>
+      <reuses xmi:id="_Xpe34CzMEeWR9KImvuEHjQ" name="Checkpointable" selectedConfiguration="_Xpe34SzMEeWR9KImvuEHjQ">
+        <reusedConcern href="Reused_Checkpointable/Checkpointable.core#_WFMm4MeQEeSb5YMwXG3r2w"/>
+        <configurations xmi:id="_Xpe34SzMEeWR9KImvuEHjQ" name="Checkpointable_Checkpointable">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Checkpointable/Checkpointable.core#_WFNN8MeQEeSb5YMwXG3r2w"/>
+          <selected href="Reused_Checkpointable/Checkpointable.core#_WFNN8ceQEeSb5YMwXG3r2w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_DPH6QCzREeWIq5OGZn_XnA" name="Checkpointable1" selectedConfiguration="_DPH6QSzREeWIq5OGZn_XnA">
+        <reusedConcern href="Reused_Checkpointable/Checkpointable.core#_WFMm4MeQEeSb5YMwXG3r2w"/>
+        <configurations xmi:id="_DPH6QSzREeWIq5OGZn_XnA" name="Checkpointable_Checkpointable">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Checkpointable/Checkpointable.core#_WFNN8MeQEeSb5YMwXG3r2w"/>
+          <selected href="Reused_Checkpointable/Checkpointable.core#_WFNN8ceQEeSb5YMwXG3r2w"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_1py5QMeUEeSMcvEs0xYKUg" name="Recovering" parent="_eqzN8ceUEeSMcvEs0xYKUg" parentRelationship="OR">
+      <realizedBy xsi:type="ram:Aspect" href="Recovering.ram#_LS9QoHpSEeSgh--X5qWQDg"/>
+    </features>
+  </featureModel>
+</core:COREConcern>

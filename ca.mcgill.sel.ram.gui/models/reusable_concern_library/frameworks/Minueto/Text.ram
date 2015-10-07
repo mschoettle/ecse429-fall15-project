@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_ScF4sNcnEeSyqfAiT90vaA" name="Text">
+  <realizes href="minueto.core#_3Ixt8NclEeSyqfAiT90vaA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_ScF4sdcnEeSyqfAiT90vaA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_DX-j0NcoEeSyqfAiT90vaA" name="MinuetoText" visibility="public" superTypes="_OewuQC5MEeWEMbzGx7oxkQ" instanceClassName="org.minueto.image.MinuetoText">
+      <operations xmi:id="_ES2QoNcoEeSyqfAiT90vaA" name="MinuetoText" visibility="public" returnType="_DX-j0NcoEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_ES2QodcoEeSyqfAiT90vaA" name="arg0" type="_ScF4t9cnEeSyqfAiT90vaA"/>
+        <parameters xmi:id="_ES2QotcoEeSyqfAiT90vaA" name="arg1" type="_ESymQNcoEeSyqfAiT90vaA"/>
+        <parameters xmi:id="_ES2Qo9coEeSyqfAiT90vaA" name="arg2" type="_ES1CgNcoEeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_FT9IUNcoEeSyqfAiT90vaA" name="MinuetoText" visibility="public" returnType="_DX-j0NcoEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_FT9IUdcoEeSyqfAiT90vaA" name="arg0" type="_ScF4t9cnEeSyqfAiT90vaA"/>
+        <parameters xmi:id="_FT9IUtcoEeSyqfAiT90vaA" name="arg1" type="_ESymQNcoEeSyqfAiT90vaA"/>
+        <parameters xmi:id="_FT9IU9coEeSyqfAiT90vaA" name="arg2" type="_ES1CgNcoEeSyqfAiT90vaA"/>
+        <parameters xmi:id="_FT9IVNcoEeSyqfAiT90vaA" name="arg3" type="_ScF4tNcnEeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_ESymQNcoEeSyqfAiT90vaA" name="MinuetoFont" visibility="public" instanceClassName="org.minueto.image.MinuetoFont">
+      <operations xmi:id="_TOzSIN71EeShJ659NzW61g" name="MinuetoFont" visibility="public" returnType="_ESymQNcoEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_TOzSId71EeShJ659NzW61g" name="arg0" type="_ScF4t9cnEeSyqfAiT90vaA"/>
+        <parameters xmi:id="_TOzSIt71EeShJ659NzW61g" name="arg1" type="_ScF4tdcnEeSyqfAiT90vaA"/>
+        <parameters xmi:id="_TOzSI971EeShJ659NzW61g" name="arg2" type="_ScF4tNcnEeSyqfAiT90vaA"/>
+        <parameters xmi:id="_TOzSJN71EeShJ659NzW61g" name="arg3" type="_ScF4tNcnEeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_ES1CgNcoEeSyqfAiT90vaA" name="MinuetoColor" visibility="public" instanceClassName="org.minueto.MinuetoColor"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_OewuQC5MEeWEMbzGx7oxkQ" name="MinuetoImage" instanceClassName="org.minueto.image.MinuetoImage"/>
+    <types xsi:type="ram:RVoid" xmi:id="_ScF4stcnEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_ScF4s9cnEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_ScF4tNcnEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_ScF4tdcnEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_ScF4ttcnEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RString" xmi:id="_ScF4t9cnEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_ScF4uNcnEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_ScF4udcnEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_ScF4utcnEeSyqfAiT90vaA"/>
+  </structuralView>
+  <instantiations xmi:id="_g65sUOJDEeSZQMFI4R9wUA">
+    <source xsi:type="ram:Aspect" href="Image.ram#_vWKtQNclEeSyqfAiT90vaA"/>
+  </instantiations>
+  <layout xmi:id="_ScF4u9cnEeSyqfAiT90vaA">
+    <containers xmi:id="_ScF4vNcnEeSyqfAiT90vaA" key="_ScF4sdcnEeSyqfAiT90vaA">
+      <value xmi:id="_DX_K4NcoEeSyqfAiT90vaA" key="_DX-j0NcoEeSyqfAiT90vaA">
+        <value xmi:id="_DX_K4dcoEeSyqfAiT90vaA" x="189.99997" y="257.99994"/>
+      </value>
+      <value xmi:id="_ESz0YNcoEeSyqfAiT90vaA" key="_ESymQNcoEeSyqfAiT90vaA">
+        <value xmi:id="_ESz0YdcoEeSyqfAiT90vaA" x="239.00018" y="418.00037"/>
+      </value>
+      <value xmi:id="_ES1pkNcoEeSyqfAiT90vaA" key="_ES1CgNcoEeSyqfAiT90vaA">
+        <value xmi:id="_ES1pkdcoEeSyqfAiT90vaA" x="824.0" y="68.000015"/>
+      </value>
+      <value xmi:id="_OeyjcC5MEeWEMbzGx7oxkQ" key="_OewuQC5MEeWEMbzGx7oxkQ">
+        <value xmi:id="_OeyjcS5MEeWEMbzGx7oxkQ" x="502.99982" y="36.000137"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

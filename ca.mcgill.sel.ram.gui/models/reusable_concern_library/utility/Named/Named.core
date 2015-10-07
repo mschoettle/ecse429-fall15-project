@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_vjZ6sKBAEeS-cby9IJCtzQ" name="Named">
+  <models xsi:type="core:COREFeatureModel" href="#_vjZ6saBAEeS-cby9IJCtzQ"/>
+  <models xsi:type="ram:Aspect" href="Named.ram#_etpFkDx2EeSYrv9m_C8Hww"/>
+  <models xsi:type="ram:Aspect" href="ChangeableName.ram#_nW1wADx2EeSYrv9m_C8Hww"/>
+  <featureModel xmi:id="_vjZ6saBAEeS-cby9IJCtzQ" coreConcern="_vjZ6sKBAEeS-cby9IJCtzQ" root="_vjZ6sqBAEeS-cby9IJCtzQ">
+    <features xmi:id="_vjZ6sqBAEeS-cby9IJCtzQ" name="Named" children="_wQJE4KBAEeS-cby9IJCtzQ">
+      <realizedBy xsi:type="ram:Aspect" href="Named.ram#_etpFkDx2EeSYrv9m_C8Hww"/>
+    </features>
+    <features xmi:id="_wQJE4KBAEeS-cby9IJCtzQ" name="Changeable Name" parent="_vjZ6sqBAEeS-cby9IJCtzQ" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="ChangeableName.ram#_nW1wADx2EeSYrv9m_C8Hww"/>
+    </features>
+  </featureModel>
+</core:COREConcern>

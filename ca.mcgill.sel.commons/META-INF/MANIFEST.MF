@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SEL Commons
+Bundle-SymbolicName: ca.mcgill.sel.commons
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Software Engineering Laboratory, McGill University
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.uml2.uml.resources;bundle-version="4.1.0",
+ org.eclipse.ocl.ecore,
+ org.eclipse.ocl.xtext.oclinecore;bundle-version="1.0.0",
+ org.eclipse.ocl.xtext.oclstdlib;bundle-version="1.0.0",
+ org.eclipse.ocl.xtext.completeocl;bundle-version="1.0.0"
+Export-Package: ca.mcgill.sel.commons,
+ ca.mcgill.sel.commons.emf.util

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_vHyIcKsyEeSI0ZxNw_rzmQ" name="Transfer">
+  <modelReuses xmi:id="_EyY5cCWiEeW4P6Q8k4u3cQ">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_EyY5cSWiEeW4P6Q8k4u3cQ">
+      <source xsi:type="ram:Aspect" href="Reused_Authentication/Woven_Authentication_Authentication_AutoLogoff_Blocking_Password_PasswordExpiry.ram#_EyHMoCWiEeW4P6Q8k4u3cQ"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_FkivICWiEeW4P6Q8k4u3cQ">
+        <to xsi:type="ram:Class" href="BBank.ram#_zXT7cqpXEeS1Vb-t_ucHGQ"/>
+        <from xsi:type="ram:Class" href="Reused_Authentication/Woven_Authentication_Authentication_AutoLogoff_Blocking_Password_PasswordExpiry.ram#_EyHM0SWiEeW4P6Q8k4u3cQ"/>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_GubvYCWiEeW4P6Q8k4u3cQ" to="_vHyIcqsyEeSI0ZxNw_rzmQ">
+        <from xsi:type="ram:Class" href="Reused_Authentication/Woven_Authentication_Authentication_AutoLogoff_Blocking_Password_PasswordExpiry.ram#_EyHzxyWiEeW4P6Q8k4u3cQ"/>
+        <operationMappings xmi:id="_H-8VACWiEeW4P6Q8k4u3cQ" to="_vHyIc6syEeSI0ZxNw_rzmQ">
+          <from xsi:type="ram:Operation" href="Reused_Authentication/Woven_Authentication_Authentication_AutoLogoff_Blocking_Password_PasswordExpiry.ram#_EyHzyCWiEeW4P6Q8k4u3cQ"/>
+        </operationMappings>
+      </mappings>
+    </compositions>
+    <reuse href="bBank.core#_Eyb8wCWiEeW4P6Q8k4u3cQ"/>
+  </modelReuses>
+  <realizes href="bBank.core#_fC6WoKsyEeSI0ZxNw_rzmQ"/>
+  <coreConcern href="bBank.core#_GpF_AKslEeS5cosAq8x8lQ"/>
+  <structuralView xmi:id="_vHyIcasyEeSI0ZxNw_rzmQ">
+    <classes xsi:type="ram:Class" xmi:id="_vHyIcqsyEeSI0ZxNw_rzmQ" name="AccountManager">
+      <operations xmi:id="_vHyIc6syEeSI0ZxNw_rzmQ" name="transfer" visibility="public" returnType="_vHyId6syEeSI0ZxNw_rzmQ">
+        <parameters xmi:id="_vHyIdKsyEeSI0ZxNw_rzmQ" name="src">
+          <type xsi:type="ram:Class" href="BBank.ram#_zXT7dKpXEeS1Vb-t_ucHGQ"/>
+        </parameters>
+        <parameters xmi:id="_vHyIdasyEeSI0ZxNw_rzmQ" name="dest">
+          <type xsi:type="ram:Class" href="BBank.ram#_zXT7dKpXEeS1Vb-t_ucHGQ"/>
+        </parameters>
+        <parameters xmi:id="_vHyIdqsyEeSI0ZxNw_rzmQ" name="amount" type="_vHyIeqsyEeSI0ZxNw_rzmQ"/>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_vHyId6syEeSI0ZxNw_rzmQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_vHyIeKsyEeSI0ZxNw_rzmQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_vHyIeasyEeSI0ZxNw_rzmQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_vHyIeqsyEeSI0ZxNw_rzmQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_vHyIe6syEeSI0ZxNw_rzmQ"/>
+    <types xsi:type="ram:RString" xmi:id="_vHyIfKsyEeSI0ZxNw_rzmQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_vHyIfasyEeSI0ZxNw_rzmQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_vHyIfqsyEeSI0ZxNw_rzmQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_vHyIf6syEeSI0ZxNw_rzmQ"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_vHyIgKsyEeSI0ZxNw_rzmQ" specifies="_vHyIc6syEeSI0ZxNw_rzmQ">
+    <specification xmi:id="_vHyIgasyEeSI0ZxNw_rzmQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_vHyIgqsyEeSI0ZxNw_rzmQ" covered="_vHyIiKsyEeSI0ZxNw_rzmQ" message="_vHyIi6syEeSI0ZxNw_rzmQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_vHyIg6syEeSI0ZxNw_rzmQ" covered="_vHyIiKsyEeSI0ZxNw_rzmQ" message="_vHyIjasyEeSI0ZxNw_rzmQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_vHyIhKsyEeSI0ZxNw_rzmQ" covered="_vHyIiasyEeSI0ZxNw_rzmQ" message="_vHyIjasyEeSI0ZxNw_rzmQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_vHyIhasyEeSI0ZxNw_rzmQ" covered="_vHyIiKsyEeSI0ZxNw_rzmQ" message="_vHyIkKsyEeSI0ZxNw_rzmQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_vHyIhqsyEeSI0ZxNw_rzmQ" covered="_vHyIiqsyEeSI0ZxNw_rzmQ" message="_vHyIkKsyEeSI0ZxNw_rzmQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_vHyIh6syEeSI0ZxNw_rzmQ" covered="_vHyIiKsyEeSI0ZxNw_rzmQ" message="_vHyIjKsyEeSI0ZxNw_rzmQ"/>
+      <lifelines xmi:id="_vHyIiKsyEeSI0ZxNw_rzmQ" represents="_vHyIk6syEeSI0ZxNw_rzmQ" coveredBy="_vHyIgqsyEeSI0ZxNw_rzmQ _vHyIh6syEeSI0ZxNw_rzmQ _vHyIg6syEeSI0ZxNw_rzmQ _vHyIhasyEeSI0ZxNw_rzmQ"/>
+      <lifelines xmi:id="_vHyIiasyEeSI0ZxNw_rzmQ" represents="_vHyIdKsyEeSI0ZxNw_rzmQ" coveredBy="_vHyIhKsyEeSI0ZxNw_rzmQ"/>
+      <lifelines xmi:id="_vHyIiqsyEeSI0ZxNw_rzmQ" represents="_vHyIdasyEeSI0ZxNw_rzmQ" coveredBy="_vHyIhqsyEeSI0ZxNw_rzmQ"/>
+      <messages xmi:id="_vHyIi6syEeSI0ZxNw_rzmQ" sendEvent="_vHyIlKsyEeSI0ZxNw_rzmQ" receiveEvent="_vHyIgqsyEeSI0ZxNw_rzmQ" signature="_vHyIc6syEeSI0ZxNw_rzmQ"/>
+      <messages xmi:id="_vHyIjKsyEeSI0ZxNw_rzmQ" sendEvent="_vHyIh6syEeSI0ZxNw_rzmQ" receiveEvent="_vHyIlasyEeSI0ZxNw_rzmQ" signature="_vHyIc6syEeSI0ZxNw_rzmQ" messageSort="reply"/>
+      <messages xmi:id="_vHyIjasyEeSI0ZxNw_rzmQ" sendEvent="_vHyIg6syEeSI0ZxNw_rzmQ" receiveEvent="_vHyIhKsyEeSI0ZxNw_rzmQ">
+        <signature href="BBank.ram#_musQQKpmEeSM_9pWTu2nOg"/>
+        <arguments xmi:id="_vHyIjqsyEeSI0ZxNw_rzmQ">
+          <parameter href="BBank.ram#_musQQapmEeSM_9pWTu2nOg"/>
+          <value xsi:type="ram:ParameterValue" xmi:id="_vHyIj6syEeSI0ZxNw_rzmQ" parameter="_vHyIdqsyEeSI0ZxNw_rzmQ"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_vHyIkKsyEeSI0ZxNw_rzmQ" sendEvent="_vHyIhasyEeSI0ZxNw_rzmQ" receiveEvent="_vHyIhqsyEeSI0ZxNw_rzmQ">
+        <signature href="BBank.ram#_N5zzkKslEeS5cosAq8x8lQ"/>
+        <arguments xmi:id="_vHyIkasyEeSI0ZxNw_rzmQ">
+          <parameter href="BBank.ram#_N5zzkaslEeS5cosAq8x8lQ"/>
+          <value xsi:type="ram:ParameterValue" xmi:id="_vHyIkqsyEeSI0ZxNw_rzmQ" parameter="_vHyIdqsyEeSI0ZxNw_rzmQ"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_vHyIk6syEeSI0ZxNw_rzmQ" name="target" lowerBound="1" type="_vHyIcqsyEeSI0ZxNw_rzmQ"/>
+      <formalGates xmi:id="_vHyIlKsyEeSI0ZxNw_rzmQ" message="_vHyIi6syEeSI0ZxNw_rzmQ" name="in_transfer"/>
+      <formalGates xmi:id="_vHyIlasyEeSI0ZxNw_rzmQ" message="_vHyIjKsyEeSI0ZxNw_rzmQ" name="out_transfer"/>
+    </specification>
+  </messageViews>
+  <instantiations xmi:id="_vHyIlqsyEeSI0ZxNw_rzmQ">
+    <source xsi:type="ram:Aspect" href="GUI.ram#_UGzhUKslEeS5cosAq8x8lQ"/>
+  </instantiations>
+  <layout xmi:id="_vHyIl6syEeSI0ZxNw_rzmQ">
+    <containers xmi:id="_vHyImKsyEeSI0ZxNw_rzmQ" key="_vHyIcasyEeSI0ZxNw_rzmQ">
+      <value xmi:id="_vHyImasyEeSI0ZxNw_rzmQ" key="_vHyIcqsyEeSI0ZxNw_rzmQ">
+        <value xmi:id="_vHyImqsyEeSI0ZxNw_rzmQ" x="217.12267" y="326.35278"/>
+      </value>
+    </containers>
+    <containers xmi:id="_vHyIm6syEeSI0ZxNw_rzmQ" key="_vHyIgKsyEeSI0ZxNw_rzmQ">
+      <value xmi:id="_vHyInKsyEeSI0ZxNw_rzmQ" key="_vHyIiKsyEeSI0ZxNw_rzmQ">
+        <value xmi:id="_vHyInasyEeSI0ZxNw_rzmQ" x="100.0" y="100.0"/>
+      </value>
+      <value xmi:id="_vHyInqsyEeSI0ZxNw_rzmQ" key="_vHyIiasyEeSI0ZxNw_rzmQ">
+        <value xmi:id="_vHyIn6syEeSI0ZxNw_rzmQ" x="455.0" y="100.0"/>
+      </value>
+      <value xmi:id="_vHyIoKsyEeSI0ZxNw_rzmQ" key="_vHyIiqsyEeSI0ZxNw_rzmQ">
+        <value xmi:id="_vHyIoasyEeSI0ZxNw_rzmQ" x="569.0" y="100.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

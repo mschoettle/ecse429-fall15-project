@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="__2QlIL0_EeSrjrlIV86ZSw" name="Door">
+  <models xsi:type="ram:Aspect" href="Door.ram#_XuDgsL1AEeSrjrlIV86ZSw"/>
+  <models xsi:type="core:COREFeatureModel" href="#__2QlIb0_EeSrjrlIV86ZSw"/>
+  <featureModel xmi:id="__2QlIb0_EeSrjrlIV86ZSw" coreConcern="__2QlIL0_EeSrjrlIV86ZSw" root="__2QlIr0_EeSrjrlIV86ZSw">
+    <features xmi:id="__2QlIr0_EeSrjrlIV86ZSw" name="Door">
+      <realizedBy xsi:type="ram:Aspect" href="Door.ram#_XuDgsL1AEeSrjrlIV86ZSw"/>
+      <reuses xmi:id="_nzQMsCUJEeWiSbUkFV6vLg" name="Door_Door" selectedConfiguration="_nzQMsSUJEeWiSbUkFV6vLg">
+        <reusedConcern href="Reused_AccessControl/AccessControl.core#_LtknALiCEeS3_sttK7uqeQ"/>
+        <configurations xmi:id="_nzQMsSUJEeWiSbUkFV6vLg" name="AccessControl_CardAccessControl">
+          <source xsi:type="core:COREFeatureModel" href="Reused_AccessControl/AccessControl.core#_LtlOELiCEeS3_sttK7uqeQ"/>
+          <selected href="Reused_AccessControl/AccessControl.core#_R5JaYLkwEeSVqZtHr9XOFw"/>
+          <selected href="Reused_AccessControl/AccessControl.core#_LtlOEbiCEeS3_sttK7uqeQ"/>
+        </configurations>
+      </reuses>
+    </features>
+  </featureModel>
+</core:COREConcern>

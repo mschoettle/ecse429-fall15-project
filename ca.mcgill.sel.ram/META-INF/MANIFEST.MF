@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: ca.mcgill.sel.ram;singleton:=true
+Bundle-Version: 3.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: ca.mcgill.sel.ram,
+ ca.mcgill.sel.ram.impl,
+ ca.mcgill.sel.ram.util
+Require-Bundle: ca.mcgill.sel.core;visibility:=reexport,
+ ca.mcgill.sel.commons;bundle-version="1.0.0";visibility:=reexport
+Bundle-ActivationPolicy: lazy

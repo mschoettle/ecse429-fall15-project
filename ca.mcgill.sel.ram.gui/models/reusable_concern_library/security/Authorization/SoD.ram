@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_FbqcEKylEeStjOtydxo5sA" name="SoD">
+  <realizes href="Authorization.core#_f5XeIKrdEeSxDLZ7wGlAEw"/>
+  <coreConcern href="Authorization.core#_q61c8KrcEeSxDLZ7wGlAEw"/>
+  <structuralView xmi:id="_FbqcEaylEeStjOtydxo5sA">
+    <classes xsi:type="ram:Class" xmi:id="_VjCvUKylEeStjOtydxo5sA" name="Constraint" partiality="public">
+      <operations xmi:id="_YSwd4KylEeStjOtydxo5sA" name="check" partiality="public" extendedVisibility="package" returnType="_FbqcFKylEeStjOtydxo5sA"/>
+      <associationEnds xmi:id="_cxkykaylEeStjOtydxo5sA" name="myPermission" lowerBound="1" navigable="false" assoc="_cxkykqylEeStjOtydxo5sA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_a0ASoKylEeStjOtydxo5sA" name="Permission">
+      <associationEnds xmi:id="_cxkykKylEeStjOtydxo5sA" name="constraint" assoc="_cxkykqylEeStjOtydxo5sA"/>
+    </classes>
+    <associations xmi:id="_cxkykqylEeStjOtydxo5sA" name="Permission_Constraint" ends="_cxkykKylEeStjOtydxo5sA _cxkykaylEeStjOtydxo5sA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_FbqcEqylEeStjOtydxo5sA"/>
+    <types xsi:type="ram:RAny" xmi:id="_FbqcE6ylEeStjOtydxo5sA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_FbqcFKylEeStjOtydxo5sA"/>
+    <types xsi:type="ram:RInt" xmi:id="_FbqcFaylEeStjOtydxo5sA"/>
+    <types xsi:type="ram:RChar" xmi:id="_FbqcFqylEeStjOtydxo5sA"/>
+    <types xsi:type="ram:RString" xmi:id="_FbqcF6ylEeStjOtydxo5sA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_FbqcGKylEeStjOtydxo5sA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_FbqcGaylEeStjOtydxo5sA"/>
+    <types xsi:type="ram:RLong" xmi:id="_FbqcGqylEeStjOtydxo5sA"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageViewReference" xmi:id="_rwgdwKyqEeS1hqbfmD25Jg" affectedBy="_ubak0KyqEeS1hqbfmD25Jg">
+    <references href="Authorization.ram#_y6LroKypEeS1hqbfmD25Jg"/>
+  </messageViews>
+  <messageViews xsi:type="ram:AspectMessageView" xmi:id="_ubak0KyqEeS1hqbfmD25Jg" name="constraintCheck">
+    <pointcut href="Authorization.ram#_bta2kKrnEeSxDLZ7wGlAEw"/>
+    <advice xmi:id="_ZSlGtKymEeStjOtydxo5sA">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_ZSlGtaymEeStjOtydxo5sA" covered="_ZSlGt6ymEeStjOtydxo5sA" message="_ZSlGuKymEeStjOtydxo5sA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_f9pQgKymEeStjOtydxo5sA" covered="_ZSlGt6ymEeStjOtydxo5sA" message="_f9pQgqymEeStjOtydxo5sA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_f9pQgaymEeStjOtydxo5sA" covered="_ZSlGt6ymEeStjOtydxo5sA" message="_f9pQgqymEeStjOtydxo5sA"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_lUhOkKymEeStjOtydxo5sA" covered="_ZSlGt6ymEeStjOtydxo5sA _rBs-YaynEeSihbrQRbgk7g" interactionOperator="opt">
+        <operands xmi:id="_lUhOkaymEeStjOtydxo5sA">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_rBwBsKynEeSihbrQRbgk7g" covered="_ZSlGt6ymEeStjOtydxo5sA" message="_rBwowKynEeSihbrQRbgk7g"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_rBwBsaynEeSihbrQRbgk7g" covered="_rBs-YaynEeSihbrQRbgk7g" message="_rBwowKynEeSihbrQRbgk7g"/>
+          <fragments xsi:type="ram:ExecutionStatement" xmi:id="_t-opkKynEeSihbrQRbgk7g" covered="_ZSlGt6ymEeStjOtydxo5sA">
+            <specification xsi:type="ram:OpaqueExpression" xmi:id="_t-opkaynEeSihbrQRbgk7g" body="throw exception;" language="java"/>
+          </fragments>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_lUhOkqymEeStjOtydxo5sA" body="!valid" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_ZSlGtqymEeStjOtydxo5sA" covered="_ZSlGt6ymEeStjOtydxo5sA" message="_ZSlGuaymEeStjOtydxo5sA"/>
+      <lifelines xmi:id="_ZSlGt6ymEeStjOtydxo5sA" represents="_ZSlGuqymEeStjOtydxo5sA" coveredBy="_ZSlGtaymEeStjOtydxo5sA _ZSlGtqymEeStjOtydxo5sA _f9pQgKymEeStjOtydxo5sA _f9pQgaymEeStjOtydxo5sA _lUhOkKymEeStjOtydxo5sA _rBwBsKynEeSihbrQRbgk7g _t-opkKynEeSihbrQRbgk7g"/>
+      <lifelines xmi:id="_rBs-YaynEeSihbrQRbgk7g" represents="_rBs-YKynEeSihbrQRbgk7g" coveredBy="_lUhOkKymEeStjOtydxo5sA _rBwBsaynEeSihbrQRbgk7g"/>
+      <messages xmi:id="_ZSlGuKymEeStjOtydxo5sA" sendEvent="_ZSlGu6ymEeStjOtydxo5sA" receiveEvent="_ZSlGtaymEeStjOtydxo5sA">
+        <signature href="Authorization.ram#_bta2kKrnEeSxDLZ7wGlAEw"/>
+        <localProperties xsi:type="ram:Attribute" xmi:id="_gcGuIKymEeStjOtydxo5sA" name="valid" type="_FbqcFKylEeStjOtydxo5sA"/>
+        <localProperties xsi:type="ram:Reference" xmi:id="_rBs-YKynEeSihbrQRbgk7g" name="exception" lowerBound="1">
+          <type xsi:type="ram:Class" href="Authorization.ram#_5J7MUKrxEeSMxYqyb-x4dQ"/>
+        </localProperties>
+      </messages>
+      <messages xmi:id="_ZSlGuaymEeStjOtydxo5sA" sendEvent="_ZSlGtqymEeStjOtydxo5sA" receiveEvent="_ZSlGvKymEeStjOtydxo5sA" messageSort="reply">
+        <signature href="Authorization.ram#_bta2kKrnEeSxDLZ7wGlAEw"/>
+      </messages>
+      <messages xmi:id="_f9pQgqymEeStjOtydxo5sA" sendEvent="_f9pQgKymEeStjOtydxo5sA" receiveEvent="_f9pQgaymEeStjOtydxo5sA" signature="_YSwd4KylEeStjOtydxo5sA" assignTo="_gcGuIKymEeStjOtydxo5sA"/>
+      <messages xmi:id="_rBwowKynEeSihbrQRbgk7g" sendEvent="_rBwBsKynEeSihbrQRbgk7g" receiveEvent="_rBwBsaynEeSihbrQRbgk7g" assignTo="_rBs-YKynEeSihbrQRbgk7g" messageSort="createMessage">
+        <signature href="Authorization.ram#_8K300KrxEeSMxYqyb-x4dQ"/>
+      </messages>
+      <properties xmi:id="_ZSlGuqymEeStjOtydxo5sA" name="target" lowerBound="1">
+        <type xsi:type="ram:Class" href="Authorization.ram#_Y49K4KrnEeSxDLZ7wGlAEw"/>
+      </properties>
+      <formalGates xmi:id="_ZSlGu6ymEeStjOtydxo5sA" message="_ZSlGuKymEeStjOtydxo5sA" name="in_execute"/>
+      <formalGates xmi:id="_ZSlGvKymEeStjOtydxo5sA" message="_ZSlGuaymEeStjOtydxo5sA" name="out_execute"/>
+    </advice>
+  </messageViews>
+  <instantiations xmi:id="_bpLAEKylEeStjOtydxo5sA">
+    <source xsi:type="ram:Aspect" href="Authorization.ram#_dPkxYKrdEeSxDLZ7wGlAEw"/>
+  </instantiations>
+  <layout xmi:id="_FbqcG6ylEeStjOtydxo5sA">
+    <containers xmi:id="_FbqcHKylEeStjOtydxo5sA" key="_FbqcEaylEeStjOtydxo5sA">
+      <value xmi:id="_VjD9cKylEeStjOtydxo5sA" key="_VjCvUKylEeStjOtydxo5sA">
+        <value xmi:id="_VjD9caylEeStjOtydxo5sA" x="345.99985" y="130.00003"/>
+      </value>
+      <value xmi:id="_a0BgwKylEeStjOtydxo5sA" key="_a0ASoKylEeStjOtydxo5sA">
+        <value xmi:id="_a0BgwaylEeStjOtydxo5sA" x="374.99976" y="354.00012"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

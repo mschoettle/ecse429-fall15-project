@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_Ls00UC5bEeWEMbzGx7oxkQ" name="HelloWorldInteractive">
+  <modelReuses xmi:id="_J0vpoC5hEeWmpNtxUwjadQ">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_J0vpoS5hEeWmpNtxUwjadQ">
+      <source xsi:type="ram:Aspect" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o78C5hEeWmpNtxUwjadQ"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_KSn4cC5hEeWmpNtxUwjadQ" to="_Ls00VC5bEeWEMbzGx7oxkQ">
+        <from xsi:type="ram:Class" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjFS5hEeWmpNtxUwjadQ"/>
+        <operationMappings xmi:id="_LDlbUC5hEeWmpNtxUwjadQ" to="_Ls00VS5bEeWEMbzGx7oxkQ">
+          <from xsi:type="ram:Operation" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjGC5hEeWmpNtxUwjadQ"/>
+        </operationMappings>
+        <operationMappings xmi:id="_L-EtoC5hEeWmpNtxUwjadQ" to="_TCCuYC5bEeWEMbzGx7oxkQ">
+          <from xsi:type="ram:Operation" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjFy5hEeWmpNtxUwjadQ"/>
+        </operationMappings>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_NG4v0C5hEeWmpNtxUwjadQ" to="_Ls00VC5bEeWEMbzGx7oxkQ">
+        <from xsi:type="ram:Class" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjKC5hEeWmpNtxUwjadQ"/>
+        <operationMappings xmi:id="_N24CUC5hEeWmpNtxUwjadQ" to="_QQsZYC5hEeWmpNtxUwjadQ">
+          <from xsi:type="ram:Operation" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjKS5hEeWmpNtxUwjadQ"/>
+        </operationMappings>
+        <operationMappings xmi:id="_OZhcYC5hEeWmpNtxUwjadQ" to="_ROW7gC5hEeWmpNtxUwjadQ">
+          <from xsi:type="ram:Operation" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjKy5hEeWmpNtxUwjadQ"/>
+        </operationMappings>
+        <operationMappings xmi:id="_OdWMcC5hEeWmpNtxUwjadQ" to="_SGp1cC5hEeWmpNtxUwjadQ">
+          <from xsi:type="ram:Operation" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjLS5hEeWmpNtxUwjadQ"/>
+        </operationMappings>
+      </mappings>
+    </compositions>
+    <reuse href="Minueto.core#_J0z7EC5hEeWmpNtxUwjadQ"/>
+  </modelReuses>
+  <realizes href="Minueto.core#_vAJlwC5gEeWmpNtxUwjadQ"/>
+  <coreConcern href="Minueto.core#_6i10kC5aEeWEMbzGx7oxkQ"/>
+  <structuralView xmi:id="_Ls00Uy5bEeWEMbzGx7oxkQ">
+    <classes xsi:type="ram:Class" xmi:id="_Ls00VC5bEeWEMbzGx7oxkQ" name="HelloWorldDemo" visibility="public">
+      <operations xmi:id="_Ls00VS5bEeWEMbzGx7oxkQ" name="create" visibility="public" returnType="_Ls00VC5bEeWEMbzGx7oxkQ" operationType="Constructor"/>
+      <operations xmi:id="_Ls00Vi5bEeWEMbzGx7oxkQ" name="main" visibility="public" returnType="_Ls00WC5bEeWEMbzGx7oxkQ" static="true">
+        <parameters xmi:id="_Ls00Vy5bEeWEMbzGx7oxkQ" name="args" type="_Ls00YS5bEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_TCCuYC5bEeWEMbzGx7oxkQ" name="doDraw" visibility="public" returnType="_Ls00WC5bEeWEMbzGx7oxkQ"/>
+      <operations xmi:id="_QQsZYC5hEeWmpNtxUwjadQ" name="handleKeyPress" visibility="public" returnType="_Ls00WC5bEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_QQsZYS5hEeWmpNtxUwjadQ" name="arg0" type="_Ls00Wy5bEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_ROW7gC5hEeWmpNtxUwjadQ" name="handleKeyRelease" visibility="public" returnType="_Ls00WC5bEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_ROW7gS5hEeWmpNtxUwjadQ" name="arg0" type="_Ls00Wy5bEeWEMbzGx7oxkQ"/>
+      </operations>
+      <operations xmi:id="_SGp1cC5hEeWmpNtxUwjadQ" name="handleKeyType" visibility="public" returnType="_Ls00WC5bEeWEMbzGx7oxkQ">
+        <parameters xmi:id="_SGp1cS5hEeWmpNtxUwjadQ" name="arg0" type="_Ls00XC5bEeWEMbzGx7oxkQ"/>
+      </operations>
+      <associationEnds xmi:id="_62NAAC5bEeWEMbzGx7oxkQ" name="blackColor" lowerBound="1" assoc="_62QDUC5bEeWEMbzGx7oxkQ"/>
+      <associationEnds xmi:id="_7BBI4C5bEeWEMbzGx7oxkQ" name="defaultFont" lowerBound="1" assoc="_7BDlIC5bEeWEMbzGx7oxkQ"/>
+      <associationEnds xmi:id="_hs4q0C5eEeWfu-yFDHm7bA" name="helloWorldText" lowerBound="1" assoc="_hs7uIC5eEeWfu-yFDHm7bA"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_5Ko2EC5bEeWEMbzGx7oxkQ" name="MinuetoFont" instanceClassName="org.minueto.image.MinuetoFont">
+      <associationEnds xmi:id="_7BC-EC5bEeWEMbzGx7oxkQ" name="myHelloWorldDemo" lowerBound="1" navigable="false" assoc="_7BDlIC5bEeWEMbzGx7oxkQ"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_6f_fcC5bEeWEMbzGx7oxkQ" name="MinuetoColor" instanceClassName="org.minueto.MinuetoColor">
+      <associationEnds xmi:id="_62PcQC5bEeWEMbzGx7oxkQ" name="myHelloWorldDemo" lowerBound="1" navigable="false" assoc="_62QDUC5bEeWEMbzGx7oxkQ"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_fRQ88C5eEeWfu-yFDHm7bA" name="MinuetoText" instanceClassName="org.minueto.image.MinuetoText">
+      <associationEnds xmi:id="_hs7HEC5eEeWfu-yFDHm7bA" name="myHelloWorldDemo" lowerBound="1" navigable="false" assoc="_hs7uIC5eEeWfu-yFDHm7bA"/>
+    </classes>
+    <associations xmi:id="_62QDUC5bEeWEMbzGx7oxkQ" name="HelloWorldDemo_MinuetoColor" ends="_62NAAC5bEeWEMbzGx7oxkQ _62PcQC5bEeWEMbzGx7oxkQ"/>
+    <associations xmi:id="_7BDlIC5bEeWEMbzGx7oxkQ" name="HelloWorldDemo_MinuetoFont" ends="_7BBI4C5bEeWEMbzGx7oxkQ _7BC-EC5bEeWEMbzGx7oxkQ"/>
+    <associations xmi:id="_hs7uIC5eEeWfu-yFDHm7bA" name="HelloWorldDemo_MinuetoText" ends="_hs4q0C5eEeWfu-yFDHm7bA _hs7HEC5eEeWfu-yFDHm7bA"/>
+    <types xsi:type="ram:RVoid" xmi:id="_Ls00WC5bEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_Ls00WS5bEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_Ls00Wi5bEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RInt" xmi:id="_Ls00Wy5bEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RChar" xmi:id="_Ls00XC5bEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RString" xmi:id="_Ls00XS5bEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RDouble" xmi:id="_Ls00Xi5bEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RFloat" xmi:id="_Ls00Xy5bEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RLong" xmi:id="_Ls00YC5bEeWEMbzGx7oxkQ"/>
+    <types xsi:type="ram:RArray" xmi:id="_Ls00YS5bEeWEMbzGx7oxkQ" type="_Ls00XS5bEeWEMbzGx7oxkQ"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_WXUBEy5bEeWEMbzGx7oxkQ" specifies="_Ls00Vi5bEeWEMbzGx7oxkQ">
+    <specification xmi:id="_WXUBFC5bEeWEMbzGx7oxkQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_WXUBFS5bEeWEMbzGx7oxkQ" covered="_WXUBFy5bEeWEMbzGx7oxkQ" message="_WXUBGC5bEeWEMbzGx7oxkQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_XaMaYi5bEeWEMbzGx7oxkQ" covered="_WXUBFy5bEeWEMbzGx7oxkQ" message="_XaMaZC5bEeWEMbzGx7oxkQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_XaMaYy5bEeWEMbzGx7oxkQ" covered="_XaLzUS5bEeWEMbzGx7oxkQ" message="_XaMaZC5bEeWEMbzGx7oxkQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Y0rbYC5bEeWEMbzGx7oxkQ" covered="_WXUBFy5bEeWEMbzGx7oxkQ" message="_Y0rbYi5bEeWEMbzGx7oxkQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Y0rbYS5bEeWEMbzGx7oxkQ" covered="_XaLzUS5bEeWEMbzGx7oxkQ" message="_Y0rbYi5bEeWEMbzGx7oxkQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_WXUBFi5bEeWEMbzGx7oxkQ" covered="_WXUBFy5bEeWEMbzGx7oxkQ" message="_WXUBGS5bEeWEMbzGx7oxkQ"/>
+      <lifelines xmi:id="_WXUBFy5bEeWEMbzGx7oxkQ" represents="_WXUBGi5bEeWEMbzGx7oxkQ" coveredBy="_WXUBFS5bEeWEMbzGx7oxkQ _WXUBFi5bEeWEMbzGx7oxkQ _XaMaYi5bEeWEMbzGx7oxkQ _Y0rbYC5bEeWEMbzGx7oxkQ"/>
+      <lifelines xmi:id="_XaLzUS5bEeWEMbzGx7oxkQ" represents="_XaLzUC5bEeWEMbzGx7oxkQ" coveredBy="_XaMaYy5bEeWEMbzGx7oxkQ _Y0rbYS5bEeWEMbzGx7oxkQ"/>
+      <messages xmi:id="_WXUBGC5bEeWEMbzGx7oxkQ" sendEvent="_WXUBGy5bEeWEMbzGx7oxkQ" receiveEvent="_WXUBFS5bEeWEMbzGx7oxkQ" signature="_Ls00Vi5bEeWEMbzGx7oxkQ">
+        <localProperties xsi:type="ram:Reference" xmi:id="_XaLzUC5bEeWEMbzGx7oxkQ" name="helloworlddemo" lowerBound="1" type="_Ls00VC5bEeWEMbzGx7oxkQ"/>
+      </messages>
+      <messages xmi:id="_WXUBGS5bEeWEMbzGx7oxkQ" sendEvent="_WXUBFi5bEeWEMbzGx7oxkQ" receiveEvent="_WXUBHC5bEeWEMbzGx7oxkQ" signature="_Ls00Vi5bEeWEMbzGx7oxkQ" messageSort="reply"/>
+      <messages xmi:id="_XaMaZC5bEeWEMbzGx7oxkQ" sendEvent="_XaMaYi5bEeWEMbzGx7oxkQ" receiveEvent="_XaMaYy5bEeWEMbzGx7oxkQ" signature="_Ls00VS5bEeWEMbzGx7oxkQ" assignTo="_XaLzUC5bEeWEMbzGx7oxkQ" messageSort="createMessage"/>
+      <messages xmi:id="_Y0rbYi5bEeWEMbzGx7oxkQ" sendEvent="_Y0rbYC5bEeWEMbzGx7oxkQ" receiveEvent="_Y0rbYS5bEeWEMbzGx7oxkQ">
+        <signature href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjFi5hEeWmpNtxUwjadQ"/>
+      </messages>
+      <properties xmi:id="_WXUBGi5bEeWEMbzGx7oxkQ" name="target" lowerBound="1" type="_Ls00VC5bEeWEMbzGx7oxkQ"/>
+      <formalGates xmi:id="_WXUBGy5bEeWEMbzGx7oxkQ" message="_WXUBGC5bEeWEMbzGx7oxkQ" name="in_main"/>
+      <formalGates xmi:id="_WXUBHC5bEeWEMbzGx7oxkQ" message="_WXUBGS5bEeWEMbzGx7oxkQ" name="out_main"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_wXWwoy5dEeWEMbzGx7oxkQ" specifies="_TCCuYC5bEeWEMbzGx7oxkQ">
+    <specification xmi:id="_wXWwpC5dEeWEMbzGx7oxkQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_wXWwpS5dEeWEMbzGx7oxkQ" covered="_wXWwpy5dEeWEMbzGx7oxkQ" message="_wXWwqC5dEeWEMbzGx7oxkQ"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_i_z8MC5nEeWjU4JPvnUR5w" covered="_wXWwpy5dEeWEMbzGx7oxkQ _lUGTAC5nEeWjU4JPvnUR5w" interactionOperator="loop">
+        <operands xmi:id="_i_z8MS5nEeWjU4JPvnUR5w">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_lUHhIC5nEeWjU4JPvnUR5w" covered="_wXWwpy5dEeWEMbzGx7oxkQ" message="_lUIIMC5nEeWjU4JPvnUR5w"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_lUHhIS5nEeWjU4JPvnUR5w" covered="_lUGTAC5nEeWjU4JPvnUR5w" message="_lUIIMC5nEeWjU4JPvnUR5w"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_i_z8Mi5nEeWjU4JPvnUR5w" body="eventQueue.hasNext()" language="java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_yLj5Mi5dEeWEMbzGx7oxkQ" covered="_wXWwpy5dEeWEMbzGx7oxkQ" message="_yLj5NC5dEeWEMbzGx7oxkQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_yLj5My5dEeWEMbzGx7oxkQ" covered="_yLjSIC5dEeWEMbzGx7oxkQ" message="_yLj5NC5dEeWEMbzGx7oxkQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_0EPSEC5dEeWEMbzGx7oxkQ" covered="_wXWwpy5dEeWEMbzGx7oxkQ" message="_0EPSEi5dEeWEMbzGx7oxkQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_0EPSES5dEeWEMbzGx7oxkQ" covered="_yLjSIC5dEeWEMbzGx7oxkQ" message="_0EPSEi5dEeWEMbzGx7oxkQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_XbuHkC5fEeWfu-yFDHm7bA" covered="_wXWwpy5dEeWEMbzGx7oxkQ" message="_XbuHki5fEeWfu-yFDHm7bA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_XbuHkS5fEeWfu-yFDHm7bA" covered="_yLjSIC5dEeWEMbzGx7oxkQ" message="_XbuHki5fEeWfu-yFDHm7bA"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_wXWwpi5dEeWEMbzGx7oxkQ" covered="_wXWwpy5dEeWEMbzGx7oxkQ" message="_wXWwqS5dEeWEMbzGx7oxkQ"/>
+      <lifelines xmi:id="_wXWwpy5dEeWEMbzGx7oxkQ" represents="_wXWwqi5dEeWEMbzGx7oxkQ" coveredBy="_wXWwpS5dEeWEMbzGx7oxkQ _wXWwpi5dEeWEMbzGx7oxkQ _yLj5Mi5dEeWEMbzGx7oxkQ _0EPSEC5dEeWEMbzGx7oxkQ _XbuHkC5fEeWfu-yFDHm7bA _i_z8MC5nEeWjU4JPvnUR5w _lUHhIC5nEeWjU4JPvnUR5w"/>
+      <lifelines xmi:id="_yLjSIC5dEeWEMbzGx7oxkQ" coveredBy="_yLj5My5dEeWEMbzGx7oxkQ _0EPSES5dEeWEMbzGx7oxkQ _XbuHkS5fEeWfu-yFDHm7bA">
+        <represents xsi:type="ram:AssociationEnd" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjGS5hEeWmpNtxUwjadQ"/>
+      </lifelines>
+      <lifelines xmi:id="_lUGTAC5nEeWjU4JPvnUR5w" coveredBy="_i_z8MC5nEeWjU4JPvnUR5w _lUHhIS5nEeWjU4JPvnUR5w">
+        <represents xsi:type="ram:AssociationEnd" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjGi5hEeWmpNtxUwjadQ"/>
+      </lifelines>
+      <messages xmi:id="_wXWwqC5dEeWEMbzGx7oxkQ" sendEvent="_wXWwqy5dEeWEMbzGx7oxkQ" receiveEvent="_wXWwpS5dEeWEMbzGx7oxkQ" signature="_TCCuYC5bEeWEMbzGx7oxkQ"/>
+      <messages xmi:id="_wXWwqS5dEeWEMbzGx7oxkQ" sendEvent="_wXWwpi5dEeWEMbzGx7oxkQ" receiveEvent="_wXWwrC5dEeWEMbzGx7oxkQ" signature="_TCCuYC5bEeWEMbzGx7oxkQ" messageSort="reply"/>
+      <messages xmi:id="_yLj5NC5dEeWEMbzGx7oxkQ" sendEvent="_yLj5Mi5dEeWEMbzGx7oxkQ" receiveEvent="_yLj5My5dEeWEMbzGx7oxkQ">
+        <signature href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8bC5hEeWmpNtxUwjadQ"/>
+      </messages>
+      <messages xmi:id="_0EPSEi5dEeWEMbzGx7oxkQ" sendEvent="_0EPSEC5dEeWEMbzGx7oxkQ" receiveEvent="_0EPSES5dEeWEMbzGx7oxkQ">
+        <signature href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8dS5hEeWmpNtxUwjadQ"/>
+        <arguments xmi:id="_0EPSEy5dEeWEMbzGx7oxkQ">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8di5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_TBszUC5fEeWfu-yFDHm7bA" value="_hs4q0C5eEeWfu-yFDHm7bA"/>
+        </arguments>
+        <arguments xmi:id="_0EPSFC5dEeWEMbzGx7oxkQ">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8dy5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralInteger" xmi:id="_UasmkC5fEeWfu-yFDHm7bA" value="10"/>
+        </arguments>
+        <arguments xmi:id="_0EPSFS5dEeWEMbzGx7oxkQ">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8eC5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralInteger" xmi:id="_VZVZEC5fEeWfu-yFDHm7bA" value="10"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_XbuHki5fEeWfu-yFDHm7bA" sendEvent="_XbuHkC5fEeWfu-yFDHm7bA" receiveEvent="_XbuHkS5fEeWfu-yFDHm7bA">
+        <signature href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8Yy5hEeWmpNtxUwjadQ"/>
+      </messages>
+      <messages xmi:id="_lUIIMC5nEeWjU4JPvnUR5w" sendEvent="_lUHhIC5nEeWjU4JPvnUR5w" receiveEvent="_lUHhIS5nEeWjU4JPvnUR5w">
+        <signature href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjJi5hEeWmpNtxUwjadQ"/>
+      </messages>
+      <properties xmi:id="_wXWwqi5dEeWEMbzGx7oxkQ" name="target" lowerBound="1" type="_Ls00VC5bEeWEMbzGx7oxkQ"/>
+      <formalGates xmi:id="_wXWwqy5dEeWEMbzGx7oxkQ" message="_wXWwqC5dEeWEMbzGx7oxkQ" name="in_doDraw"/>
+      <formalGates xmi:id="_wXWwrC5dEeWEMbzGx7oxkQ" message="_wXWwqS5dEeWEMbzGx7oxkQ" name="out_doDraw"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_zyZscy5jEeWaBu0ULpEVSw" specifies="_Ls00VS5bEeWEMbzGx7oxkQ">
+    <specification xmi:id="_zyZsdC5jEeWaBu0ULpEVSw">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_zyZsdS5jEeWaBu0ULpEVSw" covered="_zyZsdy5jEeWaBu0ULpEVSw" message="_zyZseC5jEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_B5r6wi5lEeWaBu0ULpEVSw" covered="_zyZsdy5jEeWaBu0ULpEVSw" message="_B5r6xC5lEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_B5r6wy5lEeWaBu0ULpEVSw" covered="_B5rTsS5lEeWaBu0ULpEVSw" message="_B5r6xC5lEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Hiq8gC5lEeWaBu0ULpEVSw" covered="_zyZsdy5jEeWaBu0ULpEVSw" message="_Hiq8gi5lEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Hiq8gS5lEeWaBu0ULpEVSw" covered="_HiqVcC5lEeWaBu0ULpEVSw" message="_Hiq8gi5lEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Q8H_MC5lEeWaBu0ULpEVSw" covered="_zyZsdy5jEeWaBu0ULpEVSw" message="_Q8H_Mi5lEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Q8H_MS5lEeWaBu0ULpEVSw" covered="_Q8HYIC5lEeWaBu0ULpEVSw" message="_Q8H_Mi5lEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_UdqMQC5lEeWaBu0ULpEVSw" covered="_zyZsdy5jEeWaBu0ULpEVSw" message="_UdqMQi5lEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_UdqMQS5lEeWaBu0ULpEVSw" covered="_UdplMC5lEeWaBu0ULpEVSw" message="_UdqMQi5lEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_e6hzwC5lEeWaBu0ULpEVSw" covered="_zyZsdy5jEeWaBu0ULpEVSw" message="_e6ia0C5lEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_e6hzwS5lEeWaBu0ULpEVSw" covered="_UdplMC5lEeWaBu0ULpEVSw" message="_e6ia0C5lEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_NxY2oC5nEeWjU4JPvnUR5w" covered="_zyZsdy5jEeWaBu0ULpEVSw" message="_NxY2oi5nEeWjU4JPvnUR5w"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_NxY2oS5nEeWjU4JPvnUR5w" covered="_UdplMC5lEeWaBu0ULpEVSw" message="_NxY2oi5nEeWjU4JPvnUR5w"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_zyZsdi5jEeWaBu0ULpEVSw" covered="_zyZsdy5jEeWaBu0ULpEVSw" message="_zyZseS5jEeWaBu0ULpEVSw"/>
+      <lifelines xmi:id="_zyZsdy5jEeWaBu0ULpEVSw" represents="_zyZsei5jEeWaBu0ULpEVSw" coveredBy="_zyZsdS5jEeWaBu0ULpEVSw _zyZsdi5jEeWaBu0ULpEVSw _B5r6wi5lEeWaBu0ULpEVSw _Hiq8gC5lEeWaBu0ULpEVSw _Q8H_MC5lEeWaBu0ULpEVSw _UdqMQC5lEeWaBu0ULpEVSw _e6hzwC5lEeWaBu0ULpEVSw _NxY2oC5nEeWjU4JPvnUR5w"/>
+      <lifelines xmi:id="_B5rTsS5lEeWaBu0ULpEVSw" represents="_62NAAC5bEeWEMbzGx7oxkQ" coveredBy="_B5r6wy5lEeWaBu0ULpEVSw"/>
+      <lifelines xmi:id="_HiqVcC5lEeWaBu0ULpEVSw" represents="_7BBI4C5bEeWEMbzGx7oxkQ" coveredBy="_Hiq8gS5lEeWaBu0ULpEVSw"/>
+      <lifelines xmi:id="_Q8HYIC5lEeWaBu0ULpEVSw" represents="_hs4q0C5eEeWfu-yFDHm7bA" coveredBy="_Q8H_MS5lEeWaBu0ULpEVSw"/>
+      <lifelines xmi:id="_UdplMC5lEeWaBu0ULpEVSw" coveredBy="_UdqMQS5lEeWaBu0ULpEVSw _e6hzwS5lEeWaBu0ULpEVSw _NxY2oS5nEeWjU4JPvnUR5w">
+        <represents xsi:type="ram:AssociationEnd" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjGS5hEeWmpNtxUwjadQ"/>
+      </lifelines>
+      <messages xmi:id="_zyZseC5jEeWaBu0ULpEVSw" sendEvent="_zyZsey5jEeWaBu0ULpEVSw" receiveEvent="_zyZsdS5jEeWaBu0ULpEVSw" signature="_Ls00VS5bEeWEMbzGx7oxkQ" messageSort="createMessage"/>
+      <messages xmi:id="_zyZseS5jEeWaBu0ULpEVSw" sendEvent="_zyZsdi5jEeWaBu0ULpEVSw" receiveEvent="_zyZsfC5jEeWaBu0ULpEVSw" signature="_Ls00VS5bEeWEMbzGx7oxkQ" messageSort="reply"/>
+      <messages xmi:id="_B5r6xC5lEeWaBu0ULpEVSw" sendEvent="_B5r6wi5lEeWaBu0ULpEVSw" receiveEvent="_B5r6wy5lEeWaBu0ULpEVSw" assignTo="_62NAAC5bEeWEMbzGx7oxkQ" messageSort="createMessage">
+        <signature href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8Iy5hEeWmpNtxUwjadQ"/>
+        <arguments xmi:id="_B5r6xS5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8JC5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralInteger" xmi:id="_Co_QwC5lEeWaBu0ULpEVSw"/>
+        </arguments>
+        <arguments xmi:id="_B5r6xi5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8JS5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralInteger" xmi:id="_DIcz8C5lEeWaBu0ULpEVSw"/>
+        </arguments>
+        <arguments xmi:id="_B5r6xy5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8Ji5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralInteger" xmi:id="_DojQUC5lEeWaBu0ULpEVSw"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_Hiq8gi5lEeWaBu0ULpEVSw" sendEvent="_Hiq8gC5lEeWaBu0ULpEVSw" receiveEvent="_Hiq8gS5lEeWaBu0ULpEVSw" assignTo="_7BBI4C5bEeWEMbzGx7oxkQ" messageSort="createMessage">
+        <signature href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8HS5hEeWmpNtxUwjadQ"/>
+        <arguments xmi:id="_Hiq8gy5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8Hi5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralString" xmi:id="_IPx6IC5lEeWaBu0ULpEVSw" value="Arial"/>
+        </arguments>
+        <arguments xmi:id="_Hiq8hC5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8Hy5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralInteger" xmi:id="_IqzpQC5lEeWaBu0ULpEVSw" value="42"/>
+        </arguments>
+        <arguments xmi:id="_Hiq8hS5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8IC5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralBoolean" xmi:id="_JZ15gC5lEeWaBu0ULpEVSw"/>
+        </arguments>
+        <arguments xmi:id="_Hiq8hi5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8IS5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralBoolean" xmi:id="_J2xtIC5lEeWaBu0ULpEVSw"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_Q8H_Mi5lEeWaBu0ULpEVSw" sendEvent="_Q8H_MC5lEeWaBu0ULpEVSw" receiveEvent="_Q8H_MS5lEeWaBu0ULpEVSw" assignTo="_hs4q0C5eEeWfu-yFDHm7bA" messageSort="createMessage">
+        <signature href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8SC5hEeWmpNtxUwjadQ"/>
+        <arguments xmi:id="_Q8H_My5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8SS5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralString" xmi:id="_Ri5EQC5lEeWaBu0ULpEVSw" value="Hello World!"/>
+        </arguments>
+        <arguments xmi:id="_Q8H_NC5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8Si5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_SoL4YC5lEeWaBu0ULpEVSw" value="_7BBI4C5bEeWEMbzGx7oxkQ"/>
+        </arguments>
+        <arguments xmi:id="_Q8H_NS5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8Sy5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_S3xMgC5lEeWaBu0ULpEVSw" value="_62NAAC5bEeWEMbzGx7oxkQ"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_UdqMQi5lEeWaBu0ULpEVSw" sendEvent="_UdqMQC5lEeWaBu0ULpEVSw" receiveEvent="_UdqMQS5lEeWaBu0ULpEVSw" messageSort="createMessage">
+        <signature href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8WC5hEeWmpNtxUwjadQ"/>
+        <assignTo xsi:type="ram:AssociationEnd" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjGS5hEeWmpNtxUwjadQ"/>
+        <arguments xmi:id="_UdqMQy5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8WS5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralInteger" xmi:id="_YhGMgC5lEeWaBu0ULpEVSw" value="640"/>
+        </arguments>
+        <arguments xmi:id="_UdqMRC5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8Wi5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralInteger" xmi:id="_Y9tQAC5lEeWaBu0ULpEVSw" value="480"/>
+        </arguments>
+        <arguments xmi:id="_UdqMRS5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8Wy5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralBoolean" xmi:id="_ZcO_EC5lEeWaBu0ULpEVSw"/>
+        </arguments>
+      </messages>
+      <messages xmi:id="_e6ia0C5lEeWaBu0ULpEVSw" sendEvent="_e6hzwC5lEeWaBu0ULpEVSw" receiveEvent="_e6hzwS5lEeWaBu0ULpEVSw">
+        <signature href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8eS5hEeWmpNtxUwjadQ"/>
+        <arguments xmi:id="_e6ia0S5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8ei5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_fS_-IC5lEeWaBu0ULpEVSw" value="_zyZsei5jEeWaBu0ULpEVSw"/>
+        </arguments>
+        <arguments xmi:id="_e6ia0i5lEeWaBu0ULpEVSw">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjAC5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:StructuralFeatureValue" xmi:id="_MUT0oC5nEeWjU4JPvnUR5w">
+            <value xsi:type="ram:AssociationEnd" href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0pjGi5hEeWmpNtxUwjadQ"/>
+          </value>
+        </arguments>
+      </messages>
+      <messages xmi:id="_NxY2oi5nEeWjU4JPvnUR5w" sendEvent="_NxY2oC5nEeWjU4JPvnUR5w" receiveEvent="_NxY2oS5nEeWjU4JPvnUR5w">
+        <signature href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8ai5hEeWmpNtxUwjadQ"/>
+        <arguments xmi:id="_NxY2oy5nEeWjU4JPvnUR5w">
+          <parameter href="Reused_Minueto/Woven_Minueto_Acceleration_Event_GraphicalElement_Keyboard_Minueto_Surface_Text_Transparency_Visual_Window.ram#_J0o8ay5hEeWmpNtxUwjadQ"/>
+          <value xsi:type="ram:LiteralBoolean" xmi:id="_OUqi0C5nEeWjU4JPvnUR5w" value="true"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_zyZsei5jEeWaBu0ULpEVSw" name="target" lowerBound="1" type="_Ls00VC5bEeWEMbzGx7oxkQ"/>
+      <formalGates xmi:id="_zyZsey5jEeWaBu0ULpEVSw" message="_zyZseC5jEeWaBu0ULpEVSw" name="in_create"/>
+      <formalGates xmi:id="_zyZsfC5jEeWaBu0ULpEVSw" message="_zyZseS5jEeWaBu0ULpEVSw" name="out_create"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_24RRMy5jEeWaBu0ULpEVSw" specifies="_QQsZYC5hEeWmpNtxUwjadQ">
+    <specification xmi:id="_24RRNC5jEeWaBu0ULpEVSw">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_24RRNS5jEeWaBu0ULpEVSw" covered="_24RRNy5jEeWaBu0ULpEVSw" message="_24RROC5jEeWaBu0ULpEVSw"/>
+      <fragments xsi:type="ram:ExecutionStatement" xmi:id="_xYmHAC5kEeWaBu0ULpEVSw" covered="_24RRNy5jEeWaBu0ULpEVSw">
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_xYmHAS5kEeWaBu0ULpEVSw" body="System.out.println(&quot;Key Pressed: &quot; + arg0)" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_24RRNi5jEeWaBu0ULpEVSw" covered="_24RRNy5jEeWaBu0ULpEVSw" message="_24RROS5jEeWaBu0ULpEVSw"/>
+      <lifelines xmi:id="_24RRNy5jEeWaBu0ULpEVSw" represents="_24RROi5jEeWaBu0ULpEVSw" coveredBy="_24RRNS5jEeWaBu0ULpEVSw _24RRNi5jEeWaBu0ULpEVSw _xYmHAC5kEeWaBu0ULpEVSw"/>
+      <messages xmi:id="_24RROC5jEeWaBu0ULpEVSw" sendEvent="_24RROy5jEeWaBu0ULpEVSw" receiveEvent="_24RRNS5jEeWaBu0ULpEVSw" signature="_QQsZYC5hEeWmpNtxUwjadQ"/>
+      <messages xmi:id="_24RROS5jEeWaBu0ULpEVSw" sendEvent="_24RRNi5jEeWaBu0ULpEVSw" receiveEvent="_24RRPC5jEeWaBu0ULpEVSw" signature="_QQsZYC5hEeWmpNtxUwjadQ" messageSort="reply"/>
+      <properties xmi:id="_24RROi5jEeWaBu0ULpEVSw" name="target" lowerBound="1" type="_Ls00VC5bEeWEMbzGx7oxkQ"/>
+      <formalGates xmi:id="_24RROy5jEeWaBu0ULpEVSw" message="_24RROC5jEeWaBu0ULpEVSw" name="in_handleKeyPress"/>
+      <formalGates xmi:id="_24RRPC5jEeWaBu0ULpEVSw" message="_24RROS5jEeWaBu0ULpEVSw" name="out_handleKeyPress"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_Ls00Yi5bEeWEMbzGx7oxkQ">
+    <containers xmi:id="_Ls00Yy5bEeWEMbzGx7oxkQ" key="_Ls00Uy5bEeWEMbzGx7oxkQ">
+      <value xmi:id="_Ls00ZC5bEeWEMbzGx7oxkQ" key="_Ls00VC5bEeWEMbzGx7oxkQ">
+        <value xmi:id="_Ls00ZS5bEeWEMbzGx7oxkQ" x="407.00006" y="100.999954"/>
+      </value>
+      <value xmi:id="_5KqEMC5bEeWEMbzGx7oxkQ" key="_5Ko2EC5bEeWEMbzGx7oxkQ">
+        <value xmi:id="_5KqEMS5bEeWEMbzGx7oxkQ" x="511.0" y="550.00037"/>
+      </value>
+      <value xmi:id="_6gAtkC5bEeWEMbzGx7oxkQ" key="_6f_fcC5bEeWEMbzGx7oxkQ">
+        <value xmi:id="_6gAtkS5bEeWEMbzGx7oxkQ" x="304.99988" y="555.0001"/>
+      </value>
+      <value xmi:id="_fRSyIC5eEeWfu-yFDHm7bA" key="_fRQ88C5eEeWfu-yFDHm7bA">
+        <value xmi:id="_fRSyIS5eEeWfu-yFDHm7bA" x="99.99997" y="346.99985"/>
+      </value>
+    </containers>
+    <containers xmi:id="_WXUBEC5bEeWEMbzGx7oxkQ" key="_WXUBEy5bEeWEMbzGx7oxkQ">
+      <value xmi:id="_WXUBES5bEeWEMbzGx7oxkQ" key="_WXUBFy5bEeWEMbzGx7oxkQ">
+        <value xmi:id="_WXUBEi5bEeWEMbzGx7oxkQ" x="100.0" y="100.0"/>
+      </value>
+      <value xmi:id="_XaMaYC5bEeWEMbzGx7oxkQ" key="_XaLzUS5bEeWEMbzGx7oxkQ">
+        <value xmi:id="_XaMaYS5bEeWEMbzGx7oxkQ" x="435.00006" y="186.0"/>
+      </value>
+    </containers>
+    <containers xmi:id="_bFUoUC5bEeWEMbzGx7oxkQ">
+      <value xmi:id="_bFUoUS5bEeWEMbzGx7oxkQ">
+        <value xmi:id="_bFUoUi5bEeWEMbzGx7oxkQ" x="100.0" y="94.0"/>
+      </value>
+      <value xmi:id="_cm8MEC5bEeWEMbzGx7oxkQ">
+        <value xmi:id="_cm8MES5bEeWEMbzGx7oxkQ" x="706.0" y="146.0"/>
+      </value>
+      <value xmi:id="_vwUwYi5eEeWfu-yFDHm7bA">
+        <value xmi:id="_vwUwYy5eEeWfu-yFDHm7bA" x="640.00024" y="198.0"/>
+      </value>
+      <value xmi:id="_1xaJEC5eEeWfu-yFDHm7bA">
+        <value xmi:id="_1xaJES5eEeWfu-yFDHm7bA" x="618.00024" y="250.0"/>
+      </value>
+      <value xmi:id="_9A6csC5eEeWfu-yFDHm7bA">
+        <value xmi:id="_9A6csS5eEeWfu-yFDHm7bA" x="768.0001" y="302.0"/>
+      </value>
+    </containers>
+    <containers xmi:id="_wXWwoC5dEeWEMbzGx7oxkQ" key="_wXWwoy5dEeWEMbzGx7oxkQ">
+      <value xmi:id="_wXWwoS5dEeWEMbzGx7oxkQ" key="_wXWwpy5dEeWEMbzGx7oxkQ">
+        <value xmi:id="_wXWwoi5dEeWEMbzGx7oxkQ" x="100.0" y="100.0"/>
+      </value>
+      <value xmi:id="_yLj5MC5dEeWEMbzGx7oxkQ" key="_yLjSIC5dEeWEMbzGx7oxkQ">
+        <value xmi:id="_yLj5MS5dEeWEMbzGx7oxkQ" x="371.0" y="100.0"/>
+      </value>
+      <value xmi:id="_lUG6EC5nEeWjU4JPvnUR5w" key="_lUGTAC5nEeWjU4JPvnUR5w">
+        <value xmi:id="_lUG6ES5nEeWjU4JPvnUR5w" x="611.0001" y="100.0"/>
+      </value>
+    </containers>
+    <containers xmi:id="_zyZscC5jEeWaBu0ULpEVSw" key="_zyZscy5jEeWaBu0ULpEVSw">
+      <value xmi:id="_zyZscS5jEeWaBu0ULpEVSw" key="_zyZsdy5jEeWaBu0ULpEVSw">
+        <value xmi:id="_zyZsci5jEeWaBu0ULpEVSw" x="100.0" y="94.0"/>
+      </value>
+      <value xmi:id="_B5r6wC5lEeWaBu0ULpEVSw" key="_B5rTsS5lEeWaBu0ULpEVSw">
+        <value xmi:id="_B5r6wS5lEeWaBu0ULpEVSw" x="521.0" y="146.0"/>
+      </value>
+      <value xmi:id="_HiqVcS5lEeWaBu0ULpEVSw" key="_HiqVcC5lEeWaBu0ULpEVSw">
+        <value xmi:id="_HiqVci5lEeWaBu0ULpEVSw" x="621.0002" y="198.0"/>
+      </value>
+      <value xmi:id="_Q8HYIS5lEeWaBu0ULpEVSw" key="_Q8HYIC5lEeWaBu0ULpEVSw">
+        <value xmi:id="_Q8HYIi5lEeWaBu0ULpEVSw" x="746.0001" y="250.0"/>
+      </value>
+      <value xmi:id="_UdplMS5lEeWaBu0ULpEVSw" key="_UdplMC5lEeWaBu0ULpEVSw">
+        <value xmi:id="_UdplMi5lEeWaBu0ULpEVSw" x="605.00006" y="302.0"/>
+      </value>
+    </containers>
+    <containers xmi:id="_24RRMC5jEeWaBu0ULpEVSw" key="_24RRMy5jEeWaBu0ULpEVSw">
+      <value xmi:id="_24RRMS5jEeWaBu0ULpEVSw" key="_24RRNy5jEeWaBu0ULpEVSw">
+        <value xmi:id="_24RRMi5jEeWaBu0ULpEVSw" x="100.0" y="100.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

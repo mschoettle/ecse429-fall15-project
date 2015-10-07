@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_LtknALiCEeS3_sttK7uqeQ" name="AccessControl">
+  <models xsi:type="ram:Aspect" href="AccessControl.ram#_NB_cQLiCEeS3_sttK7uqeQ"/>
+  <models xsi:type="ram:Aspect" href="Card.ram#_VBtRULkxEeSVqZtHr9XOFw"/>
+  <models xsi:type="ram:Aspect" href="Code.ram#_d09FELkwEeSVqZtHr9XOFw"/>
+  <models xsi:type="core:COREFeatureModel" href="#_LtlOELiCEeS3_sttK7uqeQ"/>
+  <models xsi:type="core:COREImpactModel" href="#_nIlecLxjEeSA05FIxa4yPg"/>
+  <models xsi:type="core:COREImpactModel" href="#_sm-FwL0_EeSrjrlIV86ZSw"/>
+  <models xsi:type="core:COREImpactModel" href="#_WH59YCTqEeWHgeykmmooMg"/>
+  <featureModel xmi:id="_LtlOELiCEeS3_sttK7uqeQ" coreConcern="_LtknALiCEeS3_sttK7uqeQ" root="_LtlOEbiCEeS3_sttK7uqeQ">
+    <features xmi:id="_LtlOEbiCEeS3_sttK7uqeQ" name="AccessControl" children="_O6EaILkwEeSVqZtHr9XOFw _R5JaYLkwEeSVqZtHr9XOFw">
+      <realizedBy xsi:type="ram:Aspect" href="AccessControl.ram#_NB_cQLiCEeS3_sttK7uqeQ"/>
+    </features>
+    <features xmi:id="_O6EaILkwEeSVqZtHr9XOFw" name="Code" parent="_LtlOEbiCEeS3_sttK7uqeQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="Code.ram#_d09FELkwEeSVqZtHr9XOFw"/>
+    </features>
+    <features xmi:id="_R5JaYLkwEeSVqZtHr9XOFw" name="Card" parent="_LtlOEbiCEeS3_sttK7uqeQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="Card.ram#_VBtRULkxEeSVqZtHr9XOFw"/>
+    </features>
+  </featureModel>
+  <impactModel xmi:id="_WH59YCTqEeWHgeykmmooMg" name="Impact Model" coreConcern="_LtknALiCEeS3_sttK7uqeQ">
+    <impactModelElements xmi:id="_WH59YSTqEeWHgeykmmooMg" name="Improve User Convenience" incoming="_aX5y8CTqEeWHgeykmmooMg _ak67QCTqEeWHgeykmmooMg"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_ZeoBkCTqEeWHgeykmmooMg" name="Code" outgoing="_aX5y8CTqEeWHgeykmmooMg" represents="_O6EaILkwEeSVqZtHr9XOFw"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_ZkqYICTqEeWHgeykmmooMg" name="Card" outgoing="_ak67QCTqEeWHgeykmmooMg" represents="_R5JaYLkwEeSVqZtHr9XOFw"/>
+    <impactModelElements xmi:id="_dKku4CTqEeWHgeykmmooMg" name="Improve Security" incoming="_hG72wCTqEeWHgeykmmooMg _hRbPgCTqEeWHgeykmmooMg"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_gA_iYCTqEeWHgeykmmooMg" name="Code" outgoing="_hG72wCTqEeWHgeykmmooMg" represents="_O6EaILkwEeSVqZtHr9XOFw"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_gKNIwCTqEeWHgeykmmooMg" name="Card" outgoing="_hRbPgCTqEeWHgeykmmooMg" represents="_R5JaYLkwEeSVqZtHr9XOFw"/>
+    <layouts xmi:id="_WH6kcCTqEeWHgeykmmooMg" key="_WH59YSTqEeWHgeykmmooMg">
+      <value xmi:id="_WH6kcSTqEeWHgeykmmooMg" key="_WH59YSTqEeWHgeykmmooMg">
+        <value xmi:id="_WH6kciTqEeWHgeykmmooMg" x="512.0" y="50.0"/>
+      </value>
+      <value xmi:id="_ZesTACTqEeWHgeykmmooMg" key="_ZeoBkCTqEeWHgeykmmooMg">
+        <value xmi:id="_ZesTASTqEeWHgeykmmooMg" x="412.37595" y="288.00012"/>
+      </value>
+      <value xmi:id="_ZkqYISTqEeWHgeykmmooMg" key="_ZkqYICTqEeWHgeykmmooMg">
+        <value xmi:id="_ZkqYIiTqEeWHgeykmmooMg" x="620.5561" y="287.9999"/>
+      </value>
+    </layouts>
+    <layouts xmi:id="_dKlV8CTqEeWHgeykmmooMg" key="_dKku4CTqEeWHgeykmmooMg">
+      <value xmi:id="_dKlV8STqEeWHgeykmmooMg" key="_dKku4CTqEeWHgeykmmooMg">
+        <value xmi:id="_dKlV8iTqEeWHgeykmmooMg" x="512.0" y="50.0"/>
+      </value>
+      <value xmi:id="_gA_iYSTqEeWHgeykmmooMg" key="_gA_iYCTqEeWHgeykmmooMg">
+        <value xmi:id="_gA_iYiTqEeWHgeykmmooMg" x="412.03143" y="174.99973"/>
+      </value>
+      <value xmi:id="_gKNv0CTqEeWHgeykmmooMg" key="_gKNIwCTqEeWHgeykmmooMg">
+        <value xmi:id="_gKNv0STqEeWHgeykmmooMg" x="596.7656" y="172.99979"/>
+      </value>
+    </layouts>
+    <contributions xmi:id="_aX5y8CTqEeWHgeykmmooMg" relativeWeight="1" source="_ZeoBkCTqEeWHgeykmmooMg" impacts="_WH59YSTqEeWHgeykmmooMg"/>
+    <contributions xmi:id="_ak67QCTqEeWHgeykmmooMg" relativeWeight="8" source="_ZkqYICTqEeWHgeykmmooMg" impacts="_WH59YSTqEeWHgeykmmooMg"/>
+    <contributions xmi:id="_hG72wCTqEeWHgeykmmooMg" relativeWeight="1" source="_gA_iYCTqEeWHgeykmmooMg" impacts="_dKku4CTqEeWHgeykmmooMg"/>
+    <contributions xmi:id="_hRbPgCTqEeWHgeykmmooMg" relativeWeight="2" source="_gKNIwCTqEeWHgeykmmooMg" impacts="_dKku4CTqEeWHgeykmmooMg"/>
+  </impactModel>
+</core:COREConcern>

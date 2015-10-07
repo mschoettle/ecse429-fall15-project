@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_KrYvkCUSEeWFg_nGt9-F9Q" name="Association&lt;KeyIndexed,HashMap,Association>">
+  <structuralView xmi:id="_KrYvkSUSEeWFg_nGt9-F9Q">
+    <classes xsi:type="ram:Class" xmi:id="_KrYvkiUSEeWFg_nGt9-F9Q" name="Data" partiality="public">
+      <operations xmi:id="_KrYvkyUSEeWFg_nGt9-F9Q" name="add" visibility="public" returnType="_KrZW1SUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWoCUSEeWFg_nGt9-F9Q" name="k" type="_KrZWsSUSEeWFg_nGt9-F9Q"/>
+        <parameters xmi:id="_KrZWoSUSEeWFg_nGt9-F9Q" name="a" type="_KrZWxyUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <operations xmi:id="_KrZWoiUSEeWFg_nGt9-F9Q" name="remove" visibility="public" returnType="_KrZW1SUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWoyUSEeWFg_nGt9-F9Q" name="k" type="_KrZWsSUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <operations xmi:id="_KrZWpCUSEeWFg_nGt9-F9Q" name="contains" visibility="public" returnType="_KrZW1yUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWpSUSEeWFg_nGt9-F9Q" name="a" type="_KrZWsSUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <operations xmi:id="_KrZWpiUSEeWFg_nGt9-F9Q" name="containsKey" visibility="public" returnType="_KrZW1yUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWpyUSEeWFg_nGt9-F9Q" name="k" type="_KrZWsSUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <operations xmi:id="_KrZWqCUSEeWFg_nGt9-F9Q" name="get" visibility="public" returnType="_KrZWxyUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWqSUSEeWFg_nGt9-F9Q" name="k" type="_KrZWsSUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <operations xmi:id="_KrZWqiUSEeWFg_nGt9-F9Q" name="keySet" visibility="public" returnType="_KrZWySUSEeWFg_nGt9-F9Q"/>
+      <operations xmi:id="_KrZWqyUSEeWFg_nGt9-F9Q" name="values" visibility="public" returnType="_KrZWyyUSEeWFg_nGt9-F9Q"/>
+      <operations xmi:id="_KrZWrCUSEeWFg_nGt9-F9Q" name="contains" partiality="public" visibility="public" returnType="_KrZW1yUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWrSUSEeWFg_nGt9-F9Q" name="a" type="_KrZWxyUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <operations xmi:id="_KrZWriUSEeWFg_nGt9-F9Q" name="size" visibility="public" returnType="_KrZW2CUSEeWFg_nGt9-F9Q"/>
+      <associationEnds xmi:id="_KrZWryUSEeWFg_nGt9-F9Q" name="hashMap" lowerBound="1" referenceType="Composition" assoc="_KrZW0SUSEeWFg_nGt9-F9Q"/>
+      <associationEnds xmi:id="_KrZWsCUSEeWFg_nGt9-F9Q" name="myCollection" lowerBound="1" referenceType="Composition" assoc="_KrZW1CUSEeWFg_nGt9-F9Q"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_KrZWsSUSEeWFg_nGt9-F9Q" name="Key" partiality="public">
+      <associationEnds xmi:id="_KrZWsiUSEeWFg_nGt9-F9Q" name="myHashMap" lowerBound="1" navigable="false" assoc="_KrZW0iUSEeWFg_nGt9-F9Q"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_KrZWtCUSEeWFg_nGt9-F9Q" name="Object" instanceClassName="java.lang.Object"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_KrZWtSUSEeWFg_nGt9-F9Q" name="HashMap" instanceClassName="java.util.HashMap">
+      <operations xmi:id="_KrZWtiUSEeWFg_nGt9-F9Q" name="put" visibility="public" returnType="_KrZWxyUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWtyUSEeWFg_nGt9-F9Q" name="arg0" type="_KrZWsSUSEeWFg_nGt9-F9Q"/>
+        <parameters xmi:id="_KrZWuCUSEeWFg_nGt9-F9Q" name="arg1" type="_KrZWxyUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <operations xmi:id="_KrZWuSUSEeWFg_nGt9-F9Q" name="remove" visibility="public" returnType="_KrZWxyUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWuiUSEeWFg_nGt9-F9Q" name="arg0" type="_KrZWtCUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <operations xmi:id="_KrZWuyUSEeWFg_nGt9-F9Q" name="containsValue" visibility="public" returnType="_KrZW1yUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWvCUSEeWFg_nGt9-F9Q" name="arg0" type="_KrZWtCUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <operations xmi:id="_KrZWvSUSEeWFg_nGt9-F9Q" name="containsKey" visibility="public" returnType="_KrZW1yUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWviUSEeWFg_nGt9-F9Q" name="arg0" type="_KrZWtCUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <operations xmi:id="_KrZWvyUSEeWFg_nGt9-F9Q" name="get" visibility="public" returnType="_KrZWxyUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWwCUSEeWFg_nGt9-F9Q" name="arg0" type="_KrZWtCUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <operations xmi:id="_KrZWwSUSEeWFg_nGt9-F9Q" name="keySet" visibility="public" returnType="_KrZWySUSEeWFg_nGt9-F9Q"/>
+      <operations xmi:id="_KrZWwiUSEeWFg_nGt9-F9Q" name="values" visibility="public" returnType="_KrZWyyUSEeWFg_nGt9-F9Q"/>
+      <associationEnds xmi:id="_KrZWwyUSEeWFg_nGt9-F9Q" name="data" lowerBound="1" navigable="false" assoc="_KrZW0SUSEeWFg_nGt9-F9Q"/>
+      <associationEnds xmi:id="_KrZWxCUSEeWFg_nGt9-F9Q" name="myKeys" lowerBound="1" upperBound="-1" assoc="_KrZW0iUSEeWFg_nGt9-F9Q"/>
+      <typeParameters xmi:id="_KrZWxSUSEeWFg_nGt9-F9Q" name="K" genericType="_KrZWsSUSEeWFg_nGt9-F9Q"/>
+      <typeParameters xmi:id="_KrZWxiUSEeWFg_nGt9-F9Q" name="V" genericType="_KrZWxyUSEeWFg_nGt9-F9Q"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_KrZWxyUSEeWFg_nGt9-F9Q" name="Value" partiality="public"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_KrZWySUSEeWFg_nGt9-F9Q" name="Set" instanceClassName="java.util.Set" interface="true">
+      <typeParameters xmi:id="_KrZWyiUSEeWFg_nGt9-F9Q" name="E" genericType="_KrZWsSUSEeWFg_nGt9-F9Q"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_KrZWyyUSEeWFg_nGt9-F9Q" name="Collection" instanceClassName="java.util.Collection" interface="true">
+      <operations xmi:id="_KrZWzCUSEeWFg_nGt9-F9Q" name="size" partiality="concern" visibility="public" returnType="_KrZW2CUSEeWFg_nGt9-F9Q"/>
+      <operations xmi:id="_KrZWzSUSEeWFg_nGt9-F9Q" name="contains" partiality="concern" visibility="public" returnType="_KrZW1yUSEeWFg_nGt9-F9Q">
+        <parameters xmi:id="_KrZWziUSEeWFg_nGt9-F9Q" name="a" type="_KrZWxyUSEeWFg_nGt9-F9Q"/>
+      </operations>
+      <associationEnds xmi:id="_KrZWzyUSEeWFg_nGt9-F9Q" name="myData" lowerBound="1" navigable="false" assoc="_KrZW1CUSEeWFg_nGt9-F9Q"/>
+      <typeParameters xmi:id="_KrZW0CUSEeWFg_nGt9-F9Q" name="E" genericType="_KrZWxyUSEeWFg_nGt9-F9Q"/>
+    </classes>
+    <associations xmi:id="_KrZW0SUSEeWFg_nGt9-F9Q" name="Data_HashMap" ends="_KrZWwyUSEeWFg_nGt9-F9Q _KrZWryUSEeWFg_nGt9-F9Q"/>
+    <associations xmi:id="_KrZW0iUSEeWFg_nGt9-F9Q" name="HashMap_Value" ends="_KrZWsiUSEeWFg_nGt9-F9Q _KrZWxCUSEeWFg_nGt9-F9Q"/>
+    <associations xmi:id="_KrZW1CUSEeWFg_nGt9-F9Q" name="Data_Collection" ends="_KrZWzyUSEeWFg_nGt9-F9Q _KrZWsCUSEeWFg_nGt9-F9Q"/>
+    <types xsi:type="ram:RVoid" xmi:id="_KrZW1SUSEeWFg_nGt9-F9Q"/>
+    <types xsi:type="ram:RAny" xmi:id="_KrZW1iUSEeWFg_nGt9-F9Q"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_KrZW1yUSEeWFg_nGt9-F9Q"/>
+    <types xsi:type="ram:RInt" xmi:id="_KrZW2CUSEeWFg_nGt9-F9Q"/>
+    <types xsi:type="ram:RChar" xmi:id="_KrZW2SUSEeWFg_nGt9-F9Q"/>
+    <types xsi:type="ram:RString" xmi:id="_KrZW2iUSEeWFg_nGt9-F9Q"/>
+    <types xsi:type="ram:RDouble" xmi:id="_KrZW2yUSEeWFg_nGt9-F9Q"/>
+    <types xsi:type="ram:RFloat" xmi:id="_KrZW3CUSEeWFg_nGt9-F9Q"/>
+    <types xsi:type="ram:RLong" xmi:id="_KrZW3SUSEeWFg_nGt9-F9Q"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_KrZW3iUSEeWFg_nGt9-F9Q" specifies="_KrYvkyUSEeWFg_nGt9-F9Q">
+    <specification xmi:id="_KrZW3yUSEeWFg_nGt9-F9Q">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZW4CUSEeWFg_nGt9-F9Q" covered="_KrZW5CUSEeWFg_nGt9-F9Q" message="_KrZW5iUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZW4SUSEeWFg_nGt9-F9Q" covered="_KrZW5CUSEeWFg_nGt9-F9Q" message="_KrZW6SUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZW4iUSEeWFg_nGt9-F9Q" covered="_KrZW5SUSEeWFg_nGt9-F9Q" message="_KrZW6SUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZW4yUSEeWFg_nGt9-F9Q" covered="_KrZW5CUSEeWFg_nGt9-F9Q" message="_KrZW6CUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZW5CUSEeWFg_nGt9-F9Q" represents="_KrZW7iUSEeWFg_nGt9-F9Q" coveredBy="_KrZW4CUSEeWFg_nGt9-F9Q _KrZW4yUSEeWFg_nGt9-F9Q _KrZW4SUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZW5SUSEeWFg_nGt9-F9Q" represents="_KrZWryUSEeWFg_nGt9-F9Q" coveredBy="_KrZW4iUSEeWFg_nGt9-F9Q"/>
+      <messages xmi:id="_KrZW5iUSEeWFg_nGt9-F9Q" sendEvent="_KrZW7yUSEeWFg_nGt9-F9Q" receiveEvent="_KrZW4CUSEeWFg_nGt9-F9Q" signature="_KrYvkyUSEeWFg_nGt9-F9Q">
+        <localProperties xsi:type="ram:Reference" xmi:id="_KrZW5yUSEeWFg_nGt9-F9Q" name="value" lowerBound="1" type="_KrZWxyUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZW6CUSEeWFg_nGt9-F9Q" sendEvent="_KrZW4yUSEeWFg_nGt9-F9Q" receiveEvent="_KrZW8CUSEeWFg_nGt9-F9Q" signature="_KrYvkyUSEeWFg_nGt9-F9Q" messageSort="reply"/>
+      <messages xmi:id="_KrZW6SUSEeWFg_nGt9-F9Q" sendEvent="_KrZW4SUSEeWFg_nGt9-F9Q" receiveEvent="_KrZW4iUSEeWFg_nGt9-F9Q" signature="_KrZWtiUSEeWFg_nGt9-F9Q" assignTo="_KrZW5yUSEeWFg_nGt9-F9Q">
+        <arguments xmi:id="_KrZW6iUSEeWFg_nGt9-F9Q" parameter="_KrZWtyUSEeWFg_nGt9-F9Q">
+          <value xsi:type="ram:ParameterValue" xmi:id="_KrZW6yUSEeWFg_nGt9-F9Q" parameter="_KrZWoCUSEeWFg_nGt9-F9Q"/>
+        </arguments>
+        <arguments xmi:id="_KrZW7CUSEeWFg_nGt9-F9Q" parameter="_KrZWuCUSEeWFg_nGt9-F9Q">
+          <value xsi:type="ram:ParameterValue" xmi:id="_KrZW7SUSEeWFg_nGt9-F9Q" parameter="_KrZWoSUSEeWFg_nGt9-F9Q"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_KrZW7iUSEeWFg_nGt9-F9Q" name="target" lowerBound="1" type="_KrYvkiUSEeWFg_nGt9-F9Q"/>
+      <formalGates xmi:id="_KrZW7yUSEeWFg_nGt9-F9Q" message="_KrZW5iUSEeWFg_nGt9-F9Q" name="out_add"/>
+      <formalGates xmi:id="_KrZW8CUSEeWFg_nGt9-F9Q" message="_KrZW6CUSEeWFg_nGt9-F9Q" name="in_add"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_KrZW8SUSEeWFg_nGt9-F9Q" specifies="_KrZWoiUSEeWFg_nGt9-F9Q">
+    <specification xmi:id="_KrZW8iUSEeWFg_nGt9-F9Q">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZW8yUSEeWFg_nGt9-F9Q" covered="_KrZW9yUSEeWFg_nGt9-F9Q" message="_KrZW-SUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZW9CUSEeWFg_nGt9-F9Q" covered="_KrZW9yUSEeWFg_nGt9-F9Q" message="_KrZW_CUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZW9SUSEeWFg_nGt9-F9Q" covered="_KrZW-CUSEeWFg_nGt9-F9Q" message="_KrZW_CUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZW9iUSEeWFg_nGt9-F9Q" covered="_KrZW9yUSEeWFg_nGt9-F9Q" message="_KrZW-yUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZW9yUSEeWFg_nGt9-F9Q" represents="_KrZW_yUSEeWFg_nGt9-F9Q" coveredBy="_KrZW8yUSEeWFg_nGt9-F9Q _KrZW9iUSEeWFg_nGt9-F9Q _KrZW9CUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZW-CUSEeWFg_nGt9-F9Q" represents="_KrZWryUSEeWFg_nGt9-F9Q" coveredBy="_KrZW9SUSEeWFg_nGt9-F9Q"/>
+      <messages xmi:id="_KrZW-SUSEeWFg_nGt9-F9Q" sendEvent="_KrZXACUSEeWFg_nGt9-F9Q" receiveEvent="_KrZW8yUSEeWFg_nGt9-F9Q" signature="_KrZWoiUSEeWFg_nGt9-F9Q">
+        <localProperties xsi:type="ram:Reference" xmi:id="_KrZW-iUSEeWFg_nGt9-F9Q" name="value" lowerBound="1" type="_KrZWxyUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZW-yUSEeWFg_nGt9-F9Q" sendEvent="_KrZW9iUSEeWFg_nGt9-F9Q" receiveEvent="_KrZXASUSEeWFg_nGt9-F9Q" signature="_KrZWoiUSEeWFg_nGt9-F9Q" messageSort="reply"/>
+      <messages xmi:id="_KrZW_CUSEeWFg_nGt9-F9Q" sendEvent="_KrZW9CUSEeWFg_nGt9-F9Q" receiveEvent="_KrZW9SUSEeWFg_nGt9-F9Q" signature="_KrZWuSUSEeWFg_nGt9-F9Q" assignTo="_KrZW-iUSEeWFg_nGt9-F9Q">
+        <arguments xmi:id="_KrZW_SUSEeWFg_nGt9-F9Q" parameter="_KrZWuiUSEeWFg_nGt9-F9Q">
+          <value xsi:type="ram:ParameterValue" xmi:id="_KrZW_iUSEeWFg_nGt9-F9Q" parameter="_KrZWoyUSEeWFg_nGt9-F9Q"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_KrZW_yUSEeWFg_nGt9-F9Q" name="target" lowerBound="1" type="_KrYvkiUSEeWFg_nGt9-F9Q"/>
+      <formalGates xmi:id="_KrZXACUSEeWFg_nGt9-F9Q" message="_KrZW-SUSEeWFg_nGt9-F9Q" name="out_remove"/>
+      <formalGates xmi:id="_KrZXASUSEeWFg_nGt9-F9Q" message="_KrZW-yUSEeWFg_nGt9-F9Q" name="in_remove"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_KrZXAiUSEeWFg_nGt9-F9Q" specifies="_KrZWpCUSEeWFg_nGt9-F9Q">
+    <specification xmi:id="_KrZXAyUSEeWFg_nGt9-F9Q">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZXBCUSEeWFg_nGt9-F9Q" covered="_KrZXCCUSEeWFg_nGt9-F9Q" message="_KrZXCiUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZXBSUSEeWFg_nGt9-F9Q" covered="_KrZXCCUSEeWFg_nGt9-F9Q" message="_KrZ9syUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZXBiUSEeWFg_nGt9-F9Q" covered="_KrZXCSUSEeWFg_nGt9-F9Q" message="_KrZ9syUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZXByUSEeWFg_nGt9-F9Q" covered="_KrZXCCUSEeWFg_nGt9-F9Q" message="_KrZ9sSUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZXCCUSEeWFg_nGt9-F9Q" represents="_KrZ9tiUSEeWFg_nGt9-F9Q" coveredBy="_KrZXBCUSEeWFg_nGt9-F9Q _KrZXByUSEeWFg_nGt9-F9Q _KrZXBSUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZXCSUSEeWFg_nGt9-F9Q" represents="_KrZWryUSEeWFg_nGt9-F9Q" coveredBy="_KrZXBiUSEeWFg_nGt9-F9Q"/>
+      <messages xmi:id="_KrZXCiUSEeWFg_nGt9-F9Q" sendEvent="_KrZ9tyUSEeWFg_nGt9-F9Q" receiveEvent="_KrZXBCUSEeWFg_nGt9-F9Q" signature="_KrZWpCUSEeWFg_nGt9-F9Q">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_KrZ9sCUSEeWFg_nGt9-F9Q" name="containsValue" type="_KrZW1yUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ9sSUSEeWFg_nGt9-F9Q" sendEvent="_KrZXByUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ9uCUSEeWFg_nGt9-F9Q" signature="_KrZWpCUSEeWFg_nGt9-F9Q" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_KrZ9siUSEeWFg_nGt9-F9Q" value="_KrZ9sCUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ9syUSEeWFg_nGt9-F9Q" sendEvent="_KrZXBSUSEeWFg_nGt9-F9Q" receiveEvent="_KrZXBiUSEeWFg_nGt9-F9Q" signature="_KrZWuyUSEeWFg_nGt9-F9Q" assignTo="_KrZ9sCUSEeWFg_nGt9-F9Q">
+        <arguments xmi:id="_KrZ9tCUSEeWFg_nGt9-F9Q" parameter="_KrZWvCUSEeWFg_nGt9-F9Q">
+          <value xsi:type="ram:ParameterValue" xmi:id="_KrZ9tSUSEeWFg_nGt9-F9Q" parameter="_KrZWpSUSEeWFg_nGt9-F9Q"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_KrZ9tiUSEeWFg_nGt9-F9Q" name="target" lowerBound="1" type="_KrYvkiUSEeWFg_nGt9-F9Q"/>
+      <formalGates xmi:id="_KrZ9tyUSEeWFg_nGt9-F9Q" message="_KrZXCiUSEeWFg_nGt9-F9Q" name="out_contains"/>
+      <formalGates xmi:id="_KrZ9uCUSEeWFg_nGt9-F9Q" message="_KrZ9sSUSEeWFg_nGt9-F9Q" name="in_contains"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_KrZ9uSUSEeWFg_nGt9-F9Q" specifies="_KrZWpiUSEeWFg_nGt9-F9Q">
+    <specification xmi:id="_KrZ9uiUSEeWFg_nGt9-F9Q">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ9uyUSEeWFg_nGt9-F9Q" covered="_KrZ9vyUSEeWFg_nGt9-F9Q" message="_KrZ9wSUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ9vCUSEeWFg_nGt9-F9Q" covered="_KrZ9vyUSEeWFg_nGt9-F9Q" message="_KrZ9xSUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ9vSUSEeWFg_nGt9-F9Q" covered="_KrZ9wCUSEeWFg_nGt9-F9Q" message="_KrZ9xSUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ9viUSEeWFg_nGt9-F9Q" covered="_KrZ9vyUSEeWFg_nGt9-F9Q" message="_KrZ9wyUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ9vyUSEeWFg_nGt9-F9Q" represents="_KrZ9yCUSEeWFg_nGt9-F9Q" coveredBy="_KrZ9uyUSEeWFg_nGt9-F9Q _KrZ9viUSEeWFg_nGt9-F9Q _KrZ9vCUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ9wCUSEeWFg_nGt9-F9Q" represents="_KrZWryUSEeWFg_nGt9-F9Q" coveredBy="_KrZ9vSUSEeWFg_nGt9-F9Q"/>
+      <messages xmi:id="_KrZ9wSUSEeWFg_nGt9-F9Q" sendEvent="_KrZ9ySUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ9uyUSEeWFg_nGt9-F9Q" signature="_KrZWpiUSEeWFg_nGt9-F9Q">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_KrZ9wiUSEeWFg_nGt9-F9Q" name="containsKey" type="_KrZW1yUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ9wyUSEeWFg_nGt9-F9Q" sendEvent="_KrZ9viUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ9yiUSEeWFg_nGt9-F9Q" signature="_KrZWpiUSEeWFg_nGt9-F9Q" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_KrZ9xCUSEeWFg_nGt9-F9Q" value="_KrZ9wiUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ9xSUSEeWFg_nGt9-F9Q" sendEvent="_KrZ9vCUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ9vSUSEeWFg_nGt9-F9Q" signature="_KrZWvSUSEeWFg_nGt9-F9Q" assignTo="_KrZ9wiUSEeWFg_nGt9-F9Q">
+        <arguments xmi:id="_KrZ9xiUSEeWFg_nGt9-F9Q" parameter="_KrZWviUSEeWFg_nGt9-F9Q">
+          <value xsi:type="ram:ParameterValue" xmi:id="_KrZ9xyUSEeWFg_nGt9-F9Q" parameter="_KrZWpyUSEeWFg_nGt9-F9Q"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_KrZ9yCUSEeWFg_nGt9-F9Q" name="target" lowerBound="1" type="_KrYvkiUSEeWFg_nGt9-F9Q"/>
+      <formalGates xmi:id="_KrZ9ySUSEeWFg_nGt9-F9Q" message="_KrZ9wSUSEeWFg_nGt9-F9Q" name="out_containsKey"/>
+      <formalGates xmi:id="_KrZ9yiUSEeWFg_nGt9-F9Q" message="_KrZ9wyUSEeWFg_nGt9-F9Q" name="in_containsKey"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_KrZ9yyUSEeWFg_nGt9-F9Q" specifies="_KrZWqCUSEeWFg_nGt9-F9Q">
+    <specification xmi:id="_KrZ9zCUSEeWFg_nGt9-F9Q">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ9zSUSEeWFg_nGt9-F9Q" covered="_KrZ90SUSEeWFg_nGt9-F9Q" message="_KrZ90yUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ9ziUSEeWFg_nGt9-F9Q" covered="_KrZ90SUSEeWFg_nGt9-F9Q" message="_KrZ91yUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ9zyUSEeWFg_nGt9-F9Q" covered="_KrZ90iUSEeWFg_nGt9-F9Q" message="_KrZ91yUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ90CUSEeWFg_nGt9-F9Q" covered="_KrZ90SUSEeWFg_nGt9-F9Q" message="_KrZ91SUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ90SUSEeWFg_nGt9-F9Q" represents="_KrZ92iUSEeWFg_nGt9-F9Q" coveredBy="_KrZ9zSUSEeWFg_nGt9-F9Q _KrZ90CUSEeWFg_nGt9-F9Q _KrZ9ziUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ90iUSEeWFg_nGt9-F9Q" represents="_KrZWryUSEeWFg_nGt9-F9Q" coveredBy="_KrZ9zyUSEeWFg_nGt9-F9Q"/>
+      <messages xmi:id="_KrZ90yUSEeWFg_nGt9-F9Q" sendEvent="_KrZ92yUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ9zSUSEeWFg_nGt9-F9Q" signature="_KrZWqCUSEeWFg_nGt9-F9Q">
+        <localProperties xsi:type="ram:Reference" xmi:id="_KrZ91CUSEeWFg_nGt9-F9Q" name="value" lowerBound="1" type="_KrZWxyUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ91SUSEeWFg_nGt9-F9Q" sendEvent="_KrZ90CUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ93CUSEeWFg_nGt9-F9Q" signature="_KrZWqCUSEeWFg_nGt9-F9Q" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_KrZ91iUSEeWFg_nGt9-F9Q" value="_KrZ91CUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ91yUSEeWFg_nGt9-F9Q" sendEvent="_KrZ9ziUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ9zyUSEeWFg_nGt9-F9Q" signature="_KrZWvyUSEeWFg_nGt9-F9Q" assignTo="_KrZ91CUSEeWFg_nGt9-F9Q">
+        <arguments xmi:id="_KrZ92CUSEeWFg_nGt9-F9Q" parameter="_KrZWwCUSEeWFg_nGt9-F9Q">
+          <value xsi:type="ram:ParameterValue" xmi:id="_KrZ92SUSEeWFg_nGt9-F9Q" parameter="_KrZWqSUSEeWFg_nGt9-F9Q"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_KrZ92iUSEeWFg_nGt9-F9Q" name="target" lowerBound="1" type="_KrYvkiUSEeWFg_nGt9-F9Q"/>
+      <formalGates xmi:id="_KrZ92yUSEeWFg_nGt9-F9Q" message="_KrZ90yUSEeWFg_nGt9-F9Q" name="in_get"/>
+      <formalGates xmi:id="_KrZ93CUSEeWFg_nGt9-F9Q" message="_KrZ91SUSEeWFg_nGt9-F9Q" name="out_get"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_KrZ93SUSEeWFg_nGt9-F9Q" specifies="_KrZWqiUSEeWFg_nGt9-F9Q">
+    <specification xmi:id="_KrZ93iUSEeWFg_nGt9-F9Q">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ93yUSEeWFg_nGt9-F9Q" covered="_KrZ94yUSEeWFg_nGt9-F9Q" message="_KrZ95SUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ94CUSEeWFg_nGt9-F9Q" covered="_KrZ94yUSEeWFg_nGt9-F9Q" message="_KrZ96SUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ94SUSEeWFg_nGt9-F9Q" covered="_KrZ95CUSEeWFg_nGt9-F9Q" message="_KrZ96SUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ94iUSEeWFg_nGt9-F9Q" covered="_KrZ94yUSEeWFg_nGt9-F9Q" message="_KrZ95yUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ94yUSEeWFg_nGt9-F9Q" represents="_KrZ96iUSEeWFg_nGt9-F9Q" coveredBy="_KrZ93yUSEeWFg_nGt9-F9Q _KrZ94iUSEeWFg_nGt9-F9Q _KrZ94CUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ95CUSEeWFg_nGt9-F9Q" represents="_KrZWryUSEeWFg_nGt9-F9Q" coveredBy="_KrZ94SUSEeWFg_nGt9-F9Q"/>
+      <messages xmi:id="_KrZ95SUSEeWFg_nGt9-F9Q" sendEvent="_KrZ96yUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ93yUSEeWFg_nGt9-F9Q" signature="_KrZWqiUSEeWFg_nGt9-F9Q">
+        <localProperties xsi:type="ram:Reference" xmi:id="_KrZ95iUSEeWFg_nGt9-F9Q" name="keySet" lowerBound="1" type="_KrZWySUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ95yUSEeWFg_nGt9-F9Q" sendEvent="_KrZ94iUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ97CUSEeWFg_nGt9-F9Q" signature="_KrZWqiUSEeWFg_nGt9-F9Q" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_KrZ96CUSEeWFg_nGt9-F9Q" value="_KrZ95iUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ96SUSEeWFg_nGt9-F9Q" sendEvent="_KrZ94CUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ94SUSEeWFg_nGt9-F9Q" signature="_KrZWwSUSEeWFg_nGt9-F9Q" assignTo="_KrZ95iUSEeWFg_nGt9-F9Q"/>
+      <properties xmi:id="_KrZ96iUSEeWFg_nGt9-F9Q" name="target" lowerBound="1" type="_KrYvkiUSEeWFg_nGt9-F9Q"/>
+      <formalGates xmi:id="_KrZ96yUSEeWFg_nGt9-F9Q" message="_KrZ95SUSEeWFg_nGt9-F9Q" name="in_keySet"/>
+      <formalGates xmi:id="_KrZ97CUSEeWFg_nGt9-F9Q" message="_KrZ95yUSEeWFg_nGt9-F9Q" name="out_keySet"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_KrZ97SUSEeWFg_nGt9-F9Q" specifies="_KrZWqyUSEeWFg_nGt9-F9Q">
+    <specification xmi:id="_KrZ97iUSEeWFg_nGt9-F9Q">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ97yUSEeWFg_nGt9-F9Q" covered="_KrZ98yUSEeWFg_nGt9-F9Q" message="_KrZ99SUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ98CUSEeWFg_nGt9-F9Q" covered="_KrZ98yUSEeWFg_nGt9-F9Q" message="_KrZ9-SUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ98SUSEeWFg_nGt9-F9Q" covered="_KrZ99CUSEeWFg_nGt9-F9Q" message="_KrZ9-SUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ98iUSEeWFg_nGt9-F9Q" covered="_KrZ98yUSEeWFg_nGt9-F9Q" message="_KrZ99yUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ98yUSEeWFg_nGt9-F9Q" represents="_KrZ9-iUSEeWFg_nGt9-F9Q" coveredBy="_KrZ97yUSEeWFg_nGt9-F9Q _KrZ98iUSEeWFg_nGt9-F9Q _KrZ98CUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ99CUSEeWFg_nGt9-F9Q" represents="_KrZWryUSEeWFg_nGt9-F9Q" coveredBy="_KrZ98SUSEeWFg_nGt9-F9Q"/>
+      <messages xmi:id="_KrZ99SUSEeWFg_nGt9-F9Q" sendEvent="_KrZ9-yUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ97yUSEeWFg_nGt9-F9Q" signature="_KrZWqyUSEeWFg_nGt9-F9Q">
+        <localProperties xsi:type="ram:Reference" xmi:id="_KrZ99iUSEeWFg_nGt9-F9Q" name="values" lowerBound="1" type="_KrZWyyUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ99yUSEeWFg_nGt9-F9Q" sendEvent="_KrZ98iUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ9_CUSEeWFg_nGt9-F9Q" signature="_KrZWqyUSEeWFg_nGt9-F9Q" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_KrZ9-CUSEeWFg_nGt9-F9Q" value="_KrZ99iUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ9-SUSEeWFg_nGt9-F9Q" sendEvent="_KrZ98CUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ98SUSEeWFg_nGt9-F9Q" signature="_KrZWwiUSEeWFg_nGt9-F9Q" assignTo="_KrZ99iUSEeWFg_nGt9-F9Q"/>
+      <properties xmi:id="_KrZ9-iUSEeWFg_nGt9-F9Q" name="target" lowerBound="1" type="_KrYvkiUSEeWFg_nGt9-F9Q"/>
+      <formalGates xmi:id="_KrZ9-yUSEeWFg_nGt9-F9Q" message="_KrZ99SUSEeWFg_nGt9-F9Q" name="in_values"/>
+      <formalGates xmi:id="_KrZ9_CUSEeWFg_nGt9-F9Q" message="_KrZ99yUSEeWFg_nGt9-F9Q" name="out_values"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_KrZ9_SUSEeWFg_nGt9-F9Q" specifies="_KrZWriUSEeWFg_nGt9-F9Q">
+    <specification xmi:id="_KrZ9_iUSEeWFg_nGt9-F9Q">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ9_yUSEeWFg_nGt9-F9Q" covered="_KrZ-AyUSEeWFg_nGt9-F9Q" message="_KrZ-BSUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ-ACUSEeWFg_nGt9-F9Q" covered="_KrZ-AyUSEeWFg_nGt9-F9Q" message="_KrZ-CSUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ-ASUSEeWFg_nGt9-F9Q" covered="_KrZ-BCUSEeWFg_nGt9-F9Q" message="_KrZ-CSUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ-AiUSEeWFg_nGt9-F9Q" covered="_KrZ-AyUSEeWFg_nGt9-F9Q" message="_KrZ-ByUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ-AyUSEeWFg_nGt9-F9Q" represents="_KrZ-CiUSEeWFg_nGt9-F9Q" coveredBy="_KrZ9_yUSEeWFg_nGt9-F9Q _KrZ-AiUSEeWFg_nGt9-F9Q _KrZ-ACUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ-BCUSEeWFg_nGt9-F9Q" represents="_KrZWsCUSEeWFg_nGt9-F9Q" coveredBy="_KrZ-ASUSEeWFg_nGt9-F9Q"/>
+      <messages xmi:id="_KrZ-BSUSEeWFg_nGt9-F9Q" sendEvent="_KrZ-CyUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ9_yUSEeWFg_nGt9-F9Q" signature="_KrZWriUSEeWFg_nGt9-F9Q">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_KrZ-BiUSEeWFg_nGt9-F9Q" name="size" type="_KrZW2CUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ-ByUSEeWFg_nGt9-F9Q" sendEvent="_KrZ-AiUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ-DCUSEeWFg_nGt9-F9Q" signature="_KrZWriUSEeWFg_nGt9-F9Q" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_KrZ-CCUSEeWFg_nGt9-F9Q" value="_KrZ-BiUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ-CSUSEeWFg_nGt9-F9Q" sendEvent="_KrZ-ACUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ-ASUSEeWFg_nGt9-F9Q" signature="_KrZWzCUSEeWFg_nGt9-F9Q" assignTo="_KrZ-BiUSEeWFg_nGt9-F9Q"/>
+      <properties xmi:id="_KrZ-CiUSEeWFg_nGt9-F9Q" name="target" lowerBound="1" type="_KrYvkiUSEeWFg_nGt9-F9Q"/>
+      <formalGates xmi:id="_KrZ-CyUSEeWFg_nGt9-F9Q" message="_KrZ-BSUSEeWFg_nGt9-F9Q" name="in_size"/>
+      <formalGates xmi:id="_KrZ-DCUSEeWFg_nGt9-F9Q" message="_KrZ-ByUSEeWFg_nGt9-F9Q" name="out_size"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_KrZ-DSUSEeWFg_nGt9-F9Q" specifies="_KrZWrCUSEeWFg_nGt9-F9Q">
+    <specification xmi:id="_KrZ-DiUSEeWFg_nGt9-F9Q">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ-DyUSEeWFg_nGt9-F9Q" covered="_KrZ-EyUSEeWFg_nGt9-F9Q" message="_KrZ-FSUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ-ECUSEeWFg_nGt9-F9Q" covered="_KrZ-EyUSEeWFg_nGt9-F9Q" message="_KrZ-GSUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ-ESUSEeWFg_nGt9-F9Q" covered="_KrZ-FCUSEeWFg_nGt9-F9Q" message="_KrZ-GSUSEeWFg_nGt9-F9Q"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_KrZ-EiUSEeWFg_nGt9-F9Q" covered="_KrZ-EyUSEeWFg_nGt9-F9Q" message="_KrZ-FyUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ-EyUSEeWFg_nGt9-F9Q" represents="_KrZ-HCUSEeWFg_nGt9-F9Q" coveredBy="_KrZ-DyUSEeWFg_nGt9-F9Q _KrZ-EiUSEeWFg_nGt9-F9Q _KrZ-ECUSEeWFg_nGt9-F9Q"/>
+      <lifelines xmi:id="_KrZ-FCUSEeWFg_nGt9-F9Q" represents="_KrZWsCUSEeWFg_nGt9-F9Q" coveredBy="_KrZ-ESUSEeWFg_nGt9-F9Q"/>
+      <messages xmi:id="_KrZ-FSUSEeWFg_nGt9-F9Q" sendEvent="_KrZ-HSUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ-DyUSEeWFg_nGt9-F9Q" signature="_KrZWrCUSEeWFg_nGt9-F9Q">
+        <localProperties xsi:type="ram:Attribute" xmi:id="_KrZ-FiUSEeWFg_nGt9-F9Q" name="contains" type="_KrZW1yUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ-FyUSEeWFg_nGt9-F9Q" sendEvent="_KrZ-EiUSEeWFg_nGt9-F9Q" receiveEvent="_KrakwCUSEeWFg_nGt9-F9Q" signature="_KrZWrCUSEeWFg_nGt9-F9Q" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_KrZ-GCUSEeWFg_nGt9-F9Q" value="_KrZ-FiUSEeWFg_nGt9-F9Q"/>
+      </messages>
+      <messages xmi:id="_KrZ-GSUSEeWFg_nGt9-F9Q" sendEvent="_KrZ-ECUSEeWFg_nGt9-F9Q" receiveEvent="_KrZ-ESUSEeWFg_nGt9-F9Q" signature="_KrZWzSUSEeWFg_nGt9-F9Q" assignTo="_KrZ-FiUSEeWFg_nGt9-F9Q">
+        <arguments xmi:id="_KrZ-GiUSEeWFg_nGt9-F9Q" parameter="_KrZWziUSEeWFg_nGt9-F9Q">
+          <value xsi:type="ram:ParameterValue" xmi:id="_KrZ-GyUSEeWFg_nGt9-F9Q" parameter="_KrZWrSUSEeWFg_nGt9-F9Q"/>
+        </arguments>
+      </messages>
+      <properties xmi:id="_KrZ-HCUSEeWFg_nGt9-F9Q" name="target" lowerBound="1" type="_KrYvkiUSEeWFg_nGt9-F9Q"/>
+      <formalGates xmi:id="_KrZ-HSUSEeWFg_nGt9-F9Q" message="_KrZ-FSUSEeWFg_nGt9-F9Q" name="in_contains"/>
+      <formalGates xmi:id="_KrakwCUSEeWFg_nGt9-F9Q" message="_KrZ-FyUSEeWFg_nGt9-F9Q" name="out_contains"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_KrakwSUSEeWFg_nGt9-F9Q">
+    <containers xmi:id="_KrakwiUSEeWFg_nGt9-F9Q" key="_KrYvkSUSEeWFg_nGt9-F9Q">
+      <value xmi:id="_ljQw8CUSEeWFg_nGt9-F9Q" key="_KrYvkiUSEeWFg_nGt9-F9Q">
+        <value xmi:id="_ljQw8SUSEeWFg_nGt9-F9Q" x="300.0" y="100.0"/>
+      </value>
+      <value xmi:id="_ljR_ECUSEeWFg_nGt9-F9Q" key="_KrZWsSUSEeWFg_nGt9-F9Q">
+        <value xmi:id="_ljR_ESUSEeWFg_nGt9-F9Q" x="757.7669" y="-15.1273365"/>
+      </value>
+      <value xmi:id="_ljTNMCUSEeWFg_nGt9-F9Q" key="_KrZWtCUSEeWFg_nGt9-F9Q">
+        <value xmi:id="_ljTNMSUSEeWFg_nGt9-F9Q" x="1119.0" y="100.0"/>
+      </value>
+      <value xmi:id="_ljmvMCUSEeWFg_nGt9-F9Q" key="_KrZWtSUSEeWFg_nGt9-F9Q">
+        <value xmi:id="_ljmvMSUSEeWFg_nGt9-F9Q" x="1469.0" y="100.0"/>
+      </value>
+      <value xmi:id="_ljn9UCUSEeWFg_nGt9-F9Q" key="_KrZWxyUSEeWFg_nGt9-F9Q">
+        <value xmi:id="_ljn9USUSEeWFg_nGt9-F9Q" x="1439.0856" y="-2.9598663"/>
+      </value>
+      <value xmi:id="_ljqZkCUSEeWFg_nGt9-F9Q" key="_KrZWySUSEeWFg_nGt9-F9Q">
+        <value xmi:id="_ljqZkSUSEeWFg_nGt9-F9Q" x="2346.0" y="100.0"/>
+      </value>
+      <value xmi:id="_lkLW8CUSEeWFg_nGt9-F9Q" key="_KrZWyyUSEeWFg_nGt9-F9Q">
+        <value xmi:id="_lkLW8SUSEeWFg_nGt9-F9Q" x="2699.0" y="100.0"/>
+      </value>
+    </containers>
+  </layout>
+  <wovenAspects xmi:id="_KrakwyUSEeWFg_nGt9-F9Q" name="HashMap" wovenElements="_KrZWwiUSEeWFg_nGt9-F9Q _KrZWwSUSEeWFg_nGt9-F9Q _KrYvkiUSEeWFg_nGt9-F9Q _KrYvkyUSEeWFg_nGt9-F9Q _KrZWsSUSEeWFg_nGt9-F9Q _KrZWuSUSEeWFg_nGt9-F9Q _KrZWtCUSEeWFg_nGt9-F9Q _KrZWtSUSEeWFg_nGt9-F9Q _KrZWoiUSEeWFg_nGt9-F9Q _KrZWxyUSEeWFg_nGt9-F9Q _KrZWpCUSEeWFg_nGt9-F9Q _KrZWqCUSEeWFg_nGt9-F9Q _KrZWqyUSEeWFg_nGt9-F9Q _KrZWvSUSEeWFg_nGt9-F9Q _KrZWpiUSEeWFg_nGt9-F9Q _KrZWqiUSEeWFg_nGt9-F9Q _KrZWtiUSEeWFg_nGt9-F9Q _KrZWvyUSEeWFg_nGt9-F9Q _KrZWuyUSEeWFg_nGt9-F9Q">
+    <comesFrom href="HashMap.ram#_PD6TUNxdEeOWzK3gwh7MSw"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_KrakxCUSEeWFg_nGt9-F9Q" name="KeyIndexed" wovenElements="_KrZWoiUSEeWFg_nGt9-F9Q _KrZWySUSEeWFg_nGt9-F9Q _KrZWqyUSEeWFg_nGt9-F9Q _KrZWsSUSEeWFg_nGt9-F9Q _KrYvkyUSEeWFg_nGt9-F9Q _KrZWqCUSEeWFg_nGt9-F9Q _KrZWqiUSEeWFg_nGt9-F9Q _KrZWpiUSEeWFg_nGt9-F9Q _KrZWxyUSEeWFg_nGt9-F9Q _KrYvkiUSEeWFg_nGt9-F9Q _KrZWyyUSEeWFg_nGt9-F9Q _KrZWrCUSEeWFg_nGt9-F9Q">
+    <comesFrom href="KeyIndexed.ram#__rlwYNxaEeOLe_W5cUN4CA"/>
+  </wovenAspects>
+  <wovenAspects xmi:id="_KrakxSUSEeWFg_nGt9-F9Q" name="Association" wovenElements="_KrZWriUSEeWFg_nGt9-F9Q _KrZWzCUSEeWFg_nGt9-F9Q _KrZWyyUSEeWFg_nGt9-F9Q _KrYvkiUSEeWFg_nGt9-F9Q _KrZWrCUSEeWFg_nGt9-F9Q _KrZWxyUSEeWFg_nGt9-F9Q _KrZWzSUSEeWFg_nGt9-F9Q">
+    <comesFrom href="Association.ram#_mDv4YEQ1EeSSfO86-u_zzA"/>
+  </wovenAspects>
+</ram:Aspect>

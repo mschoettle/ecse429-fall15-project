@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_j0ZQYCWLEeWKwdDnYqndcw" name="AccessClassification&lt;AccessClassified>">
+  <structuralView xmi:id="_j0ZQYSWLEeWKwdDnYqndcw">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_j0ZQYiWLEeWKwdDnYqndcw" name="Method" instanceClassName="java.lang.reflect.Method"/>
+    <classes xsi:type="ram:Class" xmi:id="_j0ZQYyWLEeWKwdDnYqndcw" name="AccessClassified" partiality="public">
+      <operations xmi:id="_j0ZQZCWLEeWKwdDnYqndcw" name="create" visibility="public" returnType="_j0ZQYyWLEeWKwdDnYqndcw" operationType="Constructor"/>
+      <operations xmi:id="_j0ZQZSWLEeWKwdDnYqndcw" name="getAccessKind" visibility="public" returnType="_j0ZQcSWLEeWKwdDnYqndcw">
+        <parameters xmi:id="_j0ZQZiWLEeWKwdDnYqndcw" name="m" type="_j0ZQYiWLEeWKwdDnYqndcw"/>
+      </operations>
+      <operations xmi:id="_j0ZQZyWLEeWKwdDnYqndcw" name="classifiedMethod" partiality="public" visibility="public" returnType="_j0ZQaSWLEeWKwdDnYqndcw"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_j0ZQaCWLEeWKwdDnYqndcw"/>
+    <types xsi:type="ram:RAny" xmi:id="_j0ZQaSWLEeWKwdDnYqndcw"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_j0ZQaiWLEeWKwdDnYqndcw"/>
+    <types xsi:type="ram:RInt" xmi:id="_j0ZQayWLEeWKwdDnYqndcw"/>
+    <types xsi:type="ram:RChar" xmi:id="_j0ZQbCWLEeWKwdDnYqndcw"/>
+    <types xsi:type="ram:RString" xmi:id="_j0ZQbSWLEeWKwdDnYqndcw"/>
+    <types xsi:type="ram:RDouble" xmi:id="_j0ZQbiWLEeWKwdDnYqndcw"/>
+    <types xsi:type="ram:RFloat" xmi:id="_j0ZQbyWLEeWKwdDnYqndcw"/>
+    <types xsi:type="ram:RLong" xmi:id="_j0ZQcCWLEeWKwdDnYqndcw"/>
+    <types xsi:type="ram:REnum" xmi:id="_j0ZQcSWLEeWKwdDnYqndcw" name="AccessKind">
+      <literals xmi:id="_j0ZQciWLEeWKwdDnYqndcw" name="READ"/>
+      <literals xmi:id="_j0ZQcyWLEeWKwdDnYqndcw" name="WRITE"/>
+      <literals xmi:id="_j0ZQdCWLEeWKwdDnYqndcw" name="UPDATE"/>
+    </types>
+  </structuralView>
+  <layout xmi:id="_j0ZQdSWLEeWKwdDnYqndcw">
+    <containers xmi:id="_j0ZQdiWLEeWKwdDnYqndcw" key="_j0ZQYSWLEeWKwdDnYqndcw"/>
+  </layout>
+  <stateViews xmi:id="_j0ZQdyWLEeWKwdDnYqndcw" name="AccessClassified" specifies="_j0ZQYyWLEeWKwdDnYqndcw">
+    <stateMachines xmi:id="_j0ZQeCWLEeWKwdDnYqndcw" start="_j0ZQeSWLEeWKwdDnYqndcw">
+      <states xmi:id="_j0ZQeSWLEeWKwdDnYqndcw" name="start" outgoings="_j0ZQeyWLEeWKwdDnYqndcw"/>
+      <states xmi:id="_j0ZQeiWLEeWKwdDnYqndcw" name="Classified" incomings="_j0ZQeyWLEeWKwdDnYqndcw _j0ZQfCWLEeWKwdDnYqndcw _j0ZQfSWLEeWKwdDnYqndcw" outgoings="_j0ZQfCWLEeWKwdDnYqndcw _j0ZQfSWLEeWKwdDnYqndcw"/>
+      <transitions xmi:id="_j0ZQeyWLEeWKwdDnYqndcw" name="create" endState="_j0ZQeiWLEeWKwdDnYqndcw" startState="_j0ZQeSWLEeWKwdDnYqndcw" signature="_j0ZQZCWLEeWKwdDnYqndcw"/>
+      <transitions xmi:id="_j0ZQfCWLEeWKwdDnYqndcw" name="getAccessKind" endState="_j0ZQeiWLEeWKwdDnYqndcw" startState="_j0ZQeiWLEeWKwdDnYqndcw" signature="_j0ZQZSWLEeWKwdDnYqndcw"/>
+      <transitions xmi:id="_j0ZQfSWLEeWKwdDnYqndcw" name="classifiedMethod" endState="_j0ZQeiWLEeWKwdDnYqndcw" startState="_j0ZQeiWLEeWKwdDnYqndcw" signature="_j0ZQZyWLEeWKwdDnYqndcw"/>
+    </stateMachines>
+  </stateViews>
+  <wovenAspects xmi:id="_j0ZQfiWLEeWKwdDnYqndcw" name="AccessClassified" wovenElements="_j0ZQYiWLEeWKwdDnYqndcw _j0ZQZyWLEeWKwdDnYqndcw _j0ZQZSWLEeWKwdDnYqndcw _j0ZQZCWLEeWKwdDnYqndcw _j0ZQYyWLEeWKwdDnYqndcw">
+    <comesFrom href="AccessClassified.ram#_yBifgGESEeSXOsBvT42j1g"/>
+  </wovenAspects>
+</ram:Aspect>

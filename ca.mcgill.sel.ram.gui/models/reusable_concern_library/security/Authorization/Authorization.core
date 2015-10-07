@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_q61c8KrcEeSxDLZ7wGlAEw" name="Authorization">
+  <models xsi:type="core:COREFeatureModel" href="#_q62EAKrcEeSxDLZ7wGlAEw"/>
+  <models xsi:type="ram:Aspect" href="Authorization.ram#_dPkxYKrdEeSxDLZ7wGlAEw"/>
+  <models xsi:type="ram:Aspect" href="SoD.ram#_FbqcEKylEeStjOtydxo5sA"/>
+  <models xsi:type="core:COREImpactModel" href="#_LaqAEFf5EeWBIMO_lU-Y1g"/>
+  <featureModel xmi:id="_q62EAKrcEeSxDLZ7wGlAEw" coreConcern="_q61c8KrcEeSxDLZ7wGlAEw" root="_q62EAarcEeSxDLZ7wGlAEw">
+    <features xmi:id="_q62EAarcEeSxDLZ7wGlAEw" name="Authorization" children="_d2Pv0KrdEeSxDLZ7wGlAEw _f5XeIKrdEeSxDLZ7wGlAEw">
+      <realizedBy xsi:type="ram:Aspect" href="Authorization.ram#_dPkxYKrdEeSxDLZ7wGlAEw"/>
+      <reuses xmi:id="_fiI1YCWpEeWiqbwSFmJigg" name="Named_Role" selectedConfiguration="_fiI1YSWpEeWiqbwSFmJigg">
+        <reusedConcern href="Reused_Named/Named.core#_vjZ6sKBAEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_fiI1YSWpEeWiqbwSFmJigg" name="Named_Named">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Named/Named.core#_vjZ6saBAEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Named/Named.core#_vjZ6sqBAEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_lkjq0CWpEeWiqbwSFmJigg" name="Singleton_AuthorizationManager" selectedConfiguration="_lkjq0SWpEeWiqbwSFmJigg">
+        <reusedConcern href="Reused_Singleton/Singleton.core#_d1_oUKBBEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_lkjq0SWpEeWiqbwSFmJigg" name="Singleton_Singleton">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Singleton/Singleton.core#_d1_oUaBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Singleton/Singleton.core#_d1_oUqBBEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_cBYtoCW4EeWYJ8pRhlXY0w" name="Association_AuthorizationManager_Roles" selectedConfiguration="_cBYtoSW4EeWYJ8pRhlXY0w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_cBYtoSW4EeWYJ8pRhlXY0w" name="Association_AssociationKeyIndexedHashMap">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_ndvLsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_r80mIACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_41QhoCW4EeWYJ8pRhlXY0w" name="Association_Action_Permission" selectedConfiguration="_41QhoSW4EeWYJ8pRhlXY0w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_41QhoSW4EeWYJ8pRhlXY0w" name="Association_HashSetUnorderedAssociationPlainKind">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_DebZ0ACYEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_CYjzYACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_GpV8kCW5EeWYJ8pRhlXY0w" name="Association_Permissio_Role" selectedConfiguration="_GpV8kSW5EeWYJ8pRhlXY0w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_GpV8kSW5EeWYJ8pRhlXY0w" name="Association_AssociationKindHashSetUnorderedPlain">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_DebZ0ACYEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_CYjzYACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_4mmK0CXJEeWYJ8pRhlXY0w" name="Named_Permission" selectedConfiguration="_4mmK0SXJEeWYJ8pRhlXY0w">
+        <reusedConcern href="Reused_Named/Named.core#_vjZ6sKBAEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_4mmK0SXJEeWYJ8pRhlXY0w" name="Named_Named">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Named/Named.core#_vjZ6saBAEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Named/Named.core#_vjZ6sqBAEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_dlKBoFf5EeWBIMO_lU-Y1g" name="Authentication_User" selectedConfiguration="_dlKBoVf5EeWBIMO_lU-Y1g">
+        <reusedConcern href="Reused_Authentication/authentication.core#_gFhYwKAyEeSaEq_8EhRMPA"/>
+        <configurations xmi:id="_dlKBoVf5EeWBIMO_lU-Y1g" name="Authentication_Authentication MeansAuthentication" reuse="_dlKBoFf5EeWBIMO_lU-Y1g">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Authentication/authentication.core#_gFhYwaAyEeSaEq_8EhRMPA"/>
+          <selected href="Reused_Authentication/authentication.core#_hq6pQKAyEeSaEq_8EhRMPA"/>
+          <selected href="Reused_Authentication/authentication.core#_gFhYwqAyEeSaEq_8EhRMPA"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_d2Pv0KrdEeSxDLZ7wGlAEw" name="Hierarchical" parent="_q62EAarcEeSxDLZ7wGlAEw" parentRelationship="Optional"/>
+    <features xmi:id="_f5XeIKrdEeSxDLZ7wGlAEw" name="SoD" parent="_q62EAarcEeSxDLZ7wGlAEw" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="SoD.ram#_FbqcEKylEeStjOtydxo5sA"/>
+    </features>
+  </featureModel>
+  <impactModel xmi:id="_LaqAEFf5EeWBIMO_lU-Y1g" name="Impact Model" coreConcern="_q61c8KrcEeSxDLZ7wGlAEw">
+    <modelReuses xmi:id="_vDmOcFf5EeWBIMO_lU-Y1g" reuse="_dlKBoFf5EeWBIMO_lU-Y1g">
+      <compositions xsi:type="core:COREImpactModelBinding" xmi:id="_vDm1gFf5EeWBIMO_lU-Y1g">
+        <mappings xsi:type="core:COREWeightedMapping" xmi:id="_vDm1gVf5EeWBIMO_lU-Y1g" to="_qDhm0Ff5EeWBIMO_lU-Y1g" weight="3">
+          <from xsi:type="core:COREImpactNode" href="Reused_Authentication/authentication.core#__zZzsA33EeWSKreNQjtGbg"/>
+        </mappings>
+      </compositions>
+    </modelReuses>
+    <impactModelElements xmi:id="_LaqnIFf5EeWBIMO_lU-Y1g" name="Improve Security" scalingFactor="25.0" incoming="_qk51kFf5EeWBIMO_lU-Y1g _sGgyQFf5EeWBIMO_lU-Y1g"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_qDhm0Ff5EeWBIMO_lU-Y1g" name="Authorization" scalingFactor="33.333332" offset="-33.333332" outgoing="_qk51kFf5EeWBIMO_lU-Y1g" relativeFeatureWeight="1" represents="_q62EAarcEeSxDLZ7wGlAEw" weightedMappings="_vDm1gVf5EeWBIMO_lU-Y1g"/>
+    <impactModelElements xsi:type="core:COREFeatureImpactNode" xmi:id="_ra9T0Ff5EeWBIMO_lU-Y1g" name="SoD" scalingFactor="1.0" outgoing="_sGgyQFf5EeWBIMO_lU-Y1g" represents="_f5XeIKrdEeSxDLZ7wGlAEw"/>
+    <layouts xmi:id="_LaqnIVf5EeWBIMO_lU-Y1g" key="_LaqnIFf5EeWBIMO_lU-Y1g">
+      <value xmi:id="_LaqnIlf5EeWBIMO_lU-Y1g" key="_LaqnIFf5EeWBIMO_lU-Y1g">
+        <value xmi:id="_LaqnI1f5EeWBIMO_lU-Y1g" x="553.0" y="65.00018"/>
+      </value>
+      <value xmi:id="_qDhm0Vf5EeWBIMO_lU-Y1g" key="_qDhm0Ff5EeWBIMO_lU-Y1g">
+        <value xmi:id="_qDhm0lf5EeWBIMO_lU-Y1g" x="373.58115" y="287.00037"/>
+      </value>
+      <value xmi:id="_ra9T0Vf5EeWBIMO_lU-Y1g" key="_ra9T0Ff5EeWBIMO_lU-Y1g">
+        <value xmi:id="_ra9T0lf5EeWBIMO_lU-Y1g" x="712.6639" y="274.00006"/>
+      </value>
+    </layouts>
+    <contributions xmi:id="_qk51kFf5EeWBIMO_lU-Y1g" relativeWeight="3" source="_qDhm0Ff5EeWBIMO_lU-Y1g" impacts="_LaqnIFf5EeWBIMO_lU-Y1g"/>
+    <contributions xmi:id="_sGgyQFf5EeWBIMO_lU-Y1g" relativeWeight="1" source="_ra9T0Ff5EeWBIMO_lU-Y1g" impacts="_LaqnIFf5EeWBIMO_lU-Y1g"/>
+  </impactModel>
+</core:COREConcern>

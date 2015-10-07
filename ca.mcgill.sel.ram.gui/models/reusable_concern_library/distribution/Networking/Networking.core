@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="__iNx0Kr2EeSFZ4ae5sBgYg" name="Networking">
+  <models xsi:type="core:COREFeatureModel" href="#__iNx0ar2EeSFZ4ae5sBgYg"/>
+  <models xsi:type="ram:Aspect" href="Networking.ram#_STbk8F1iEeS-crAw_TocNg"/>
+  <featureModel xmi:id="__iNx0ar2EeSFZ4ae5sBgYg" coreConcern="__iNx0Kr2EeSFZ4ae5sBgYg" root="__iNx0qr2EeSFZ4ae5sBgYg">
+    <features xmi:id="__iNx0qr2EeSFZ4ae5sBgYg" name="Networking">
+      <realizedBy xsi:type="ram:Aspect" href="Networking.ram#_STbk8F1iEeS-crAw_TocNg"/>
+    </features>
+  </featureModel>
+</core:COREConcern>

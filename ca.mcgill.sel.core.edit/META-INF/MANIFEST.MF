@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: ca.mcgill.sel.core.edit;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: ca.mcgill.sel.core.provider.COREEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: ca.mcgill.sel.core.provider
+Require-Bundle: ca.mcgill.sel.core;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport,
+ ca.mcgill.sel.commons;bundle-version="1.0.0",
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy

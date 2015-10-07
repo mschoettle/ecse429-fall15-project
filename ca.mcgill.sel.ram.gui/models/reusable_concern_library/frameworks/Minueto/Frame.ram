@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_MwfsANcgEeSyqfAiT90vaA" name="Window">
+  <realizes href="minueto.core#_1dm0UNcfEeSyqfAiT90vaA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_MwfsAdcgEeSyqfAiT90vaA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_NwJyMNcgEeSyqfAiT90vaA" name="MinuetoFrame" visibility="public" superTypes="_8cjGAC5LEeWEMbzGx7oxkQ" instanceClassName="org.minueto.window.MinuetoFrame">
+      <operations xmi:id="_QzoKQNcgEeSyqfAiT90vaA" name="MinuetoFrame" visibility="public" returnType="_NwJyMNcgEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_QzoKQdcgEeSyqfAiT90vaA" name="arg0" type="_MwfsBdcgEeSyqfAiT90vaA"/>
+        <parameters xmi:id="_QzoKQtcgEeSyqfAiT90vaA" name="arg1" type="_MwfsBdcgEeSyqfAiT90vaA"/>
+        <parameters xmi:id="_QzoKQ9cgEeSyqfAiT90vaA" name="arg2" type="_MwfsBNcgEeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_8cjGAC5LEeWEMbzGx7oxkQ" name="MinuetoWindow" instanceClassName="org.minueto.window.MinuetoWindow" interface="true"/>
+    <types xsi:type="ram:RVoid" xmi:id="_MwfsAtcgEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_MwfsA9cgEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_MwfsBNcgEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_MwfsBdcgEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_MwfsBtcgEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RString" xmi:id="_MwfsB9cgEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_MwfsCNcgEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_MwfsCdcgEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_MwfsCtcgEeSyqfAiT90vaA"/>
+  </structuralView>
+  <instantiations xmi:id="_Zdec4CDKEeWOgN4vdFvUTg">
+    <source xsi:type="ram:Aspect" href="Surface.ram#_eG4zkPfvEeSv9pyqEMq9pA"/>
+  </instantiations>
+  <layout xmi:id="_MwfsC9cgEeSyqfAiT90vaA">
+    <containers xmi:id="_MwfsDNcgEeSyqfAiT90vaA" key="_MwfsAdcgEeSyqfAiT90vaA">
+      <value xmi:id="_NwLAUNcgEeSyqfAiT90vaA" key="_NwJyMNcgEeSyqfAiT90vaA">
+        <value xmi:id="_NwLAUdcgEeSyqfAiT90vaA" x="272.99988" y="245.0001"/>
+      </value>
+      <value xmi:id="_8ckUIC5LEeWEMbzGx7oxkQ" key="_8cjGAC5LEeWEMbzGx7oxkQ">
+        <value xmi:id="_8ckUIS5LEeWEMbzGx7oxkQ" x="395.99997" y="46.99997"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_fgaXECWpEeWiqbwSFmJigg" name="Named&lt;Named>">
+  <structuralView xmi:id="_fga-ICWpEeWiqbwSFmJigg">
+    <classes xsi:type="ram:Class" xmi:id="_fga-ISWpEeWiqbwSFmJigg" name="Named" partiality="public">
+      <operations xmi:id="_fga-IiWpEeWiqbwSFmJigg" name="create" visibility="public" returnType="_fga-ISWpEeWiqbwSFmJigg" operationType="Constructor">
+        <parameters xmi:id="_fga-IyWpEeWiqbwSFmJigg" name="name" type="_fga-KyWpEeWiqbwSFmJigg"/>
+      </operations>
+      <operations xmi:id="_fga-JCWpEeWiqbwSFmJigg" name="getName" visibility="public" returnType="_fga-KyWpEeWiqbwSFmJigg"/>
+      <attributes xmi:id="_fga-JSWpEeWiqbwSFmJigg" name="name" type="_fga-KyWpEeWiqbwSFmJigg"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_fga-JiWpEeWiqbwSFmJigg"/>
+    <types xsi:type="ram:RAny" xmi:id="_fga-JyWpEeWiqbwSFmJigg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_fga-KCWpEeWiqbwSFmJigg"/>
+    <types xsi:type="ram:RInt" xmi:id="_fga-KSWpEeWiqbwSFmJigg"/>
+    <types xsi:type="ram:RChar" xmi:id="_fga-KiWpEeWiqbwSFmJigg"/>
+    <types xsi:type="ram:RString" xmi:id="_fga-KyWpEeWiqbwSFmJigg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_fga-LCWpEeWiqbwSFmJigg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_fga-LSWpEeWiqbwSFmJigg"/>
+    <types xsi:type="ram:RLong" xmi:id="_fga-LiWpEeWiqbwSFmJigg"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_fga-LyWpEeWiqbwSFmJigg" specifies="_fga-IiWpEeWiqbwSFmJigg">
+    <specification xmi:id="_fga-MCWpEeWiqbwSFmJigg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_fga-MSWpEeWiqbwSFmJigg" covered="_fga-NSWpEeWiqbwSFmJigg" message="_fga-NiWpEeWiqbwSFmJigg"/>
+      <fragments xsi:type="ram:ExecutionStatement" xmi:id="_fga-MiWpEeWiqbwSFmJigg" covered="_fga-NSWpEeWiqbwSFmJigg">
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_fga-MyWpEeWiqbwSFmJigg" body="this.name = name" language="java"/>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_fga-NCWpEeWiqbwSFmJigg" covered="_fga-NSWpEeWiqbwSFmJigg" message="_fga-NyWpEeWiqbwSFmJigg"/>
+      <lifelines xmi:id="_fga-NSWpEeWiqbwSFmJigg" represents="_fga-OCWpEeWiqbwSFmJigg" coveredBy="_fga-MSWpEeWiqbwSFmJigg _fga-NCWpEeWiqbwSFmJigg _fga-MiWpEeWiqbwSFmJigg"/>
+      <messages xmi:id="_fga-NiWpEeWiqbwSFmJigg" sendEvent="_fga-OSWpEeWiqbwSFmJigg" receiveEvent="_fga-MSWpEeWiqbwSFmJigg" signature="_fga-IiWpEeWiqbwSFmJigg" messageSort="createMessage"/>
+      <messages xmi:id="_fga-NyWpEeWiqbwSFmJigg" sendEvent="_fga-NCWpEeWiqbwSFmJigg" receiveEvent="_fga-OiWpEeWiqbwSFmJigg" signature="_fga-IiWpEeWiqbwSFmJigg" messageSort="reply"/>
+      <properties xmi:id="_fga-OCWpEeWiqbwSFmJigg" name="target" lowerBound="1" type="_fga-ISWpEeWiqbwSFmJigg"/>
+      <formalGates xmi:id="_fga-OSWpEeWiqbwSFmJigg" message="_fga-NiWpEeWiqbwSFmJigg" name="in_create"/>
+      <formalGates xmi:id="_fga-OiWpEeWiqbwSFmJigg" message="_fga-NyWpEeWiqbwSFmJigg" name="out_create"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_fga-OyWpEeWiqbwSFmJigg" specifies="_fga-JCWpEeWiqbwSFmJigg">
+    <specification xmi:id="_fga-PCWpEeWiqbwSFmJigg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_fga-PSWpEeWiqbwSFmJigg" covered="_fga-PyWpEeWiqbwSFmJigg" message="_fga-QCWpEeWiqbwSFmJigg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_fga-PiWpEeWiqbwSFmJigg" covered="_fga-PyWpEeWiqbwSFmJigg" message="_fga-QSWpEeWiqbwSFmJigg"/>
+      <lifelines xmi:id="_fga-PyWpEeWiqbwSFmJigg" represents="_fga-QyWpEeWiqbwSFmJigg" coveredBy="_fga-PSWpEeWiqbwSFmJigg _fga-PiWpEeWiqbwSFmJigg"/>
+      <messages xmi:id="_fga-QCWpEeWiqbwSFmJigg" sendEvent="_fga-RCWpEeWiqbwSFmJigg" receiveEvent="_fga-PSWpEeWiqbwSFmJigg" signature="_fga-JCWpEeWiqbwSFmJigg"/>
+      <messages xmi:id="_fga-QSWpEeWiqbwSFmJigg" sendEvent="_fga-PiWpEeWiqbwSFmJigg" receiveEvent="_fga-RSWpEeWiqbwSFmJigg" signature="_fga-JCWpEeWiqbwSFmJigg" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_fga-QiWpEeWiqbwSFmJigg" value="_fga-JSWpEeWiqbwSFmJigg"/>
+      </messages>
+      <properties xmi:id="_fga-QyWpEeWiqbwSFmJigg" name="target" lowerBound="1" type="_fga-ISWpEeWiqbwSFmJigg"/>
+      <formalGates xmi:id="_fga-RCWpEeWiqbwSFmJigg" message="_fga-QCWpEeWiqbwSFmJigg" name="in_getName"/>
+      <formalGates xmi:id="_fga-RSWpEeWiqbwSFmJigg" message="_fga-QSWpEeWiqbwSFmJigg" name="out_getName"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_fga-RiWpEeWiqbwSFmJigg">
+    <containers xmi:id="_fga-RyWpEeWiqbwSFmJigg" key="_fga-ICWpEeWiqbwSFmJigg"/>
+  </layout>
+  <wovenAspects xmi:id="_fga-SCWpEeWiqbwSFmJigg" name="Named" wovenElements="_fga-JSWpEeWiqbwSFmJigg _fga-JCWpEeWiqbwSFmJigg _fga-IiWpEeWiqbwSFmJigg _fga-ISWpEeWiqbwSFmJigg">
+    <comesFrom href="Named.ram#_etpFkDx2EeSYrv9m_C8Hww"/>
+  </wovenAspects>
+</ram:Aspect>

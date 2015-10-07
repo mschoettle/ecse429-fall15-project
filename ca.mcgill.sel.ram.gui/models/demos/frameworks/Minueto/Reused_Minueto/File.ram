@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_7LgcMNcoEeSyqfAiT90vaA" name="File">
+  <realizes href="minueto.core#_4Nu4gN70EeShJ659NzW61g"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_7LgcMdcoEeSyqfAiT90vaA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_8JqtkNcoEeSyqfAiT90vaA" name="MinuetoImageFile" visibility="public" superTypes="_Xq3RcC5MEeWEMbzGx7oxkQ" instanceClassName="org.minueto.image.MinuetoImageFile">
+      <operations xmi:id="_81MW0NcoEeSyqfAiT90vaA" name="MinuetoImageFile" visibility="public" returnType="_8JqtkNcoEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_81MW0dcoEeSyqfAiT90vaA" name="arg0" type="_7LgcN9coEeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_9GtkoNcoEeSyqfAiT90vaA" name="MinuetoImageFile" visibility="public" returnType="_8JqtkNcoEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_9GtkodcoEeSyqfAiT90vaA" name="arg0" type="_9GrvcNcoEeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_9GrvcNcoEeSyqfAiT90vaA" name="URL" visibility="public" instanceClassName="java.net.URL">
+      <operations xmi:id="_e9nTYCDEEeWPvadi4kRETg" name="URL" visibility="public" returnType="_9GrvcNcoEeSyqfAiT90vaA" operationType="Constructor">
+        <parameters xmi:id="_e9nTYSDEEeWPvadi4kRETg" name="arg0" type="_7LgcN9coEeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_bfSYsNdBEeSyqfAiT90vaA" name="MinuetoFileException" visibility="public" instanceClassName="org.minueto.MinuetoFileException"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_Xq3RcC5MEeWEMbzGx7oxkQ" name="MinuetoImage" instanceClassName="org.minueto.image.MinuetoImage"/>
+    <types xsi:type="ram:RVoid" xmi:id="_7LgcMtcoEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_7LgcM9coEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_7LgcNNcoEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_7LgcNdcoEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_7LgcNtcoEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RString" xmi:id="_7LgcN9coEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_7LgcONcoEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_7LgcOdcoEeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_7LgcOtcoEeSyqfAiT90vaA"/>
+  </structuralView>
+  <instantiations xmi:id="_7LgcO9coEeSyqfAiT90vaA">
+    <source xsi:type="ram:Aspect" href="Image.ram#_vWKtQNclEeSyqfAiT90vaA"/>
+  </instantiations>
+  <layout xmi:id="_7LgcPNcoEeSyqfAiT90vaA">
+    <containers xmi:id="_7LgcPdcoEeSyqfAiT90vaA" key="_7LgcMdcoEeSyqfAiT90vaA">
+      <value xmi:id="_8JrUoNcoEeSyqfAiT90vaA" key="_8JqtkNcoEeSyqfAiT90vaA">
+        <value xmi:id="_8JrUodcoEeSyqfAiT90vaA" x="377.0" y="252.0"/>
+      </value>
+      <value xmi:id="_9Gs9kNcoEeSyqfAiT90vaA" key="_9GrvcNcoEeSyqfAiT90vaA">
+        <value xmi:id="_9Gs9kdcoEeSyqfAiT90vaA" x="573.00006" y="462.00006"/>
+      </value>
+      <value xmi:id="_bfS_wNdBEeSyqfAiT90vaA" key="_bfSYsNdBEeSyqfAiT90vaA">
+        <value xmi:id="_bfS_wddBEeSyqfAiT90vaA" x="292.00012" y="419.99994"/>
+      </value>
+      <value xmi:id="_Xq4fkC5MEeWEMbzGx7oxkQ" key="_Xq3RcC5MEeWEMbzGx7oxkQ">
+        <value xmi:id="_Xq4fkS5MEeWEMbzGx7oxkQ" x="437.00006" y="49.999954"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

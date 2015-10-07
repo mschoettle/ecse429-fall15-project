@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_mDv4YEQ1EeSSfO86-u_zzA" name="Association">
+  <realizes href="Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+  <coreConcern href="Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+  <structuralView xmi:id="_stleAHdvEeGm3uH8rYfPgw">
+    <classes xsi:type="ram:Class" xmi:id="_stleMHdvEeGm3uH8rYfPgw" name="Data" partiality="public" visibility="public">
+      <associationEnds xmi:id="_oPTvIAYTEeWaUOEQZBS6pA" name="myCollection" lowerBound="1" referenceType="Composition" assoc="_oPVkUAYTEeWaUOEQZBS6pA"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_R4j4oIdeEeG0oPAT5BSQFQ" name="Associated" partiality="public"/>
+    <classes xsi:type="ram:Class" xmi:id="_ln19oAYTEeWaUOEQZBS6pA" name="Collection" partiality="public" visibility="public">
+      <associationEnds xmi:id="_oPUWMAYTEeWaUOEQZBS6pA" name="myData" lowerBound="1" navigable="false" assoc="_oPVkUAYTEeWaUOEQZBS6pA"/>
+    </classes>
+    <associations xmi:id="_oPVkUAYTEeWaUOEQZBS6pA" name="Data_Collection" ends="_oPTvIAYTEeWaUOEQZBS6pA _oPUWMAYTEeWaUOEQZBS6pA"/>
+    <types xsi:type="ram:RInt" xmi:id="_1gRigIdfEeG0oPAT5BSQFQ"/>
+    <types xsi:type="ram:RVoid" xmi:id="__pWrUIdfEeG0oPAT5BSQFQ"/>
+    <types xsi:type="ram:RAny" xmi:id="_fQmL8JF-EeGl6_HHEAkO0g"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_fQmL8ZF-EeGl6_HHEAkO0g"/>
+    <types xsi:type="ram:RChar" xmi:id="_fQmL8pF-EeGl6_HHEAkO0g"/>
+    <types xsi:type="ram:RString" xmi:id="_fQmL85F-EeGl6_HHEAkO0g"/>
+    <types xsi:type="ram:RDouble" xmi:id="_8n9aMNHjEeKndf5avu7gLg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_9a_ZoNHjEeKndf5avu7gLg"/>
+  </structuralView>
+  <layout xmi:id="_g6zTgQZ4EeKZrL1xbgDvbw">
+    <containers xmi:id="_g6zTggZ4EeKZrL1xbgDvbw" key="_stleAHdvEeGm3uH8rYfPgw">
+      <value xmi:id="_g6zTgwZ4EeKZrL1xbgDvbw" key="_R4j4oIdeEeG0oPAT5BSQFQ">
+        <value xmi:id="_g6zThAZ4EeKZrL1xbgDvbw" x="565.0313" y="131.24626"/>
+      </value>
+      <value xmi:id="_g6zThQZ4EeKZrL1xbgDvbw">
+        <value xmi:id="_g6zThgZ4EeKZrL1xbgDvbw" x="661.99963" y="107.99991"/>
+      </value>
+      <value xmi:id="_g6zThwZ4EeKZrL1xbgDvbw" key="_stleMHdvEeGm3uH8rYfPgw">
+        <value xmi:id="_g6zTiAZ4EeKZrL1xbgDvbw" x="114.999725" y="294.00006"/>
+      </value>
+      <value xmi:id="_ln3LwAYTEeWaUOEQZBS6pA" key="_ln19oAYTEeWaUOEQZBS6pA">
+        <value xmi:id="_ln3LwQYTEeWaUOEQZBS6pA" x="689.0001" y="470.99976"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

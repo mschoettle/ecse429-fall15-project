@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_1PKRcPs2EeSHIIOvSBz79Q" name="Bidirectional">
+  <realizes href="Association.core#_FqDZUACXEeWTy6SkLveZ6w"/>
+  <coreConcern href="Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+  <structuralView xmi:id="_1PKRcfs2EeSHIIOvSBz79Q">
+    <classes xsi:type="ram:Class" xmi:id="_1PKRcvs2EeSHIIOvSBz79Q" name="Data" visibility="public">
+      <operations xmi:id="_1PKRc_s2EeSHIIOvSBz79Q" name="add" visibility="public" returnType="_1PKRefs2EeSHIIOvSBz79Q">
+        <parameters xmi:id="_1PKRdPs2EeSHIIOvSBz79Q" name="a">
+          <type xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        </parameters>
+      </operations>
+      <operations xmi:id="_1PKRdfs2EeSHIIOvSBz79Q" name="remove" visibility="public" returnType="_1PKRefs2EeSHIIOvSBz79Q">
+        <parameters xmi:id="_1PKRdvs2EeSHIIOvSBz79Q" name="a">
+          <type xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        </parameters>
+      </operations>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_1PKRd_s2EeSHIIOvSBz79Q"/>
+    <types xsi:type="ram:RAny" xmi:id="_1PKRePs2EeSHIIOvSBz79Q"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_1PKRefs2EeSHIIOvSBz79Q"/>
+    <types xsi:type="ram:RInt" xmi:id="_1PKRevs2EeSHIIOvSBz79Q"/>
+    <types xsi:type="ram:RChar" xmi:id="_1PKRe_s2EeSHIIOvSBz79Q"/>
+    <types xsi:type="ram:RString" xmi:id="_1PKRfPs2EeSHIIOvSBz79Q"/>
+    <types xsi:type="ram:RDouble" xmi:id="_1PKRffs2EeSHIIOvSBz79Q"/>
+    <types xsi:type="ram:RFloat" xmi:id="_1PKRfvs2EeSHIIOvSBz79Q"/>
+    <types xsi:type="ram:RLong" xmi:id="_1PKRf_s2EeSHIIOvSBz79Q"/>
+  </structuralView>
+  <instantiations xmi:id="_1PKRgPs2EeSHIIOvSBz79Q">
+    <source xsi:type="ram:Aspect" href="Association.ram#_mDv4YEQ1EeSSfO86-u_zzA"/>
+  </instantiations>
+  <layout xmi:id="_1PKRgfs2EeSHIIOvSBz79Q">
+    <containers xmi:id="_1PKRgvs2EeSHIIOvSBz79Q" key="_1PKRcfs2EeSHIIOvSBz79Q">
+      <value xmi:id="_1PKRg_s2EeSHIIOvSBz79Q" key="_1PKRcvs2EeSHIIOvSBz79Q">
+        <value xmi:id="_1PKRhPs2EeSHIIOvSBz79Q" x="252.0" y="240.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

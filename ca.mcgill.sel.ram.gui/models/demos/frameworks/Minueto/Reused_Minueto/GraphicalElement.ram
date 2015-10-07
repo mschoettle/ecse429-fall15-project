@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_tGECgCDJEeWOgN4vdFvUTg" name="GraphicalElement">
+  <realizes href="minueto.core#_eZUKkNclEeSyqfAiT90vaA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_tGECgSDJEeWOgN4vdFvUTg">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_tGECgiDJEeWOgN4vdFvUTg" name="MinuetoDrawingSurface" visibility="public" instanceClassName="org.minueto.image.MinuetoDrawingSurface" interface="true">
+      <operations xmi:id="_LBWMMC5MEeWEMbzGx7oxkQ" name="draw" visibility="public" returnType="_tGECiCDJEeWOgN4vdFvUTg">
+        <parameters xmi:id="_LBWMMS5MEeWEMbzGx7oxkQ" name="arg0" type="_LBTv8C5MEeWEMbzGx7oxkQ"/>
+        <parameters xmi:id="_LBWMMi5MEeWEMbzGx7oxkQ" name="arg1" type="_tGECiyDJEeWOgN4vdFvUTg"/>
+        <parameters xmi:id="_LBWMMy5MEeWEMbzGx7oxkQ" name="arg2" type="_tGECiyDJEeWOgN4vdFvUTg"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_LBTv8C5MEeWEMbzGx7oxkQ" name="MinuetoImage" superTypes="_tGECgiDJEeWOgN4vdFvUTg" instanceClassName="org.minueto.image.MinuetoImage"/>
+    <types xsi:type="ram:RVoid" xmi:id="_tGECiCDJEeWOgN4vdFvUTg"/>
+    <types xsi:type="ram:RAny" xmi:id="_tGECiSDJEeWOgN4vdFvUTg"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_tGECiiDJEeWOgN4vdFvUTg"/>
+    <types xsi:type="ram:RInt" xmi:id="_tGECiyDJEeWOgN4vdFvUTg"/>
+    <types xsi:type="ram:RChar" xmi:id="_tGECjCDJEeWOgN4vdFvUTg"/>
+    <types xsi:type="ram:RString" xmi:id="_tGECjSDJEeWOgN4vdFvUTg"/>
+    <types xsi:type="ram:RDouble" xmi:id="_tGECjiDJEeWOgN4vdFvUTg"/>
+    <types xsi:type="ram:RFloat" xmi:id="_tGECjyDJEeWOgN4vdFvUTg"/>
+    <types xsi:type="ram:RLong" xmi:id="_tGECkCDJEeWOgN4vdFvUTg"/>
+  </structuralView>
+  <instantiations xmi:id="_dB7bECDKEeWOgN4vdFvUTg">
+    <source xsi:type="ram:Aspect" href="Visual.ram#_vwwVAPNUEeSMhuSPkYyYzA"/>
+  </instantiations>
+  <layout xmi:id="_tGECkSDJEeWOgN4vdFvUTg">
+    <containers xmi:id="_tGECkiDJEeWOgN4vdFvUTg" key="_tGECgSDJEeWOgN4vdFvUTg">
+      <value xmi:id="_tGECkyDJEeWOgN4vdFvUTg" key="_tGECgiDJEeWOgN4vdFvUTg">
+        <value xmi:id="_tGEClCDJEeWOgN4vdFvUTg" x="184.99979" y="319.0"/>
+      </value>
+      <value xmi:id="_LBU-EC5MEeWEMbzGx7oxkQ" key="_LBTv8C5MEeWEMbzGx7oxkQ">
+        <value xmi:id="_LBU-ES5MEeWEMbzGx7oxkQ" x="309.00012" y="542.9999"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

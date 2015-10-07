@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/2.1" xmi:id="_iMtfQJ0zEeSJ-Z_pgbSXFA" name="Networking&lt;Networking>">
+  <structuralView xmi:id="_iMtfQZ0zEeSJ-Z_pgbSXFA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_iMtfQp0zEeSJ-Z_pgbSXFA" name="SocketAddress" instanceClassName="java.net.SocketAddress"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_iMtfQ50zEeSJ-Z_pgbSXFA" name="Serializable" instanceClassName="java.io.Serializable"/>
+    <classes xsi:type="ram:Class" xmi:id="_iMtfRJ0zEeSJ-Z_pgbSXFA" name="Sendable" partiality="public" superTypes="_iMtfQ50zEeSJ-Z_pgbSXFA"/>
+    <classes xsi:type="ram:Class" xmi:id="_iMtfRZ0zEeSJ-Z_pgbSXFA" name="InputStreamImpl" superTypes="_iMtfU50zEeSJ-Z_pgbSXFA"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_iMtfRp0zEeSJ-Z_pgbSXFA" name="Socket" instanceClassName="java.net.Socket">
+      <operations  xmi:id="_iMtfR50zEeSJ-Z_pgbSXFA" name="Socket" returnType="_iMtfRp0zEeSJ-Z_pgbSXFA" operationType="Constructor" visibility="public">
+        <parameters xmi:id="_iMtfSJ0zEeSJ-Z_pgbSXFA" name="arg0" type="_iMtfWZ0zEeSJ-Z_pgbSXFA"/>
+        <parameters xmi:id="_iMtfSZ0zEeSJ-Z_pgbSXFA" name="arg1" type="_iMtfV50zEeSJ-Z_pgbSXFA"/>
+      </operations>
+      <operations  xmi:id="_iMtfSp0zEeSJ-Z_pgbSXFA" name="close" returnType="_iMtfVJ0zEeSJ-Z_pgbSXFA" visibility="public"/>
+      <operations  xmi:id="_iMtfS50zEeSJ-Z_pgbSXFA" name="isConnected" returnType="_iMtfVp0zEeSJ-Z_pgbSXFA" visibility="public"/>
+      <operations  xmi:id="_iMtfTJ0zEeSJ-Z_pgbSXFA" name="getOutputStream" returnType="_iMtfTp0zEeSJ-Z_pgbSXFA" visibility="public"/>
+      <operations  xmi:id="_iMtfTZ0zEeSJ-Z_pgbSXFA" name="getInputStream" returnType="_iMtfU50zEeSJ-Z_pgbSXFA" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_iMtfTp0zEeSJ-Z_pgbSXFA" name="OutputStream" instanceClassName="java.io.OutputStream"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_iMtfT50zEeSJ-Z_pgbSXFA" name="ServerSocket" instanceClassName="java.net.ServerSocket">
+      <operations  xmi:id="_iMtfUJ0zEeSJ-Z_pgbSXFA" name="ServerSocket" returnType="_iMtfT50zEeSJ-Z_pgbSXFA" operationType="Constructor" visibility="public">
+        <parameters xmi:id="_iMtfUZ0zEeSJ-Z_pgbSXFA" name="arg0" type="_iMtfV50zEeSJ-Z_pgbSXFA"/>
+      </operations>
+      <operations  xmi:id="_iMtfUp0zEeSJ-Z_pgbSXFA" name="accept" returnType="_iMtfRp0zEeSJ-Z_pgbSXFA" visibility="public"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_iMtfU50zEeSJ-Z_pgbSXFA" name="InputStream" instanceClassName="java.io.InputStream"/>
+    <types xsi:type="ram:RVoid" xmi:id="_iMtfVJ0zEeSJ-Z_pgbSXFA"/>
+    <types xsi:type="ram:RAny" xmi:id="_iMtfVZ0zEeSJ-Z_pgbSXFA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_iMtfVp0zEeSJ-Z_pgbSXFA"/>
+    <types xsi:type="ram:RInt" xmi:id="_iMtfV50zEeSJ-Z_pgbSXFA"/>
+    <types xsi:type="ram:RChar" xmi:id="_iMtfWJ0zEeSJ-Z_pgbSXFA"/>
+    <types xsi:type="ram:RString" xmi:id="_iMtfWZ0zEeSJ-Z_pgbSXFA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_iMtfWp0zEeSJ-Z_pgbSXFA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_iMtfW50zEeSJ-Z_pgbSXFA"/>
+    <types xsi:type="ram:RLong" xmi:id="_iMtfXJ0zEeSJ-Z_pgbSXFA"/>
+  </structuralView>
+  <layout xmi:id="_iMtfXZ0zEeSJ-Z_pgbSXFA">
+    <containers xmi:id="_iMtfXp0zEeSJ-Z_pgbSXFA" key="_iMtfQZ0zEeSJ-Z_pgbSXFA"/>
+  </layout>
+  <wovenAspects xmi:id="_iMtfX50zEeSJ-Z_pgbSXFA" name="Networking">
+    <comesFrom href="Networking.ram#_STbk8F1iEeS-crAw_TocNg"/>
+  </wovenAspects>
+</ram:Aspect>

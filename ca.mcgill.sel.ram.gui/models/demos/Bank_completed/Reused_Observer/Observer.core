@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_GcFioKBBEeS-cby9IJCtzQ" name="Observer">
+  <models xsi:type="ram:Aspect" href="Observer.ram#_Hod6sESCEeSPZZUzZmb1Lg"/>
+  <models xsi:type="ram:Aspect" href="Controller.ram#_Cd_jwEWcEeSKH5wBRt271w"/>
+  <models xsi:type="ram:Aspect" href="PullObserver.ram#_VFNdMMovEeOpP4Q9VsHH6Q"/>
+  <models xsi:type="ram:Aspect" href="PushObserver.ram#_NEOG4MmuEeOjc-JSG1BdPA"/>
+  <models xsi:type="core:COREFeatureModel" href="#_GcFioaBBEeS-cby9IJCtzQ"/>
+  <featureModel xmi:id="_GcFioaBBEeS-cby9IJCtzQ" coreConcern="_GcFioKBBEeS-cby9IJCtzQ" root="_GcFioqBBEeS-cby9IJCtzQ">
+    <features xmi:id="_GcFioqBBEeS-cby9IJCtzQ" name="Observer" children="_PJW0wKBBEeS-cby9IJCtzQ _PPTEsKBBEeS-cby9IJCtzQ">
+      <realizedBy xsi:type="ram:Aspect" href="Observer.ram#_Hod6sESCEeSPZZUzZmb1Lg"/>
+      <reuses xmi:id="_uYfXABWBEeWseuMrkTdQmw" name="Observer_Observer" selectedConfiguration="_uYfXARWBEeWseuMrkTdQmw">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_uYfXARWBEeWseuMrkTdQmw" name="Association_UniqueArrayListOrderedBidirectionalPlainKindAssociationMinimumMaximum">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_Qs-UMACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_B8rTMACYEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#__6WrkACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_FqDZUACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_LEwHcACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_JFas8ACXEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_eK9PsBonEeWzi_7BPy1bSw" name="Observer_Observer" selectedConfiguration="_eK9PsRonEeWzi_7BPy1bSw">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_eK9PsRonEeWzi_7BPy1bSw" name="Association_BidirectionalOrderedUniquePlainKindAssociationMaximumArrayListMinimum">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_FqDZUACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#__6WrkACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_Qs-UMACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_JFas8ACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_B8rTMACYEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_LEwHcACXEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+    </features>
+    <features xmi:id="_PJW0wKBBEeS-cby9IJCtzQ" name="NotificationMethod" children="_Rj3IUKBBEeS-cby9IJCtzQ _Rq5kcKBBEeS-cby9IJCtzQ" parent="_GcFioqBBEeS-cby9IJCtzQ" parentRelationship="Mandatory"/>
+    <features xmi:id="_PPTEsKBBEeS-cby9IJCtzQ" name="Controller" parent="_GcFioqBBEeS-cby9IJCtzQ" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Controller.ram#_Cd_jwEWcEeSKH5wBRt271w"/>
+    </features>
+    <features xmi:id="_Rj3IUKBBEeS-cby9IJCtzQ" name="Pull" parent="_PJW0wKBBEeS-cby9IJCtzQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="PullObserver.ram#_VFNdMMovEeOpP4Q9VsHH6Q"/>
+    </features>
+    <features xmi:id="_Rq5kcKBBEeS-cby9IJCtzQ" name="Push" parent="_PJW0wKBBEeS-cby9IJCtzQ" parentRelationship="XOR">
+      <realizedBy xsi:type="ram:Aspect" href="PushObserver.ram#_NEOG4MmuEeOjc-JSG1BdPA"/>
+    </features>
+  </featureModel>
+  <impactModel xmi:id="_q-CqAMvuEeSfHuASB4SrSA" name="Increase Performance for Big Data">
+    <impactModelElements xmi:id="_q-CqAcvuEeSfHuASB4SrSA" name="Increase Performance for Big Data"/>
+  </impactModel>
+</core:COREConcern>

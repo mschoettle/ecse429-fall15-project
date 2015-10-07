@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RAM Controller
+Bundle-SymbolicName: ca.mcgill.sel.ram.controller;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: ca.mcgill.sel.ram.edit;bundle-version="1.8.0"
+Export-Package: ca.mcgill.sel.core.controller,
+ ca.mcgill.sel.ram.controller

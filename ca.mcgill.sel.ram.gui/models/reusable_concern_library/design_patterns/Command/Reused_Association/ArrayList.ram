@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_zWzAQNrhEeOjbYigm5_oCw" name="ArrayList">
+  <realizes href="Association.core#_B8rTMACYEeWTy6SkLveZ6w"/>
+  <coreConcern href="Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+  <structuralView xmi:id="_zWzAQdrhEeOjbYigm5_oCw">
+    <classes xsi:type="ram:Class" xmi:id="_zWzAQtrhEeOjbYigm5_oCw" name="Data" partiality="public" visibility="public"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_zWznXdrhEeOjbYigm5_oCw" name="Object" instanceClassName="java.lang.Object"/>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="__k9SwFSREeSLmvPOS04lbQ" name="ArrayList" instanceClassName="java.util.ArrayList">
+      <operations xmi:id="_A1GsAFSSEeSLmvPOS04lbQ" name="add" visibility="public" returnType="_zWznY9rhEeOjbYigm5_oCw">
+        <parameters xmi:id="_A1GsAVSSEeSLmvPOS04lbQ" name="arg0">
+          <type xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        </parameters>
+      </operations>
+      <operations xmi:id="_BSi18FSSEeSLmvPOS04lbQ" name="add" visibility="public" returnType="_zWznYdrhEeOjbYigm5_oCw">
+        <parameters xmi:id="_BSi18VSSEeSLmvPOS04lbQ" name="arg0" type="_zWznYNrhEeOjbYigm5_oCw"/>
+        <parameters xmi:id="_BSi18lSSEeSLmvPOS04lbQ" name="arg1">
+          <type xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        </parameters>
+      </operations>
+      <operations xmi:id="_CMsxEFSSEeSLmvPOS04lbQ" name="remove" visibility="public">
+        <returnType xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        <parameters xmi:id="_CMsxEVSSEeSLmvPOS04lbQ" name="arg0" type="_zWznYNrhEeOjbYigm5_oCw"/>
+      </operations>
+      <operations xmi:id="_C04ycFSSEeSLmvPOS04lbQ" name="remove" visibility="public" returnType="_zWznY9rhEeOjbYigm5_oCw">
+        <parameters xmi:id="_C04ycVSSEeSLmvPOS04lbQ" name="arg0" type="_zWznXdrhEeOjbYigm5_oCw"/>
+      </operations>
+      <operations xmi:id="_DhYsEFSSEeSLmvPOS04lbQ" name="contains" visibility="public" returnType="_zWznY9rhEeOjbYigm5_oCw">
+        <parameters xmi:id="_DhYsEVSSEeSLmvPOS04lbQ" name="arg0" type="_zWznXdrhEeOjbYigm5_oCw"/>
+      </operations>
+      <operations xmi:id="_-ayJsGRrEeS2sKUW41VvAQ" name="get" visibility="public">
+        <returnType xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+        <parameters xmi:id="_-ayJsWRrEeS2sKUW41VvAQ" name="arg0" type="_zWznYNrhEeOjbYigm5_oCw"/>
+      </operations>
+      <associationEnds xmi:id="_7ZJc8O9NEeSgzupU5rnn9w" name="myAssociated" lowerBound="1" upperBound="-1" assoc="_7ZL5MO9NEeSgzupU5rnn9w"/>
+      <typeParameters xmi:id="__k9SwVSREeSLmvPOS04lbQ" name="E">
+        <genericType xsi:type="ram:Class" href="Association.ram#_R4j4oIdeEeG0oPAT5BSQFQ"/>
+      </typeParameters>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_6aO9oO9NEeSgzupU5rnn9w" name="Associated" partiality="public">
+      <associationEnds xmi:id="_7ZI14O9NEeSgzupU5rnn9w" name="myArrayList" lowerBound="1" navigable="false" assoc="_7ZL5MO9NEeSgzupU5rnn9w"/>
+    </classes>
+    <associations xmi:id="_7ZL5MO9NEeSgzupU5rnn9w" name="Associated_ArrayList" ends="_7ZI14O9NEeSgzupU5rnn9w _7ZJc8O9NEeSgzupU5rnn9w"/>
+    <types xsi:type="ram:RInt" xmi:id="_zWznYNrhEeOjbYigm5_oCw"/>
+    <types xsi:type="ram:RVoid" xmi:id="_zWznYdrhEeOjbYigm5_oCw"/>
+    <types xsi:type="ram:RAny" xmi:id="_zWznYtrhEeOjbYigm5_oCw"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_zWznY9rhEeOjbYigm5_oCw"/>
+    <types xsi:type="ram:RChar" xmi:id="_zWznZNrhEeOjbYigm5_oCw"/>
+    <types xsi:type="ram:RString" xmi:id="_zWznZdrhEeOjbYigm5_oCw"/>
+    <types xsi:type="ram:RDouble" xmi:id="_zWznZtrhEeOjbYigm5_oCw"/>
+    <types xsi:type="ram:RFloat" xmi:id="_zWznZ9rhEeOjbYigm5_oCw"/>
+  </structuralView>
+  <instantiations xmi:id="_8V5jMKaKEeSAKObocMolaA">
+    <source xsi:type="ram:Aspect" href="Ordered.ram#_3WYVMKaKEeSAKObocMolaA"/>
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_jlj-4AobEeW_I4MFMkuPog" to="__k9SwFSREeSLmvPOS04lbQ">
+      <from xsi:type="ram:Class" href="Ordered.ram#_ywmIIArrEeWFfslgIxrGVg"/>
+      <operationMappings xmi:id="_j_aZcAu0EeWRLs7CPr0vDw" to="_A1GsAFSSEeSLmvPOS04lbQ">
+        <from xsi:type="ram:Operation" href="Kind.ram#_hxmOUAvFEeW97eUarwQSdA"/>
+      </operationMappings>
+      <operationMappings xmi:id="_myaFgAu0EeWRLs7CPr0vDw" to="_C04ycFSSEeSLmvPOS04lbQ">
+        <from xsi:type="ram:Operation" href="Kind.ram#_iwMkkAvFEeW97eUarwQSdA"/>
+      </operationMappings>
+      <operationMappings xmi:id="_W0CRYAvBEeWYf67JHtyOew" to="_DhYsEFSSEeSLmvPOS04lbQ">
+        <from xsi:type="ram:Operation" href="Association.ram#_seuEACUOEeWgp7aUYsQ0Fg"/>
+      </operationMappings>
+      <operationMappings xmi:id="_H03CsAvJEeW97eUarwQSdA" to="_BSi18FSSEeSLmvPOS04lbQ">
+        <from xsi:type="ram:Operation" href="Ordered.ram#_bB3KcAvGEeW97eUarwQSdA"/>
+      </operationMappings>
+      <operationMappings xmi:id="_IV6hUAvJEeW97eUarwQSdA" to="_-ayJsGRrEeS2sKUW41VvAQ">
+        <from xsi:type="ram:Operation" href="Ordered.ram#_etu_QAvGEeW97eUarwQSdA"/>
+      </operationMappings>
+      <operationMappings xmi:id="_ImbpkAvJEeW97eUarwQSdA" to="_CMsxEFSSEeSLmvPOS04lbQ">
+        <from xsi:type="ram:Operation" href="Ordered.ram#_dTdZoAvGEeW97eUarwQSdA"/>
+      </operationMappings>
+    </mappings>
+  </instantiations>
+  <layout xmi:id="_zWznedrhEeOjbYigm5_oCw">
+    <containers xmi:id="_zWznetrhEeOjbYigm5_oCw" key="_zWzAQdrhEeOjbYigm5_oCw">
+      <value xmi:id="_zWznf9rhEeOjbYigm5_oCw" key="_zWzAQtrhEeOjbYigm5_oCw">
+        <value xmi:id="_zWzngNrhEeOjbYigm5_oCw" x="299.63904" y="144.42761"/>
+      </value>
+      <value xmi:id="_zWzng9rhEeOjbYigm5_oCw" key="_zWznXdrhEeOjbYigm5_oCw">
+        <value xmi:id="_zWznhNrhEeOjbYigm5_oCw" x="840.22455" y="193.78601"/>
+      </value>
+      <value xmi:id="__k_H8FSREeSLmvPOS04lbQ" key="__k9SwFSREeSLmvPOS04lbQ">
+        <value xmi:id="__k_H8VSREeSLmvPOS04lbQ" x="251.79053" y="396.45212"/>
+      </value>
+      <value xmi:id="_6aQLwO9NEeSgzupU5rnn9w" key="_6aO9oO9NEeSgzupU5rnn9w">
+        <value xmi:id="_6aQLwe9NEeSgzupU5rnn9w" x="942.5032" y="481.27808"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

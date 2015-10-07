@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_d1_oUKBBEeS-cby9IJCtzQ" name="Singleton">
+  <models xsi:type="ram:Aspect" href="Singleton.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+  <models xsi:type="core:COREFeatureModel" href="#_d1_oUaBBEeS-cby9IJCtzQ"/>
+  <featureModel xmi:id="_d1_oUaBBEeS-cby9IJCtzQ" coreConcern="_d1_oUKBBEeS-cby9IJCtzQ" root="_d1_oUqBBEeS-cby9IJCtzQ">
+    <features xmi:id="_d1_oUqBBEeS-cby9IJCtzQ" name="Singleton">
+      <realizedBy xsi:type="ram:Aspect" href="Singleton.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+    </features>
+  </featureModel>
+</core:COREConcern>

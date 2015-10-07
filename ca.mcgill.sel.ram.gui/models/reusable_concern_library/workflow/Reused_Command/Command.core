@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_ZYsdEKr2EeSFZ4ae5sBgYg" name="Command">
+  <models xsi:type="core:COREFeatureModel" href="#_ZYsdEar2EeSFZ4ae5sBgYg"/>
+  <models xsi:type="ram:Aspect" href="Command.ram#_HIDooYelEeK-LqcHzTt-6Q"/>
+  <models xsi:type="ram:Aspect" href="NetworkCommand.ram#_e91f8F3vEeS-crAw_TocNg"/>
+  <featureModel xmi:id="_ZYsdEar2EeSFZ4ae5sBgYg" coreConcern="_ZYsdEKr2EeSFZ4ae5sBgYg" root="_ZYsdEqr2EeSFZ4ae5sBgYg">
+    <features xmi:id="_ZYsdEqr2EeSFZ4ae5sBgYg" name="Command" children="_gHhFgKr2EeSFZ4ae5sBgYg">
+      <realizedBy xsi:type="ram:Aspect" href="Command.ram#_HIDooYelEeK-LqcHzTt-6Q"/>
+    </features>
+    <features xmi:id="_gHhFgKr2EeSFZ4ae5sBgYg" name="NetworkCommand" parent="_ZYsdEqr2EeSFZ4ae5sBgYg" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="NetworkCommand.ram#_e91f8F3vEeS-crAw_TocNg"/>
+      <reuses xmi:id="_bL4GYCUSEeWFg_nGt9-F9Q" name="Command_NetworkCommand" selectedConfiguration="_bL4GYSUSEeWFg_nGt9-F9Q">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_bL4GYSUSEeWFg_nGt9-F9Q" name="Association_KeyIndexedAssociationHashMap">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_ndvLsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_r80mIACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+    </features>
+  </featureModel>
+</core:COREConcern>

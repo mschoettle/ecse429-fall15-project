@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_Ew7ZINc7EeSyqfAiT90vaA" name="Focus">
+  <realizes href="minueto.core#_w1Pt0Nc6EeSyqfAiT90vaA"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_Ew7ZIdc7EeSyqfAiT90vaA">
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_Ew7ZItc7EeSyqfAiT90vaA" name="MinuetoFocusHandler" visibility="public" instanceClassName="org.minueto.handlers.MinuetoFocusHandler" interface="true">
+      <operations xmi:id="_Ew7ZI9c7EeSyqfAiT90vaA" name="handleGetFocus" visibility="public" returnType="_Ew7ZKtc7EeSyqfAiT90vaA"/>
+      <operations xmi:id="_Ew7ZJNc7EeSyqfAiT90vaA" name="handleLostFocus" visibility="public" returnType="_Ew7ZKtc7EeSyqfAiT90vaA"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_Ew7ZJdc7EeSyqfAiT90vaA" name="MinuetoWindow" visibility="public" instanceClassName="org.minueto.window.MinuetoWindow" interface="true">
+      <operations xmi:id="_Ew7ZJtc7EeSyqfAiT90vaA" name="registerFocusHandler" visibility="public" returnType="_Ew7ZKtc7EeSyqfAiT90vaA">
+        <parameters xmi:id="_Ew7ZJ9c7EeSyqfAiT90vaA" name="arg0" type="_Ew7ZItc7EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_Ew7ZKNc7EeSyqfAiT90vaA" name="arg1" type="_Ew7ZKdc7EeSyqfAiT90vaA"/>
+      </operations>
+      <operations xmi:id="_6dkiQN72EeShJ659NzW61g" name="unregisterFocusHandler" visibility="public" returnType="_Ew7ZKtc7EeSyqfAiT90vaA">
+        <parameters xmi:id="_6dkiQd72EeShJ659NzW61g" name="arg0" type="_Ew7ZItc7EeSyqfAiT90vaA"/>
+        <parameters xmi:id="_6dkiQt72EeShJ659NzW61g" name="arg1" type="_Ew7ZKdc7EeSyqfAiT90vaA"/>
+      </operations>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_Ew7ZKdc7EeSyqfAiT90vaA" name="MinuetoEventQueue" visibility="public" instanceClassName="org.minueto.MinuetoEventQueue"/>
+    <classes xsi:type="ram:Class" xmi:id="_WyLPEAhyEeWF_N5Blk99kA" name="FocusHandler" partiality="public" visibility="public" superTypes="_Ew7ZItc7EeSyqfAiT90vaA">
+      <operations xmi:id="_Zm0g8AhyEeWF_N5Blk99kA" name="handleGetFocus" partiality="public" visibility="public" returnType="_Ew7ZKtc7EeSyqfAiT90vaA"/>
+      <operations xmi:id="_bL5BUAhyEeWF_N5Blk99kA" name="handleLostFocus" partiality="public" visibility="public" returnType="_Ew7ZKtc7EeSyqfAiT90vaA"/>
+    </classes>
+    <types xsi:type="ram:RVoid" xmi:id="_Ew7ZKtc7EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RAny" xmi:id="_Ew7ZK9c7EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_Ew7ZLNc7EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RInt" xmi:id="_Ew7ZLdc7EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RChar" xmi:id="_Ew7ZLtc7EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RString" xmi:id="_Ew7ZL9c7EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RDouble" xmi:id="_Ew7ZMNc7EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RFloat" xmi:id="_Ew7ZMdc7EeSyqfAiT90vaA"/>
+    <types xsi:type="ram:RLong" xmi:id="_Ew7ZMtc7EeSyqfAiT90vaA"/>
+  </structuralView>
+  <instantiations xmi:id="_Fzg3gNc7EeSyqfAiT90vaA">
+    <source xsi:type="ram:Aspect" href="Event.ram#_03aqINc3EeSyqfAiT90vaA"/>
+  </instantiations>
+  <layout xmi:id="_Ew7ZM9c7EeSyqfAiT90vaA">
+    <containers xmi:id="_Ew7ZNNc7EeSyqfAiT90vaA" key="_Ew7ZIdc7EeSyqfAiT90vaA">
+      <value xmi:id="_Ew7ZNdc7EeSyqfAiT90vaA" key="_Ew7ZItc7EeSyqfAiT90vaA">
+        <value xmi:id="_Ew7ZNtc7EeSyqfAiT90vaA" x="347.00006" y="175.99991"/>
+      </value>
+      <value xmi:id="_Ew7ZN9c7EeSyqfAiT90vaA" key="_Ew7ZJdc7EeSyqfAiT90vaA">
+        <value xmi:id="_Ew7ZONc7EeSyqfAiT90vaA" x="86.99985" y="496.99994"/>
+      </value>
+      <value xmi:id="_Ew7ZOdc7EeSyqfAiT90vaA" key="_Ew7ZKdc7EeSyqfAiT90vaA">
+        <value xmi:id="_Ew7ZOtc7EeSyqfAiT90vaA" x="69.99997" y="193.99994"/>
+      </value>
+      <value xmi:id="_WyMdMAhyEeWF_N5Blk99kA" key="_WyLPEAhyEeWF_N5Blk99kA">
+        <value xmi:id="_WyMdMQhyEeWF_N5Blk99kA" x="342.99988" y="348.99994"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

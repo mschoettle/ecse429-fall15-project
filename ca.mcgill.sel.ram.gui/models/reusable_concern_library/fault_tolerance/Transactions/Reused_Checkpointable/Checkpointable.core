@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_WFMm4MeQEeSb5YMwXG3r2w" name="Checkpointable">
+  <models xsi:type="ram:Aspect" href="Checkpointable.ram#_fP6hoGEUEeSD1YvY63sbpA"/>
+  <models xsi:type="core:COREFeatureModel" href="#_WFNN8MeQEeSb5YMwXG3r2w"/>
+  <featureModel xmi:id="_WFNN8MeQEeSb5YMwXG3r2w" coreConcern="_WFMm4MeQEeSb5YMwXG3r2w" root="_WFNN8ceQEeSb5YMwXG3r2w">
+    <features xmi:id="_WFNN8ceQEeSb5YMwXG3r2w" name="Checkpointable">
+      <realizedBy xsi:type="ram:Aspect" href="Checkpointable.ram#_fP6hoGEUEeSD1YvY63sbpA"/>
+      <reuses xmi:id="_kDxzYCWPEeWQNeYVjMdQrA" name="Copyable" selectedConfiguration="_kDxzYSWPEeWQNeYVjMdQrA">
+        <reusedConcern href="Reused_Copyable/Copyable.core#_ZlbngKBAEeSFg4mHi7X2Nw"/>
+        <configurations xmi:id="_kDxzYSWPEeWQNeYVjMdQrA" name="Copyable_CloneCopyable">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Copyable/Copyable.core#_ZlbngaBAEeSFg4mHi7X2Nw"/>
+          <selected href="Reused_Copyable/Copyable.core#_d5nZgKBAEeSFg4mHi7X2Nw"/>
+          <selected href="Reused_Copyable/Copyable.core#_ZlbngqBAEeSFg4mHi7X2Nw"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_yDczQCWPEeWQNeYVjMdQrA" name="Association_Checkpointable_Checkpoint" selectedConfiguration="_yDczQSWPEeWQNeYVjMdQrA">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_yDczQSWPEeWQNeYVjMdQrA" name="Association_KindPlainArrayListOrderedAssociation">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_B8rTMACYEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#__6WrkACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_CbYOgCWREeWQNeYVjMdQrA" name="Association_CheckPointable_Checkpoint_Backup" selectedConfiguration="_CbYOgSWREeWQNeYVjMdQrA">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_CbYOgSWREeWQNeYVjMdQrA" name="Association_KindPlainArrayListOrderedAssociation">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_B8rTMACYEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#__6WrkACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+    </features>
+  </featureModel>
+</core:COREConcern>

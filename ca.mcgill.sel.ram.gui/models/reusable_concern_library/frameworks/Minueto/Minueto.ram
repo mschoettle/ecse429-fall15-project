@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_OqwhEMf9EeSSgrP6a4IKSw" name="Minueto">
+  <realizes href="minueto.core#_MGAFUsf9EeSSgrP6a4IKSw"/>
+  <coreConcern href="minueto.core#_MGAFUMf9EeSSgrP6a4IKSw"/>
+  <structuralView xmi:id="_OqwhEcf9EeSSgrP6a4IKSw">
+    <classes xsi:type="ram:Class" xmi:id="_lkWdECc2EeW0ouusF6AkQg" name="Application" partiality="public" visibility="public"/>
+    <types xsi:type="ram:RVoid" xmi:id="_OqwhEsf9EeSSgrP6a4IKSw"/>
+    <types xsi:type="ram:RAny" xmi:id="_OqwhE8f9EeSSgrP6a4IKSw"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_OqwhFMf9EeSSgrP6a4IKSw"/>
+    <types xsi:type="ram:RInt" xmi:id="_OqwhFcf9EeSSgrP6a4IKSw"/>
+    <types xsi:type="ram:RChar" xmi:id="_OqwhFsf9EeSSgrP6a4IKSw"/>
+    <types xsi:type="ram:RString" xmi:id="_OqwhF8f9EeSSgrP6a4IKSw"/>
+    <types xsi:type="ram:RDouble" xmi:id="_OqwhGMf9EeSSgrP6a4IKSw"/>
+    <types xsi:type="ram:RFloat" xmi:id="_OqwhGcf9EeSSgrP6a4IKSw"/>
+    <types xsi:type="ram:RLong" xmi:id="_OqwhGsf9EeSSgrP6a4IKSw"/>
+  </structuralView>
+  <layout xmi:id="_OqwhG8f9EeSSgrP6a4IKSw">
+    <containers xmi:id="_OqwhHMf9EeSSgrP6a4IKSw" key="_OqwhEcf9EeSSgrP6a4IKSw">
+      <value xmi:id="_lkYSQCc2EeW0ouusF6AkQg" key="_lkWdECc2EeW0ouusF6AkQg">
+        <value xmi:id="_lkYSQSc2EeW0ouusF6AkQg" x="397.0" y="254.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>
