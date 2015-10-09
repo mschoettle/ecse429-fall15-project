@@ -146,7 +146,7 @@ Or, you can request the message view for a specific operation by calling `RAMMod
 
 #### Calling a controller
 
-Use the `ca.mcgill.sel.ram.controller.ram.ControllerFactory` to get the singleton instance of a controller.
+Use the `ca.mcgill.sel.ram.controller.ram.ControllerFactory` class to get the singleton instance of a controller.
 
 #### Initializing the GUI
 
