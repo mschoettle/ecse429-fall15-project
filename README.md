@@ -144,6 +144,10 @@ Once you loaded a model, you can navigate it to access its properties and childr
 You can either access them directly by calling `aspect.getMessageViews()` to retrieve the list.
 Or, you can request the message view for a specific operation by calling `RAMModelUtil.getMessageViewFor(Aspect, Operation)`.
 
+#### Calling a controller
+
+Use the `ca.mcgill.sel.ram.controller.ram.ControllerFactory` to get the singleton instance of a controller.
+
 #### Initializing the GUI
 
 In addition to the initializing code provided above, the following is required to run the GUI of TouchCORE.
