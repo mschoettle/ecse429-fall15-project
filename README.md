@@ -154,15 +154,25 @@ In addition to the initializing code provided above, the following is required t
 
 ```
 RamApp.initialize(new Runnable() {
-        
+    
     @Override
     public void run() {
-        // TODO: Your code.
+        final RamApp app = RamApp.getApplication();        
+        app.loadAspect(aspect);
+        app.invokeLater(new Runnable() {
+            
+            @Override
+            public void run() {
+                // TODO: Your test code.
+            }
+        });
     }
 });
 ```
 
-The code inside `run()` will be executed once TouchCORE is fully set up. In there, you could, for example, create a `MessageViewView`. The following code snippets also shows you how to access the layout of a message view:
+The code inside `run()` will be executed once TouchCORE is fully set up. Since in some cases the aspect needs to be loaded in the GUI, it is loaded first. The aspect will then be shown when the next frame is drawn.
+
+Your test code should execute after, i.e., it needs to be executed in the frame after that. Therefore, it is invoked later. Inside there, you could then for example create a `MessageViewView`. The following code snippets also shows you how to access the layout of a message view:
 
 ```
 MessageView messageView = (MessageView) aspect.getMessageViews().get(0);
@@ -172,6 +182,17 @@ MessageViewView messageViewView = new MessageViewView(messageView, layout, 1024,
 ```
 
 To access a handler for a view, use the `ca.mcgill.sel.ram.ui.views.message.handler.MessageViewHandlerFactory` class.
+
+#### Simulating mouse events
+
+To simulate that a mouse button was pressed (and released) somewhere on the screen, use the following code:
+
+```
+app.dispatchEvent(new MouseEvent(app, MouseEvent.MOUSE_PRESSED, 0, MouseEvent.BUTTON1_MASK, x, x, x, y, 1, false, MouseEvent.BUTTON1));
+app.dispatchEvent(new MouseEvent(app, MouseEvent.MOUSE_RELEASED, 0, MouseEvent.BUTTON1_MASK, x, y, x, y, 1, false, MouseEvent.BUTTON1));
+```
+
+You need to find out the correct `x` and `y` to tap the right location on the screen. You can either debug into `MouseInputSource.mousePressed(...)` to find out the `x` and `y` when you tap somewhere or only dispatch the `MOUSE_PRESSED` event, which will then show the tap point on the screen.
 
 ## Background
 
