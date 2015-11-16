@@ -15,6 +15,9 @@ It is highly recommended that you use the Java JDK. The Java Runtime Environment
 Eclipse Mars is required for TouchCORE. While you may use your existing Eclipse installation, it is recommended to start off with the *Eclipse Modeling Tools*. If you feel comfortable enough, you can add these to your existing installation.
 
 1. Download and install the *Eclipse Modeling Tools* package from [eclipse.org](http://www.eclipse.org/downloads/).
+
+    **Note:** Due to problems you cannot use the Eclipse Installer. Download the *Eclipse Modeling Tools* directly instead to avoid any problems, please.
+
 1. Unzip and start it.
 1. Recommended: Create a new workspace for TouchCORE related development.
 1. Go to *Preferences* > *General* > *Editors* > *Text Editors*
