@@ -189,7 +189,7 @@ As you can see in the example code above there is code that can be invoked later
 
 This means that your test case within a test method can reach the end, but UI modifications have not been executed yet. When JUnit executed all tests, it shuts down the process and all threads within. So depending on the time it takes you might not see the GUI showing up at all.
 
-To overcome this, you can use a semaphore which forces the main thread to be blocked until another thread is done. A very pragmatic solution could involve sleeping the main thread for a certain number of seconds. However, this requires to "play around" with the time it takes for certain operations. A more flexible solution can be the use of a helper library like [concurrentunit](https://github.com/jhalterman/concurrentunit). The following code shows an example on how this would be used within one test class.
+To overcome this, you can use a semaphore which forces the main thread to be blocked until another thread is done. A very pragmatic solution could involve sleeping the main thread for a certain number of seconds. However, this requires to "play around" with the time it takes for certain operations. A more flexible solution can be the use of a helper library like [concurrentunit](https://github.com/jhalterman/concurrentunit). The following code shows an example on how this would be used within one test class. Please see the README of *concurrentunit* for more details on how it can be used.
 
 ```
 public class TestSomeClass {
