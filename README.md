@@ -183,6 +183,85 @@ MessageViewView messageViewView = new MessageViewView(messageView, layout, 1024,
 
 To access a handler for a view, use the `ca.mcgill.sel.ram.ui.views.message.handler.MessageViewHandlerFactory` class.
 
+#### Testing with multiple threads
+
+As you can see in the example code above there is code that can be invoked later. The reason is that the GUI is executed within its own UI thread. So all modifications on the UI need to be performed in this thread. Otherwise you might get an exception during runtime.
+
+This means that your test case within a test method can reach the end, but UI modifications have not been executed yet. When JUnit executed all tests, it shuts down the process and all threads within. So depending on the time it takes you might not see the GUI showing up at all.
+
+To overcome this, you can use a semaphore which forces the main thread to be blocked until another thread is done. A very pragmatic solution could involve sleeping the main thread for a certain number of seconds. However, this requires to "play around" with the time it takes for certain operations. A more flexible solution can be the use of a helper library like [concurrentunit](https://github.com/jhalterman/concurrentunit). The following code shows an example on how this would be used within one test class.
+
+```
+public class TestSomeClass {
+    
+    private static Waiter waiter = new Waiter();
+
+    @BeforeClass
+    public static void setUpBeforeClass() throws Exception {
+        // Initialize ResourceManager.
+        ResourceManager.initialize();
+        // Initialize packages.
+        RamPackage.eINSTANCE.eClass();
+        
+        // Register resource factories.
+        ResourceManager.registerExtensionFactory("ram", new RamResourceFactoryImpl());
+    
+        // Initialize adapter factories.
+        AdapterFactoryRegistry.INSTANCE.addAdapterFactory(RamItemProviderAdapterFactory.class);
+        
+        RamApp.initialize(new Runnable() {
+            
+            @Override
+            public void run() {
+                waiter.resume();
+            }
+        });
+        
+        // Wait for RamApp to be initialized.
+        waiter.await();
+    }
+
+    /**
+     * Assumes that each test case uses the same test model.
+     * Closes and reloads the aspect scene.
+     */
+    @Before
+    public void setUp() throws Exception {
+        // Close current aspect.
+        if (aspect != null) {
+            RamApp.getApplication().invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    RamApp.getApplication().closeAspectScene(RamApp.getActiveAspectScene());                    
+                }
+            });
+        }
+        
+        // Load model to use in test.
+        aspect = (Aspect) ResourceManager.loadModel("/path/to/my/Model.ram");
+        
+        RamApp.getApplication().addSceneChangeListener(new ISceneChangeListener() {
+            
+            @Override
+            public void processSceneChangeEvent(SceneChangeEvent event) {
+                // Resume once the new aspect scene is loaded (switched to).
+                if (event.getNewScene() instanceof DisplayAspectScene) {
+                    RamApp.getApplication().removeSceneChangeListener(this);
+                    waiter.resume();
+                }
+            }
+        });
+        
+        RamApp.getApplication().loadAspect(aspect);
+        
+        // Wait for UI to be updated.
+        waiter.await();
+    }
+
+    // TODO: Your tests.
+}.
+```
+
 #### Simulating mouse events
 
 To simulate that a mouse button was pressed (and released) somewhere on the screen, use the following code:
